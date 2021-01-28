@@ -6,20 +6,37 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScreenScript : MonoBehaviour
 {
+        public string Area;
         public GameObject loadingScreenObj;
         public Slider slider;
+        public GameObject Complete;
 
         AsyncOperation async;
 
+        public void Park()
+    {
+        Area = "Park";
+        LoadScreenExample();
+    }
         public void LoadScreenExample()
         {
             StartCoroutine(LoadingScreen());
         }
 
-        IEnumerator LoadingScreen()
+        public void Continue()
+    {
+        {
+            async.allowSceneActivation = true;
+            loadingScreenObj.SetActive(false);
+            Complete.SetActive(false);
+        }
+
+    }
+
+    IEnumerator LoadingScreen()
         {
             loadingScreenObj.SetActive(true);
-        async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        async = SceneManager.LoadSceneAsync(Area);
             async.allowSceneActivation = false;
 
             while (async.isDone == false)
@@ -28,11 +45,13 @@ public class LoadingScreenScript : MonoBehaviour
                 if (async.progress == 0.9f)
                 {
                     slider.value = 1f;
-                    async.allowSceneActivation = true;
-                    loadingScreenObj.SetActive(false);
+                    Complete.SetActive(true);
                 }
+
+
                 yield return null;
 
             }
         }
-    }
+    }           
+

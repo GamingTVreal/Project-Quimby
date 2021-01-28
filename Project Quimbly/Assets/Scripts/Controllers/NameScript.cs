@@ -10,6 +10,7 @@ public class NameScript : MonoBehaviour
     NameScript Names;
     public GameObject NameMenu;
     public TMP_InputField Name;
+    public GameObject Tutorial;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +30,9 @@ public class NameScript : MonoBehaviour
     {
 
         B.Name = Name.text;
-        Debug.Log(B.Name);
         if (B.Name != "")
         {
+            Tutorial.SetActive(true);
             NameMenu.SetActive(false);
         }
         
