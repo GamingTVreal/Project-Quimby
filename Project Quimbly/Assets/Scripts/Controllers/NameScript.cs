@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.UI;
+using UnityEngine.UI;
 using TMPro;
 
 public class NameScript : MonoBehaviour
@@ -11,10 +11,11 @@ public class NameScript : MonoBehaviour
     public GameObject NameMenu;
     public TMP_InputField Name;
     public GameObject Tutorial;
+    public static GameObject Carrot;
     // Start is called before the first frame update
     void Start()
     {
-     if (B.Name != "")
+     if (BasicFunctions.Name != null)
         {
             NameMenu.SetActive(false);
         }
@@ -29,8 +30,8 @@ public class NameScript : MonoBehaviour
    public void SelectName()
     {
 
-        B.Name = Name.text;
-        if (B.Name != "")
+        BasicFunctions.Name = Name.text;
+        if (BasicFunctions.Name != null)
         {
             Tutorial.SetActive(true);
             NameMenu.SetActive(false);

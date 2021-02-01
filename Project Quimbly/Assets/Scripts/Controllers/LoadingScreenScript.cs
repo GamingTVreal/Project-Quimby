@@ -1,29 +1,36 @@
 ﻿
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadingScreenScript : MonoBehaviour
 {
-        public string Area;
-        public GameObject loadingScreenObj;
-        public Slider slider;
-        public GameObject Complete;
+    public string Area;
+    public GameObject loadingScreenObj;
+    public Slider slider;
+    public GameObject Complete;
 
-        AsyncOperation async;
+    AsyncOperation async;
 
-        public void Park()
+    public void Park()
     {
         Area = "Park";
         LoadScreenExample();
     }
-        public void LoadScreenExample()
-        {
-            StartCoroutine(LoadingScreen());
-        }
 
-        public void Continue()
+    public void Home()
+    {
+        Area = "Home";
+        LoadScreenExample();
+    }
+
+    public void LoadScreenExample()
+    {
+        StartCoroutine(LoadingScreen());
+    }
+
+    public void Continue()
     {
         {
             async.allowSceneActivation = true;
@@ -34,24 +41,24 @@ public class LoadingScreenScript : MonoBehaviour
     }
 
     IEnumerator LoadingScreen()
-        {
-            loadingScreenObj.SetActive(true);
+    {
+        loadingScreenObj.SetActive(true);
         async = SceneManager.LoadSceneAsync(Area);
-            async.allowSceneActivation = false;
+        async.allowSceneActivation = false;
 
-            while (async.isDone == false)
+        while (async.isDone == false)
+        {
+            slider.value = async.progress;
+            if (async.progress == 0.9f)
             {
-                slider.value = async.progress;
-                if (async.progress == 0.9f)
-                {
-                    slider.value = 1f;
-                    Complete.SetActive(true);
-                }
-
-
-                yield return null;
-
+                slider.value = 1f;
+                Complete.SetActive(true);
             }
+
+
+            yield return null;
+
         }
-    }           
+    }
+}
 

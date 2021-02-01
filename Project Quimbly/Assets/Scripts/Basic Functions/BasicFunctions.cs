@@ -4,14 +4,17 @@ using UnityEngine;
 using TMPro;
 public class BasicFunctions : MonoBehaviour
 {
+
+    public Animator PhoneAnimation;
+    public GameObject Phone;
     public TextMeshProUGUI MoneyText,EnergyText,PlayerName;
-    public int Money;
-    public int Energy;
-    public string Name;
+    public static int Money;
+    public static int Energy;
+    public static string Name;
     // Start is called before the first frame update
     void Start() 
     {
-        if(Name == "")
+        if(Name == null)
         {
             FirstTimeSetup();
         }
@@ -30,5 +33,16 @@ public class BasicFunctions : MonoBehaviour
         Money = 2500;
         
     }
-
+   public void OpenthePhone()
+    {
+        if (PhoneAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime>1)
+        {
+            Debug.Log("NotPlaying");
+            Phone.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("Playing");
+        }
+    }
 }
