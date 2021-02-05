@@ -16,6 +16,7 @@ public class TextBoxManager : MonoBehaviour
     public bool isactive;
     // Use this for initialization
 
+    BasicFunctions Basic;
     public TextAsset textfile;
     public string[] textlines;
     private string TypedLine = "";
@@ -44,6 +45,7 @@ public class TextBoxManager : MonoBehaviour
         for (int i = 0; i < textlines[currentline].Length; i++)
         {
 
+            textlines[currentline] = textlines[currentline].Replace("Mark", BasicFunctions.Name);
             TypedLine = textlines[currentline].Substring(0, i);
             yield return new WaitForSeconds(speed);
 
@@ -55,6 +57,16 @@ public class TextBoxManager : MonoBehaviour
     }
     void Update()
     {
+
+        if (TextBox.activeSelf)
+        {
+            Phone.SetActive(false);
+            isactive = true;
+        }
+        else
+        {
+            Phone.SetActive(true);
+        }
         if (isactive)
         {
             EnableTextBox();
@@ -63,8 +75,9 @@ public class TextBoxManager : MonoBehaviour
         {
             DisableTextBox();
         }
-
+        
         thetext.text = TypedLine;
+        
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A))
         {
             StopCoroutine(showTextCoroutine);
@@ -92,6 +105,7 @@ public class TextBoxManager : MonoBehaviour
     public void DisableTextBox()
     {
         TextBox.SetActive(false);
+        Phone.SetActive(true);
     }
     public void ReloadScript(TextAsset NewText)
     {

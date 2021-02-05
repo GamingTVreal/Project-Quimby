@@ -4,16 +4,35 @@ using UnityEngine;
 using TMPro;
 public class BasicFunctions : MonoBehaviour
 {
-
-    public Animator PhoneAnimation;
-    public GameObject Phone;
-    public TextMeshProUGUI MoneyText,EnergyText,PlayerName;
-    public static int Money;
-    public static int Energy;
+    [SerializeField] private Inventory_Ui Inventory_UI;
+    [SerializeField] GameObject phoneObject;
+    public GameObject TextBox;
+    [SerializeField] Animator PhoneAnimation;
+    [SerializeField] GameObject Phone;
+    [SerializeField] TextMeshProUGUI MoneyText, EnergyText, PlayerName;
+    static int Money;
+    static int Energy;
     public static string Name;
-    // Start is called before the first frame update
+    public int[] ItemsHeld;
+    private Inventory Inventory;
+
+    private void Awake()
+    {
+        Inventory = new Inventory();
+        Inventory_UI.SetInventory(Inventory);
+    }
+
+
     void Start() 
     {
+        if(TextBox.activeInHierarchy)
+        {
+            phoneObject.SetActive(false);
+        }
+        else
+        {
+            phoneObject.SetActive(true);
+        }
         if(Name == null)
         {
             FirstTimeSetup();
@@ -43,6 +62,45 @@ public class BasicFunctions : MonoBehaviour
         else
         {
             Debug.Log("Playing");
+        }
+    }
+}
+public class Item
+{
+    public enum ItemType
+    {
+        Cake,
+        Soda,
+        Mints,
+        BikePump,
+        Sandwich,
+        Water,
+        Pizza,
+        Burger,
+        Chocolates,
+        Roses,
+    }
+    public ItemType itemType;
+    public int amount;
+    
+    public bool IsStackable()
+    {
+        switch (itemType)
+        {
+            default:
+            case ItemType.Cake:
+            case ItemType.Soda:
+            case ItemType.Mints:
+            case ItemType.Sandwich:
+            case ItemType.Water:
+            case ItemType.Pizza:
+            case ItemType.Burger:
+            case ItemType.Chocolates:
+            case ItemType.Roses:
+                return true;
+            
+            case ItemType.BikePump:
+                return false;
         }
     }
 }
