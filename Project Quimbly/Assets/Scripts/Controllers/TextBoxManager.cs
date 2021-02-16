@@ -9,10 +9,12 @@ using System;
 
 public class TextBoxManager : MonoBehaviour
 {
+    public GameObject NameBox;
     public GameObject Phone;
     public GameObject TextBox;
     public float speed = 0.1f;
     public TMP_Text thetext;
+    public TMP_Text Speaker;
     public bool isactive;
     // Use this for initialization
 
@@ -22,11 +24,11 @@ public class TextBoxManager : MonoBehaviour
     private string TypedLine = "";
     public int currentline;
     public int endatline;
+    public int NameLine;
     Coroutine showTextCoroutine = null;
 
     void Start()
     {
-
         if (textfile != null)
         {
             textlines = (textfile.text.Split('\n'));
@@ -57,7 +59,15 @@ public class TextBoxManager : MonoBehaviour
     }
     void Update()
     {
-
+        textlines[NameLine] = textlines[NameLine].Replace("Mark", BasicFunctions.Name);
+        if (textlines[NameLine].Contains("null"))
+        {
+            DisableNameBox();
+        }
+        else
+        {
+            EnableNameBox();
+        }
         if (TextBox.activeSelf)
         {
             Phone.SetActive(false);
@@ -75,9 +85,10 @@ public class TextBoxManager : MonoBehaviour
         {
             DisableTextBox();
         }
-        
+
+        NameLine = currentline - 1;
         thetext.text = TypedLine;
-        
+        Speaker.text = textlines[NameLine];
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A))
         {
             StopCoroutine(showTextCoroutine);
@@ -88,7 +99,8 @@ public class TextBoxManager : MonoBehaviour
         {
 
             showTextCoroutine = StartCoroutine(ShowText());
-            currentline += 1;
+            currentline += 2;
+            NameLine += 2;
         }
 
         if (currentline > endatline)
@@ -98,12 +110,22 @@ public class TextBoxManager : MonoBehaviour
         }
 
     }
+
+    void EnableNameBox()
+    {
+        NameBox.SetActive(true);
+    }
+    void DisableNameBox()
+    {
+        NameBox.SetActive(false);
+    }
     public void EnableTextBox()
     {
         TextBox.SetActive(true);
     }
     public void DisableTextBox()
     {
+        NameBox.SetActive(false);
         TextBox.SetActive(false);
         Phone.SetActive(true);
     }

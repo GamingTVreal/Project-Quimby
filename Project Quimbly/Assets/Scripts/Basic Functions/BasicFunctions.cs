@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 public class BasicFunctions : MonoBehaviour
 {
+    
     [SerializeField] private Inventory_Ui Inventory_UI;
     [SerializeField] GameObject phoneObject;
     public GameObject TextBox;
@@ -13,19 +14,55 @@ public class BasicFunctions : MonoBehaviour
     static int Money;
     static int Energy;
     public static string Name;
-    public int[] ItemsHeld;
-    private Inventory Inventory;
+    private Inventory inventory;
+    private Item item;
 
-    private void Awake()
+    public void Awake()
     {
-        Inventory = new Inventory();
-        Inventory_UI.SetInventory(Inventory);
+
+        inventory = new Inventory(UseItem);
+        Inventory_UI.SetItems(this);
+        Inventory_UI.SetInventory(inventory);
+        Inventory_UI.InventoryUI();
+        inventory.AddItem(new Item { itemType = Item.ItemType.Soda, amount = 1});
+    }
+
+    public void AddSoda()
+    {
+        inventory.AddItem(new Item { itemType = Item.ItemType.Soda, amount = 1});
+        Inventory_UI.Add();
+        Inventory_UI.RefreshInventory();
+    }
+    public void RemoveSoda()
+    {
+        inventory.RemoveItem(new Item { itemType = Item.ItemType.Soda, amount = 1 });
+        Inventory_UI.Remove();
+        Inventory_UI.RefreshInventory();
+    }
+    public Item GetItem()
+    {
+        return item;
+    }
+    private void UseItem(Item item)
+    {
+        switch (item.itemType)
+        {
+            case Item.ItemType.Cake:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.Cake, amount = 1 });
+                break;
+            case Item.ItemType.BikePump:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.BikePump, amount = 1 });
+                break;
+            case Item.ItemType.Soda:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.Soda, amount = 1 });
+                break;
+        }
     }
 
 
-    void Start() 
+    void Start()
     {
-        if(TextBox.activeInHierarchy)
+        if (TextBox.activeInHierarchy)
         {
             phoneObject.SetActive(false);
         }
@@ -33,7 +70,7 @@ public class BasicFunctions : MonoBehaviour
         {
             phoneObject.SetActive(true);
         }
-        if(Name == null)
+        if (Name == null)
         {
             FirstTimeSetup();
         }
@@ -50,23 +87,20 @@ public class BasicFunctions : MonoBehaviour
     {
         Energy = 20;
         Money = 2500;
-        
+
     }
-   public void OpenthePhone()
+    public void OpenthePhone()
     {
-        if (PhoneAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime>1)
+        if (PhoneAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
         {
-            Debug.Log("NotPlaying");
             Phone.SetActive(true);
-        }
-        else
-        {
-            Debug.Log("Playing");
         }
     }
 }
 public class Item
 {
+
+
     public enum ItemType
     {
         Cake,
@@ -82,25 +116,5 @@ public class Item
     }
     public ItemType itemType;
     public int amount;
-    
-    public bool IsStackable()
-    {
-        switch (itemType)
-        {
-            default:
-            case ItemType.Cake:
-            case ItemType.Soda:
-            case ItemType.Mints:
-            case ItemType.Sandwich:
-            case ItemType.Water:
-            case ItemType.Pizza:
-            case ItemType.Burger:
-            case ItemType.Chocolates:
-            case ItemType.Roses:
-                return true;
-            
-            case ItemType.BikePump:
-                return false;
-        }
-    }
+
 }
