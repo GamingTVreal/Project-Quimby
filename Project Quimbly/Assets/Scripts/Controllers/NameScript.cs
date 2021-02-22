@@ -6,7 +6,7 @@ using TMPro;
 
 public class NameScript : MonoBehaviour
 {
-    public BasicFunctions B;
+    private BasicFunctions B;
     NameScript Names;
     public GameObject NameMenu;
     public TMP_InputField Name;
@@ -15,9 +15,17 @@ public class NameScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+     
      if (BasicFunctions.Name != null)
         {
-            NameMenu.SetActive(false);
+            
+            if(NameMenu != null)
+            {
+                Name = null;
+                NameMenu.SetActive(false);
+                Debug.Log(BasicFunctions.Name);
+            }
+            
         }
     }
 

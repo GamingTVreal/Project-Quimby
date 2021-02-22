@@ -46,11 +46,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264a6f967fef96b4d96095367616648a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Inventory_UI: {fileID: 0}
+  phoneObject: {fileID: 0}
+  TextBox: {fileID: 0}
   PhoneAnimation: {fileID: 0}
   Phone: {fileID: 0}
   MoneyText: {fileID: 0}
   EnergyText: {fileID: 0}
   PlayerName: {fileID: 0}
+  ScriptHolder: {fileID: 9015601317646389276, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
 --- !u!114 &3241687173818506856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,12 +67,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d11992c9b29e6824f81a2858b133a88b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteController: {fileID: 0}
   Character: 0
-  Names: []
-  Biography: []
-  Age: 
-  CupSize: []
-  Gifts: []
   fullness: 0
   happiness: 0
   interestlevel: 0
@@ -84,7 +84,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86934fc92c3fa31459ac130b9139f505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  B: {fileID: 3241687173818506854}
   NameMenu: {fileID: 0}
   Name: {fileID: 0}
   Tutorial: {fileID: 0}

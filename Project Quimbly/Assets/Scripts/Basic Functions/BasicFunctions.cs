@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor.Experimental.Rendering;
+
 public class BasicFunctions : MonoBehaviour
 {
     
@@ -16,10 +18,10 @@ public class BasicFunctions : MonoBehaviour
     public static string Name;
     private Inventory inventory;
     private Item item;
-
+    public GameObject ScriptHolder;
     public void Awake()
     {
-
+        SetName();
         inventory = new Inventory(UseItem);
         Inventory_UI.SetItems(this);
         Inventory_UI.SetInventory(inventory);
@@ -38,6 +40,11 @@ public class BasicFunctions : MonoBehaviour
         inventory.RemoveItem(new Item { itemType = Item.ItemType.Soda, amount = 1 });
         Inventory_UI.Remove();
         Inventory_UI.RefreshInventory();
+    }
+    public void SetName()
+    {
+        PlayerName.text = Name;
+        Debug.Log(Name);
     }
     public Item GetItem()
     {
@@ -62,6 +69,7 @@ public class BasicFunctions : MonoBehaviour
 
     void Start()
     {
+        DontDestroyOnLoad(ScriptHolder);
         if (TextBox.activeInHierarchy)
         {
             phoneObject.SetActive(false);
@@ -79,7 +87,6 @@ public class BasicFunctions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerName.text = Name;
         MoneyText.text = Money.ToString();
         EnergyText.text = Energy.ToString();
     }
@@ -97,24 +104,4 @@ public class BasicFunctions : MonoBehaviour
         }
     }
 }
-public class Item
-{
 
-
-    public enum ItemType
-    {
-        Cake,
-        Soda,
-        Mints,
-        BikePump,
-        Sandwich,
-        Water,
-        Pizza,
-        Burger,
-        Chocolates,
-        Roses,
-    }
-    public ItemType itemType;
-    public int amount;
-
-}

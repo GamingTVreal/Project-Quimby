@@ -9,6 +9,7 @@ using System;
 
 public class TextBoxManager : MonoBehaviour
 {
+    [SerializeField] GameObject SpriteImage;
     public GameObject NameBox;
     public GameObject Phone;
     public GameObject TextBox;
@@ -128,6 +129,11 @@ public class TextBoxManager : MonoBehaviour
         NameBox.SetActive(false);
         TextBox.SetActive(false);
         Phone.SetActive(true);
+    }
+    public void EnableSpriteImage()
+    {
+        SpriteImage.SetActive(true);
+
     }
     public void ReloadScript(TextAsset NewText)
     {

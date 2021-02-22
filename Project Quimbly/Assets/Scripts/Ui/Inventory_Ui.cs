@@ -16,6 +16,7 @@ public class Inventory_Ui : MonoBehaviour
 
     private void Awake()
     {
+        
         Debug.Log(Inventory.itemList.Count);
         var count = this.Inventory.itemList.Count;
         
@@ -31,6 +32,7 @@ public class Inventory_Ui : MonoBehaviour
                 {
                     if (child == ItemTransfom) continue;
                     child.gameObject.SetActive(true);
+                    
                 }
             }
             else
@@ -48,7 +50,7 @@ public class Inventory_Ui : MonoBehaviour
 
             if (item.amount < 1)
             {
-                Debug.Log("No");
+                
                 foreach (Transform child in ItemTransfom)
                 {
                     if (child == ItemTransfom) continue;
@@ -68,11 +70,11 @@ public class Inventory_Ui : MonoBehaviour
             if (item.amount > 1)
             {
                 uiText.SetText(item.amount.ToString());
-                Debug.Log("Over1");
+                
             }
             else
             {
-                Debug.Log("Else");
+                
                 uiText.SetText("");
             }
         }

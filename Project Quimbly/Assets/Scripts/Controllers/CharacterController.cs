@@ -1,29 +1,42 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    public int Character;
-    public string[] Names;
-    public string[] Biography;
-    public int[] Age;
-    public string[] CupSize;
-    public string[] Gifts;
+    [SerializeField] private SpriteController spriteController;
 
-    public int fullness;
+    public int Character = 0;
+    
+    private string[] Names = new string [5];
+    private string[] Biography = new string [5];
+    private int[] Age = new int [5];
+    private string[] CupSize = new string [5];
+    private static bool[] UnlockedGirls = new bool [5];
+    bool UnlockGirl;
+
+    public float fullness;
     public int happiness;
-    public int interestlevel;
+    public float interestlevel;
     
 
     // Start is called before the first frame update
     void Start()
     {
-    switch (Character)
+        if(UnlockedGirls == null)
         {
-            case 0:
-            break;
+            UnlockedGirls[0] = false;
         }
+        UnlockGirl = true;
+        if(UnlockGirl == true)
+        {
+            UnlockedGirls[0] = true;
+            SetCharacters();
+        }
+        UnlockGirl = false;
+        Debug.Log(UnlockedGirls[0]);
 
     }
 
@@ -33,11 +46,32 @@ public class CharacterController : MonoBehaviour
 
     }
 
-    void TalkToCharacter()
+    public void TalkToCharacter()
     {
-
+        switch (Character)
+        {
+            case 0:
+                spriteController.boobs();
+                spriteController.GetSprite();
+                break;
+        }
     }
+    void SetCharacters()
+    {
+        switch (Character)
+        {
+            case 0:
+                if (UnlockedGirls[0] == true)
+                {
+                    Names[Character] = "Deb";
+                    Biography[Character] = "Deb is the debug girl of your dreams :)";
+                    Age[Character] = 21;
+                    CupSize[Character] = "D";
+                }
 
+                break;
+        }
+    }
 }
         
 
