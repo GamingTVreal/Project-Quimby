@@ -51,8 +51,9 @@ public class CharacterController : MonoBehaviour
         switch (Character)
         {
             case 0:
-                spriteController.boobs();
+
                 spriteController.GetSprite();
+                spriteController.SetSprite();
                 break;
         }
     }

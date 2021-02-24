@@ -17,6 +17,9 @@ public class TextBoxManager : MonoBehaviour
     public TMP_Text thetext;
     public TMP_Text Speaker;
     public bool isactive;
+    public SpriteController spriteController;
+    public int CurrentSprite;
+    public string AssignedSprite;
     // Use this for initialization
 
     BasicFunctions Basic;
@@ -86,27 +89,34 @@ public class TextBoxManager : MonoBehaviour
         {
             DisableTextBox();
         }
-
+        CurrentSprite = NameLine - 1;
         NameLine = currentline - 1;
         thetext.text = TypedLine;
         Speaker.text = textlines[NameLine];
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A))
         {
+            if(spriteController.x != 0)
+            {
+                spriteController.SetSprite();
+            }
+            
             StopCoroutine(showTextCoroutine);
             TypedLine = textlines[currentline];
         }
 
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) && TypedLine == textlines[currentline])
         {
-
+            
             showTextCoroutine = StartCoroutine(ShowText());
             currentline += 2;
             NameLine += 2;
+            CurrentSprite += 2;
         }
 
         if (currentline > endatline)
 
         {
+            DisableSpriteImage();
             DisableTextBox();
         }
 
@@ -133,6 +143,11 @@ public class TextBoxManager : MonoBehaviour
     public void EnableSpriteImage()
     {
         SpriteImage.SetActive(true);
+
+    }
+    public void DisableSpriteImage()
+    {
+        SpriteImage.SetActive(false);
 
     }
     public void ReloadScript(TextAsset NewText)
