@@ -7,7 +7,7 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] private SpriteController spriteController;
-
+    [SerializeField] private TextEvents _textEvents;
     public int Character = 0;
     
     private string[] Names = new string [5];
@@ -46,14 +46,14 @@ public class CharacterController : MonoBehaviour
 
     }
 
-    public void TalkToCharacter()
+    public void TalkToDeb()
     {
+
         switch (Character)
         {
             case 0:
-
+                _textEvents.MeetingDeb();
                 spriteController.GetSprite();
-                spriteController.SetSprite();
                 break;
         }
     }

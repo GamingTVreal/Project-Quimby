@@ -38,7 +38,6 @@ public class BasicFunctions : MonoBehaviour
     public void RemoveSoda()
     {
         inventory.RemoveItem(new Item { itemType = Item.ItemType.Soda, amount = 1 });
-        Inventory_UI.Remove();
         Inventory_UI.RefreshInventory();
     }
     public void SetName()
@@ -87,8 +86,7 @@ public class BasicFunctions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoneyText.text = Money.ToString();
-        EnergyText.text = Energy.ToString();
+
     }
     void FirstTimeSetup()
     {

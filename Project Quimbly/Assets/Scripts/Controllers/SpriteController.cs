@@ -13,8 +13,7 @@ public class SpriteController : MonoBehaviour
     {
 
     }
-
-    public void GetSprite()
+    public void SetSprite()
     {
         switch (x)
         {
@@ -29,36 +28,34 @@ public class SpriteController : MonoBehaviour
                 break;
         }
     }
-
-    public void SetSprite() //I know this function sucks but I could not find another way around this. Please forgive me :(
+    public void GetSprite()
     {
-
         if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("1"))
         {
-            x = 1;
-        }  
+            x = 0; 
+        }
         else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("2"))
         {
-            x = 2;
+            x = 1;
         }
         else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("3"))
         {
-            x = 3;
+            x = 2;
         }
         else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("4"))
         {
-            x = 4;
+            x = 3;
         }
         else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("5"))
         {
-            x = 5;
+            x = 4;
         }
-        else
+        else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("6"))
         {
-            x = 0;
+            textboxmanager.DisableSpriteImage();
         }
 
-        GetSprite();
+        SetSprite();
     }
 
 

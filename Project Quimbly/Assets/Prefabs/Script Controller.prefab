@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3241687173818506856}
   - component: {fileID: 3241687173818506855}
   - component: {fileID: 3241687173818506852}
+  - component: {fileID: 7866628036986942650}
+  - component: {fileID: 2556943766880750430}
   m_Layer: 0
   m_Name: Script Controller
   m_TagString: Untagged
@@ -68,6 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteController: {fileID: 0}
+  _textEvents: {fileID: 2556943766880750430}
   Character: 0
   fullness: 0
   happiness: 0
@@ -103,3 +106,36 @@ MonoBehaviour:
   loadingScreenObj: {fileID: 0}
   slider: {fileID: 0}
   Complete: {fileID: 0}
+--- !u!114 &7866628036986942650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241687173818506859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0d652f2891c9549b99c4cd97e891eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  SnoringSFX: {fileID: 0}
+  Fadeout: {fileID: 0}
+--- !u!114 &2556943766880750430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241687173818506859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228c8f22d25e8444184eb6c506a4c1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextText: {fileID: 0}
+  StartLine: 0
+  MainCamera: {fileID: 0}
+  MenuCamera: {fileID: 0}
+  SpeakButton: {fileID: 0}
+  TextBox: {fileID: 0}
