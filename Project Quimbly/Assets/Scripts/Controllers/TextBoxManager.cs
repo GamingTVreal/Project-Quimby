@@ -10,16 +10,15 @@ using System;
 public class TextBoxManager : MonoBehaviour
 {
     [SerializeField] GameObject SpriteImage;
-    public GameObject NameBox;
-    public GameObject Phone;
-    public GameObject TextBox;
+    public GameObject Phone,NameBox,TextBox;
     public float speed = 0.1f;
     public TMP_Text thetext;
     public TMP_Text Speaker;
     public bool isactive;
+    [SerializeField] Button Sleep;
     // Use this for initialization
 
-    BasicFunctions Basic;
+    public SpriteController Sprite;
     public TextAsset textfile;
     public string[] textlines;
     private string TypedLine = "";
@@ -47,7 +46,7 @@ public class TextBoxManager : MonoBehaviour
     IEnumerator ShowText()
     {
 
-        for (int i = 0; i < textlines[currentline].Length; i++)
+        for (int i = 0; i < textlines[currentline].Length + 1; i++)
         {
 
             textlines[currentline] = textlines[currentline].Replace("Mark", BasicFunctions.Name);
@@ -73,7 +72,15 @@ public class TextBoxManager : MonoBehaviour
         }
         if (TextBox.activeSelf)
         {
-            Phone.SetActive(false);
+            if (Phone != null) 
+            {
+                Phone.SetActive(false);
+            }
+            if (Sleep != null)
+            {
+               Sleep.interactable = false;
+            }
+            
             isactive = true;
         }
         else
@@ -83,26 +90,31 @@ public class TextBoxManager : MonoBehaviour
         if (isactive)
         {
             EnableTextBox();
-            EnableSpriteImage();
+            if(SpriteImage != null)
+            {
+             EnableSpriteImage();
+            }
+            
         }
         else
         {
             DisableSpriteImage();
             DisableTextBox();
         }
-        CurrentSprite = NameLine - 1;
+        CurrentSprite = currentline - 2;
         NameLine = currentline - 1;
         thetext.text = TypedLine;
         Speaker.text = textlines[NameLine];
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A))
         {
+            Sprite.GetSprite();
             StopCoroutine(showTextCoroutine);
             TypedLine = textlines[currentline];
         }
 
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) && TypedLine == textlines[currentline])
         {
-
+            Sprite.GetSprite();
             showTextCoroutine = StartCoroutine(ShowText());
             currentline += 3;
         }
@@ -110,12 +122,21 @@ public class TextBoxManager : MonoBehaviour
         if (currentline > endatline)
 
         {
-            DisableSpriteImage();
+            DisableSpriteImage(); 
             DisableTextBox();
+        }
+        else
+        {
+            EnableSpriteImage();
+            EnableTextBox();
         }
 
     }
 
+    public void NextLine()
+    {
+        showTextCoroutine = StartCoroutine(ShowText());
+    }
     void EnableNameBox()
     {
         NameBox.SetActive(true);
@@ -132,11 +153,20 @@ public class TextBoxManager : MonoBehaviour
     {
         NameBox.SetActive(false);
         TextBox.SetActive(false);
-        Phone.SetActive(true);
+       if(Phone != null)
+        {
+            Phone.SetActive(true);
+        } 
+       if(Sleep != null)
+        {
+            Sleep.interactable = true;
+        }
+        
     }
     public void EnableSpriteImage()
     {
         SpriteImage.SetActive(true);
+        Sprite.GetSprite();
     }
     public void DisableSpriteImage()
     {

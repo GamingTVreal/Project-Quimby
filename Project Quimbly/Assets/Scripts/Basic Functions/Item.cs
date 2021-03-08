@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Item
 {
@@ -21,5 +22,10 @@ public class Item
     }
     public ItemType itemType;
     public int amount;
+
+    public void SetType(string type)
+    {
+        itemType = (ItemType)Enum.Parse(typeof(ItemType), type);
+    }
 
 }

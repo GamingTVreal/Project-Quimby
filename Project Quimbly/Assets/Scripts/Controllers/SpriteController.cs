@@ -52,9 +52,10 @@ public class SpriteController : MonoBehaviour
         }
         else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("6"))
         {
+            x = 0;
             textboxmanager.DisableSpriteImage();
+            
         }
-
         SetSprite();
     }
 

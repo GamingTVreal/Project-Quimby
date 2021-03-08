@@ -264,7 +264,8 @@ MonoBehaviour:
   thetext: {fileID: 3195114302688911225}
   Speaker: {fileID: 2261417268358587308}
   isactive: 0
-  textfile: {fileID: 4900000, guid: 104eb19b5522d5443b01ed08d7c4a859, type: 3}
+  Sprite: {fileID: 7702735474566224777}
+  textfile: {fileID: 4900000, guid: e338eadb667ff32429a2249ac6f818b1, type: 3}
   textlines:
   - 
   - 
@@ -284,6 +285,8 @@ MonoBehaviour:
   currentline: 2
   endatline: 0
   NameLine: 0
+  SpriteFinder: 
+  CurrentSprite: 0
 --- !u!1 &3571428096130556653
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,5 +586,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   x: 0
-  Deb: []
+  Deb:
+  - {fileID: 21300000, guid: 5f46b2824adf81d48980fac0fdbec998, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   textboxmanager: {fileID: 3195114302811450055}

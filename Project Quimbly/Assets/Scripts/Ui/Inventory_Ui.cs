@@ -17,13 +17,13 @@ public class Inventory_Ui : MonoBehaviour
     private void Awake()
     {
         
-        Debug.Log(Inventory.itemList.Count);
-        var count = this.Inventory.itemList.Count;
+        //Debug.Log(Inventory.itemList.Count);
+        var count = Inventory.Instance.itemList.Count;
         
     }
     public void Add()
     {
-        foreach (Item item in Inventory.GetItemList())
+        foreach (Item item in Inventory.Instance.GetItemList())
         {
             if (item.amount == 0)
             {
@@ -44,7 +44,7 @@ public class Inventory_Ui : MonoBehaviour
     }
     public void Remove()
     {
-            foreach (Item item in Inventory.GetItemList())
+            foreach (Item item in Inventory.Instance.GetItemList())
             {
                 item.amount = item.amount - 1;
 
@@ -63,7 +63,7 @@ public class Inventory_Ui : MonoBehaviour
     }
     public void RefreshInventory()
     {
-        foreach (Item item in Inventory.GetItemList())
+        foreach (Item item in Inventory.Instance.GetItemList())
         {
             
             TextMeshProUGUI uiText = ItemTransfom.Find("ItemCount").GetComponent<TextMeshProUGUI>();
@@ -99,7 +99,7 @@ public class Inventory_Ui : MonoBehaviour
 
     public void InventoryUI()
     {
-        foreach(Item _item in Inventory.itemList)
+        foreach(Item _item in Inventory.Instance.itemList)
         {
             GameObject itemObj = Instantiate(ItemPrefab, InventoryUi.transform);
             ItemTransfom = itemObj.transform;

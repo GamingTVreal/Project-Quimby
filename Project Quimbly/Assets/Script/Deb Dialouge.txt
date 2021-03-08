@@ -49,3 +49,184 @@ Are you ready for your <color=#ffff00ff> Training?
 3
 Deb
 Well get ready to learn how to flirt with a real robot woman!!! 
+
+
+\\Random Generate 1
+1
+Deb
+So what got you into belly inflation?! 
+1
+Mark 
+How many times do I need to tell you to keep it down?... 
+1
+Deb
+Ehehe... sorry. I couldn't wait to finally talk to someone about this 
+1
+Mark 
+Wait so you never found another person into this? 
+1
+Deb
+Nope I was made just for you. (literally) 
+1
+Mark 
+Have you ever done.. "that" before? 
+1
+Deb
+You mean inflation? 
+1
+Mark
+... 
+1
+Mark 
+Yeah... 
+1
+Deb 
+Well then no, I never really have.
+1
+Deb
+I guess I wanted someone to teach me, hehe. 
+1
+Mark
+<color=#00ffffff> maybe I can teach her a thing or two... 
+
+
+//RDM Convo 2
+1
+Mark
+So, eh what you said earlier about... 
+1
+Mark
+Me being "familiar" with my existance? 
+1
+Mark
+What do you mean? 
+1
+Deb
+Well, I just mean that you arent real! 
+1
+Mark
+<color=#00ffffff> What is this chick on about?... 
+1
+Deb
+Haven't you noticed you can't go anywhere other than the park and your house? 
+1
+Mark
+I... Yeah, I guess so. 
+1
+Deb
+Just to prove it... 
+1
+Deb
+I'll give you <color=#ffff00ff> $100,000 
+1
+Mark
+SERIOUSLY???! 
+6
+null
+You recieved $100,000
+
+
+//Random Convo 3
+1
+Mark
+So what are your hobbies like?
+1
+Deb
+Well I've always loved chess!
+1
+Deb
+Even if my design doesn't look like it. 
+1
+Deb
+I also enjoy eating, Like A LOT!
+1
+Mark
+<color=#00ffffff> I like a woman like that...
+1
+Mark
+Do you like feeling full?
+1
+Deb
+I love the feeling of my stomach being so tight and bloated, It's a total turn on fo-
+1
+Deb
+Wait a second, I see what you're doing hehe...
+1
+Deb
+I can't say I don't like it.
+
+
+//Random Convo 4
+1
+Deb
+Hmmm, anyone ever tell you that you're super handsome or beautiful, whichever you prefer.
+1
+Mark
+<color=#00ffffff> It's like the statement loses it's meaning when it's said that way...
+1
+Deb
+I'm sorry, I'm not super good at flirting and stuff.
+1
+Deb
+I like to put on a flirtatous persona but I guess I'm still learning...
+1
+Deb
+You look like a fantastic person to learn with though hehe.
+1
+Mark
+Haha, guess we can learn together eh?
+1
+null
+Deb begins to blush.
+
+//Random Convo 5
+1
+Mark
+Not gonna lie, this wasn't what I had in mind today but I kinda like it!
+1
+Deb
+I planned this 2 months ago and it went off without a hitch!
+1
+Deb
+It was definitely worth it, I'd do it again.
+1
+Mark
+2 months?!
+1
+Mark
+You planned to meet me 2 months ago?
+1
+Deb
+Well yes, that's when development started
+1
+Deb
+and not so much you but the <color=#ffff00ff> extension of you.
+1
+Mark
+<color=#00ffffff> Extention of me?
+1
+Deb
+Haha, don't look so worried
+1
+Deb
+I like your presence a lot too. (but mostly the person behind the computer ;) )
+
+//random convo 6
+1
+Mark
+So do you also like stuffing and eh maybe some f-
+1
+Deb
+Force feeding?!!
+1
+Mark
+Again with the loudness
+1
+Deb
+Sorry I just got excited because that's another thing I just loooooove
+1
+Mark
+Hehe, I'll definetly keep a stocked fridge for you.
+1
+Deb
+hehe, you're making me hungry.
