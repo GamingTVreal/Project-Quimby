@@ -34,7 +34,7 @@ public class TextEvents : MonoBehaviour
             TextBox.endatline = 51;
             MetDeb = true;
         }
-        Invoke("EnableGirlMenu", 4f);
+        
     }
     public void GirlMenu()
     {

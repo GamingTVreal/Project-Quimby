@@ -489,7 +489,15 @@ PrefabInstance:
     - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: Deb.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 5f46b2824adf81d48980fac0fdbec998, type: 3}
+      objectReference: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
+    - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: Deb.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
+    - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: Deb.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
 --- !u!4 &8678663294895853907 stripped

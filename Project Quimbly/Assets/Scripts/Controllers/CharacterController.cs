@@ -25,18 +25,7 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(UnlockedGirls == null)
-        {
-            UnlockedGirls[0] = false;
-        }
-        UnlockGirl = true;
-        if(UnlockGirl == true)
-        {
-            UnlockedGirls[0] = true;
-            SetCharacters();
-        }
-        UnlockGirl = false;
-        Debug.Log(UnlockedGirls[0]);
+
 
     }
 
@@ -46,6 +35,20 @@ public class CharacterController : MonoBehaviour
 
     }
 
+    private void UnlockCharacter()
+    {
+        if (UnlockedGirls == null)
+        {
+            UnlockedGirls[0] = false;
+        }
+        UnlockGirl = true;
+        if (UnlockGirl == true)
+        {
+            UnlockedGirls[0] = true;
+            SetCharacters();
+        }
+        UnlockGirl = false;
+    }
     public void TalkToDeb()
     {
 
@@ -54,6 +57,7 @@ public class CharacterController : MonoBehaviour
             case 0:
                 _textEvents.MeetingDeb();
                 spriteController.GetSprite();
+                UnlockCharacter();
                 break;
         }
     }

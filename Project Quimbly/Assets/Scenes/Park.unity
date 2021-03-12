@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5f46b2824adf81d48980fac0fdbec998, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1000,6 +1000,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 3241687173818506855, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
     - {fileID: 7866628036986942650, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
+    - {fileID: 3810611499479576015, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
 --- !u!114 &441747818 stripped
 MonoBehaviour:
@@ -1362,6 +1363,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: Deb.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
+    - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: Deb.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
+    - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: Deb.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+    - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: textboxmanager
+      value: 
+      objectReference: {fileID: 1841340547}
     - target: {fileID: 9174040789374504938, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 368
@@ -2044,8 +2061,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1615069189}
   - component: {fileID: 1615069192}
-  - component: {fileID: 1615069191}
   - component: {fileID: 1615069190}
+  - component: {fileID: 1615069191}
   m_Layer: 0
   m_Name: CharacterBeing Interacted With
   m_TagString: Untagged
@@ -2070,7 +2087,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49, y: -118.78}
+  m_AnchoredPosition: {x: -17, y: -118.78}
   m_SizeDelta: {x: 1785.5281, y: 842.4486}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1615069190
@@ -2087,9 +2104,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   Deb:
-  - {fileID: 21300000, guid: 5f46b2824adf81d48980fac0fdbec998, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
+  - {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
+  - {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   textboxmanager: {fileID: 1841340547}
@@ -2107,13 +2124,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5f46b2824adf81d48980fac0fdbec998, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

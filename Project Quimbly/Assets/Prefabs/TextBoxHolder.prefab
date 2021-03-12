@@ -234,8 +234,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: da5b8c412d4bf8343821e71e7fb72edf, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c7f5282e6aeb15645b5358739deaec99, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -257,13 +257,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpriteImage: {fileID: 6406470215181712254}
-  NameBox: {fileID: 3571428096130556653}
   Phone: {fileID: 0}
+  NameBox: {fileID: 3571428096130556653}
   TextBox: {fileID: 3195114302811450075}
   speed: -0.7
   thetext: {fileID: 3195114302688911225}
   Speaker: {fileID: 2261417268358587308}
   isactive: 0
+  Sleep: {fileID: 0}
   Sprite: {fileID: 7702735474566224777}
   textfile: {fileID: 4900000, guid: e338eadb667ff32429a2249ac6f818b1, type: 3}
   textlines:
@@ -353,8 +354,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: da5b8c412d4bf8343821e71e7fb72edf, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c7f5282e6aeb15645b5358739deaec99, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

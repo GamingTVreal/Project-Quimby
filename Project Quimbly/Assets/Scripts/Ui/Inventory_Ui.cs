@@ -46,7 +46,7 @@ public class Inventory_Ui : MonoBehaviour
     {
             foreach (Item item in Inventory.Instance.GetItemList())
             {
-                item.amount = item.amount - 1;
+                item.amount = item.amount - 1 + 1;
 
             if (item.amount < 1)
             {
