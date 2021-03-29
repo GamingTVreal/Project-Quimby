@@ -13,6 +13,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             if (_instance == null)
             {
                 _instance = FindObjectOfType<T>();
+
                 if (_instance == null)
                 {
                     GameObject singleton = new GameObject("Singleton " + typeof(T));
@@ -20,6 +21,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
                     DontDestroyOnLoad(_instance.gameObject);
                 }
             }
+
             return _instance;
         }
     }

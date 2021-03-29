@@ -24,6 +24,11 @@ public class LoadingScreenScript : MonoBehaviour
         Area = "Home";
         LoadScreenExample();
     }
+    public void JobAgency()
+    {
+        Area = "JobAgency";
+        LoadScreenExample();
+    }
 
     public void LoadScreenExample()
     {

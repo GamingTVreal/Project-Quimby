@@ -7,7 +7,7 @@ public class SpriteController : MonoBehaviour
 {
 
     public int x = 0;
-    public Sprite[] Deb;
+    public Sprite[] Deb, Extras;
     public TextBoxManager textboxmanager;
     private void Start()
     {

@@ -9,10 +9,10 @@ public class TextEvents : MonoBehaviour
     public TextAsset NextText;
     public int StartLine;
     int x = 0;
-    bool MetDeb = false;
+    bool MetDeb = false,BeenToJobAgency = false;
     [SerializeField] AudioSource SnoringSFX, Music;
     [SerializeField] Animator Fadeout;
-    [SerializeField] GameObject MainCamera, MenuCamera;
+    [SerializeField] GameObject MainCamera, MenuCamera, JobMenu;
     [SerializeField] Button SpeakButton, ChatButton;
     public TextBoxManager TextBox;
     public TextBoxManager TB2;
@@ -162,7 +162,22 @@ public class TextEvents : MonoBehaviour
             }
         }
     }
-    
+    public void JobAgency()
+    {
+        SpeakButton.interactable = false;
+        if (BeenToJobAgency == true)
+        {
+            JobMenu.SetActive(true);
+        }
+        else
+        {
+            TextBox.EnableTextBox();
+            TextBox.currentline = 2;
+            TextBox.endatline = 15;
+            BeenToJobAgency = true;
+        }
+        SpeakButton.interactable = true;
+    }
     public void NoEnergy()
     {
         TextBox.EnableTextBox();

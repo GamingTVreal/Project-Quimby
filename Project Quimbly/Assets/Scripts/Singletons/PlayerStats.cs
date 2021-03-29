@@ -10,6 +10,7 @@ public class PlayerStats : Singleton<PlayerStats>
     private int _maxEnergy = 20;
     private int _energy;
 
+    public int CurrentJob;
     public string Name;
 
     public int GetMoney(bool max = false)

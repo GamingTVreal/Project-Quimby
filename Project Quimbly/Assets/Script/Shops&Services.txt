@@ -1,0 +1,15 @@
+6
+Mark
+Hey what's going on?
+6
+Worker
+Not much, you looking for a job?
+6
+Mark
+Yeah, what do you have availible?
+6
+Worker
+Well unfortnetly it would appear the only position availible for this demo is a dishwasher
+6
+Mark
+<color=#00ffffff> ... Demo?
