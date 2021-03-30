@@ -5,8 +5,6 @@ using System;
 
 public class Item
 {
-
-
     public enum ItemType
     {
         Cake,
@@ -21,11 +19,25 @@ public class Item
         Roses,
     }
     public ItemType itemType;
+    public Sprite icon;
     public int amount;
+    bool isConsumable;
 
     public void SetType(string type)
     {
         itemType = (ItemType)Enum.Parse(typeof(ItemType), type);
+    }
+
+    public bool IsConsumable(Item.ItemType itemType)
+    {
+        switch (itemType)
+        {
+            case Item.ItemType.BikePump:
+            case Item.ItemType.Roses:
+                return false;
+            default:
+                return true;
+        }
     }
 
 }

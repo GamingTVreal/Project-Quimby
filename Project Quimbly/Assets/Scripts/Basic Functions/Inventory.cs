@@ -46,8 +46,6 @@ public class Inventory : Singleton<Inventory>
         }
     }
 
-    
-
     public void AddItem(Item item)
     {
         bool itemAlreadyInInventory = false;
@@ -67,29 +65,71 @@ public class Inventory : Singleton<Inventory>
         Debug.Log(item);
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
         SaveList();
-
     }
-    public void RemoveItem(Item item)
+
+    public void AddItem(Item.ItemType itemType, int amount)
     {
-        
-            Item itemInInventory = null;
-            foreach (Item inventoryItem in itemList)
+        bool itemAlreadyInInventory = false;
+        foreach (Item inventoryItem in itemList)
+        {
+            if (inventoryItem.itemType == itemType)
             {
-                if (inventoryItem.itemType == item.itemType)
-                {
-                    inventoryItem.amount -= item.amount;
-                    itemInInventory = inventoryItem;
-                }
+                inventoryItem.amount += amount;
+                itemAlreadyInInventory = true;
+                break;
             }
-            if (itemInInventory != null && itemInInventory.amount <= 0)
-            {
-                itemList.Remove(itemInInventory);
-            }
+        }
+        if (!itemAlreadyInInventory)
+        {
+            Item newItem = new Item();
+            newItem.itemType = itemType;
+            newItem.amount = amount;
+            itemList.Add(newItem);
+        }
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
         SaveList();
     }
-       
-    
+
+    public void RemoveItem(Item item)
+    {
+        Item itemInInventory = null;
+        foreach (Item inventoryItem in itemList)
+        {
+            if (inventoryItem.itemType == item.itemType)
+            {
+                inventoryItem.amount -= item.amount;
+                itemInInventory = inventoryItem;
+            }
+        }
+
+        if (itemInInventory != null && itemInInventory.amount <= 0)
+        {
+            itemList.Remove(itemInInventory);
+        }
+
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
+        SaveList();
+    }
+
+    public void RemoveItem(Item.ItemType itemType, int amount)
+    {
+        foreach (var inventoryItem in itemList)
+        {
+            if(inventoryItem.itemType == itemType)
+            {
+                inventoryItem.amount -= amount;
+                if(inventoryItem.amount <= 0)
+                {
+                    itemList.Remove(inventoryItem);
+                }
+
+                break;
+            }
+        }
+
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
+        SaveList();
+    }
        
     public void UseItem(Item item)
     {
@@ -98,6 +138,18 @@ public class Inventory : Singleton<Inventory>
     public List<Item> GetItemList()
     {
         return itemList;
+    }
+
+    public int GetItemAmount(Item.ItemType itemType)
+    {
+        foreach (var inventoryItem in itemList)
+        {
+            if (inventoryItem.itemType == itemType)
+            {
+                return inventoryItem.amount;
+            }
+        }
+        return 0;
     }
 
     public void SaveList()

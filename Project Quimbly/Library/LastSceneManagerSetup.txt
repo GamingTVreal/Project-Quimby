@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/JobAgency.unity
+- path: Assets/Scenes/Feeding Minigame.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

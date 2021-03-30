@@ -107,4 +107,21 @@ public class Inventory_Ui : MonoBehaviour
             ItemTransfom.GetChild(2).GetComponent<TextMeshProUGUI>().text = "" + _item.amount;
         }
     }
+
+    public void DebugListItems()
+    {
+        foreach (Item item in Inventory.Instance.GetItemList())
+        {
+            Debug.Log("Item: " + item.itemType.ToString() + " Count: " + item.amount);
+        }
+    }
+
+    // Add 5 of every item
+    public void DebugAddItems()
+    {
+        foreach (Item.ItemType itemType in System.Enum.GetValues(typeof(Item.ItemType)))
+        {
+            Inventory.Instance.AddItem(itemType, 5);
+        }
+    }
 }
