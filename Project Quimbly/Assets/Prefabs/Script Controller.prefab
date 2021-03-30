@@ -53,10 +53,17 @@ MonoBehaviour:
   TextBox: {fileID: 0}
   PhoneAnimation: {fileID: 0}
   Phone: {fileID: 0}
-  MoneyText: {fileID: 0}
-  EnergyText: {fileID: 0}
-  PlayerName: {fileID: 0}
   ScriptHolder: {fileID: 9015601317646389276, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+  cursorMappings:
+  - type: 0
+    texture: {fileID: 2800000, guid: 80e4f045cb98dc7469ed762b37f3fc01, type: 3}
+    hotspot: {x: 0, y: 0}
+  - type: 1
+    texture: {fileID: 2800000, guid: 7f21bc70ef6501e4ba14635d4b905445, type: 3}
+    hotspot: {x: 32, y: 10}
+  - type: 2
+    texture: {fileID: 2800000, guid: 1e31a5fc337b89d4ca3cd1166046b260, type: 3}
+    hotspot: {x: 40, y: 20}
 --- !u!114 &3241687173818506856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,9 +128,11 @@ MonoBehaviour:
   NextText: {fileID: 0}
   StartLine: 0
   SnoringSFX: {fileID: 3810611499479576015}
+  Music: {fileID: 0}
   Fadeout: {fileID: 0}
   MainCamera: {fileID: 0}
   MenuCamera: {fileID: 0}
+  JobMenu: {fileID: 0}
   SpeakButton: {fileID: 0}
   ChatButton: {fileID: 0}
   TextBox: {fileID: 0}

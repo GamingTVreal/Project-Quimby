@@ -11,14 +11,14 @@ namespace ProjectQuimbly.Feeding
         [SerializeField] int biteSize = 1;
         [SerializeField][Range(0, 3f)]
         float eatingCooldown = 1f;
-        float timeSincelastBite = Mathf.Infinity;
+        float timeSinceLastBite = Mathf.Infinity;
         // Event set to cancel UI dragging in BasicFunctions
         // Tried canceling in the DragItem draghandler, but I couldn't get the PointerEventData to agree
         [SerializeField] UnityEvent onMouthEvent; 
 
         private void Update() 
         {
-            timeSincelastBite += Time.deltaTime;
+            timeSinceLastBite += Time.deltaTime;
         }
         
         public float MaxAcceptable()
@@ -38,12 +38,12 @@ namespace ProjectQuimbly.Feeding
 
         private void TryToEat(Collider2D other)
         {
-            if (timeSincelastBite >= eatingCooldown)
+            if (timeSinceLastBite >= eatingCooldown)
             {
                 SelectedFood food = other.GetComponent<SelectedFood>();
                 if (food != null)
                 {
-                    timeSincelastBite = 0;
+                    timeSinceLastBite = 0;
                     food.RemoveItems(biteSize);
                     onMouthEvent?.Invoke();
                 }

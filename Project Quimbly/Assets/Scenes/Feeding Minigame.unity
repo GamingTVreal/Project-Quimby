@@ -3584,8 +3584,12 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 77b615cab9bfd6f409390db7600cfec7, type: 3}
     - target: {fileID: 3810611499479576015, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3810611499479576015, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 32871032e54c4f448b2c18fe68991a43, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
 --- !u!114 &1311127917 stripped
@@ -4729,6 +4733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   biteSize: 1
+  eatingCooldown: 1
   onMouthEvent:
     m_PersistentCalls:
       m_Calls:
