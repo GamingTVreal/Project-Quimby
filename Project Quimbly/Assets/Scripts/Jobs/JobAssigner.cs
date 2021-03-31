@@ -8,7 +8,7 @@ public class JobAssigner : MonoBehaviour
 {
     [SerializeField] TMP_Text Currentjob;
     int AssignedJob;
-
+    public string CurrentAssignedJob;
 
     // Start is called before the first frame update
     void Start()
@@ -40,11 +40,14 @@ public class JobAssigner : MonoBehaviour
         switch (AssignedJob)
         {
             case 0:
-                Currentjob.text = "Unenployed";
+                CurrentAssignedJob = "Unenployed";
+                Currentjob.text = CurrentAssignedJob;
                 break;
             case 1:
-                Currentjob.text = "Dishwasher";
+                CurrentAssignedJob = "Dishwasher";
+                Currentjob.text = CurrentAssignedJob;
                 break;
         }
+        
     }
 }

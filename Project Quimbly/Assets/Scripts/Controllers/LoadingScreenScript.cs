@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,7 @@ public class LoadingScreenScript : MonoBehaviour
     public GameObject loadingScreenObj;
     public Slider slider;
     public GameObject Complete;
+    public JobAssigner Job;
 
     AsyncOperation async;
 
@@ -33,6 +35,11 @@ public class LoadingScreenScript : MonoBehaviour
     public void LoadScreenExample()
     {
         StartCoroutine(LoadingScreen());
+    }
+    public void Work()
+    {
+        Area = Job.CurrentAssignedJob;
+        LoadScreenExample();
     }
 
     public void Continue()

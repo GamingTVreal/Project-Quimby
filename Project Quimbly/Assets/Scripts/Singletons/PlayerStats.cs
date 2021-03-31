@@ -8,11 +8,12 @@ public class PlayerStats : Singleton<PlayerStats>
     private int _money;
 
     private int _maxEnergy = 20;
-    private int _energy;
+    public int Energy;
 
-    public int CurrentJob;
+    public int CurrentJob,JobLevel;
     public string Name;
 
+    
     public int GetMoney(bool max = false)
     {
         if (max)
@@ -34,7 +35,7 @@ public class PlayerStats : Singleton<PlayerStats>
         if (max)
             return _maxEnergy;
         else
-            return _energy;
+            return Energy;
     }
 
     public void AdjustEnergy(int amount, bool max = false)
@@ -42,6 +43,6 @@ public class PlayerStats : Singleton<PlayerStats>
         if (max)
             _maxEnergy += amount;
         else
-            _energy += amount;
+            Energy += amount;
     }
 }

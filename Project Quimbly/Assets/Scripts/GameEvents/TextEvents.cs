@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,7 @@ public class TextEvents : MonoBehaviour
     public TextBoxManager TextBox;
     public TextBoxManager TB2;
     public PlayerStats Player;
+    public LoadingScreenScript Load;
     public void MeetingDeb()
     {
 
@@ -62,7 +64,7 @@ public class TextEvents : MonoBehaviour
     {
         ChatButton.interactable = false;
         int Descussion;
-        Descussion = Random.Range(0,6);
+        Descussion = UnityEngine.Random.Range(0,6);
         
         switch (Descussion)
         {
@@ -185,5 +187,17 @@ public class TextEvents : MonoBehaviour
         TextBox.endatline = 51;
     }
         
-    
+    public void GoToWork()
+    {
+        if(PlayerStats.Instance.Energy < 15)
+        {
+            TextBox.EnableTextBox();
+            TextBox.textlines[TextBox.NameLine] = "Mark";
+            TextBox.textlines[TextBox.currentline] = "I don't have enough energy to do this, I should get some rest.";
+        }
+        else
+        {
+            Load.Work();
+        }
+    }
 }
