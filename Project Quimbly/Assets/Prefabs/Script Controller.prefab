@@ -117,7 +117,7 @@ MonoBehaviour:
   loadingScreenObj: {fileID: 0}
   slider: {fileID: 0}
   Complete: {fileID: 0}
-  Job: {fileID: 0}
+  Job: {fileID: 4437140186418717415}
 --- !u!114 &2556943766880750430
 MonoBehaviour:
   m_ObjectHideFlags: 0

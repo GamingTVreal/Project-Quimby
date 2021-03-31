@@ -38,8 +38,17 @@ public class LoadingScreenScript : MonoBehaviour
     }
     public void Work()
     {
-        Area = Job.CurrentAssignedJob;
-        LoadScreenExample();
+        switch (PlayerStats.Instance.CurrentJob)
+        {
+            case 0:
+                break;
+            case 1:
+                Area = "Dishwasher";
+                LoadScreenExample();
+                break;
+
+        }
+        
     }
 
     public void Continue()
