@@ -23,6 +23,7 @@ public class BasicFunctions : MonoBehaviour
     public GameObject ScriptHolder;
 
     // Cursor struct for dynamic cursor
+    [SerializeField] LayerMask grabbableLayers;
     [System.Serializable]
     struct CursorMapping
     {
@@ -111,7 +112,7 @@ public class BasicFunctions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        InteractWithUI();
+        ChangeCursorOnUI();
         //MoneyText.text = Money.ToString();
         //EnergyText.text = Energy.ToString();
     }
@@ -131,7 +132,7 @@ public class BasicFunctions : MonoBehaviour
     }
 
     // Check if mouse cursor is over interactable object
-    private bool InteractWithUI()
+    private bool ChangeCursorOnUI()
     {
         // On release left-click, set drag to false
         if(Input.GetMouseButtonUp(0))
@@ -144,7 +145,7 @@ public class BasicFunctions : MonoBehaviour
         }
 
         // Raycast under mouse curse and see if top item is interactable (can be extended to get array and sort)
-        RaycastHit2D hit = Physics2D.Raycast(Input.mousePosition, Vector2.zero);
+        RaycastHit2D hit = Physics2D.Raycast(Input.mousePosition, Vector2.zero, Mathf.Infinity, grabbableLayers);
         if(hit.collider != null)
         {
             IRayCastable rayCastable = hit.collider.GetComponent<IRayCastable>();

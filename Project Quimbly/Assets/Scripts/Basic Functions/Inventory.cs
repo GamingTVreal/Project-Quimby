@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using ProjectQuimbly.BasicFunctions;
 using UnityEngine;
 
 public class Inventory : Singleton<Inventory>
@@ -8,11 +9,13 @@ public class Inventory : Singleton<Inventory>
     public event EventHandler OnItemListChanged;
     public List<Item> itemList;
     private Action<Item> useItemAction;
+    ItemIconDB itemIconDB = null;
 
     private int _savedListCount;
 
     private void Awake()
     {
+        LoadItemIconDB();
         LoadList();
     }
 
@@ -53,13 +56,15 @@ public class Inventory : Singleton<Inventory>
         {
             if (inventoryItem.itemType == item.itemType)
             {
-                item.amount = item.amount + 1;
+                item.amount += 1;
                 itemAlreadyInInventory = true;
                 Debug.Log(item.amount);
+                break;
             }
         }
         if (!itemAlreadyInInventory)
         {
+            item.icon = itemIconDB.GetSprite(item.itemType);
             itemList.Add(item);
         }
         Debug.Log(item);
@@ -84,6 +89,7 @@ public class Inventory : Singleton<Inventory>
             Item newItem = new Item();
             newItem.itemType = itemType;
             newItem.amount = amount;
+            newItem.icon = itemIconDB.GetSprite(newItem.itemType);
             itemList.Add(newItem);
         }
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
@@ -166,6 +172,15 @@ public class Inventory : Singleton<Inventory>
         }
     }
 
+    // Loads ScriptableObject with item/sprite pairing lookup
+    private void LoadItemIconDB()
+    {
+        if (itemIconDB == null)
+        {
+            itemIconDB = Resources.Load<ItemIconDB>("Core/ItemIconDB");
+        }
+    }
+
     public void LoadList()
     {
         //this.useItemAction = useItemAction;
@@ -181,6 +196,7 @@ public class Inventory : Singleton<Inventory>
                 Item newItem = new Item();
                 newItem.SetType(PlayerPrefs.GetString("ItemType" + i));
                 newItem.amount = PlayerPrefs.GetInt("ItemAmount" + i);
+                newItem.icon = itemIconDB.GetSprite(newItem.itemType);
                 itemList.Add(newItem);
             }
         }
@@ -190,6 +206,7 @@ public class Inventory : Singleton<Inventory>
             Item item = new Item();
             item.itemType = Item.ItemType.Soda;
             item.amount = 1;
+            item.icon = itemIconDB.GetSprite(item.itemType);
             AddItem(item);
         }
     }

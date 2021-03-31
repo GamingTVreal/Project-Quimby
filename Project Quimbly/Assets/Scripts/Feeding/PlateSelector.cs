@@ -16,14 +16,26 @@ namespace ProjectQuimbly.Feeding
 
         private void Start()
         {
+            BuildConsumableList();
+            DisplayStartingFood();
+        }
+
+        // Loop through inventory and build list of consumable foods for session
+        private void BuildConsumableList()
+        {
             foreach (Item item in Inventory.Instance.GetItemList())
             {
-                if(item.IsConsumable(item.itemType))
+                if (item.IsConsumable(item.itemType))
                 {
                     items.Add(item);
                 }
             }
-            if(items.Count > 0)
+        }
+
+        // If food in inventory, start with random item, otherwise display out of food
+        private void DisplayStartingFood()
+        {
+            if (items.Count > 0)
             {
                 selectedItemIndex = Random.Range(0, items.Count);
                 SetFoodUI(items[selectedItemIndex]);
@@ -34,6 +46,7 @@ namespace ProjectQuimbly.Feeding
             }
         }
 
+        // Check player inputs for selecting new plate
         private void Update() 
         {
             float hInput = Input.GetAxis("Horizontal");
@@ -59,11 +72,14 @@ namespace ProjectQuimbly.Feeding
             food.gameObject.SetActive(true);
             foodText.text = items[selectedItemIndex].itemType.ToString();
             foodQtyText.text = "(" + items[selectedItemIndex].amount.ToString() + ")";
-            food.SetItem(items[selectedItemIndex].itemType, 1);
+            food.SetItem(items[selectedItemIndex].itemType, 1, item.icon);
         }
 
+        // On mouth trigger, event is called when item is consumed.
+        // Decrements consumable item list and updates text/plate.
         public void FromConsumeEvent()
         {
+            if(items.Count == 0) BuildConsumableList();
             int itemCount = Inventory.Instance.GetItemAmount(items[selectedItemIndex].itemType);
             foodQtyText.text = "(" + itemCount.ToString() + ")";
             if (itemCount <= 0)
@@ -73,6 +89,7 @@ namespace ProjectQuimbly.Feeding
             }
         }
 
+        // Used via arrow or button controls to change selected food
         public void ChangeSelectedFood(bool isToRight)
         {
             selectedItemIndex += isToRight ? 1: -1;
@@ -93,6 +110,7 @@ namespace ProjectQuimbly.Feeding
             SetFoodUI(items[selectedItemIndex]);
         }
 
+        // On empty inventory, disable interactable food and update text
         private void OutOfFood()
         {
             foodText.text = "Out of food";

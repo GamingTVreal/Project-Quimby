@@ -55,6 +55,9 @@ MonoBehaviour:
   PhoneAnimation: {fileID: 0}
   Phone: {fileID: 0}
   ScriptHolder: {fileID: 9015601317646389276, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+  grabbableLayers:
+    serializedVersion: 2
+    m_Bits: 512
   cursorMappings:
   - type: 0
     texture: {fileID: 2800000, guid: 80e4f045cb98dc7469ed762b37f3fc01, type: 3}

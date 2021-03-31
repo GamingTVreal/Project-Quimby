@@ -12,18 +12,12 @@ namespace ProjectQuimbly.UI.Dragging
     {
         // state
         Vector3 startPosition;
+        Vector2 offset;
         private PointerEventData _lastPointerData;
-
-        // Cache
-        Canvas parentCanvas;
-
-        private void Awake() 
-        {
-            parentCanvas = GetComponentInParent<Canvas>();
-        }
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            offset = eventData.position - new Vector2(transform.position.x, transform.position.y);
             startPosition = transform.position;
             _lastPointerData = eventData;
         }
@@ -32,7 +26,7 @@ namespace ProjectQuimbly.UI.Dragging
         {
             if(_lastPointerData != null)
             {
-                transform.position = eventData.position;
+                transform.position = eventData.position - offset;
                 return;
             }
 
