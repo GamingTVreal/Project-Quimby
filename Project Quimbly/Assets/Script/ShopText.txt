@@ -1,4 +1,23 @@
-Cashier
-Are you gonna buy something or what?
+//No Energy at all
+6
 Mark
-Oh, sorry I would like...
+I don't think I can do that, in fact...
+6
+Mark 
+I don't think I can do anything, I'm exhausted!
+6
+Mark
+I should head home and get some sleep.
+
+//Some Energy
+6
+Mark
+Gosh, I'm way to tired to do that.
+
+// No Job
+6
+Mark
+How can I go to work if I have no job?
+6
+Mark
+How can I go to work if I have no job?

@@ -13,20 +13,25 @@ namespace ProjectQuimbly.Feeding
     {
         [SerializeField] Item item = new Item();
         [SerializeField] Image foodImage = null;
-
+        private CharacterController Character;
+        private PlateSelector Plate;
         private void Awake() 
         {
-            if(!foodImage)
+            Character = FindObjectOfType<CharacterController>();
+            Plate = FindObjectOfType<PlateSelector>();
+
+            if (!foodImage)
             {
                 foodImage = GetComponent<Image>();
             }
         }
 
-        public void SetItem(Item.ItemType itemType, int amount, Sprite icon = null)
+        public void SetItem(Item.ItemType itemType, int amount, float filling, Sprite icon = null)
         {
             item.itemType = itemType;
             item.amount = amount;
             item.icon = icon;
+            item.filling = filling;
             foodImage.sprite = item.icon;
         }
 
@@ -48,11 +53,16 @@ namespace ProjectQuimbly.Feeding
             return 1;
         }
 
+        public void FeedCharacter()
+        {
+            Character.fullness = Character.fullness + Plate.items;
+        }
         // Removes item from inventory
         public void RemoveItems(int number)
         {
             Inventory.Instance.RemoveItem(item.itemType, number);
             // Debug.Log("Item Removed: " + item.itemType.ToString() + " Remaining " + Inventory.Instance.GetItemAmount(item.itemType));
         }
+       
     }
 }

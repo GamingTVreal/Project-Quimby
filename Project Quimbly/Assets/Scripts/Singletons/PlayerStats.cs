@@ -41,7 +41,7 @@ public class PlayerStats : Singleton<PlayerStats>
     public void AdjustEnergy(int amount, bool max = false)
     {
         if (max)
-            _maxEnergy += amount;
+            Energy = _maxEnergy;
         else
             Energy += amount;
     }

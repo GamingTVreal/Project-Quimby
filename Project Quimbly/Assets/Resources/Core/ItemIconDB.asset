@@ -15,21 +15,31 @@ MonoBehaviour:
   itemSprites:
   - itemType: 0
     sprite: {fileID: 21300000, guid: 91a92ba7a06d8774ebcb370e2f9c1f19, type: 3}
+    filling: 1.7
   - itemType: 1
     sprite: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
+    filling: 3.4
   - itemType: 2
     sprite: {fileID: 21300000, guid: e97ef4f1b5969164cb8a86c7a06104cc, type: 3}
+    filling: 0.5
   - itemType: 3
     sprite: {fileID: 21300000, guid: 9f2e5dd02ff202844ba9633b6126c143, type: 3}
+    filling: 0
   - itemType: 4
     sprite: {fileID: 21300000, guid: 4c4498e6a30ff27429014f64ff2420f7, type: 3}
+    filling: 2
   - itemType: 5
     sprite: {fileID: 21300000, guid: 96487823fb0d57d498d750f696a54b93, type: 3}
+    filling: 0.2
   - itemType: 6
     sprite: {fileID: 21300000, guid: 1cce89364f73c5949a2682b87604c049, type: 3}
+    filling: 1.4
   - itemType: 7
     sprite: {fileID: 21300000, guid: 8ed02c2bd373e8346b73a63eb0895839, type: 3}
+    filling: 4.6
   - itemType: 8
     sprite: {fileID: 21300000, guid: 27c40fb5237ac074f89481a4f2ea34b5, type: 3}
+    filling: 2.1
   - itemType: 9
     sprite: {fileID: 21300000, guid: 1c12b96f93ac2a841a68e4aa62d65867, type: 3}
+    filling: 0

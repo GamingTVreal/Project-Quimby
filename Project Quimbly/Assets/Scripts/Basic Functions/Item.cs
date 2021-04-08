@@ -21,6 +21,7 @@ public class Item
     public ItemType itemType;
     public Sprite icon;
     public int amount;
+    public float filling;
     bool isConsumable;
 
     public void SetType(string type)

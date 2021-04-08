@@ -54,6 +54,7 @@ MonoBehaviour:
   TextBox: {fileID: 0}
   PhoneAnimation: {fileID: 0}
   Phone: {fileID: 0}
+  Food: {fileID: 0}
   ScriptHolder: {fileID: 9015601317646389276, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
   grabbableLayers:
     serializedVersion: 2
@@ -130,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228c8f22d25e8444184eb6c506a4c1b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextText: {fileID: 0}
+  ErrorMessages: {fileID: 4900000, guid: b5f8c317b37eb7e4ab6199b16a141b49, type: 3}
   StartLine: 0
   SnoringSFX: {fileID: 3810611499479576015}
   Music: {fileID: 0}

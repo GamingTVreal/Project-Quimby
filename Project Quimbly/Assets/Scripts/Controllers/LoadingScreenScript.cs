@@ -42,13 +42,18 @@ public class LoadingScreenScript : MonoBehaviour
         {
             case 0:
                 break;
-            case 1:
-                Area = "Dishwasher";
-                LoadScreenExample();
+            case 1: 
+                    Area = "Dishwasher";
+                    LoadScreenExample();
                 break;
 
         }
         
+    }
+    public void Feed()
+    {
+        Area = "Feeding Minigame";
+        LoadScreenExample();
     }
 
     public void Continue()

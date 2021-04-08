@@ -172,6 +172,10 @@ public class TextBoxManager : MonoBehaviour
     {
         SpriteImage.SetActive(false);
     }
+    public void Letsseeifitworks()
+    {
+        StartCoroutine(ShowText());
+    }
     public void ReloadScript(TextAsset NewText)
     {
        if(NewText != null)

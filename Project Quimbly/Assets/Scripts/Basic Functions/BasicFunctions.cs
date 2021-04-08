@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using ProjectQuimbly.UI;
 using ProjectQuimbly.Controllers;
+using ProjectQuimbly.Feeding;
 
 public class BasicFunctions : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class BasicFunctions : MonoBehaviour
     public GameObject TextBox;
     [SerializeField] Animator PhoneAnimation;
     [SerializeField] GameObject Phone;
+    public SelectedFood Food;
     //[SerializeField] TextMeshProUGUI MoneyText, EnergyText, PlayerName;
     static int Money;
     static int Energy;

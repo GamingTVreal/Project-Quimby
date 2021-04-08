@@ -1,21 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using ProjectQuimbly.BasicFunctions;
 using ProjectQuimbly.UI.Dragging;
 using UnityEngine;
 using UnityEngine.Events;
-
 namespace ProjectQuimbly.Feeding
 {
     public class MouthTrigger : MonoBehaviour, IDragDestination
     {
+        private CharacterController Character;
         [SerializeField] int biteSize = 1;
         [SerializeField][Range(0, 3f)]
         float eatingCooldown = 1f;
         float timeSinceLastBite = Mathf.Infinity;
         // Event set to cancel UI dragging in BasicFunctions
         // Tried canceling in the DragItem draghandler, but I couldn't get the PointerEventData to agree
-        [SerializeField] UnityEvent onMouthEvent; 
+        [SerializeField] UnityEvent onMouthEvent;
 
+        private void Awake()
+        {
+            Character = FindObjectOfType<CharacterController>();
+        }
         private void Update() 
         {
             timeSinceLastBite += Time.deltaTime;
@@ -43,6 +48,7 @@ namespace ProjectQuimbly.Feeding
                 SelectedFood food = other.GetComponent<SelectedFood>();
                 if (food != null)
                 {
+                    food.FeedCharacter();
                     timeSinceLastBite = 0;
                     food.RemoveItems(biteSize);
                     onMouthEvent?.Invoke();

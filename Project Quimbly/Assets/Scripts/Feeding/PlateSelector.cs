@@ -10,8 +10,8 @@ namespace ProjectQuimbly.Feeding
         [SerializeField] SelectedFood food;
         [SerializeField] TextMeshProUGUI foodText;
         [SerializeField] TextMeshProUGUI foodQtyText;
-        List<Item> items = new List<Item>();
-        int selectedItemIndex;
+        public List<Item> items = new List<Item>();
+        public int selectedItemIndex;
         bool isSelectionChanging = false;
 
         private void Start()
@@ -72,7 +72,7 @@ namespace ProjectQuimbly.Feeding
             food.gameObject.SetActive(true);
             foodText.text = items[selectedItemIndex].itemType.ToString();
             foodQtyText.text = "(" + items[selectedItemIndex].amount.ToString() + ")";
-            food.SetItem(items[selectedItemIndex].itemType, 1, item.icon);
+            food.SetItem(items[selectedItemIndex].itemType, 1, item.filling, item.icon);
         }
 
         // On mouth trigger, event is called when item is consumed.
@@ -87,6 +87,7 @@ namespace ProjectQuimbly.Feeding
                 items.Remove(items[selectedItemIndex]);
                 ChangeSelectedFood(true);
             }
+            
         }
 
         // Used via arrow or button controls to change selected food

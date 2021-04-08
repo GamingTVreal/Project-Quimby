@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CharacterController : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class CharacterController : MonoBehaviour
     public float fullness;
     public int happiness;
     public float interestlevel;
+
+    public TMP_Text FeedingFullness;
     
 
     // Start is called before the first frame update
@@ -32,7 +35,7 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        FeedingFullness.text = fullness.ToString();
     }
 
     private void UnlockCharacter()

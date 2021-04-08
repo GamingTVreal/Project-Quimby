@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class TextEvents : MonoBehaviour
 {
 
-    public TextAsset NextText;
+    public TextAsset ErrorMessages;
     public int StartLine;
     int x = 0;
     bool MetDeb = false,BeenToJobAgency = false;
@@ -157,7 +157,7 @@ public class TextEvents : MonoBehaviour
             }
             if (!SnoringSFX.isPlaying) 
             {
-                PlayerStats.Instance.AdjustEnergy(20);
+                PlayerStats.Instance.AdjustEnergy(1,true);
                 Fadeout.SetBool("Fadeout", false);
                 x = 0;
                 Music.Play();
@@ -183,21 +183,48 @@ public class TextEvents : MonoBehaviour
     public void NoEnergy()
     {
         TextBox.EnableTextBox();
-        TextBox.currentline = 2;
-        TextBox.endatline = 51;
+        TextBox.ReloadScript(ErrorMessages);
+        TextBox.CurrentSprite = 1;
+        TextBox.NameLine = 2;
+        TextBox.currentline = 3;
+        TextBox.endatline = 10;
     }
-        
+    public void NotEnoughEnergy()
+    {
+        TextBox.EnableTextBox();
+        TextBox.ReloadScript(ErrorMessages);
+        TextBox.CurrentSprite = 12;
+        TextBox.NameLine = 13;
+        TextBox.currentline = 14;
+        TextBox.endatline = 15;
+    }
     public void GoToWork()
     {
-        if(PlayerStats.Instance.Energy < 15)
+        if (PlayerStats.Instance.CurrentJob != 0)
         {
-            TextBox.EnableTextBox();
-            TextBox.textlines[TextBox.NameLine] = "Mark";
-            TextBox.textlines[TextBox.currentline] = "I don't have enough energy to do this, I should get some rest.";
+            if (PlayerStats.Instance.Energy == 0)
+            {
+                NoEnergy();
+            }
+            else if (PlayerStats.Instance.Energy < 15 && PlayerStats.Instance.Energy != 0)
+            {
+                NotEnoughEnergy();
+            }
+            else
+            {
+                PlayerStats.Instance.Energy = PlayerStats.Instance.Energy - 15;
+                Load.Work();
+            }
         }
         else
         {
-            Load.Work();
+            TextBox.EnableTextBox();
+            TextBox.ReloadScript(ErrorMessages);
+            TextBox.CurrentSprite = 17;
+            TextBox.NameLine = 18;
+            TextBox.currentline = 19;
+            TextBox.endatline = 22;
         }
+
     }
 }

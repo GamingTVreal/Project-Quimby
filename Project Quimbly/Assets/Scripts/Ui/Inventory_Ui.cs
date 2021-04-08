@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 using System.Threading;
 
+using ProjectQuimbly.Feeding;
+
 public class Inventory_Ui : MonoBehaviour
 {
     private BasicFunctions Items;
@@ -13,7 +15,7 @@ public class Inventory_Ui : MonoBehaviour
     private Transform ItemTransfom;
     public GameObject InventoryUi;
     public GameObject ItemPrefab;
-
+    public SelectedFood food;
     private void Awake()
     {
         
@@ -103,6 +105,7 @@ public class Inventory_Ui : MonoBehaviour
         {
             GameObject itemObj = Instantiate(ItemPrefab, InventoryUi.transform);
             ItemTransfom = itemObj.transform;
+            ItemTransfom.GetChild(0).GetComponent<Image>().sprite = _item.icon;
             ItemTransfom.GetChild(1).GetComponent<TextMeshProUGUI>().text = _item.itemType.ToString();
             ItemTransfom.GetChild(2).GetComponent<TextMeshProUGUI>().text = "" + _item.amount;
         }
