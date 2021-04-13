@@ -53,10 +53,6 @@ namespace ProjectQuimbly.Feeding
             return 1;
         }
 
-        public void FeedCharacter()
-        {
-            Character.fullness = Character.fullness + Plate.items;
-        }
         // Removes item from inventory
         public void RemoveItems(int number)
         {

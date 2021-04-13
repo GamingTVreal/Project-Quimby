@@ -4,11 +4,14 @@ using ProjectQuimbly.BasicFunctions;
 using ProjectQuimbly.UI.Dragging;
 using UnityEngine;
 using UnityEngine.Events;
+
 namespace ProjectQuimbly.Feeding
 {
     public class MouthTrigger : MonoBehaviour, IDragDestination
     {
         private CharacterController Character;
+        private FeedingRoom Feed;
+
         [SerializeField] int biteSize = 1;
         [SerializeField][Range(0, 3f)]
         float eatingCooldown = 1f;
@@ -20,6 +23,7 @@ namespace ProjectQuimbly.Feeding
         private void Awake()
         {
             Character = FindObjectOfType<CharacterController>();
+            Feed = FindObjectOfType<FeedingRoom>();
         }
         private void Update() 
         {
@@ -48,7 +52,8 @@ namespace ProjectQuimbly.Feeding
                 SelectedFood food = other.GetComponent<SelectedFood>();
                 if (food != null)
                 {
-                    food.FeedCharacter();
+                    Feed.GetSFX(0);
+                    Character.fullness = food.GetItem().filling + Character.fullness;
                     timeSinceLastBite = 0;
                     food.RemoveItems(biteSize);
                     onMouthEvent?.Invoke();

@@ -6,8 +6,9 @@ public class FeedingRoom : MonoBehaviour
 {
     Texture2D Hand;
     CursorMode Cursor;
-    [SerializeField] AudioSource Audio;
+    [SerializeField] AudioSource Audio,Audio2;
     [SerializeField] AudioClip[] Songs;
+    [SerializeField] AudioClip[] SFX;
     [SerializeField] Animator FeedingRoomAnimator;
     
     public CharacterController Character;
@@ -65,11 +66,35 @@ public class FeedingRoom : MonoBehaviour
     void Start()
     {
         Audio.volume = 0.100f;
+        Character = FindObjectOfType<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    public void GetFullnessSprite()
+    {
+
+    }
+    // 1 - 10 = gurgles, 11 - 14 = sloshes, 15 - 19 = burps :)
+    public void GetSFX(int SFXChance)
+    {
+        Audio2.PlayOneShot(SFX[Random.Range(15, 19)]);
+
+        if (Character.fullness > 15)
+        {
+            if (!Audio.isPlaying)
+            {
+                Audio2.PlayOneShot(SFX[Random.Range(0,10)]);
+            }
+            
+        }
+        Audio2.clip = (SFX[Random.Range(11, 14)]);
+        Audio2.Play();
+        Audio2.loop = true;
+        
+
     }
 }

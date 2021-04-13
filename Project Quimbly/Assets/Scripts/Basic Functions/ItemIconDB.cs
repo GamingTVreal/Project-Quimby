@@ -18,7 +18,7 @@ namespace ProjectQuimbly.BasicFunctions
             spriteLookup.TryGetValue(itemType, out itemSprite);
             return itemSprite;
         }
-        public float GetFloat (Item.ItemType itemType)
+        public float GetFullness (Item.ItemType itemType)
         {
             BuildLookup();
             float filling = 0;
@@ -29,6 +29,7 @@ namespace ProjectQuimbly.BasicFunctions
         {
             if(spriteLookup != null) return;
 
+            FullnessLookup = new Dictionary<Item.ItemType, float>();
             spriteLookup = new Dictionary<Item.ItemType, Sprite>();
             foreach (ItemSprite item in itemSprites)
             {

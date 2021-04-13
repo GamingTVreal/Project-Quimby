@@ -65,6 +65,7 @@ public class Inventory : Singleton<Inventory>
         if (!itemAlreadyInInventory)
         {
             item.icon = itemIconDB.GetSprite(item.itemType);
+            item.filling = itemIconDB.GetFullness(item.itemType);
             itemList.Add(item);
         }
         Debug.Log(item);
@@ -90,6 +91,7 @@ public class Inventory : Singleton<Inventory>
             newItem.itemType = itemType;
             newItem.amount = amount;
             newItem.icon = itemIconDB.GetSprite(newItem.itemType);
+            newItem.filling = itemIconDB.GetFullness(newItem.itemType);
             itemList.Add(newItem);
         }
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
@@ -197,6 +199,7 @@ public class Inventory : Singleton<Inventory>
                 newItem.SetType(PlayerPrefs.GetString("ItemType" + i));
                 newItem.amount = PlayerPrefs.GetInt("ItemAmount" + i);
                 newItem.icon = itemIconDB.GetSprite(newItem.itemType);
+                newItem.filling = itemIconDB.GetFullness(newItem.itemType);
                 itemList.Add(newItem);
             }
         }
@@ -207,6 +210,7 @@ public class Inventory : Singleton<Inventory>
             item.itemType = Item.ItemType.Soda;
             item.amount = 1;
             item.icon = itemIconDB.GetSprite(item.itemType);
+            item.filling = itemIconDB.GetFullness(item.itemType);
             AddItem(item);
         }
     }
