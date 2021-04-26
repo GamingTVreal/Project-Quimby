@@ -26,12 +26,13 @@ namespace ProjectQuimbly.Feeding
             }
         }
 
-        public void SetItem(Item.ItemType itemType, int amount, float filling, Sprite icon = null)
+        public void SetItem(Item.ItemType itemType, int amount, bool isdrink, float filling, Sprite icon = null)
         {
             item.itemType = itemType;
             item.amount = amount;
             item.icon = icon;
             item.filling = filling;
+            item.isdrink = isdrink;
             foodImage.sprite = item.icon;
         }
 

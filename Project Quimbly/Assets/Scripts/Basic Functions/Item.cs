@@ -22,6 +22,7 @@ public class Item
     public Sprite icon;
     public int amount;
     public float filling;
+    public bool isdrink;
     bool isConsumable;
 
     public void SetType(string type)

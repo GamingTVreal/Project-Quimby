@@ -72,7 +72,7 @@ namespace ProjectQuimbly.Feeding
             food.gameObject.SetActive(true);
             foodText.text = items[selectedItemIndex].itemType.ToString();
             foodQtyText.text = "(" + items[selectedItemIndex].amount.ToString() + ")";
-            food.SetItem(items[selectedItemIndex].itemType, 1, item.filling, item.icon);
+            food.SetItem(items[selectedItemIndex].itemType, 1, item.isdrink, item.filling, item.icon);
         }
 
         // On mouth trigger, event is called when item is consumed.

@@ -66,6 +66,7 @@ public class Inventory : Singleton<Inventory>
         {
             item.icon = itemIconDB.GetSprite(item.itemType);
             item.filling = itemIconDB.GetFullness(item.itemType);
+            item.isdrink = itemIconDB.GetWater(item.itemType);
             itemList.Add(item);
         }
         Debug.Log(item);
@@ -90,6 +91,7 @@ public class Inventory : Singleton<Inventory>
             Item newItem = new Item();
             newItem.itemType = itemType;
             newItem.amount = amount;
+            newItem.isdrink = itemIconDB.GetWater(newItem.itemType);
             newItem.icon = itemIconDB.GetSprite(newItem.itemType);
             newItem.filling = itemIconDB.GetFullness(newItem.itemType);
             itemList.Add(newItem);

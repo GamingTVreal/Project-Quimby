@@ -16,30 +16,40 @@ MonoBehaviour:
   - itemType: 0
     sprite: {fileID: -5132586085858449338, guid: e5f3917f4f7bb614ca7cb327d61171dc, type: 3}
     filling: 1.7
+    isdrink: 0
   - itemType: 1
     sprite: {fileID: -7504481137930832207, guid: f7fff59852a2e0c4cbe43db4d8faf7b2, type: 3}
     filling: 3.4
+    isdrink: 1
   - itemType: 2
     sprite: {fileID: 21300000, guid: e97ef4f1b5969164cb8a86c7a06104cc, type: 3}
     filling: 0.5
+    isdrink: 0
   - itemType: 3
     sprite: {fileID: 21300000, guid: 9f2e5dd02ff202844ba9633b6126c143, type: 3}
     filling: 0
+    isdrink: 0
   - itemType: 4
     sprite: {fileID: 21300000, guid: 4c4498e6a30ff27429014f64ff2420f7, type: 3}
     filling: 2
+    isdrink: 0
   - itemType: 5
     sprite: {fileID: -643074295224266439, guid: 19830cee6e9fe864383df2cbf25654cf, type: 3}
     filling: 0.2
+    isdrink: 1
   - itemType: 6
     sprite: {fileID: 21300000, guid: 1cce89364f73c5949a2682b87604c049, type: 3}
     filling: 1.4
+    isdrink: 0
   - itemType: 7
     sprite: {fileID: 3143075536409021132, guid: ed85bb67c9679bb41b906d9a592da890, type: 3}
     filling: 4.6
+    isdrink: 0
   - itemType: 8
     sprite: {fileID: 21300000, guid: 27c40fb5237ac074f89481a4f2ea34b5, type: 3}
     filling: 2.1
+    isdrink: 0
   - itemType: 9
     sprite: {fileID: 21300000, guid: 1c12b96f93ac2a841a68e4aa62d65867, type: 3}
     filling: 0
+    isdrink: 0
