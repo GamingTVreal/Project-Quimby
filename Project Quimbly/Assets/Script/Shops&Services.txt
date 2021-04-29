@@ -13,3 +13,12 @@ Well unfortnetly it would appear the only position availible for this demo is a 
 6
 Mark
 <color=#00ffffff> ... Demo?
+
+//Going Shopping
+
+6
+Cashier
+Are you gonna buy something or are you just going to keep staring?
+6
+Mark
+Oh, sorry I would like...

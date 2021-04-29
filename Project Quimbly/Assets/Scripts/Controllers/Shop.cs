@@ -5,6 +5,8 @@ using UnityEngine;
 public class Shop : MonoBehaviour
 {
     public TextBoxManager Peter;
+    public GameObject Store;
+    bool TalkedToShopLady = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +21,19 @@ public class Shop : MonoBehaviour
 
    public void StartBrowsing()
     {
-        Peter.currentline = 1;
-        Peter.EnableTextBox();
-        Peter.endatline = 4;
+        if (TalkedToShopLady == true)
+        {
+            Store.SetActive(true);
+        }
+        else
+        {
+            Peter.currentline = 20;
+            Peter.EnableTextBox();
+            Peter.EnableSpriteImage();
+            Peter.endatline = 23;
+            TalkedToShopLady = true;
+        }
+
+        
     }
 }

@@ -35,7 +35,11 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FeedingFullness.text = fullness.ToString();
+        if(FeedingFullness != null)
+        {
+            FeedingFullness.text = fullness.ToString();
+        }
+        
     }
 
     private void UnlockCharacter()
