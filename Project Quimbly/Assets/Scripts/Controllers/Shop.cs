@@ -32,8 +32,6 @@ public class Shop : MonoBehaviour
             Peter.EnableSpriteImage();
             Peter.endatline = 23;
             TalkedToShopLady = true;
-        }
-
-        
+        } 
     }
 }

@@ -162,6 +162,18 @@ public class Inventory : Singleton<Inventory>
         return 0;
     }
 
+    public Item GetItem(Item.ItemType itemType)
+    {
+        foreach(var inventoryItem in itemList)
+        {
+            if(inventoryItem.itemType == itemType)
+            {
+                return inventoryItem;
+            }
+        }
+        return null;
+    }
+
     public void SaveList()
     {
         if (itemList != null)
