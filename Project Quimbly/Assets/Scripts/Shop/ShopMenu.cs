@@ -43,12 +43,8 @@ namespace ProjectQuimbly.Shop
         // Update money text here
         private void UpdateMoney()
         {
-            moneyText.text = "Money";
-        }
-
-        private void UpdateMoney(int newMoney)
-        {
-            moneyText.text = newMoney.ToString();
+            int money = PlayerStats.Instance.GetMoney();
+            moneyText.text = money.ToString();
         }
 
         // Loop through ShopItemsDB and set up item slots for each entry
@@ -137,13 +133,13 @@ namespace ProjectQuimbly.Shop
         private void BuyItem(Item.ItemType itemType, int cost)
         {
             // Check if player has money
-            int playerMoney = 100;  // TODO: update to pull from inventory instance when implemented
+            int playerMoney = PlayerStats.Instance.GetMoney();
             if(cost <= playerMoney)
             {
                 // Add item and subtract money
                 Inventory.Instance.AddItem(itemType, 1);
-                playerMoney -= cost;
-                UpdateMoney(playerMoney);
+                PlayerStats.Instance.AdjustMoney(-cost);
+                UpdateMoney();
 
                 // Update inventory side of shop
                 ItemSlotUI itemSlot = null;
