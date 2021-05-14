@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.InputSystem;
 
 public class TextBoxManager : MonoBehaviour
 {
@@ -105,14 +106,14 @@ public class TextBoxManager : MonoBehaviour
         NameLine = currentline - 1;
         thetext.text = TypedLine;
         Speaker.text = textlines[NameLine];
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             Sprite.GetSprite();
             StopCoroutine(showTextCoroutine);
             TypedLine = textlines[currentline];
         }
 
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) && TypedLine == textlines[currentline])
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Mouse0)  || Input.GetKeyDown(KeyCode.A) && TypedLine == textlines[currentline])
         {
             Sprite.GetSprite();
             showTextCoroutine = StartCoroutine(ShowText());
@@ -148,11 +149,13 @@ public class TextBoxManager : MonoBehaviour
     public void EnableTextBox()
     {
         TextBox.SetActive(true);
+        isactive = true;
     }
     public void DisableTextBox()
     {
         NameBox.SetActive(false);
         TextBox.SetActive(false);
+        isactive = false;
        if(Phone != null)
         {
             Phone.SetActive(true);

@@ -15,6 +15,16 @@ public class LoadingScreenScript : MonoBehaviour
 
     AsyncOperation async;
 
+    public void FeedingRoom()
+    {
+        Area = "Feeding Minigame";
+        LoadScreenExample();
+    }
+    public void GroceryStore()
+    {
+        Area = "Grocery Store";
+        LoadScreenExample();
+    }
     public void Park()
     {
         Area = "Park";

@@ -38,7 +38,7 @@ MonoBehaviour:
     filling: 0.2
     isdrink: 1
   - itemType: 6
-    sprite: {fileID: 21300000, guid: 1cce89364f73c5949a2682b87604c049, type: 3}
+    sprite: {fileID: 4975192539690352401, guid: 033d51ed728a9e74282fe30baf670a24, type: 3}
     filling: 1.4
     isdrink: 0
   - itemType: 7

@@ -30,9 +30,8 @@ namespace ProjectQuimbly.BasicFunctions
         public bool GetWater (Item.ItemType itemType)
         {
             BuildLookup();
-            bool isdrink = false;
+            bool isdrink = true;
             DrinkableLookup.TryGetValue(itemType, out isdrink);
-            Debug.Log(isdrink);
             return isdrink;
         }
         private void BuildLookup()

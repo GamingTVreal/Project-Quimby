@@ -121,7 +121,7 @@ public class BasicFunctions : MonoBehaviour
 
     void FirstTimeSetup()
     {
-        PlayerStats.Instance.AdjustMoney(2500,false);
+        PlayerStats.Instance.AdjustMoney(500,false);
         PlayerStats.Instance.AdjustEnergy(20);
 
     }

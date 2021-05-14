@@ -58,7 +58,7 @@ So what got you into belly inflation?!
 1
 Mark 
 How many times do I need to tell you to keep it down?... 
-1
+2
 Deb
 Ehehe... sorry. I couldn't wait to finally talk to someone about this 
 1
@@ -79,7 +79,7 @@ Mark
 1
 Mark 
 Yeah... 
-1
+3
 Deb 
 Well then no, I never really have.
 2
@@ -100,7 +100,7 @@ Me being "familiar" with my existance?
 1
 Mark
 What do you mean? 
-1
+2
 Deb
 Well, I just mean that you arent real! 
 1
@@ -130,10 +130,10 @@ You recieved $100,000
 1
 Mark
 So what are your hobbies like?
-1
+2
 Deb
 Well I've always loved chess!
-1
+3
 Deb
 Even if my design doesn't look like it. 
 1
@@ -197,7 +197,7 @@ Mark
 You planned to meet me 2 months ago?
 1
 Deb
-Well yes, that's when development started
+Well yes, that's when development started (Albiet this sentence was written a lot eariler in development hehe)
 1
 Deb
 and not so much you but the <color=#ffff00ff> extension of you.
@@ -230,3 +230,28 @@ Hehe, I'll definetly keep a stocked fridge for you.
 1
 Deb
 hehe, you're making me hungry.
+
+//feeding
+1
+Mark
+Hey, this may come off as a little crazy mainly because we've just met and all but...
+2
+Deb 
+Yess!!!
+2
+Mark
+I didn't even finish my sentence, haha.
+1
+Deb
+Well I know what you're going to ask and just the thought of it turns me on!
+2
+Deb
+What are you waiting for!
+2
+Deb
+<color=#ffff00ff> Fill me up!
+
+//too tired to talk
+6
+Mark
+<color=#00ffffff> I'm exausted, I should go home

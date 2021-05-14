@@ -2673,6 +2673,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2309688702294739188, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 9015601318368592500}
+    - target: {fileID: 2309688702294739188, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309688702294739188, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 259390330}
+    - target: {fileID: 2309688702294739188, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GroceryStore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309688702294739188, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1463554671}
+    - target: {fileID: 2309688702294739188, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 4358742337894597484, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2975,3 +2999,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+--- !u!1 &9015601318368592500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9015601318601600239, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
+  m_PrefabInstance: {fileID: 9015601318368592499}
+  m_PrefabAsset: {fileID: 0}

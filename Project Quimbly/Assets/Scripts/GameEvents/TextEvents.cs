@@ -10,7 +10,8 @@ public class TextEvents : MonoBehaviour
     public TextAsset ErrorMessages;
     public int StartLine;
     int x = 0;
-    bool MetDeb = false,BeenToJobAgency = false;
+    static bool MetDeb = false;
+    bool BeenToJobAgency = false;
     [SerializeField] AudioSource SnoringSFX, Music;
     [SerializeField] Animator Fadeout;
     [SerializeField] GameObject MainCamera, MenuCamera, JobMenu;
@@ -47,7 +48,69 @@ public class TextEvents : MonoBehaviour
     {
         
     }
+    public void Feeding()
+    {
+        GameObject FeedingButton = GameObject.Find("Feed");
+        FeedingButton.SetActive(false);
+        TB2.isactive = true;
+        TB2.EnableSpriteImage();
+        TB2.EnableTextBox();
+        TB2.currentline = 236;
+        TB2.endatline = 251;
+        feeding2();
 
+        
+    }
+
+    void feeding2()
+    {
+        if (PlayerStats.Instance.Energy > 5)
+        {
+            if (TB2.isactive == false)
+            {
+                PlayerStats.Instance.Energy = PlayerStats.Instance.Energy - 5;
+                Load.FeedingRoom();
+            }
+            else
+            {
+                Invoke("feeding2", 1f);
+            }
+        }
+        else
+        {
+            TB2.ReloadScript(ErrorMessages);
+            TB2.textfile = ErrorMessages;
+            TB2.isactive = true;
+            TB2.EnableSpriteImage();
+            TB2.EnableTextBox();
+            TB2.currentline = 27;
+            TB2.endatline = 34;
+            Leave2();
+        }
+
+    }
+
+    public void Leave()
+    {
+        TextBox.isactive = true;
+        TextBox.EnableSpriteImage();
+        TextBox.EnableTextBox();
+        TextBox.currentline = 40;
+        TextBox.endatline = 61;
+        Leave2();
+        Debug.Log("I made it here :)");
+    }
+    void Leave2()
+    {
+        if (TextBox.isactive == false && TB2.isactive == false || TB2 == null)
+        {
+            Load.Home();
+        }
+        else
+        {
+            Invoke("Leave2", 1f);
+        }
+    }
     private void FixedUpdate()
     {
         if (SpeakButton != null)
@@ -191,12 +254,16 @@ public class TextEvents : MonoBehaviour
     }
     public void NotEnoughEnergy()
     {
+        TextAsset OldText;
+        OldText = TextBox.textfile;
         TextBox.EnableTextBox();
         TextBox.ReloadScript(ErrorMessages);
+        TextBox.textfile = ErrorMessages;
         TextBox.CurrentSprite = 12;
         TextBox.NameLine = 13;
         TextBox.currentline = 14;
         TextBox.endatline = 15;
+        TextBox.textfile = OldText;
     }
     public void GoToWork()
     {
@@ -218,8 +285,9 @@ public class TextEvents : MonoBehaviour
         }
         else
         {
-            TextBox.EnableTextBox();
+    
             TextBox.ReloadScript(ErrorMessages);
+            TextBox.EnableTextBox();
             TextBox.CurrentSprite = 17;
             TextBox.NameLine = 18;
             TextBox.currentline = 19;

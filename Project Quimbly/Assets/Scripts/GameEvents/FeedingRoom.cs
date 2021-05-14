@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using ProjectQuimbly.Feeding;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,11 +7,11 @@ public class FeedingRoom : MonoBehaviour
 {
     Texture2D Hand;
     CursorMode Cursor;
-    [SerializeField] AudioSource Audio,Audio2;
+    [SerializeField] AudioSource Audio, Audio2;
     [SerializeField] AudioClip[] Songs;
     [SerializeField] AudioClip[] SFX;
     [SerializeField] Animator FeedingRoomAnimator;
-    
+    [SerializeField]  SelectedFood Food;
     public CharacterController Character;
     
     
@@ -91,9 +92,13 @@ public class FeedingRoom : MonoBehaviour
             }
             
         }
-        Audio2.clip = (SFX[Random.Range(11, 14)]);
-        Audio2.Play();
-        Audio2.loop = true;
+        if (Food.GetItem().isdrink == true)
+        {
+            Audio2.clip = (SFX[Random.Range(11, 14)]);
+            Audio2.Play();
+            Audio2.loop = false;
+        }
+    
         
 
     }

@@ -214,6 +214,7 @@ public class Inventory : Singleton<Inventory>
                 newItem.amount = PlayerPrefs.GetInt("ItemAmount" + i);
                 newItem.icon = itemIconDB.GetSprite(newItem.itemType);
                 newItem.filling = itemIconDB.GetFullness(newItem.itemType);
+                newItem.isdrink = itemIconDB.GetWater(newItem.itemType);
                 itemList.Add(newItem);
             }
         }
@@ -225,6 +226,7 @@ public class Inventory : Singleton<Inventory>
             item.amount = 1;
             item.icon = itemIconDB.GetSprite(item.itemType);
             item.filling = itemIconDB.GetFullness(item.itemType);
+            item.isdrink = itemIconDB.GetWater(item.itemType);
             AddItem(item);
         }
     }

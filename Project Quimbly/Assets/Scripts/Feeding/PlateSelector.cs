@@ -10,6 +10,7 @@ namespace ProjectQuimbly.Feeding
         [SerializeField] SelectedFood food;
         [SerializeField] TextMeshProUGUI foodText;
         [SerializeField] TextMeshProUGUI foodQtyText;
+        [SerializeField] GameObject Exit;
         public List<Item> items = new List<Item>();
         public int selectedItemIndex;
         bool isSelectionChanging = false;
@@ -114,6 +115,7 @@ namespace ProjectQuimbly.Feeding
         // On empty inventory, disable interactable food and update text
         private void OutOfFood()
         {
+            Exit.SetActive(true);
             foodText.text = "Out of food";
             foodQtyText.text = "";
             food.gameObject.SetActive(false);
