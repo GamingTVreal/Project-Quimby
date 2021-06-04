@@ -52,7 +52,7 @@ namespace ProjectQuimbly.Feeding
                 SelectedFood food = other.GetComponent<SelectedFood>();
                 if (food != null)
                 {
-                    //Debug.Log(food.GetItem().isdrink);
+                    
                     Feed.GetSFX(0);
                     Character.fullness = food.GetItem().filling + Character.fullness;
                     timeSinceLastBite = 0;

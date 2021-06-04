@@ -4,18 +4,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] private SpriteController spriteController;
     [SerializeField] private TextEvents _textEvents;
     public int Character = 0;
-    
-    private string[] Names = new string [5];
-    private string[] Biography = new string [5];
-    private int[] Age = new int [5];
-    private string[] CupSize = new string [5];
-    private static bool[] UnlockedGirls = new bool [5];
+
+    private string[] Names = new string[5];
+    private string[] Biography = new string[5];
+    private int[] Age = new int[5];
+    private string[] CupSize = new string[5];
+    private static bool[] UnlockedGirls = new bool[5];
+    public GameObject[] ContactButtons = new GameObject[5]; 
     bool UnlockGirl;
 
     public float fullness;
@@ -28,6 +30,14 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        for(int x = 0; x < 5; x++)
+        {
+            if (UnlockedGirls[x] == true)
+            {
+                ContactButtons[x].SetActive(true);
+            }
+        }
 
 
     }
@@ -44,17 +54,7 @@ public class CharacterController : MonoBehaviour
 
     private void UnlockCharacter()
     {
-        if (UnlockedGirls == null)
-        {
-            UnlockedGirls[0] = false;
-        }
-        UnlockGirl = true;
-        if (UnlockGirl == true)
-        {
-            UnlockedGirls[0] = true;
-            SetCharacters();
-        }
-        UnlockGirl = false;
+
     }
     public void TalkToDeb()
     {

@@ -14,15 +14,20 @@ public class TextEvents : MonoBehaviour
     bool BeenToJobAgency = false;
     [SerializeField] AudioSource SnoringSFX, Music;
     [SerializeField] Animator Fadeout;
-    [SerializeField] GameObject MainCamera, MenuCamera, JobMenu;
+    [SerializeField] GameObject MainCamera, MenuCamera, JobMenu, DebMenu;
     [SerializeField] Button SpeakButton, ChatButton;
     public TextBoxManager TextBox;
     public TextBoxManager TB2;
     public PlayerStats Player;
     public LoadingScreenScript Load;
+    
+
+    public void Start()
+    {
+    }
     public void MeetingDeb()
     {
-
+        
         
          if (MetDeb == true)
         {
@@ -285,7 +290,6 @@ public class TextEvents : MonoBehaviour
         }
         else
         {
-    
             TextBox.ReloadScript(ErrorMessages);
             TextBox.EnableTextBox();
             TextBox.CurrentSprite = 17;
@@ -293,6 +297,35 @@ public class TextEvents : MonoBehaviour
             TextBox.currentline = 19;
             TextBox.endatline = 22;
         }
+
+    }
+    public void TooFullToContinue()
+    {
+        bool talked = false;
+        if (TextBox.isactive == false && talked == false)
+        {
+
+            TextBox.isactive = true;
+            TextBox.EnableTextBox();
+            TextBox.currentline = 17;
+            TextBox.endatline = 35;
+            talked = true;
+        }
+        TooFullToContinue2(); 
+        
+    }
+    public void TooFullToContinue2()
+    {
+        
+        if (TextBox.isactive == false)
+        {
+            Load.Home();
+        }
+        else
+        {
+            Invoke("TooFullToContinue2", 1f);
+        }
+        
 
     }
 }

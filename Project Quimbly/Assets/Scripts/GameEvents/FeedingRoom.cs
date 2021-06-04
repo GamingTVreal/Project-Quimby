@@ -12,8 +12,9 @@ public class FeedingRoom : MonoBehaviour
     [SerializeField] AudioClip[] SFX;
     [SerializeField] Animator FeedingRoomAnimator;
     [SerializeField]  SelectedFood Food;
+    static int BellyCompacity = 25;
     public CharacterController Character;
-    
+    private TextEvents TextEvent;
     
     public void Jukebox(int SongChoice)
     {
@@ -68,12 +69,26 @@ public class FeedingRoom : MonoBehaviour
     {
         Audio.volume = 0.100f;
         Character = FindObjectOfType<CharacterController>();
+        TextEvent = FindObjectOfType<TextEvents>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Character.fullness > BellyCompacity)
+        {
+            if (BellyCompacity >= 100)
+            {
+                TextEvent.TooFullToContinue();
+            }
+            else
+            {
+                TextEvent.TooFullToContinue();
+                BellyCompacity += 5;
+            }
+            
+            
+        }
     }
     public void GetFullnessSprite()
     {
