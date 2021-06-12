@@ -328,4 +328,10 @@ public class TextEvents : MonoBehaviour
         
 
     }
+
+    public void FeedingSmalltalk()
+    {
+
+
+    }
 }
