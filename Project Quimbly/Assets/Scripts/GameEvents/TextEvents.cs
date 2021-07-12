@@ -20,7 +20,7 @@ public class TextEvents : MonoBehaviour
     public TextBoxManager TB2;
     public PlayerStats Player;
     public LoadingScreenScript Load;
-    
+    static bool talked = false;
 
     public void Start()
     {
@@ -301,7 +301,8 @@ public class TextEvents : MonoBehaviour
     }
     public void TooFullToContinue()
     {
-        bool talked = false;
+        //talked = true;
+        int x = UnityEngine.Random.Range(0, 6);
         if (TextBox.isactive == false && talked == false)
         {
 
@@ -311,6 +312,49 @@ public class TextEvents : MonoBehaviour
             TextBox.endatline = 35;
             talked = true;
         }
+        else if (TextBox.isactive == false && talked == true)
+        {
+            switch (x)
+            {
+                case 0:
+                    TextBox.isactive = true;
+                    TextBox.EnableTextBox();
+                    TextBox.currentline = 17;
+                    TextBox.endatline = 23;
+                    break;
+                case 1:
+                    TextBox.isactive = true;
+                    TextBox.EnableTextBox();
+                    TextBox.currentline = 66;
+                    TextBox.endatline = 102;
+                    break;
+                case 2:
+                    TextBox.isactive = true;
+                    TextBox.EnableTextBox();
+                    TextBox.currentline = 107;
+                    TextBox.endatline = 125;
+                    break;
+                case 3:
+                    TextBox.isactive = true;
+                    TextBox.EnableTextBox();
+                    TextBox.currentline = 130;
+                    TextBox.endatline = 145;
+                    break;
+                case 4:
+                    TextBox.isactive = true;
+                    TextBox.EnableTextBox();
+                    TextBox.currentline = 17;
+                    TextBox.endatline = 23;
+                    break;
+                case 5:
+                    TextBox.isactive = true;
+                    TextBox.EnableTextBox();
+                    TextBox.currentline = 17;
+                    TextBox.endatline = 23;
+                    break;
+            }
+        }
+
         TooFullToContinue2(); 
         
     }

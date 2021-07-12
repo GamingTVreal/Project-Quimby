@@ -12,6 +12,7 @@ public class FeedingRoom : MonoBehaviour
     [SerializeField] AudioClip[] SFX;
     [SerializeField] Animator FeedingRoomAnimator;
     [SerializeField]  SelectedFood Food;
+    [SerializeField] Sprite[] BellyLevels;
     static int BellyCompacity = 25;
     public CharacterController Character;
     private TextEvents TextEvent;

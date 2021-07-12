@@ -36,4 +36,9 @@ public class Menu : MonoBehaviour
     {
         Application.OpenURL("https://forum.weightgaming.com/t/project-quimbly/14160");
     }
+    public void Patreon()
+    {
+        Application.OpenURL("https://www.patreon.com/TeamQuimbly");
+    }
+
 }

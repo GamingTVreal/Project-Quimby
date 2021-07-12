@@ -185,7 +185,10 @@ public class BasicFunctions : MonoBehaviour
         CursorMapping mapping = GetCursorMapping(type);
         Cursor.SetCursor(mapping.texture, mapping.hotspot, CursorMode.Auto);
     }
-
+    public void ReportBugs()
+    {
+        Application.OpenURL("https://forms.gle/AjfjdCRSPvLctiaUA");
+    }
     private CursorMapping GetCursorMapping(CursorType type)
     {
         foreach (CursorMapping mapping in cursorMappings)
