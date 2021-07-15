@@ -266,8 +266,8 @@ MonoBehaviour:
   NameBox: {fileID: 3571428096130556653}
   TextBox: {fileID: 3195114302811450075}
   speed: -0.7
-  thetext: {fileID: 3195114302688911225}
-  Speaker: {fileID: 2261417268358587308}
+  textboxText: {fileID: 3195114302688911225}
+  speakerText: {fileID: 2261417268358587308}
   isactive: 0
   Sleep: {fileID: 0}
   Sprite: {fileID: 7702735474566224777}
@@ -290,9 +290,9 @@ MonoBehaviour:
   - 
   currentline: 2
   endatline: 0
-  NameLine: 0
+  nameLine: 0
   SpriteFinder: 
-  CurrentSprite: 0
+  currentSprite: 0
 --- !u!1 &3571428096130556653
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,9 +28,8 @@ public class Shop : MonoBehaviour
         else
         {
             Peter.currentline = 20;
-            Peter.EnableTextBox();
-            Peter.EnableSpriteImage();
             Peter.endatline = 23;
+            Peter.ReloadScript();
             TalkedToShopLady = true;
         } 
     }

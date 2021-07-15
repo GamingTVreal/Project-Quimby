@@ -10,7 +10,8 @@ public class PlayerStats : Singleton<PlayerStats>
     private int _maxEnergy = 20;
     public int Energy;
 
-    public int CurrentJob,JobLevel;
+    public int CurrentJob = 0;
+    public int JobLevel = 0;
     public string Name;
 
     

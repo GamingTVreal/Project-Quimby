@@ -12,58 +12,139 @@ public class TextBoxManager : MonoBehaviour
 {
     [SerializeField] GameObject SpriteImage;
     public GameObject Phone,NameBox,TextBox;
-    public float speed = 0.1f;
-    public TMP_Text thetext;
-    public TMP_Text Speaker;
-    public bool isactive;
+    public float speed = 1f;
+    public TMP_Text textboxText;
+    public TMP_Text speakerText;
+    public bool isTextboxActive = false;
     [SerializeField] Button Sleep;
     // Use this for initialization
 
     public SpriteController Sprite;
     public TextAsset textfile;
-    public string[] textlines;
+    public string[] defaultTextlines;
     private string TypedLine = "";
     public int currentline;
     public int endatline;
-    public int NameLine;
+    public int nameLine;
     public string SpriteFinder;
-    public int CurrentSprite;
+    public int currentSprite;
     Coroutine showTextCoroutine = null;
 
     void Start()
     {
+        StartDefaultDialogue();
+    }
+
+    private void StartDefaultDialogue()
+    {
         if (textfile != null)
         {
-            textlines = (textfile.text.Split('\n'));
-        }
+            defaultTextlines = (textfile.text.Split('\n'));
 
-        if (endatline == 0)
-        {
-            endatline = textlines.Length - 1;
+            if (endatline == 0)
+            {
+                endatline = defaultTextlines.Length - 1;
+            }
+
+            if (!isTextboxActive)
+            {
+                showTextCoroutine = StartCoroutine(ShowText(defaultTextlines));
+            }
         }
-        showTextCoroutine = StartCoroutine(ShowText());
     }
 
-    IEnumerator ShowText()
+    // Take parsed textlines and print them to textbox based on textspeed
+    IEnumerator ShowText(string[] coTextLines)
     {
+        // Get sprite/name info
+        SetSpriteField(coTextLines);
+        SetNameField(coTextLines);
+        EnableTextBox();
 
-        for (int i = 0; i < textlines[currentline].Length + 1; i++)
+        int i = 0;
+        float timeSinceLastSubstring = Mathf.Infinity;
+        while (TextBox.activeSelf)
         {
+            timeSinceLastSubstring += Time.deltaTime;
+            if(i < coTextLines[currentline].Length + 1 && timeSinceLastSubstring > speed)
+            {
+                timeSinceLastSubstring = 0;
+                coTextLines[currentline] = coTextLines[currentline].Replace("Mark", BasicFunctions.Name);
+                TypedLine = coTextLines[currentline].Substring(0, i);
+                textboxText.text = TypedLine;
+                i++;
+            }
 
-            textlines[currentline] = textlines[currentline].Replace("Mark", BasicFunctions.Name);
-            TypedLine = textlines[currentline].Substring(0, i);
-            yield return new WaitForSeconds(speed);
-
- 
-
-
+            // Check if user is trying to advance text
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                AdvanceTextBox(coTextLines);
+            }
+            yield return null;
         }
-
+        DisableSpriteImage();
+        DisableTextBox();
     }
-    void Update()
+
+    // Complete or advance text
+    private void AdvanceTextBox(string[] coTextLines)
     {
-        textlines[NameLine] = textlines[NameLine].Replace("Mark", BasicFunctions.Name);
-        if (textlines[NameLine].Contains("null"))
+        // If line is not complete, instantly fill in line
+        if (TypedLine != coTextLines[currentline])
+        {
+            TypedLine = coTextLines[currentline];
+        }
+        // If already complete, load next line to display or close textbox
+        else
+        {
+            currentline += 3;
+            StopCoroutine(showTextCoroutine);
+            // Check if lines are left to display
+            if (currentline <= endatline)
+            {
+                showTextCoroutine = StartCoroutine(ShowText(coTextLines));
+            }
+            else
+            {
+                DisableSpriteImage();
+                DisableTextBox();
+            }
+        }
+    }
+
+    // Set sprite from script line
+    private void SetSpriteField(string[] coTextLines)
+    {
+        // Try to parse sprite select from text file
+        if (int.TryParse(coTextLines[currentline - 2], out currentSprite))
+        {
+            // 6 is used for "no sprite"
+            if (currentSprite != 6)
+            {
+                EnableSpriteImage();
+                Sprite.GetSprite(currentSprite);
+            }
+            else
+            {
+                DisableSpriteImage();
+            }
+        }
+        else
+        {
+            DisableSpriteImage();
+        }
+    }
+
+    // Set name from script line
+    private void SetNameField(string[] coTextLines)
+    {
+        // Replace and display name or disable box on "null"
+        nameLine = currentline - 1;
+        string speakerName = coTextLines[nameLine];
+        speakerName = speakerName.Replace("Mark", BasicFunctions.Name);
+        speakerText.text = speakerName;
+
+        if (speakerName.Contains("null"))
         {
             DisableNameBox();
         }
@@ -71,120 +152,115 @@ public class TextBoxManager : MonoBehaviour
         {
             EnableNameBox();
         }
+    }
+
+    // Maybe obsolete
+    private void OnEnable()
+    {
+        // Check active states to display self
         if (TextBox.activeSelf)
         {
-            if (Phone != null) 
+            if (Phone != null)
             {
                 Phone.SetActive(false);
             }
             if (Sleep != null)
             {
-               Sleep.interactable = false;
+                Sleep.interactable = false;
             }
-            
-            isactive = true;
+            // isTextboxActive = true;
         }
         else
         {
             Phone.SetActive(true);
         }
-        if (isactive)
-        {
-            EnableTextBox();
-            if(SpriteImage != null)
-            {
-             EnableSpriteImage();
-            }
-            
-        }
-        else
-        {
-            DisableSpriteImage();
-            DisableTextBox();
-        }
-        CurrentSprite = currentline - 2;
-        NameLine = currentline - 1;
-        thetext.text = TypedLine;
-        Speaker.text = textlines[NameLine];
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Sprite.GetSprite();
-            StopCoroutine(showTextCoroutine);
-            TypedLine = textlines[currentline];
-        }
 
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Mouse0)  || Input.GetKeyDown(KeyCode.A) && TypedLine == textlines[currentline])
-        {
-            Sprite.GetSprite();
-            showTextCoroutine = StartCoroutine(ShowText());
-            currentline += 3;
-        }
-
-        if (currentline > endatline)
-
-        {
-            DisableSpriteImage(); 
-            DisableTextBox();
-        }
-        else
-        {
-            EnableSpriteImage();
-            EnableTextBox();
-        }
-
+        // if (isactive)
+        // {
+        //     EnableTextBox();
+        //     if (SpriteImage != null)
+        //     {
+        //         EnableSpriteImage();
+        //     }
+        // }
+        // else
+        // {
+        //     DisableSpriteImage();
+        //     DisableTextBox();
+        // }
     }
-
+    
     public void NextLine()
     {
-        showTextCoroutine = StartCoroutine(ShowText());
+        showTextCoroutine = StartCoroutine(ShowText(defaultTextlines));
     }
+
     void EnableNameBox()
     {
         NameBox.SetActive(true);
     }
+
     void DisableNameBox()
     {
         NameBox.SetActive(false);
     }
-    public void EnableTextBox()
+
+    private void EnableTextBox()
     {
         TextBox.SetActive(true);
-        isactive = true;
+        isTextboxActive = true;
     }
-    public void DisableTextBox()
+
+    private void DisableTextBox()
     {
+        isTextboxActive = false;
         NameBox.SetActive(false);
         TextBox.SetActive(false);
-        isactive = false;
-       if(Phone != null)
+        if(Phone != null)
         {
             Phone.SetActive(true);
         } 
-       if(Sleep != null)
+        if(Sleep != null)
         {
             Sleep.interactable = true;
         }
-        
     }
+
     public void EnableSpriteImage()
     {
         SpriteImage.SetActive(true);
-        Sprite.GetSprite();
     }
+
     public void DisableSpriteImage()
     {
         SpriteImage.SetActive(false);
     }
+
     public void Letsseeifitworks()
     {
-        StartCoroutine(ShowText());
+        showTextCoroutine = StartCoroutine(ShowText(defaultTextlines));
     }
-    public void ReloadScript(TextAsset NewText)
+
+    // Start dialogue script with passed in script or scene default
+    public void ReloadScript(TextAsset newText = null)
     {
-       if(NewText != null)
+        gameObject.SetActive(true);
+        if (showTextCoroutine != null)
         {
-            textlines = new string[1];
-            textlines = (NewText.text.Split('\n'));
+            StopCoroutine(showTextCoroutine);
+        }
+
+        if(newText != null)
+        {
+            // Parse new text and begin dialogue
+            string[] tempTextLines = new string[1];
+            tempTextLines = (newText.text.Split('\n'));
+            showTextCoroutine = StartCoroutine(ShowText(tempTextLines));
+        }
+        // Start dialogue with default text
+        else
+        {
+            StartDefaultDialogue();
         }
     }
 }

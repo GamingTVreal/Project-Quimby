@@ -19,34 +19,10 @@ public class SpriteController : MonoBehaviour
     {
         this.GetComponent<Image>().sprite = Deb[x];
     }
-    public void GetSprite()
+    public void GetSprite(int spriteSelect = 0)
     {
-        if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("1"))
-        {
-            x = 0; 
-        }
-        else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("2"))
-        {
-            x = 1;
-        }
-        else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("3"))
-        {
-            x = 2;
-        }
-        else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("4"))
-        {
-            x = 3;
-        }
-        else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("5"))
-        {
-            x = 4;
-        }
-        else if (textboxmanager.textlines[textboxmanager.CurrentSprite].Contains("6"))
-        {
-            x = 0;
-            textboxmanager.DisableSpriteImage();
-            
-        }
+        x = spriteSelect;
+        
         SetSprite();
     }
     public void GetBelly()

@@ -123,7 +123,6 @@ public class BasicFunctions : MonoBehaviour
     {
         PlayerStats.Instance.AdjustMoney(500,false);
         PlayerStats.Instance.AdjustEnergy(20);
-
     }
     public void OpenthePhone()
     {

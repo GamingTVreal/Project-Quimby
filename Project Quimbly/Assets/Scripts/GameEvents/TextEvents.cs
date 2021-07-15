@@ -27,8 +27,6 @@ public class TextEvents : MonoBehaviour
     }
     public void MeetingDeb()
     {
-        
-        
          if (MetDeb == true)
         {
             GirlMenu();
@@ -36,10 +34,9 @@ public class TextEvents : MonoBehaviour
         else if (MetDeb == false)
         {
             SpeakButton.interactable = false;
-            TextBox.EnableSpriteImage();
-            TextBox.EnableTextBox();
             TextBox.currentline = 2;
             TextBox.endatline = 51;
+            TextBox.ReloadScript();
             MetDeb = true;
         }
         
@@ -57,11 +54,10 @@ public class TextEvents : MonoBehaviour
     {
         GameObject FeedingButton = GameObject.Find("Feed");
         FeedingButton.SetActive(false);
-        TB2.isactive = true;
-        TB2.EnableSpriteImage();
-        TB2.EnableTextBox();
         TB2.currentline = 236;
         TB2.endatline = 251;
+        TB2.EnableSpriteImage();
+        TB2.ReloadScript();
         feeding2();
 
         
@@ -71,7 +67,7 @@ public class TextEvents : MonoBehaviour
     {
         if (PlayerStats.Instance.Energy > 15)
         {
-            if (TB2.isactive == false)
+            if (TB2.isTextboxActive == false)
             {
                 PlayerStats.Instance.Energy = PlayerStats.Instance.Energy - 15;
                 Load.FeedingRoom();
@@ -83,11 +79,9 @@ public class TextEvents : MonoBehaviour
         }
         else
         {
-            TB2.isactive = true;
-            TB2.EnableSpriteImage();
-            TB2.EnableTextBox();
             TB2.currentline = 256;
             TB2.endatline = 257;
+            TB2.ReloadScript();
             Leave2();
         }
 
@@ -96,17 +90,15 @@ public class TextEvents : MonoBehaviour
     public void Leave()
     {
         FeedingStuff.SetActive(false);
-        TextBox.isactive = true;
-        TextBox.EnableSpriteImage();
-        TextBox.EnableTextBox();
         TextBox.currentline = 40;
         TextBox.endatline = 61;
+        TextBox.ReloadScript();
         Leave2();
         Debug.Log("I made it here :)");
     }
     void Leave2()
     {
-        if (TextBox.isactive == false && TB2.isactive == false || TextBox.isactive == false && TB2 == null)
+        if (TextBox.isTextboxActive == false && TB2.isTextboxActive == false || TextBox.isTextboxActive == false && TB2 == null)
         {
             Load.Home();
         }
@@ -138,68 +130,54 @@ public class TextEvents : MonoBehaviour
             case 0:
                 TB2.NextLine();
                 Debug.Log("Case0");
-                TB2.EnableSpriteImage();
-                TB2.EnableTextBox();
                 TB2.endatline = 90;
                 TB2.currentline = 56;
-                TB2.isactive = true;
+                TB2.ReloadScript();
                 TB2.NextLine();
                 break;
 
             case 1:
                 Debug.Log("Case1");
-                TB2.EnableSpriteImage();
-                TB2.EnableTextBox();
                 TB2.endatline = 156;
                 TB2.currentline = 131;
-                TB2.isactive = true;
+                TB2.ReloadScript();
                 TB2.NextLine();
                 break;
             case 2:
                 Debug.Log("Case2");
-                TB2.EnableSpriteImage();
-                TB2.EnableTextBox();
                 TB2.endatline = 126;
                 TB2.currentline = 95;
-                TB2.isactive = true;
+                TB2.ReloadScript();
                 TB2.NextLine();
                 PlayerStats.Instance.AdjustMoney(100000);
                 break;
             case 3:
                 Debug.Log("Case3");
-                TB2.EnableSpriteImage();
-                TB2.EnableTextBox();
                 TB2.endatline = 179;
                 TB2.currentline = 161;
-                TB2.isactive = true;
+                TB2.ReloadScript();
                 TB2.NextLine();
                 break;
 
             case 4:
                 Debug.Log("Case4");
-                TB2.EnableSpriteImage();
-                TB2.EnableTextBox();
                 TB2.endatline = 90;
                 TB2.currentline = 56;
-                TB2.isactive = true;
+                TB2.ReloadScript();
                 TB2.NextLine();
                 break;
             case 5:
                 Debug.Log("Case5");
-                TB2.EnableSpriteImage();
-                TB2.EnableTextBox();
                 TB2.endatline = 212;
                 TB2.currentline = 184;
-                TB2.isactive = true;
+                TB2.ReloadScript();
                 TB2.NextLine();
                 break;
             case 6:
                 Debug.Log("Case6");
-                TB2.EnableSpriteImage();
-                TB2.EnableTextBox();
                 TB2.endatline = 232;
-                TB2.currentline = 216 ;
-                TB2.isactive = true;
+                TB2.currentline = 216;
+                TB2.ReloadScript();
                 TB2.NextLine();
                 break;
         }
@@ -231,6 +209,7 @@ public class TextEvents : MonoBehaviour
             }
         }
     }
+
     public void JobAgency()
     {
         SpeakButton.interactable = false;
@@ -240,34 +219,24 @@ public class TextEvents : MonoBehaviour
         }
         else
         {
-            TextBox.EnableTextBox();
             TextBox.currentline = 2;
             TextBox.endatline = 15;
+            TextBox.ReloadScript();
             BeenToJobAgency = true;
         }
         SpeakButton.interactable = true;
     }
     public void NoEnergy()
     {
-        TextBox.EnableTextBox();
-        TextBox.ReloadScript(ErrorMessages);
-        TextBox.CurrentSprite = 1;
-        TextBox.NameLine = 2;
         TextBox.currentline = 3;
         TextBox.endatline = 10;
+        TextBox.ReloadScript(ErrorMessages);
     }
     public void NotEnoughEnergy()
     {
-        TextAsset OldText;
-        OldText = TextBox.textfile;
-        TextBox.EnableTextBox();
-        TextBox.textfile = ErrorMessages;
-        TextBox.ReloadScript(ErrorMessages);
-        TextBox.CurrentSprite = 12;
-        TextBox.NameLine = 13;
         TextBox.currentline = 14;
         TextBox.endatline = 15;
-        TextBox.textfile = OldText;
+        TextBox.ReloadScript(ErrorMessages);
     }
     public void GoToWork()
     {
@@ -289,19 +258,11 @@ public class TextEvents : MonoBehaviour
         }
         else
         {
-            TextAsset OldText;
-            OldText = TextBox.textfile;
-            TextBox.textfile = ErrorMessages;
-            TextBox.ReloadScript(ErrorMessages);
-            TextBox.EnableTextBox();
-            TextBox.CurrentSprite = 17;
-            TextBox.NameLine = 18;
+            // Set line range, pass in script to display
             TextBox.currentline = 19;
-            TextBox.endatline = 22;
-            TextBox.textfile = OldText;
- 
+            TextBox.endatline = 19;
+            TextBox.ReloadScript(ErrorMessages);
         }
-
     }
 
     public void HighestFullnessValue()
@@ -309,18 +270,16 @@ public class TextEvents : MonoBehaviour
         FeedingStuff.SetActive(false);
         if (MaxFed == false)
         {
-            TextBox.isactive = true;
-            TextBox.EnableTextBox();
             TextBox.currentline = 193;
             TextBox.endatline = 247;
+            TextBox.ReloadScript();
             MaxFed = true;
         }
         else
         {
-            TextBox.isactive = true;
-            TextBox.EnableTextBox();
             TextBox.currentline = 252;
             TextBox.endatline = 270;
+            TextBox.ReloadScript();
         }
         TooFullToContinue2();
     }
@@ -329,54 +288,46 @@ public class TextEvents : MonoBehaviour
         //talked = true;
         FeedingStuff.SetActive(false);
         int x = UnityEngine.Random.Range(0, 6);
-        if (TextBox.isactive == false && talked == false)
+        if (TextBox.isTextboxActive == false && talked == false)
         {
-
-            TextBox.isactive = true;
-            TextBox.EnableTextBox();
             TextBox.currentline = 17;
             TextBox.endatline = 35;
+            TextBox.ReloadScript();
             talked = true;
         }
-        else if (TextBox.isactive == false && talked == true)
+        else if (TextBox.isTextboxActive == false && talked == true)
         {
             switch (x)
             {
                 case 0:
-                    TextBox.isactive = true;
-                    TextBox.EnableTextBox();
                     TextBox.currentline = 17;
                     TextBox.endatline = 23;
+                    TextBox.ReloadScript();
                     break;
                 case 1:
-                    TextBox.isactive = true;
-                    TextBox.EnableTextBox();
                     TextBox.currentline = 66;
                     TextBox.endatline = 102;
+                    TextBox.ReloadScript();
                     break;
                 case 2:
-                    TextBox.isactive = true;
-                    TextBox.EnableTextBox();
                     TextBox.currentline = 107;
                     TextBox.endatline = 125;
+                    TextBox.ReloadScript();
                     break;
                 case 3:
-                    TextBox.isactive = true;
-                    TextBox.EnableTextBox();
                     TextBox.currentline = 130;
                     TextBox.endatline = 145;
+                    TextBox.ReloadScript();
                     break;
                 case 4:
-                    TextBox.isactive = true;
-                    TextBox.EnableTextBox();
                     TextBox.currentline = 150;
                     TextBox.endatline = 171;
+                    TextBox.ReloadScript();
                     break;
                 case 5:
-                    TextBox.isactive = true;
-                    TextBox.EnableTextBox();
                     TextBox.currentline = 176;
                     TextBox.endatline = 188;
+                    TextBox.ReloadScript();
                     break;
             }
         }
@@ -387,7 +338,7 @@ public class TextEvents : MonoBehaviour
     public void TooFullToContinue2()
     {
         
-        if (TextBox.isactive == false)
+        if (TextBox.isTextboxActive == false)
         {
             Load.Home();
         }
