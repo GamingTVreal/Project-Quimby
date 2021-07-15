@@ -52,9 +52,9 @@ namespace ProjectQuimbly.Feeding
                 SelectedFood food = other.GetComponent<SelectedFood>();
                 if (food != null)
                 {
-                    
                     Feed.GetSFX(0);
                     Character.fullness = food.GetItem().filling + Character.fullness;
+                    Feed.GetFullnessSprite();
                     timeSinceLastBite = 0;
                     food.RemoveItems(biteSize);
                     onMouthEvent?.Invoke();

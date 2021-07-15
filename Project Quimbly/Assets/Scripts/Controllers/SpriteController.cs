@@ -7,26 +7,17 @@ public class SpriteController : MonoBehaviour
 {
 
     public int x = 0;
-    public Sprite[] Deb, Extras;
+    public int y = 0;
+    public Sprite[] Deb, Extras, Bellies;
     public TextBoxManager textboxmanager;
+    public Image Feedee;
     private void Start()
     {
 
     }
     public void SetSprite()
     {
-        switch (x)
-        {
-            case 0:
-                this.GetComponent<Image>().sprite = Deb[x];
-                break;
-            case 1:
-                this.GetComponent<Image>().sprite = Deb[x];
-                break;
-            default:
-                this.GetComponent<Image>().sprite = Deb[x];
-                break;
-        }
+        this.GetComponent<Image>().sprite = Deb[x];
     }
     public void GetSprite()
     {
@@ -57,6 +48,10 @@ public class SpriteController : MonoBehaviour
             
         }
         SetSprite();
+    }
+    public void GetBelly()
+    {
+        Feedee.sprite = Bellies[y];
     }
 
 

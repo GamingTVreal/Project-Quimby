@@ -1299,6 +1299,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 5f46b2824adf81d48980fac0fdbec998, type: 3}
+    - target: {fileID: 2250068258670262599, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250068258670262599, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 88
+      objectReference: {fileID: 0}
     - target: {fileID: 2416676318948766961, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: m_Name
       value: TextBoxHolder
@@ -1308,12 +1316,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3195114302688911224, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1150.2021
+      objectReference: {fileID: 0}
+    - target: {fileID: 3195114302688911224, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 234.4594
+      objectReference: {fileID: 0}
+    - target: {fileID: 3195114302688911224, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 47.499
+      value: 0.7766
       objectReference: {fileID: 0}
     - target: {fileID: 3195114302688911224, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000006102
+      value: -7.7704
+      objectReference: {fileID: 0}
+    - target: {fileID: 3195114302688911225, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_margin.w
+      value: 10.54055
+      objectReference: {fileID: 0}
+    - target: {fileID: 3195114302688911231, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3195114302811450052, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1378,19 +1402,7 @@ PrefabInstance:
     - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: textboxmanager
       value: 
-      objectReference: {fileID: 1841340547}
-    - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
-      propertyPath: Deb.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
-    - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
-      propertyPath: Deb.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
-    - target: {fileID: 7702735474566224777, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
-      propertyPath: Deb.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+      objectReference: {fileID: 1252062758}
     - target: {fileID: 9174040789374504938, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1682.4062
@@ -2270,6 +2282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   x: 0
+  y: 0
   Deb:
   - {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
   - {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
@@ -2277,7 +2290,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Extras: []
+  Bellies: []
   textboxmanager: {fileID: 1841340547}
+  Feedee: {fileID: 0}
 --- !u!114 &1615069191
 MonoBehaviour:
   m_ObjectHideFlags: 0

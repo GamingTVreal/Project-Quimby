@@ -592,11 +592,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   x: 0
+  y: 0
   Deb:
   - {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
   - {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
   - {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
   - {fileID: 21300000, guid: 22f46be2d6a93864ca99b6df68737aa8, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
   Extras: []
+  Bellies: []
   textboxmanager: {fileID: 3195114302811450055}
+  Feedee: {fileID: 0}

@@ -13,10 +13,11 @@ public class FeedingRoom : MonoBehaviour
     [SerializeField] Animator FeedingRoomAnimator;
     [SerializeField]  SelectedFood Food;
     [SerializeField] Sprite[] BellyLevels;
+    [SerializeField] SpriteController SpriteController;
     static int BellyCompacity = 25;
+    float spritecheck = 0;
     public CharacterController Character;
     private TextEvents TextEvent;
-    
     public void Jukebox(int SongChoice)
     {
         switch (SongChoice) {
@@ -68,6 +69,7 @@ public class FeedingRoom : MonoBehaviour
     }
     void Start()
     {
+        SpriteController.GetBelly();
         Audio.volume = 0.100f;
         Character = FindObjectOfType<CharacterController>();
         TextEvent = FindObjectOfType<TextEvents>();
@@ -94,6 +96,19 @@ public class FeedingRoom : MonoBehaviour
     public void GetFullnessSprite()
     {
 
+        if (Food != null)
+        {
+            spritecheck = spritecheck + Food.GetItem().filling;
+            if(spritecheck > 5)
+            {
+                spritecheck = spritecheck - 5;
+                SpriteController.y = SpriteController.y + 1;
+                SpriteController.GetBelly();
+            }
+        }
+        
+            
+        
     }
     // 1 - 10 = gurgles, 11 - 14 = sloshes, 15 - 19 = burps :)
     public void GetSFX(int SFXChance)

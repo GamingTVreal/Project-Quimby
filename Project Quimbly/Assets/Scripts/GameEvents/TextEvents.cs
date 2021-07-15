@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TextEvents : MonoBehaviour
 {
-
+    
     public TextAsset ErrorMessages;
     public int StartLine;
     int x = 0;
@@ -14,13 +14,13 @@ public class TextEvents : MonoBehaviour
     bool BeenToJobAgency = false;
     [SerializeField] AudioSource SnoringSFX, Music;
     [SerializeField] Animator Fadeout;
-    [SerializeField] GameObject MainCamera, MenuCamera, JobMenu, DebMenu;
+    [SerializeField] GameObject MainCamera, MenuCamera, JobMenu, DebMenu,FeedingStuff;
     [SerializeField] Button SpeakButton, ChatButton;
     public TextBoxManager TextBox;
     public TextBoxManager TB2;
     public PlayerStats Player;
     public LoadingScreenScript Load;
-    static bool talked = false;
+    static bool talked, MaxFed = false;
 
     public void Start()
     {
@@ -69,11 +69,11 @@ public class TextEvents : MonoBehaviour
 
     void feeding2()
     {
-        if (PlayerStats.Instance.Energy > 5)
+        if (PlayerStats.Instance.Energy > 15)
         {
             if (TB2.isactive == false)
             {
-                PlayerStats.Instance.Energy = PlayerStats.Instance.Energy - 5;
+                PlayerStats.Instance.Energy = PlayerStats.Instance.Energy - 15;
                 Load.FeedingRoom();
             }
             else
@@ -83,13 +83,11 @@ public class TextEvents : MonoBehaviour
         }
         else
         {
-            TB2.ReloadScript(ErrorMessages);
-            TB2.textfile = ErrorMessages;
             TB2.isactive = true;
             TB2.EnableSpriteImage();
             TB2.EnableTextBox();
-            TB2.currentline = 27;
-            TB2.endatline = 34;
+            TB2.currentline = 256;
+            TB2.endatline = 257;
             Leave2();
         }
 
@@ -97,6 +95,7 @@ public class TextEvents : MonoBehaviour
 
     public void Leave()
     {
+        FeedingStuff.SetActive(false);
         TextBox.isactive = true;
         TextBox.EnableSpriteImage();
         TextBox.EnableTextBox();
@@ -107,7 +106,7 @@ public class TextEvents : MonoBehaviour
     }
     void Leave2()
     {
-        if (TextBox.isactive == false && TB2.isactive == false || TB2 == null)
+        if (TextBox.isactive == false && TB2.isactive == false || TextBox.isactive == false && TB2 == null)
         {
             Load.Home();
         }
@@ -262,8 +261,8 @@ public class TextEvents : MonoBehaviour
         TextAsset OldText;
         OldText = TextBox.textfile;
         TextBox.EnableTextBox();
-        TextBox.ReloadScript(ErrorMessages);
         TextBox.textfile = ErrorMessages;
+        TextBox.ReloadScript(ErrorMessages);
         TextBox.CurrentSprite = 12;
         TextBox.NameLine = 13;
         TextBox.currentline = 14;
@@ -290,18 +289,45 @@ public class TextEvents : MonoBehaviour
         }
         else
         {
+            TextAsset OldText;
+            OldText = TextBox.textfile;
+            TextBox.textfile = ErrorMessages;
             TextBox.ReloadScript(ErrorMessages);
             TextBox.EnableTextBox();
             TextBox.CurrentSprite = 17;
             TextBox.NameLine = 18;
             TextBox.currentline = 19;
             TextBox.endatline = 22;
+            TextBox.textfile = OldText;
+ 
         }
 
+    }
+
+    public void HighestFullnessValue()
+    {
+        FeedingStuff.SetActive(false);
+        if (MaxFed == false)
+        {
+            TextBox.isactive = true;
+            TextBox.EnableTextBox();
+            TextBox.currentline = 193;
+            TextBox.endatline = 247;
+            MaxFed = true;
+        }
+        else
+        {
+            TextBox.isactive = true;
+            TextBox.EnableTextBox();
+            TextBox.currentline = 252;
+            TextBox.endatline = 270;
+        }
+        TooFullToContinue2();
     }
     public void TooFullToContinue()
     {
         //talked = true;
+        FeedingStuff.SetActive(false);
         int x = UnityEngine.Random.Range(0, 6);
         if (TextBox.isactive == false && talked == false)
         {
@@ -343,14 +369,14 @@ public class TextEvents : MonoBehaviour
                 case 4:
                     TextBox.isactive = true;
                     TextBox.EnableTextBox();
-                    TextBox.currentline = 17;
-                    TextBox.endatline = 23;
+                    TextBox.currentline = 150;
+                    TextBox.endatline = 171;
                     break;
                 case 5:
                     TextBox.isactive = true;
                     TextBox.EnableTextBox();
-                    TextBox.currentline = 17;
-                    TextBox.endatline = 23;
+                    TextBox.currentline = 176;
+                    TextBox.endatline = 188;
                     break;
             }
         }
