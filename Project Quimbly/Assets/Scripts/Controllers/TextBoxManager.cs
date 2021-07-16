@@ -60,8 +60,10 @@ public class TextBoxManager : MonoBehaviour
         SetSpriteField(coTextLines);
         SetNameField(coTextLines);
         EnableTextBox();
+        coTextLines[currentline] = coTextLines[currentline].Replace("Mark", BasicFunctions.Name);
 
         int i = 0;
+        TypedLine = "";
         float timeSinceLastSubstring = Mathf.Infinity;
         if(coTextLines[currentline].Contains("<color="))
         {
@@ -74,8 +76,10 @@ public class TextBoxManager : MonoBehaviour
             if(i < coTextLines[currentline].Length + 1 && timeSinceLastSubstring > speed)
             {
                 timeSinceLastSubstring = 0;
-                coTextLines[currentline] = coTextLines[currentline].Replace("Mark", BasicFunctions.Name);
-                TypedLine = coTextLines[currentline].Substring(0, i);
+                if (TypedLine != coTextLines[currentline])
+                {
+                    TypedLine = coTextLines[currentline].Substring(0, i);
+                }
                 textboxText.text = TypedLine;
                 i++;
             }
@@ -97,7 +101,8 @@ public class TextBoxManager : MonoBehaviour
         // If line is not complete, instantly fill in line
         if (TypedLine != coTextLines[currentline])
         {
-            TypedLine = coTextLines[currentline];
+            if(TypedLine != "")
+                TypedLine = coTextLines[currentline];
         }
         // If already complete, load next line to display or close textbox
         else
