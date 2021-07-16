@@ -72,7 +72,8 @@ public class TextEvents : MonoBehaviour
             }
             else
             {
-                Invoke("feeding2", 1f);
+                // Textbox is active, subscribe to close event from TB Manager to exit
+                TB2.textboxCloseEvent += feeding2;
             }
         }
         else
@@ -106,7 +107,8 @@ public class TextEvents : MonoBehaviour
         }
         else
         {
-            Invoke("Leave2", 1f);
+            // Textbox is active, subscribe to close event from TB Manager to exit
+            TB2.textboxCloseEvent += Leave2;
         }
     }
     private void FixedUpdate()

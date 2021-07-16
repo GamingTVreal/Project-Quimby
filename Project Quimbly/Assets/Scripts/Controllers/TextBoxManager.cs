@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,8 +13,8 @@ public class TextBoxManager : MonoBehaviour
     [SerializeField] GameObject SpriteImage;
     public GameObject Phone,NameBox,TextBox;
     public float speed = 1f;
-    public TMP_Text textboxText;
-    public TMP_Text speakerText;
+    public TextMeshProUGUI textboxText;
+    public TextMeshProUGUI speakerText;
     public bool isTextboxActive = false;
     [SerializeField] Button Sleep;
     // Use this for initialization
@@ -29,6 +29,11 @@ public class TextBoxManager : MonoBehaviour
     public string SpriteFinder;
     public int currentSprite;
     Coroutine showTextCoroutine = null;
+
+    // Action for the end of the coroutine
+    public event Action textboxCloseEvent;
+    string parsedContent;
+    bool isScriptComplete;
 
     void Start()
     {
@@ -56,32 +61,19 @@ public class TextBoxManager : MonoBehaviour
     // Take parsed textlines and print them to textbox based on textspeed
     IEnumerator ShowText(string[] coTextLines)
     {
-        // Get sprite/name info
-        SetSpriteField(coTextLines);
-        SetNameField(coTextLines);
         EnableTextBox();
-        coTextLines[currentline] = coTextLines[currentline].Replace("Mark", BasicFunctions.Name);
+        SetupNextLine(coTextLines);
 
-        int i = 0;
-        TypedLine = "";
         float timeSinceLastSubstring = Mathf.Infinity;
-        if(coTextLines[currentline].Contains("<color="))
-        {
-            int index = coTextLines[currentline].IndexOf("<color=", 0, coTextLines[currentline].Length);
-            Debug.Log("Color mod at position: " + index + " Color: " + coTextLines[currentline].Substring(index + 7, 9));
-        }
-        while (TextBox.activeSelf)
+        isScriptComplete = false;
+
+        while (!isScriptComplete)
         {
             timeSinceLastSubstring += Time.deltaTime;
-            if(i < coTextLines[currentline].Length + 1 && timeSinceLastSubstring > speed)
+            if (textboxText.maxVisibleCharacters < parsedContent.Length && timeSinceLastSubstring > speed)
             {
                 timeSinceLastSubstring = 0;
-                if (TypedLine != coTextLines[currentline])
-                {
-                    TypedLine = coTextLines[currentline].Substring(0, i);
-                }
-                textboxText.text = TypedLine;
-                i++;
+                textboxText.maxVisibleCharacters++;
             }
 
             // Check if user is trying to advance text
@@ -91,33 +83,44 @@ public class TextBoxManager : MonoBehaviour
             }
             yield return null;
         }
+
         DisableSpriteImage();
         DisableTextBox();
+    }
+
+    private void SetupNextLine(string[] coTextLines)
+    {
+        // Get sprite/name info
+        SetSpriteField(coTextLines);
+        SetNameField(coTextLines);
+        coTextLines[currentline] = coTextLines[currentline].Replace("Mark", BasicFunctions.Name);
+
+        textboxText.maxVisibleCharacters = 0;
+        textboxText.text = coTextLines[currentline];
+        textboxText.ForceMeshUpdate();
+        parsedContent = textboxText.GetParsedText();
     }
 
     // Complete or advance text
     private void AdvanceTextBox(string[] coTextLines)
     {
         // If line is not complete, instantly fill in line
-        if (TypedLine != coTextLines[currentline])
+        if (textboxText.maxVisibleCharacters < parsedContent.Length)
         {
-            if(TypedLine != "")
-                TypedLine = coTextLines[currentline];
+            textboxText.maxVisibleCharacters = parsedContent.Length;
         }
         // If already complete, load next line to display or close textbox
         else
         {
             currentline += 3;
-            StopCoroutine(showTextCoroutine);
             // Check if lines are left to display
             if (currentline <= endatline)
             {
-                showTextCoroutine = StartCoroutine(ShowText(coTextLines));
+                SetupNextLine(coTextLines);
             }
             else
             {
-                DisableSpriteImage();
-                DisableTextBox();
+                isScriptComplete = true;
             }
         }
     }
@@ -234,6 +237,7 @@ public class TextBoxManager : MonoBehaviour
         {
             Sleep.interactable = true;
         }
+        textboxCloseEvent?.Invoke();
     }
 
     public void EnableSpriteImage()
