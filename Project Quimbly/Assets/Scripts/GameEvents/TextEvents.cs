@@ -56,11 +56,8 @@ public class TextEvents : MonoBehaviour
         FeedingButton.SetActive(false);
         TB2.currentline = 236;
         TB2.endatline = 251;
-        TB2.EnableSpriteImage();
         TB2.ReloadScript();
         feeding2();
-
-        
     }
 
     void feeding2()
@@ -70,6 +67,7 @@ public class TextEvents : MonoBehaviour
             if (TB2.isTextboxActive == false)
             {
                 PlayerStats.Instance.Energy = PlayerStats.Instance.Energy - 15;
+                DebMenu.SetActive(false);
                 Load.FeedingRoom();
             }
             else
@@ -100,6 +98,10 @@ public class TextEvents : MonoBehaviour
     {
         if (TextBox.isTextboxActive == false && TB2.isTextboxActive == false || TextBox.isTextboxActive == false && TB2 == null)
         {
+            if (DebMenu != null)
+            {
+                DebMenu.SetActive(false);
+            }
             Load.Home();
         }
         else

@@ -873,6 +873,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1252062758}
     - target: {fileID: 2556943766880750430, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
+      propertyPath: DebMenu
+      value: 
+      objectReference: {fileID: 962251091}
+    - target: {fileID: 2556943766880750430, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: TextBox
       value: 
       objectReference: {fileID: 1841340547}

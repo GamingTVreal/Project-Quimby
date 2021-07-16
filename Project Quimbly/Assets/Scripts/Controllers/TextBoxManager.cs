@@ -63,6 +63,11 @@ public class TextBoxManager : MonoBehaviour
 
         int i = 0;
         float timeSinceLastSubstring = Mathf.Infinity;
+        if(coTextLines[currentline].Contains("<color="))
+        {
+            int index = coTextLines[currentline].IndexOf("<color=", 0, coTextLines[currentline].Length);
+            Debug.Log("Color mod at position: " + index + " Color: " + coTextLines[currentline].Substring(index + 7, 9));
+        }
         while (TextBox.activeSelf)
         {
             timeSinceLastSubstring += Time.deltaTime;
@@ -249,6 +254,7 @@ public class TextBoxManager : MonoBehaviour
         {
             StopCoroutine(showTextCoroutine);
         }
+        isTextboxActive = false;
 
         if(newText != null)
         {
