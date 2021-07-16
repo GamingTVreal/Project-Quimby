@@ -17,9 +17,12 @@ namespace ProjectQuimbly.UI.Dragging
 
         public void OnBeginDrag(PointerEventData eventData)
         {
-            offset = eventData.position - new Vector2(transform.position.x, transform.position.y);
-            startPosition = transform.position;
-            _lastPointerData = eventData;
+            if(eventData.button == PointerEventData.InputButton.Left)
+            {
+                offset = eventData.position - new Vector2(transform.position.x, transform.position.y);
+                startPosition = transform.position;
+                _lastPointerData = eventData;
+            }
         }
 
         public void OnDrag(PointerEventData eventData)
