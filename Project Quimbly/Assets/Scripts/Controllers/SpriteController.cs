@@ -19,9 +19,9 @@ public class SpriteController : MonoBehaviour
     {
         this.GetComponent<Image>().sprite = Deb[x];
     }
-    public void GetSprite(int spriteSelect = 0)
+    public void GetSprite(int spriteSelect = 1)
     {
-        x = spriteSelect;
+        x = spriteSelect - 1;
         
         SetSprite();
     }
