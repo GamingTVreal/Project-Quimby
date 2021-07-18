@@ -82,11 +82,13 @@ public class FeedingRoom : MonoBehaviour
         {
             if (BellyCompacity >= 100)
             {
-                TextEvent.TooFullToContinue();
+                Character.fullness = 100;
+                TextEvent.HighestFullnessValue();
             }
             else
             {
                 TextEvent.TooFullToContinue();
+                //BellyCompacity += 70;
                 BellyCompacity += 5;
             }
             
