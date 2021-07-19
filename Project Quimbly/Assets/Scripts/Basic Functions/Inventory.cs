@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using ProjectQuimbly.BasicFunctions;
+using ProjectQuimbly.Inventories;
 using UnityEngine;
 
 public class Inventory : Singleton<Inventory>

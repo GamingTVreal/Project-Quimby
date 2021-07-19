@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using ProjectQuimbly.BasicFunctions;
+using ProjectQuimbly.Inventories;
 using ProjectQuimbly.UI.Dragging;
 using UnityEngine;
 using UnityEngine.Events;

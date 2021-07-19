@@ -2,11 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
 using TMPro;
 using System;
-using UnityEngine.InputSystem;
 
 public class TextBoxManager : MonoBehaviour
 {
@@ -37,7 +35,7 @@ public class TextBoxManager : MonoBehaviour
 
     void Start()
     {
-        StartDefaultDialogue();
+        // StartDefaultDialogue();
     }
 
     private void StartDefaultDialogue()

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4437140186418717415}
   m_Layer: 0
   m_Name: Script Controller
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,9 +84,16 @@ MonoBehaviour:
   spriteController: {fileID: 0}
   _textEvents: {fileID: 2556943766880750430}
   Character: 0
+  ContactButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   fullness: 0
   happiness: 0
   interestlevel: 0
+  FeedingFullness: {fileID: 0}
 --- !u!114 &3241687173818506855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,6 +146,8 @@ MonoBehaviour:
   MainCamera: {fileID: 0}
   MenuCamera: {fileID: 0}
   JobMenu: {fileID: 0}
+  DebMenu: {fileID: 0}
+  FeedingStuff: {fileID: 0}
   SpeakButton: {fileID: 0}
   ChatButton: {fileID: 0}
   TextBox: {fileID: 0}
