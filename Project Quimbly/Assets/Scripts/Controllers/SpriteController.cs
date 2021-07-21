@@ -27,6 +27,10 @@ public class SpriteController : MonoBehaviour
     }
     public void GetBelly()
     {
+        if(y >= Bellies.GetUpperBound(0))
+        {
+            y = Bellies.GetUpperBound(0);
+        }
         Feedee.sprite = Bellies[y];
     }
 

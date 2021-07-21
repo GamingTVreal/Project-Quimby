@@ -11,7 +11,7 @@ public class FeedingRoom : MonoBehaviour
     [SerializeField] AudioClip[] Songs;
     [SerializeField] AudioClip[] SFX;
     [SerializeField] Animator FeedingRoomAnimator;
-    [SerializeField]  SelectedFood Food;
+    [SerializeField] SelectedFood Food;
     [SerializeField] Sprite[] BellyLevels;
     [SerializeField] SpriteController SpriteController;
     static int BellyCompacity = 25;
@@ -95,23 +95,17 @@ public class FeedingRoom : MonoBehaviour
             
         }
     }
-    public void GetFullnessSprite()
+    public void GetFullnessSprite(float foodFillAmount)
     {
-
-        if (Food != null)
+        spritecheck += foodFillAmount;
+        if(spritecheck > 5)
         {
-            spritecheck = spritecheck + Food.GetItem().filling;
-            if(spritecheck > 5)
-            {
-                spritecheck = spritecheck - 5;
-                SpriteController.y = SpriteController.y + 1;
-                SpriteController.GetBelly();
-            }
+            spritecheck = spritecheck - 5;
+            SpriteController.y = SpriteController.y + 1;
+            SpriteController.GetBelly();
         }
-        
-            
-        
     }
+
     // 1 - 10 = gurgles, 11 - 14 = sloshes, 15 - 19 = burps :)
     public void GetSFX(int SFXChance)
     {
@@ -131,8 +125,16 @@ public class FeedingRoom : MonoBehaviour
             Audio2.Play();
             Audio2.loop = false;
         }
-    
-        
+    }
 
+    public void DebugIncreaseCapacity()
+    {
+        BellyCompacity = 100;
+    }
+
+    public void DebugIncreaseFullness()
+    {
+        Character.fullness += 5;
+        GetFullnessSprite(5.01f);
     }
 }
