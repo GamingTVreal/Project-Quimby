@@ -8,7 +8,8 @@ public class SpriteController : MonoBehaviour
 
     public int x = 0;
     public int y = 0;
-    public Sprite[] Deb, Extras, Bellies;
+    public int z = 0;
+    public Sprite[] Deb, Extras, Bellies, BelliesS;
     public TextBoxManager textboxmanager;
     public Image Feedee;
     private void Start()
@@ -29,7 +30,10 @@ public class SpriteController : MonoBehaviour
     {
         Feedee.sprite = Bellies[y];
     }
-
+    public void GetBellyS()
+    {
+        Feedee.sprite = BelliesS[z];
+    }
 
 }
 
