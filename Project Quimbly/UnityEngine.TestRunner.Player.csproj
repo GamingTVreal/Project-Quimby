@@ -84,8 +84,8 @@
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\PlaymodeTestsController.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestData.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\Callbacks\TestResultRenderer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\PlaymodeWorkItemFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableRepeatedTestCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\PlaymodeWorkItemFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AssemblyProvider\PlayerTestAssemblyProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\WorkItemFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableTestState.cs" />
