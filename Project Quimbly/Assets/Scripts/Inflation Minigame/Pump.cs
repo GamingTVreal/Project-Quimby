@@ -10,14 +10,26 @@ public class Pump : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (isBeingHeld == true)
+        if (this.transform.localPosition.y > 51)
         {
-            
+            isBeingHeld = false;
+            Debug.Log("HEY!");
+            this.transform.localPosition = new Vector3(807, 48, 0);
+        }
+        if (this.transform.localPosition.y < -201)
+        {
+            isBeingHeld = false;
+            Debug.Log("HEY!");
+            this.transform.localPosition = new Vector3(807, -198, 0);
+        }
+        if (isBeingHeld == true && this.transform.position.y > -201 && this.transform.position.y < 56)
+        {
+
             Vector3 MousePos;
             MousePos = Input.mousePosition;
             MousePos = Camera.main.ScreenToWorldPoint(MousePos);
 
-            this.transform.localPosition = new Vector3(MousePos.x * 100, MousePos.y * 100, 0);
+            this.transform.localPosition = new Vector3(807, MousePos.y * 100, 0);
         }
     }
     private void OnMouseDown()
