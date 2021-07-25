@@ -3783,6 +3783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afd6084c3e0bfa4e91fd4430f1fe494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pressure2: {fileID: 904744991}
+  Fullness2: {fileID: 2019005745}
   SFX:
   - {fileID: 8300000, guid: 778fda83a62046e43a057e58b00e4540, type: 3}
   - {fileID: 8300000, guid: 6d5d90ec49ff70e41913beda98bc2b27, type: 3}
