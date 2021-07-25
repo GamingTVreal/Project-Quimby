@@ -107,6 +107,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Scripts\Inflation Minigame\Pump.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\Ui\Menu.cs" />
     <Compile Include="Assets\Scripts\Feeding\PlateSelector.cs" />
@@ -139,7 +140,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\Ui\Dragging\IDragSource.cs" />
     <Compile Include="Assets\Scripts\Basic Functions\Item.cs" />
-    <Compile Include="Assets\Scripts\Inflation Minigame\Pump.cs" />
+    <Compile Include="Assets\Scripts\Inflation Minigame\Inflate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Script\QuimblyScript.txt" />
