@@ -7,17 +7,44 @@ namespace ProjectQuimbly.Dialogue
 {
     public class DialogueTrigger : MonoBehaviour
     {
-        [SerializeField]
-        OnDialogueAction action;
-        [SerializeField]
-        UnityEvent<string[]> onTrigger;
+        [SerializeField] ActionTriggerPair[] actionTriggerPairs;
+        Dictionary<OnDialogueAction, UnityEvent<string[]>> actionLookup = null;
+        // [SerializeField]
+        // OnDialogueAction action;
+        // [SerializeField]
+        // UnityEvent<string[]> onTrigger;
+
+        private void Awake() 
+        {
+            BuildLookup();
+        }
+
+        private void BuildLookup()
+        {
+            actionLookup = new Dictionary<OnDialogueAction, UnityEvent<string[]>>();
+            foreach (var action in actionTriggerPairs)
+            {
+                actionLookup[action.action] = action.onTrigger;
+            }
+        }
 
         public void Trigger(OnDialogueAction actionToTrigger, string[] actionParameters)
         {
-            if(actionToTrigger == action)
+            // if(actionToTrigger == action)
+            // {
+            //     onTrigger.Invoke(actionParameters);
+            // }
+            if(actionLookup.ContainsKey(actionToTrigger))
             {
-                onTrigger.Invoke(actionParameters);
+                actionLookup[actionToTrigger].Invoke(actionParameters);
             }
+        }
+
+        [System.Serializable]
+        private class ActionTriggerPair
+        {
+            public OnDialogueAction action;
+            public UnityEvent<string[]> onTrigger;
         }
     }
 }

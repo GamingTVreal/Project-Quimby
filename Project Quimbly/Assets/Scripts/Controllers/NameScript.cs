@@ -3,48 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using ProjectQuimbly.Dialogue;
 
 public class NameScript : MonoBehaviour
 {
-    private BasicFunctions B;
-    NameScript Names;
-    public GameObject NameMenu;
-    public TMP_InputField Name;
-    public GameObject Tutorial;
-    public static GameObject Carrot;
-    // Start is called before the first frame update
+    public GameObject nameMenu;
+    public TMP_InputField characterName;
+    [SerializeField] Dialogue tutorialDialogue;
+
     void Start()
     {
-     
-     if (BasicFunctions.Name != null)
+        if (BasicFunctions.Name != null)
         {
-            
-            if(NameMenu != null)
+            if(nameMenu != null)
             {
-                Name = null;
-                NameMenu.SetActive(false);
+                characterName = null;
+                nameMenu.SetActive(false);
                 Debug.Log(BasicFunctions.Name);
             }
-            
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
    public void SelectName()
     {
-
-        BasicFunctions.Name = Name.text;
+        BasicFunctions.Name = characterName.text;
         if (BasicFunctions.Name != null)
         {
-            Tutorial.SetActive(true);
-            Tutorial.GetComponent<TextBoxManager>().ReloadScript();
-            NameMenu.SetActive(false);
+            AIConversant conversant = GetComponent<AIConversant>();
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>().StartDialogue(conversant, tutorialDialogue);
+            nameMenu.SetActive(false);
         }
-        
     }
 }

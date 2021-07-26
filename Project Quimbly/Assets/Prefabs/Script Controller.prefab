@@ -11,11 +11,13 @@ GameObject:
   - component: {fileID: 3241687173818506857}
   - component: {fileID: 3241687173818506854}
   - component: {fileID: 3241687173818506856}
-  - component: {fileID: 3241687173818506855}
   - component: {fileID: 3241687173818506852}
   - component: {fileID: 2556943766880750430}
   - component: {fileID: 3810611499479576015}
   - component: {fileID: 4437140186418717415}
+  - component: {fileID: 5987764519267387708}
+  - component: {fileID: 6361723965474188241}
+  - component: {fileID: 1431214701429234586}
   m_Layer: 0
   m_Name: Script Controller
   m_TagString: GameController
@@ -94,21 +96,6 @@ MonoBehaviour:
   happiness: 0
   interestlevel: 0
   FeedingFullness: {fileID: 0}
---- !u!114 &3241687173818506855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3241687173818506859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86934fc92c3fa31459ac130b9139f505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NameMenu: {fileID: 0}
-  Name: {fileID: 0}
-  Tutorial: {fileID: 0}
 --- !u!114 &3241687173818506852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,3 +251,125 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Currentjob: {fileID: 0}
   CurrentAssignedJob: 
+--- !u!114 &5987764519267387708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241687173818506859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6517c2a558e53784abd8d28702df3018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterImage: {fileID: 0}
+  conversantName: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialogueContainer: {fileID: 0}
+  speakerContainer: {fileID: 0}
+--- !u!114 &6361723965474188241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241687173818506859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f5af227c76544419aaedef45d18683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1431214701429234586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241687173818506859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d247834c9d8e3ed4d8add9277957c0d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionTriggerPairs:
+  - action: 1
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5987764519267387708}
+          m_TargetAssemblyTypeName: ButtonGame.UI.DialogueUI, Assembly-CSharp
+          m_MethodName: ChangeBackground
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - action: 3
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3241687173818506854}
+          m_TargetAssemblyTypeName: BasicFunctions, Assembly-CSharp
+          m_MethodName: AdjustMoney
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - action: 4
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3241687173818506854}
+          m_TargetAssemblyTypeName: BasicFunctions, Assembly-CSharp
+          m_MethodName: AdjustEnergy
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - action: 2
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3241687173818506854}
+          m_TargetAssemblyTypeName: BasicFunctions, Assembly-CSharp
+          m_MethodName: AddItem
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - action: 5
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5987764519267387708}
+          m_TargetAssemblyTypeName: ButtonGame.UI.DialogueUI, Assembly-CSharp
+          m_MethodName: LoadScene
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

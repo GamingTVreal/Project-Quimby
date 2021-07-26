@@ -6,8 +6,9 @@ namespace ProjectQuimbly.Dialogue
 {
     public class AIConversant : MonoBehaviour
     {
-        [SerializeField] string npcName = "";
         [SerializeField] Dialogue dialogue;
+        [SerializeField] string conversationChain;
+        [SerializeField] int[] randomConvoOptions;
         
         public void StartDialogue()
         {
@@ -18,14 +19,36 @@ namespace ProjectQuimbly.Dialogue
             }
         }
 
+        public void StartDialogue(bool randomConvo = false)
+        {
+            PlayerConversant player = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>();
+            if (player != null)
+            {
+                if (!randomConvo)
+                {
+                    player.StartDialogue(this, dialogue, conversationChain);
+                }
+                else
+                {
+                    int choice = Random.Range(0, randomConvoOptions.Length);
+                    choice = randomConvoOptions[choice];
+                    player.StartDialogue(this, dialogue, choice);
+                }
+            }
+        }
+
         public void StartDialogue(Dialogue newDialogue)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, newDialogue);
         }
-        
-        public string GetCharacterInfo()
+
+        public void StartDialogue(string convoStart)
         {
-            return npcName;
+            PlayerConversant player = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>();
+            if (player != null)
+            {
+                player.StartDialogue(this, dialogue, convoStart);
+            }
         }
     }
 }

@@ -9,6 +9,14 @@ namespace ProjectQuimbly.Dialogue
     public class DialogueNode : ScriptableObject
     {
         [SerializeField]
+        bool isRoot;
+        [SerializeField]
+        string conversationChainName = "";
+        [SerializeField]
+        string girlToDisplay = "None";
+        [SerializeField] 
+        Sprite spriteToDisplay;
+        [SerializeField]
         bool isPlayerSpeaking = false;
         [SerializeField]
         string speakerName;
@@ -37,7 +45,7 @@ namespace ProjectQuimbly.Dialogue
         [SerializeField]
         int exitActionIndex;
 
-        private void Awake()
+        private void start()
         {
             hasOnEnterAction = onEnterAction > 0;
             hasOnExitAction = onExitAction > 0;
@@ -62,6 +70,36 @@ namespace ProjectQuimbly.Dialogue
         public Rect GetRect()
         {
             return rect;
+        }
+
+        public string GetGirlToDisplay()
+        {
+            return girlToDisplay;
+        }
+
+        public Sprite GetSpriteToDisplay()
+        {
+            return spriteToDisplay;
+        }
+
+        public string GetSpriteToDisplayName()
+        {
+            string s = "";
+            if(spriteToDisplay != null)
+            {
+                s = spriteToDisplay.ToString().Replace(" (UnityEngine.Sprite)", "");
+            }
+            return s;
+        }
+
+        public bool IsRootNode()
+        {
+            return isRoot;
+        }
+
+        public string GetConversationChainName()
+        {
+            return conversationChainName;
         }
 
         public bool IsPlayerSpeaking()
@@ -140,6 +178,24 @@ namespace ProjectQuimbly.Dialogue
             }
         }
 
+        public void SetGirlToDisplay(string newGirl)
+        {
+            Undo.RecordObject(this, "Modify Girl to Display");
+            girlToDisplay = newGirl;
+            if(girlToDisplay == "None")
+            {
+                spriteToDisplay = null;
+            }
+            EditorUtility.SetDirty(this);
+        }
+
+        public void SetSpriteToDisplay(Sprite newSprite)
+        {
+            Undo.RecordObject(this, "Modify Sprite to Display");
+            spriteToDisplay = newSprite;
+            EditorUtility.SetDirty(this);
+        }
+
         public void SetSpeaker(string newSpeaker)
         {
             Undo.RecordObject(this, "Modify Speaker Name");
@@ -153,20 +209,7 @@ namespace ProjectQuimbly.Dialogue
             onEnterAction = newEnterAction;
             EditorUtility.SetDirty(this);
 
-            int paramLength = onEnterActionParameter.Count;
-            switch (onEnterAction)
-            {
-                case OnDialogueAction.ChangeBackground:
-                    if (paramLength != 1)
-                    {
-                        onEnterActionParameter.Clear();
-                        onEnterActionParameter.Add("");
-                    }
-                    return;
-                default:
-                    onEnterActionParameter.Clear();
-                    return;
-            }
+            SetOnDialogueAction(onEnterAction, onEnterActionParameter);
         }
 
         public void SetOnExitAction(OnDialogueAction newExitAction)
@@ -175,18 +218,46 @@ namespace ProjectQuimbly.Dialogue
             onExitAction = newExitAction;
             EditorUtility.SetDirty(this);
 
-            int paramLength = onExitActionParameter.Count;
-            switch (onExitAction)
+            SetOnDialogueAction(onExitAction, onExitActionParameter);
+        }
+
+        private void SetOnDialogueAction(OnDialogueAction dialogueAction, List<string> actionParameter)
+        {
+            int paramLength = actionParameter.Count;
+            switch (dialogueAction)
             {
                 case OnDialogueAction.ChangeBackground:
+                    if (paramLength != 1)
+                    {
+                        actionParameter.Clear();
+                        actionParameter.Add("");
+                    }
+                    return;
+                case OnDialogueAction.GiveItem:
+                    if (paramLength != 2)
+                    {
+                        actionParameter.Clear();
+                        actionParameter.Add("");
+                        actionParameter.Add("0");
+                    }
+                    return;
+                case OnDialogueAction.GiveMoney:
+                case OnDialogueAction.GiveEnergy:
+                    if (paramLength != 1)
+                    {
+                        actionParameter.Clear();
+                        actionParameter.Add("0");
+                    }
+                    return;
+                case OnDialogueAction.LoadScene:
                     if(paramLength != 1)
                     {
-                        onExitActionParameter.Clear();
-                        onExitActionParameter.Add("");
+                        actionParameter.Clear();
+                        actionParameter.Add("");
                     }
                     return;
                 default:
-                    onExitActionParameter.Clear();
+                    actionParameter.Clear();
                     return;
             }
         }
@@ -257,6 +328,20 @@ namespace ProjectQuimbly.Dialogue
         {
             Undo.RecordObject(this, "Move Dialogue Node");
             rect.position = newPosition;
+            EditorUtility.SetDirty(this);
+        }
+
+        public void SetRootNode(bool newIsRoot)
+        {
+            Undo.RecordObject(this, "Change Root Node Assignemnt");
+            isRoot = newIsRoot;
+            EditorUtility.SetDirty(this);
+        }
+
+        public void SetRootName(string newRootName)
+        {
+            Undo.RecordObject(this, "Change Converstation Chain Name");
+            conversationChainName = newRootName;
             EditorUtility.SetDirty(this);
         }
 
