@@ -8,19 +8,12 @@ namespace ProjectQuimbly.Dialogue
 {
     public class PlayerConversant : MonoBehaviour
     {
-        string playerName;
-
-        [SerializeField] Dialogue currentDialogue;
+        Dialogue currentDialogue;
         DialogueNode currentNode = null;
         AIConversant currentConversant = null;
-        bool isChoosing = false;
 
-        public event Action onConversationUpdated;
-
-        private void Start()
-        {
-            playerName = BasicFunctions.Name;
-        }
+        public event Action onConversationStart;
+        public event Action onConversationEnd;
 
         public void StartDialogue(AIConversant newConversant, Dialogue newDialogue)
         {
@@ -28,7 +21,25 @@ namespace ProjectQuimbly.Dialogue
             currentDialogue = newDialogue;
             currentNode = currentDialogue.GetRootNode();
             TriggerEnterAction();
-            onConversationUpdated?.Invoke();
+            onConversationStart?.Invoke();
+        }
+
+        public void StartDialogue(AIConversant newConversant, Dialogue newDialogue, string convoChainName)
+        {
+            currentConversant = newConversant;
+            currentDialogue = newDialogue;
+            currentNode = currentDialogue.GetRootNode(convoChainName);
+            TriggerEnterAction();
+            onConversationStart?.Invoke();
+        }
+
+        public void StartDialogue(AIConversant newConversant, Dialogue newDialogue, int convoChain)
+        {
+            currentConversant = newConversant;
+            currentDialogue = newDialogue;
+            currentNode = currentDialogue.GetRootNode(convoChain);
+            TriggerEnterAction();
+            onConversationStart?.Invoke();
         }
 
         public void Quit()
@@ -37,8 +48,7 @@ namespace ProjectQuimbly.Dialogue
             currentConversant = null;
             currentDialogue = null;
             currentNode = null;
-            isChoosing = false;
-            onConversationUpdated?.Invoke();
+            onConversationEnd?.Invoke();
         }
 
         public bool IsActive()
@@ -48,7 +58,7 @@ namespace ProjectQuimbly.Dialogue
 
         public bool IsChoosing()
         {
-            return isChoosing;
+            return false;
         }
 
         public string GetText()
@@ -73,9 +83,9 @@ namespace ProjectQuimbly.Dialogue
 
         public string GetCurrentConversantName()
         {
-            if(isChoosing)
+            if(currentNode.IsPlayerSpeaking())
             {
-                return playerName;
+                return BasicFunctions.Name;
             }
             else
             {
@@ -86,6 +96,11 @@ namespace ProjectQuimbly.Dialogue
         public string GetCurrentConversantName(DialogueNode queryNode)
         {
             return queryNode.GetSpeaker();
+        }
+
+        public Sprite GetSprite()
+        {
+            return currentNode.GetSpriteToDisplay();
         }
 
         public IEnumerable<DialogueNode> GetChoices()
@@ -107,28 +122,12 @@ namespace ProjectQuimbly.Dialogue
 
         public void Next()
         {
-            int numPlayerResponses = FilterOnCondition(currentDialogue.GetPlayerChildren(currentNode)).Count();
-            DialogueNode[] children = FilterOnCondition(currentDialogue.GetAIChildren(currentNode)).ToArray();
+            DialogueNode[] children = FilterOnCondition(currentDialogue.GetAllChildren(currentNode)).ToArray();
             TriggerExitAction();
 
-            if ((children.Length + numPlayerResponses) == 0)
-            {
-                Quit();
-                return;
-            }
-
-            if(numPlayerResponses > 0)
-            {
-                isChoosing = true;
-            }
-            else
-            {
-                isChoosing = false;
-                int randomIndex = UnityEngine.Random.Range(0, children.Length);
-                currentNode = children[randomIndex];
-                TriggerEnterAction();
-            }
-            onConversationUpdated();
+            int randomIndex = UnityEngine.Random.Range(0, children.Length);
+            currentNode = children[randomIndex];
+            TriggerEnterAction();
         }
 
         public bool HasNext()
@@ -172,7 +171,7 @@ namespace ProjectQuimbly.Dialogue
         {
             if(action == OnDialogueAction.None) return;
 
-            foreach (DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
+            foreach (DialogueTrigger trigger in GetComponents<DialogueTrigger>())
             {
                 trigger.Trigger(action, actionParameters);
             }

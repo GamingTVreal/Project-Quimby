@@ -18,6 +18,8 @@ namespace ProjectQuimbly.Dialogue.Editor
         [NonSerialized]
         GUIStyle playerNodeStyle;
         [NonSerialized]
+        GUIStyle rootNodeStyle;
+        [NonSerialized]
         DialogueNode creatingNode = null;
         [NonSerialized]
         DialogueNode nodeToDelete = null;
@@ -69,6 +71,11 @@ namespace ProjectQuimbly.Dialogue.Editor
             playerNodeStyle.padding = new RectOffset(10, 10, 8, 10);
             playerNodeStyle.border = new RectOffset(12, 12, 12, 12);
 
+            rootNodeStyle = new GUIStyle();
+            rootNodeStyle.normal.background = EditorGUIUtility.Load("node5") as Texture2D;
+            rootNodeStyle.padding = new RectOffset(10, 10, 8, 10);
+            rootNodeStyle.border = new RectOffset(12, 12, 12, 12);
+
             OnSelectionChanged();
         }
 
@@ -98,12 +105,19 @@ namespace ProjectQuimbly.Dialogue.Editor
                 ProcessEvents();
 
                 scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition, true, true);
-                
+
                 Rect canvas = GUILayoutUtility.GetRect(canvasSize, canvasSize);
                 Texture2D backgroundTex = Resources.Load("background") as Texture2D;
                 float tileCount = canvasSize / backgroundSize;
                 Rect texCoords = new Rect(0, 0, tileCount, tileCount);
                 GUI.DrawTextureWithTexCoords(canvas, backgroundTex, texCoords);
+
+                GUILayout.BeginArea(new Rect(10, 10, 190, 20));
+                if(GUILayout.Button("Add New Conversation Chain"))
+                {
+                    selectedDialogue.CreateNode(null);
+                }
+                GUILayout.EndArea();
 
                 foreach (DialogueNode node in selectedDialogue.GetAllNodes())
                 {
@@ -148,6 +162,9 @@ namespace ProjectQuimbly.Dialogue.Editor
             }
             else if(Event.current.type == EventType.MouseDrag && draggingNode != null)
             {
+                // If mouse has selected text field, don't drag
+                if(GUI.GetNameOfFocusedControl() != "") return;
+
                 draggingNode.SetPosition(Event.current.mousePosition + draggingOffset);
                 GUI.changed = true;
             }
@@ -186,6 +203,48 @@ namespace ProjectQuimbly.Dialogue.Editor
             }
             GUILayout.EndHorizontal();
 
+            // If root node, extra option to assign conversation start
+            if(node.IsRootNode())
+            {
+                GUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField("Convo Name:", GUILayout.Width(79));
+                GUI.SetNextControlName("RootNameField");
+                node.SetRootName(EditorGUILayout.TextField(node.GetConversationChainName()));
+                GUILayout.EndHorizontal();
+            }
+
+            // Option for character sprite
+            GUILayout.BeginHorizontal();
+            GirlSpriteDB girlSpriteDB = (GirlSpriteDB)Resources.Load("Game/GirlDialogueSpriteDB");
+            string[] girlOptions = girlSpriteDB.GetGirlNames().ToArray();
+            string currentGirl = node.GetGirlToDisplay();
+            int selected = GetIndexInArray(girlOptions, currentGirl);
+            EditorGUILayout.LabelField("Girl Sprite:", GUILayout.Width(61));
+            selected = EditorGUILayout.Popup(selected, girlOptions);
+            node.SetGirlToDisplay(girlOptions[selected]);
+            GUILayout.EndHorizontal();
+
+            if (selected > 0)
+            {
+                GUILayout.BeginHorizontal();
+                string[] spriteOptions;
+                if (girlSpriteDB.GetAllSpriteNames(girlOptions[selected], out spriteOptions))
+                {
+                    int selectedSprite = GetIndexInArray(spriteOptions, node.GetSpriteToDisplayName());
+
+                    selectedSprite = EditorGUILayout.Popup(selectedSprite, spriteOptions);
+                    Sprite newSprite;
+                    if(girlSpriteDB.GetSprite(currentGirl, selectedSprite, out newSprite))
+                    {
+                        node.SetSpriteToDisplay(newSprite);
+                    }
+                }
+                GUILayout.EndHorizontal();
+            }
+
+            girlSpriteDB = null;
+
+
             // Toggle Is Player Speaking
             GUILayout.BeginHorizontal();
             node.SetPlayerSpeaking(EditorGUILayout.Toggle(node.IsPlayerSpeaking()));
@@ -195,11 +254,13 @@ namespace ProjectQuimbly.Dialogue.Editor
             {
                 GUILayout.BeginHorizontal();
                 EditorGUILayout.LabelField("Speaker:", GUILayout.Width(51));
+                GUI.SetNextControlName("SpeakerNameField");
                 node.SetSpeaker(EditorGUILayout.TextField(node.GetSpeaker()));
                 GUILayout.EndHorizontal();
             }
 
             // Dialogue Text
+            GUI.SetNextControlName("MainTextField");
             node.SetText(EditorGUILayout.TextArea(node.GetText(), wrapStyle));
 
 
@@ -210,7 +271,7 @@ namespace ProjectQuimbly.Dialogue.Editor
             node.SetHasOnExitAction(EditorGUILayout.Toggle(node.GetHasOnExitAction()));
             EditorGUILayout.LabelField("Exit", GUILayout.Width(30));
             node.SetHasConditionSelect(EditorGUILayout.Toggle(node.GetHasConditionSelect()));
-            if(node.GetHasConditionSelect())
+            if (node.GetHasConditionSelect())
             {
                 EditorGUILayout.LabelField("Condition", GUILayout.Width(68));
                 if (GUILayout.Button("New"))
@@ -266,6 +327,20 @@ namespace ProjectQuimbly.Dialogue.Editor
             GUILayout.EndArea();
         }
 
+        private static int GetIndexInArray(string[] options, string value)
+        {
+            int selected;
+            for (selected = 0; selected < options.Length; selected++)
+            {
+                if (value == options[selected])
+                {
+                    break;
+                }
+            }
+            if (selected >= options.Length) selected = 0;
+            return selected;
+        }
+
         private static void BuildDialogueActionsSelect(
             DialogueNode node, OnDialogueAction dialogueAction, 
             string[] actionParams, List<string> dialogueActions)
@@ -275,32 +350,33 @@ namespace ProjectQuimbly.Dialogue.Editor
                 case OnDialogueAction.None:
                     break;
                 case OnDialogueAction.ChangeBackground:
-                    UI.BGPhotoDB bgPhotoDB = (UI.BGPhotoDB)Resources.Load("Core/BGPhotoDB");
-                    // Debug.Log((bgPhotoDB == null).ToString());
-                    Sprite bgPhoto = bgPhotoDB.GetSprite(actionParams[0]);
-                    bgPhoto = GenerateSpriteSelect(bgPhoto);
-                    if(bgPhoto != null)
-                    {
-                        dialogueActions.Add(bgPhotoDB.GetSpriteName(bgPhoto));
-                    }
-                    else
-                    {
-                        dialogueActions.Add("");
-                    }
+                    string newPhoto = BackgroundPhotoSelect(actionParams[0]);
+                    dialogueActions.Add(newPhoto);
                     break;
-                // case OnDialogueAction.GiveItem:
-                //     InventoryItem item = InventoryItem.GetFromID(actionParams[0]);
-                //     item = GenerateItemSelect(item);
-                //     if (item != null)
-                //     {
-                //         dialogueActions.Add(item.GetItemID());
-                //     }
-                //     else
-                //     {
-                //         dialogueActions.Add("");
-                //     }
-                //     dialogueActions.Add(GenerateItemCountField(actionParams[1]));
-                //     break;
+                case OnDialogueAction.GiveItem:
+                    dialogueActions.Add(GenerateItemSelect(actionParams[0]));
+                    dialogueActions.Add(GenerateItemCountField(actionParams[1]));
+                    break;
+                case OnDialogueAction.GiveMoney:
+                case OnDialogueAction.GiveEnergy:
+                    dialogueActions.Add(GenerateNumberField(actionParams[0], "Amount:", 47));
+                    break;
+                case OnDialogueAction.LoadScene:
+                    dialogueActions.Add(GenerateSceneSelect(actionParams, dialogueActions));
+                    break;
+                    // case OnDialogueAction.GiveItem:
+                    //     InventoryItem item = InventoryItem.GetFromID(actionParams[0]);
+                    //     item = GenerateItemSelect(item);
+                    //     if (item != null)
+                    //     {
+                    //         dialogueActions.Add(item.GetItemID());
+                    //     }
+                    //     else
+                    //     {
+                    //         dialogueActions.Add("");
+                    //     }
+                    //     dialogueActions.Add(GenerateItemCountField(actionParams[1]));
+                    //     break;
             }
         }
 
@@ -349,7 +425,7 @@ namespace ProjectQuimbly.Dialogue.Editor
                         //                 parameterList.Add(item.GetItemID());
                         //                 if (j < itemList.Length)
                         //                 {
-                        //                     parameterList.Add(GenerateItemCountField(itemList[j]).ToString());
+                        //                     parameterList.Add(GenerateItemCountField(itemList[j]));
                         //                 }
                         //                 else
                         //                 {
@@ -391,42 +467,76 @@ namespace ProjectQuimbly.Dialogue.Editor
             }
         }
 
-        private static string GenerateItemCountField(string itemString)
+        private static string GenerateItemCountField(string numString)
         {
-            int itemCount;
+            int newCount;
+            if(!int.TryParse(numString, out newCount))
+            {
+                newCount = 1;
+            }
             GUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Item Count:", GUILayout.Width(70));
-            string countString = EditorGUILayout.TextField(itemString);
+            GUI.SetNextControlName("NumberField");
+            newCount = EditorGUILayout.IntField(newCount);
             GUILayout.EndHorizontal();
-            if (!int.TryParse(countString, out itemCount))
-            {
-                Debug.Log("This parameter only takes a number!");
-            }
-            itemCount = Math.Max(itemCount, 1);
-            return itemCount.ToString();
+            
+            return newCount.ToString();
         }
 
         private static string GenerateNumberField(string numString, string label, int width)
         {
-            int strCount;
+            int newCount;
+            if (!int.TryParse(numString, out newCount))
+            {
+                newCount = 1;
+            }
             GUILayout.BeginHorizontal();
             EditorGUILayout.LabelField(label, GUILayout.Width(width));
-            string countString = EditorGUILayout.TextField(numString);
+            GUI.SetNextControlName("NumberField");
+            newCount = EditorGUILayout.IntField(newCount);
             GUILayout.EndHorizontal();
-            if (!int.TryParse(countString, out strCount))
-            {
-                Debug.Log("This parameter only takes a number!");
-            }
-            return strCount.ToString();
+
+            return newCount.ToString();
         }
 
-        private static Sprite GenerateSpriteSelect(Sprite photo)
+        private static string BackgroundPhotoSelect(string locationName)
         {
+            UI.BGPhotoDB bgPhotoDB = (UI.BGPhotoDB)Resources.Load("Game/BGPhotoDB");
+            string[] bgOptions = bgPhotoDB.GetAllLocationNames().ToArray();
+            int selected = GetIndexInArray(bgOptions, locationName);
+
             GUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Image:", GUILayout.Width(40));
-            photo = (Sprite)EditorGUILayout.ObjectField(photo, typeof(Sprite), false);
+            selected = EditorGUILayout.Popup(selected, bgOptions);
             GUILayout.EndHorizontal();
-            return photo;
+            return bgOptions[selected];
+        }
+
+        private static string GenerateSceneSelect(string[] actionParams, List<string> dialogueActions)
+        {
+            SceneSelectDB sceneSelectDB = (SceneSelectDB)Resources.Load("Game/SceneSelectDB");
+            string[] sceneOptions = sceneSelectDB.GetLoadingAreas();
+            int selected = GetIndexInArray(sceneOptions, actionParams[0]);
+
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Scene: ", GUILayout.Width(41));
+            selected = EditorGUILayout.Popup(selected, sceneOptions);
+            EditorGUILayout.EndHorizontal();
+            return sceneOptions[selected];
+        }
+
+        public static string GenerateItemSelect(string itemString)
+        {
+            Item.ItemType itemType = Item.ItemType.Cake;
+            if (!Enum.TryParse(itemString, true, out itemType))
+            {
+                itemType = Item.ItemType.Cake;
+            }
+            GUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Item:", GUILayout.Width(40));
+            itemType = (Item.ItemType)EditorGUILayout.EnumPopup(itemType);
+            GUILayout.EndHorizontal();
+            return itemType.ToString();
         }
 
         // private static InventoryItem GenerateItemSelect(InventoryItem item)
@@ -500,14 +610,26 @@ namespace ProjectQuimbly.Dialogue.Editor
         private void SetNodeStyleAndSize(DialogueNode node, out GUIStyle style, out GUIStyle wrapStyle)
         {
             //Style select and height calculation
-            int heightPadding = 82;
+            int heightPadding = 102;
             style = nodeStyle;
+
+            if(node.GetGirlToDisplay() != "None")
+            {
+                heightPadding += 20;
+            }
+
             if (node.IsPlayerSpeaking())
             {
                 style = playerNodeStyle;
             }
             else
             {
+                heightPadding += 20;
+            }
+
+            if(node.IsRootNode())
+            {
+                style = rootNodeStyle;
                 heightPadding += 20;
             }
 
@@ -553,6 +675,8 @@ namespace ProjectQuimbly.Dialogue.Editor
 
         private DialogueNode GetNodeAtPoint(Vector2 point)
         {
+            GUI.FocusControl(null);
+            
             DialogueNode foundNode = null;
             foreach (DialogueNode node in selectedDialogue.GetAllNodes())
             {

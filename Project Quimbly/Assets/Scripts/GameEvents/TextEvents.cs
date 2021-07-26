@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using ProjectQuimbly.Dialogue;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,9 +35,7 @@ public class TextEvents : MonoBehaviour
         else if (MetDeb == false)
         {
             SpeakButton.interactable = false;
-            TextBox.currentline = 2;
-            TextBox.endatline = 51;
-            TextBox.ReloadScript();
+            SpeakButton.GetComponent<AIConversant>().StartDialogue();
             MetDeb = true;
         }
         
@@ -62,7 +61,7 @@ public class TextEvents : MonoBehaviour
 
     void feeding2()
     {
-        if (PlayerStats.Instance.Energy > 15)
+        if (PlayerStats.Instance.Energy >= 15)
         {
             if (TB2.isTextboxActive == false)
             {

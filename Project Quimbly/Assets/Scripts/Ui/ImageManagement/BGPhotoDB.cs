@@ -18,16 +18,17 @@ namespace ProjectQuimbly.UI
             return bgSprite;
         }
 
-        public string GetSpriteName(Sprite _sprite)
+        public List<string> GetAllLocationNames()
         {
-            foreach (var bgSprite in bgSprites)
+            BuildLookup();
+
+            List<string> locationList = new List<string>();
+            locationList.Add("None");
+            foreach (string location in spriteLookup.Keys)
             {
-                if(_sprite == bgSprite.sprite)
-                {
-                    return bgSprite.location;           
-                }
+                locationList.Add(location);
             }
-            return "";
+            return locationList;
         }
 
         private void BuildLookup()

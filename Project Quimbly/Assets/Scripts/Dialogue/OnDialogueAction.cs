@@ -6,6 +6,7 @@ namespace ProjectQuimbly.Dialogue
         ChangeBackground,
         GiveItem,
         GiveMoney,
-        GiveEnergy
+        GiveEnergy,
+        LoadScene
     }
 }

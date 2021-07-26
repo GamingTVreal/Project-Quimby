@@ -12,11 +12,16 @@ namespace ProjectQuimbly.Dialogue
         [SerializeField] 
         string defaultSpeakerName = "Speaker";
         [SerializeField]
+        bool alternateSpeaker = false;
+        [SerializeField]
         List<DialogueNode> nodes = new List<DialogueNode>();
+        [SerializeField]
+        List<DialogueNode> rootNodes = new List<DialogueNode>();
         [SerializeField]
         Vector2 newNodeOffset = new Vector2(300, 0);
         
         Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
+        Dictionary<string, DialogueNode> rootNodeLookup = new Dictionary<string, DialogueNode>();
 
         private void Awake() 
         {
@@ -30,6 +35,10 @@ namespace ProjectQuimbly.Dialogue
             foreach (DialogueNode node in GetAllNodes())
             {
                 nodeLookup[node.name] = node;
+                if(node.IsRootNode())
+                {
+                    rootNodeLookup[node.GetConversationChainName()] = node;
+                }
             }
         }
 
@@ -45,6 +54,26 @@ namespace ProjectQuimbly.Dialogue
 
         public DialogueNode GetRootNode()
         {
+            return nodes[0];
+        }
+
+        public DialogueNode GetRootNode(int index)
+        {
+            if(index >= 0 && index < rootNodes.Count)
+            {
+                return rootNodes[index];
+            }
+            return nodes[0];
+        }
+
+        public DialogueNode GetRootNode(string rootName)
+        {
+            DialogueNode rootNode;
+            if(rootNodeLookup.TryGetValue(rootName, out rootNode))
+            {
+                return rootNode;
+            }
+            Debug.Log("No conversation chain found with name: " + rootName);
             return nodes[0];
         }
 
@@ -115,8 +144,22 @@ namespace ProjectQuimbly.Dialogue
             if (parent != null)
             {
                 parent.AddChild(newNode.name);
-                newNode.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
+                if(alternateSpeaker)
+                {
+                    newNode.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
+                }
+                else
+                {
+                    newNode.SetPlayerSpeaking(parent.IsPlayerSpeaking());
+                }
+                newNode.SetGirlToDisplay(parent.GetGirlToDisplay());
+                newNode.SetSpriteToDisplay(parent.GetSpriteToDisplay());
                 newNode.SetPosition(parent.GetRect().position + newNodeOffset);
+            }
+            else
+            {
+                newNode.SetRootNode(true);
+                rootNodes.Add(newNode);
             }
 
             return newNode;

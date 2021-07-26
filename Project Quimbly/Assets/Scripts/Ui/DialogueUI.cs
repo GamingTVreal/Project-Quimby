@@ -13,37 +13,21 @@ namespace ButtonGame.UI
     public class DialogueUI : MonoBehaviour
     {
         PlayerConversant playerConversant;
+        [SerializeField] Image characterImage;
         [SerializeField] TextMeshProUGUI conversantName;
-        [SerializeField] TextMeshProUGUI extraHeaderText;
-        [SerializeField] GameObject textGroupGO;
-        [SerializeField] TextMeshProUGUI DialogueText;
-        [SerializeField] Button nextButton;
-        // [SerializeField] Transform choiceRoot;
-        // [SerializeField] GameObject choicePrefab;
-        [SerializeField] Button quitButton;
+        [SerializeField] TextMeshProUGUI dialogueText;
         [SerializeField] GameObject dialogueContainer;
-        
-        RectTransform uiWindow;
-        List<string> hotkeys = new List<string>();
-        List<Button> choiceButtons = new List<Button>();
-        int choiceCount;
+        [SerializeField] GameObject speakerContainer;
+
+        // Action for the end of the coroutine
+        public event Action textboxCloseEvent;
+        string parsedContent;
+        bool isScriptComplete;
 
         private void Awake() 
         {
-            uiWindow = GetComponent<RectTransform>();
-            // foreach (Transform item in choiceRoot)
-            // {
-            //     choiceButtons.Add(item.GetComponent<Button>());
-            //     item.gameObject.SetActive(false);
-            // }
-            hotkeys = new List<string> {"Button0", "Button1", "Button2", "Button3", 
-                "Button4", "Button5", "Button6","Button7" ,"Button8" , "Button9"};
-
-            // playerConversant = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>();
             playerConversant = GetComponent<PlayerConversant>();
-            nextButton.onClick.AddListener(() => playerConversant.Next());
-            quitButton.onClick.AddListener(() => playerConversant.Quit());
-            playerConversant.onConversationUpdated += UpdateUI;
+            playerConversant.onConversationStart += StartCoroutine;
         }
 
         // Start is called before the first frame update
@@ -52,128 +36,124 @@ namespace ButtonGame.UI
             // UpdateUI();
         }
 
-        private void Update() 
+        private void StartCoroutine()
         {
-            if(Input.GetButtonDown("Submit"))
+            if(!dialogueContainer.activeSelf)
             {
-                if(nextButton.gameObject.activeInHierarchy) nextButton.onClick.Invoke();
-                else if(quitButton.gameObject.activeInHierarchy) quitButton.onClick.Invoke();
+                StartCoroutine(ShowText());
             }
-            // if(choiceRoot.gameObject.activeInHierarchy)
-            // {
-            //     for (int i = 0; i < choiceButtons.Count; i++)
-            //     {
-            //         if(choiceButtons[i].IsActive() && Input.GetButtonDown(hotkeys[i]))
-            //         {
-            //             choiceButtons[i].onClick.Invoke();
-            //         }
-            //     }
-            // }
         }
 
-        void UpdateUI()
+        // Print current node's dialog to textbox
+        IEnumerator ShowText()
         {
-            dialogueContainer.SetActive(playerConversant.IsActive());
-            if(!playerConversant.IsActive())
+            dialogueContainer.SetActive(true);
+            characterImage.gameObject.SetActive(true);
+            SetupTextboxGroup();
+
+            // float timeSinceLastSubstring = Mathf.Infinity;
+
+            while (playerConversant.IsActive())
             {
-                return;
+                // timeSinceLastSubstring += Time.deltaTime;
+                if(dialogueText.maxVisibleCharacters < parsedContent.Length)
+                {
+                    dialogueText.maxVisibleCharacters++;
+                }
+                // Check if user is trying to advance text
+                if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    AdvanceTextbox();
+                }
+                yield return null;
             }
-            conversantName.text = ReplaceSubstringVariables(playerConversant.GetCurrentConversantName());
-            textGroupGO.SetActive(true);
-            // choiceRoot.gameObject.SetActive(playerConversant.IsChoosing());
-            if(playerConversant.IsChoosing())
+
+            characterImage.gameObject.SetActive(false);
+            dialogueContainer.SetActive(false);
+        }
+
+        private void AdvanceTextbox()
+        {
+            if (dialogueText.maxVisibleCharacters < parsedContent.Length)
             {
-                DialogueNode[] AINodes = playerConversant.GetResponses().ToArray();
-                if(AINodes.Length > 0)
-                {
-                    int randomIndex = UnityEngine.Random.Range(0, AINodes.Length);
-                    conversantName.text = ReplaceSubstringVariables(playerConversant.GetCurrentConversantName(AINodes[randomIndex]));
-                    DialogueText.text = playerConversant.GetText(AINodes[randomIndex]);
-                    nextButton.gameObject.SetActive(false);
-                    quitButton.gameObject.SetActive(false);
-                }
-                else
-                {
-                    textGroupGO.SetActive(false);
-                }
-                ReturnChoicesToPool(choiceCount);
-                // BuildChoiceList();
+                dialogueText.maxVisibleCharacters = parsedContent.Length;
             }
             else
             {
-                DialogueText.text = playerConversant.GetText();
-                bool hasNext = playerConversant.HasNext();
-                nextButton.gameObject.SetActive(hasNext);
-                quitButton.gameObject.SetActive(!hasNext);
+                if (playerConversant.HasNext())
+                {
+                    playerConversant.Next();
+                    SetupTextboxGroup();
+                }
+                else
+                {
+                    playerConversant.Quit();
+                }
             }
-            DialogueText.text = ReplaceSubstringVariables(DialogueText.text);
-            DialogueText.maxVisibleCharacters = DialogueText.text.Length;
         }
 
-        // private void BuildChoiceList()
-        // {
-        //     choiceCount = 0;
-        //     foreach(DialogueNode choiceNode in playerConversant.GetChoices())
-        //     {
-        //         Button button;
-        //         if (choiceButtons.Count > choiceCount)
-        //         {
-        //             button = choiceButtons[choiceCount];
-        //             button.gameObject.SetActive(true);
-        //         }
-        //         else
-        //         {
-        //             GameObject choiceInstance = Instantiate(choicePrefab, choiceRoot);
-        //             button = choiceInstance.GetComponent<Button>();
-        //             choiceButtons.Add(button);
-        //         }
-        //         button.onClick.AddListener(() =>
-        //         {
-        //             playerConversant.SelectChoice(choiceNode);
-        //         });
-        //         TextMeshProUGUI buttonTextComponent = button.GetComponentInChildren<TextMeshProUGUI>();
-        //         buttonTextComponent.text = ReplaceSubstringVariables(choiceNode.GetText());
-        //         choiceCount++;
-        //     }
-        // }
+        private void SetupTextboxGroup()
+        {
+            if (!playerConversant.IsActive()) return;
+
+            SetNameAndSprite();
+            dialogueText.text = ReplaceSubstringVariables(playerConversant.GetText());
+            dialogueText.maxVisibleCharacters = 0;
+            dialogueText.ForceMeshUpdate();
+            parsedContent = dialogueText.GetParsedText();
+        }
 
         private string ReplaceSubstringVariables(string sInput)
         {
             if(sInput == null) return "";
             string sModified = sInput;
-            sModified = sModified.Replace("[Player]", BasicFunctions.Name);
+            sModified = sModified.Replace("[p]", BasicFunctions.Name);
             sModified = sModified.Replace("[]", "    ");
             return sModified;
         }
 
-        private void ReturnChoicesToPool(int count)
+        private void SetNameAndSprite()
         {
-            for (int i = 0; i < count; i++)
+            Sprite newSprite = playerConversant.GetSprite();
+            Color c = characterImage.color;
+            if (newSprite != null)
             {
-                choiceButtons[i].onClick.RemoveAllListeners();
-                choiceButtons[i].gameObject.SetActive(false);
+                characterImage.sprite = newSprite;
+                characterImage.color = new Color(c.r, c.g, c.b, 255);
             }
-        }
-
-        public void MoveWindow(string[] yOffset)
-        {
-            float yPosition;
-            if(float.TryParse(yOffset[0], out yPosition))
+            else
             {
-                uiWindow.anchoredPosition = new Vector2(uiWindow.anchoredPosition.x, yPosition);
+                characterImage.color = new Color(c.r, c.g, c.b, 0);
+            }
+
+            string speakerName = playerConversant.GetCurrentConversantName();
+            if (speakerName == "")
+            {
+                speakerContainer.SetActive(false);
+            }
+            else
+            {
+                speakerContainer.SetActive(true);
+                conversantName.text = speakerName;
             }
         }
 
         public void ChangeBackground(string[] newPhoto)
         {
             Sprite photo;
-            BGPhotoDB bgPhotoDB = (BGPhotoDB)Resources.Load("Core/BGPhotoDB");
+            BGPhotoDB bgPhotoDB = (BGPhotoDB)Resources.Load("Game/BGPhotoDB");
             if(bgPhotoDB != null)
             {
                 photo = bgPhotoDB.GetSprite(newPhoto[0]);
                 Image bgImage = GameObject.FindGameObjectWithTag("BackgroundImage").GetComponent<Image>();
                 bgImage.sprite = photo;
             }
+        }
+
+        public void LoadScene(string[] newScene)
+        {
+            string sceneToLoad = newScene[0];
+            GetComponent<LoadingScreenScript>().LoadNewArea(sceneToLoad);
         }
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using ProjectQuimbly.UI;
 using ProjectQuimbly.Controllers;
 using ProjectQuimbly.Feeding;
+using System;
 
 public class BasicFunctions : MonoBehaviour
 {
@@ -121,9 +122,51 @@ public class BasicFunctions : MonoBehaviour
 
     void FirstTimeSetup()
     {
-        PlayerStats.Instance.AdjustMoney(500,false);
+        // PlayerStats.Instance.AdjustMoney(500,false);
         PlayerStats.Instance.AdjustEnergy(20);
     }
+
+    public void AdjustMoney(int amount)
+    {
+        PlayerStats.Instance.AdjustMoney(amount);
+    }
+
+    public void AdjustMoney(string[] amount)
+    {
+        if(amount == null) return;
+
+        int value;
+        if(int.TryParse(amount[0], out value))
+        {
+            PlayerStats.Instance.AdjustMoney(value);
+        }
+    }
+
+    public void AdjustEnergy(int amount)
+    {
+        PlayerStats.Instance.AdjustEnergy(20);
+    }
+
+    public void AdjustEnergy(string[] amount)
+    {
+        if(amount == null) return;
+
+        int value;
+        if(int.TryParse(amount[0], out value))
+        {
+            PlayerStats.Instance.AdjustEnergy(value);
+        }
+    }
+
+    public void AddItem(string[] itemParameters)
+    {
+        Item.ItemType itemType;
+        if(Enum.TryParse(itemParameters[0], true, out itemType))
+        {
+            Inventory.Instance.AddItem(itemType, int.Parse(itemParameters[1]));
+        }
+    }
+
     public void OpenthePhone()
     {
         if (PhoneAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)

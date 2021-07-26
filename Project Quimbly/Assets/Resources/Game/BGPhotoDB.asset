@@ -17,6 +17,8 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: e97ef4f1b5969164cb8a86c7a06104cc, type: 3}
   - location: Park
     sprite: {fileID: 21300000, guid: 84ff71d017bb4384da7b20c55c274154, type: 3}
+  - location: ParkBlur
+    sprite: {fileID: 21300000, guid: 73ea87a4d756d7442b520221a386de1d, type: 3}
   - location: JobAgency
     sprite: {fileID: 21300000, guid: 02934f1e8349c544c8369684207072d5, type: 3}
   - location: Store

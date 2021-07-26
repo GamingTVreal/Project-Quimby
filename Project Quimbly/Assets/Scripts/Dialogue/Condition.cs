@@ -13,7 +13,6 @@ namespace ProjectQuimbly.Dialogue
         [SerializeField]
         List<Disjunction> and = new List<Disjunction>();
 
-
         public bool Check(IEnumerable<IPredicateEvaluator> evaluators)
         {
             foreach (Disjunction or in and)

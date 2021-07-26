@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
   m_Name: 0858ae7b-62bd-4f87-9ce2-fc1fffc74e15
   m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: Root Test
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
   isPlayerSpeaking: 0
   speakerName: Speaker
   text: Testing background change
@@ -19,16 +23,15 @@ MonoBehaviour:
   - cecf673d-f05d-4e2c-b2fb-7a19a194dafb
   rect:
     serializedVersion: 2
-    x: 33
-    y: 124
+    x: 47
+    y: 97
     width: 250
-    height: 200
+    height: 220
   onEnterAction: 1
   onEnterActionParameter:
-  - FeedingRoom
-  onExitAction: 1
-  onExitActionParameter:
-  - Home
+  - JobAgency
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0
@@ -50,6 +53,7 @@ MonoBehaviour:
   - {fileID: -3956809402897789680}
   - {fileID: 800585512623981193}
   - {fileID: 5530327009144189596}
+  rootNodes: []
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &800585512623981193
 MonoBehaviour:
@@ -63,21 +67,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
   m_Name: cecf673d-f05d-4e2c-b2fb-7a19a194dafb
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+  isPlayerSpeaking: 1
   speakerName: Speaker 1
   text: it worked?
   children:
   - 99ec1149-0e20-49f5-a242-ba7870dfae35
   rect:
     serializedVersion: 2
-    x: 332
-    y: 73
+    x: 358
+    y: 145
     width: 250
-    height: 120
+    height: 180
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 1
+  onExitActionParameter:
+  - FeedingRoom
   condition:
     and: []
   enterActionIndex: 0
@@ -94,19 +103,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
   m_Name: 99ec1149-0e20-49f5-a242-ba7870dfae35
   m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
   isPlayerSpeaking: 0
   speakerName: New Speaker
   text: Sure
   children: []
   rect:
     serializedVersion: 2
-    x: 632
-    y: 74
+    x: 679
+    y: 133
     width: 250
     height: 200
-  onEnterAction: 1
-  onEnterActionParameter:
-  - Park
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 1
   onExitActionParameter:
   - Home

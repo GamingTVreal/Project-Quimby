@@ -42,6 +42,12 @@ public class LoadingScreenScript : MonoBehaviour
         LoadScreenExample();
     }
 
+    public void LoadNewArea(string newArea)
+    {
+        Area = newArea;
+        StartCoroutine(LoadingScreen());
+    }
+
     public void LoadScreenExample()
     {
         StartCoroutine(LoadingScreen());
