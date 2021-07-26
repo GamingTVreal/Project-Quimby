@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using ProjectQuimbly.BasicFunctions;
+using ProjectQuimbly.Inventories;
 using ProjectQuimbly.Controllers;
 using ProjectQuimbly.UI;
 using ProjectQuimbly.UI.Dragging;

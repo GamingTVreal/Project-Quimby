@@ -42,6 +42,7 @@ public class NameScript : MonoBehaviour
         if (BasicFunctions.Name != null)
         {
             Tutorial.SetActive(true);
+            Tutorial.GetComponent<TextBoxManager>().ReloadScript();
             NameMenu.SetActive(false);
         }
         

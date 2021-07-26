@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ProjectQuimbly.BasicFunctions
+namespace ProjectQuimbly.Inventories
 {      
     [CreateAssetMenu(fileName = "ItemIconDB", menuName = "Project Quimbly/ItemIconDB", order = 0)]
     public class ItemIconDB : ScriptableObject 

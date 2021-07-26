@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using ProjectQuimbly.BasicFunctions;
+using ProjectQuimbly.Inventories;
 using ProjectQuimbly.UI.Dragging;
 using UnityEngine;
 using UnityEngine.Events;
@@ -53,8 +53,9 @@ namespace ProjectQuimbly.Feeding
                 if (food != null)
                 {
                     Feed.GetSFX(0);
-                    Character.fullness = food.GetItem().filling + Character.fullness;
-                    Feed.GetFullnessSprite();
+                    float foodFillAmount = food.GetItem().filling;
+                    Character.fullness = foodFillAmount + Character.fullness;
+                    Feed.GetFullnessSprite(foodFillAmount);
                     timeSinceLastBite = 0;
                     food.RemoveItems(biteSize);
                     onMouthEvent?.Invoke();
