@@ -19,6 +19,11 @@ namespace ProjectQuimbly.Dialogue
             }
         }
 
+        public void StartDialogue(Dialogue newDialogue)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, newDialogue);
+        }
+
         public void StartDialogue(bool randomConvo = false)
         {
             PlayerConversant player = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>();
@@ -35,11 +40,6 @@ namespace ProjectQuimbly.Dialogue
                     player.StartDialogue(this, dialogue, choice);
                 }
             }
-        }
-
-        public void StartDialogue(Dialogue newDialogue)
-        {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, newDialogue);
         }
 
         public void StartDialogue(string convoStart)

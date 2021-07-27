@@ -26,6 +26,7 @@ public class Pump : MonoBehaviour
 
             Vector3 MousePos;
             MousePos = Input.mousePosition;
+            // MousePos = this.transform.localPosition - MousePos;
             MousePos = Camera.main.ScreenToWorldPoint(MousePos);
 
             this.transform.localPosition = new Vector3(807, MousePos.y * 100, 0);

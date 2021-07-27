@@ -279,6 +279,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-6951636076217372769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 7339267b-42cc-47a2-b124-14c912d37df4
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: Inflation
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Deb
+  text: u wanna unflate me boi
+  children:
+  - 0330b4b3-7108-4ac5-926d-fdd572092e0c
+  rect:
+    serializedVersion: 2
+    x: 16
+    y: 2141
+    width: 250
+    height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-6734788840617553590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,7 +407,7 @@ MonoBehaviour:
   - dc414aaf-4297-40d9-a2ff-b845d8313803
   rect:
     serializedVersion: 2
-    x: 316
+    x: 303
     y: 1127
     width: 250
     height: 160
@@ -582,8 +617,8 @@ MonoBehaviour:
   - aba0a907-4897-41e4-94bf-f06650509890
   rect:
     serializedVersion: 2
-    x: 313
-    y: 1324
+    x: 316
+    y: 1323
     width: 250
     height: 170
   onEnterAction: 0
@@ -656,6 +691,40 @@ MonoBehaviour:
     y: 33
     width: 250
     height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-4281884617579452186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 0330b4b3-7108-4ac5-926d-fdd572092e0c
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Deb
+  text: ya sure
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 315
+    y: 2138
+    width: 250
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -934,13 +1003,11 @@ MonoBehaviour:
     x: 1476
     y: 1921
     width: 250
-    height: 240
-  onEnterAction: 4
-  onEnterActionParameter:
-  - 1
-  onExitAction: 5
-  onExitActionParameter:
-  - Feeding Minigame
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0
@@ -1343,7 +1410,7 @@ MonoBehaviour:
   m_Name: DebDialogue
   m_EditorClassIdentifier: 
   defaultSpeakerName: Deb
-  alternateSpeaker: 0
+  alternateSpeaker: 1
   nodes:
   - {fileID: -401783312524019519}
   - {fileID: 478068977612518378}
@@ -1424,6 +1491,8 @@ MonoBehaviour:
   - {fileID: 960236362087504125}
   - {fileID: 6440606427055645919}
   - {fileID: -2881250104108995003}
+  - {fileID: -6951636076217372769}
+  - {fileID: -4281884617579452186}
   rootNodes:
   - {fileID: -401783312524019519}
   - {fileID: -5721203161176120042}
@@ -1434,6 +1503,8 @@ MonoBehaviour:
   - {fileID: 8044901222142358086}
   - {fileID: 5762078360868113615}
   - {fileID: -3243214290853200765}
+  - {fileID: 0}
+  - {fileID: -6951636076217372769}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &55627009834382245
 MonoBehaviour:
@@ -1564,8 +1635,8 @@ MonoBehaviour:
   - a0512ecc-4cd9-4007-b241-10bb115e5e8c
   rect:
     serializedVersion: 2
-    x: 897
-    y: 1906
+    x: 900
+    y: 1907
     width: 250
     height: 175
   onEnterAction: 0
@@ -2159,8 +2230,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 21
-    y: 288
+    x: 56
+    y: 308
     width: 250
     height: 155
   onEnterAction: 0
@@ -2791,10 +2862,9 @@ MonoBehaviour:
     x: 3022
     y: 854
     width: 250
-    height: 180
-  onEnterAction: 3
-  onEnterActionParameter:
-  - 100000
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:

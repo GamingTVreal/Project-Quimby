@@ -98,14 +98,14 @@ public class BasicFunctions : MonoBehaviour
     {
         //Inventory.Instance.AddItem(new Item { itemType = Item.ItemType.Soda, amount = 1 });
         DontDestroyOnLoad(ScriptHolder);
-        if (TextBox.activeInHierarchy)
-        {
-            phoneObject.SetActive(false);
-        }
-        else
-        {
-            phoneObject.SetActive(true);
-        }
+        // if (TextBox.activeInHierarchy)
+        // {
+        //     phoneObject.SetActive(false);
+        // }
+        // else
+        // {
+        //     phoneObject.SetActive(true);
+        // }
         if (Name == null)
         {
             FirstTimeSetup();
