@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Jukebox : MonoBehaviour
 {
-    [SerializeField] AudioSource Audio, Audio2;
+    [SerializeField] AudioSource Audio;
     [SerializeField] AudioClip[] Songs;
     // Start is called before the first frame update
     public void JukeboxCode(int SongChoice)

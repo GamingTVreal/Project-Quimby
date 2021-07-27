@@ -9,8 +9,9 @@ public class InflationMinigame : MonoBehaviour
     public TMP_Text Pressure2, Fullness2;
     private float Pressure, Fullness;
     public AudioClip[] SFX;
+    public AudioClip[] VoiceLines;
     public AudioSource source;
-
+    bool InfLine = false;
     bool hasDoneDialogue1 = false;
     //0-4 Releasing Pump, 5-10 Charging Pump
     public void Inflate()
@@ -20,19 +21,15 @@ public class InflationMinigame : MonoBehaviour
         int x = Random.Range(0, 4);
         source.PlayOneShot(SFX[x]);
 
-        if(Pressure >= 50 && !hasDoneDialogue1)
+        if(Pressure >= 75)
         {
-            GetComponent<AIConversant>().StartDialogue("Fullness 1");
-            hasDoneDialogue1 = true;
+            source.PlayOneShot(VoiceLines[Random.Range(3, 5)]);
         }
 
-        if(Pressure >= 100)
-        {
-            GetComponent<AIConversant>().StartDialogue("Fullness 2");
-        }
     }
     public void Recharge()
     {
+        InfLine = false;
         int x = Random.Range(5, 9);
         source.PlayOneShot(SFX[x]);
     }
@@ -45,7 +42,21 @@ public class InflationMinigame : MonoBehaviour
            
             if (hit.collider != null && hit.collider.name == "BellyRubArea")
             {
-                Pressure = Pressure - Time.deltaTime * 3;
+
+                if(InfLine == false)
+                {
+                    if(source.isPlaying == false)
+                    {
+                        source.PlayOneShot(VoiceLines[Random.Range(0, 2)]);
+                    }
+
+                    InfLine = true;
+                }
+                if (Pressure > 1)
+                {
+                    Pressure = Pressure - Time.deltaTime * 3;
+                }
+                
             }
 
         }
@@ -56,5 +67,7 @@ public class InflationMinigame : MonoBehaviour
         {
             Pressure = Pressure - Time.deltaTime;
         }
+    
+    
     }
 }

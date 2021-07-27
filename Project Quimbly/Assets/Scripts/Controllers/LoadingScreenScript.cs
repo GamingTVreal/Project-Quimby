@@ -14,7 +14,11 @@ public class LoadingScreenScript : MonoBehaviour
     public JobAssigner Job;
 
     AsyncOperation async;
-
+    public void InflationMinigame()
+    {
+        Area = "Inflation Minigame";
+        LoadScreenExample();
+    }
     public void FeedingRoom()
     {
         Area = "Feeding Minigame";
