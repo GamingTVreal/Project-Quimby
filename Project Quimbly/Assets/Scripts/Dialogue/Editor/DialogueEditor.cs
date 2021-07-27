@@ -5,8 +5,7 @@ using UnityEditor;
 using UnityEditor.Callbacks;
 using System;
 using System.Linq;
-using ProjectQuimbly.Inventories;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace ProjectQuimbly.Dialogue.Editor
 {
@@ -514,8 +513,14 @@ namespace ProjectQuimbly.Dialogue.Editor
 
         private static string GenerateSceneSelect(string[] actionParams, List<string> dialogueActions)
         {
-            SceneSelectDB sceneSelectDB = (SceneSelectDB)Resources.Load("Game/SceneSelectDB");
-            string[] sceneOptions = sceneSelectDB.GetLoadingAreas();
+            List<string> sceneList = new List<string>();
+            for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
+            {
+                string sceneName = System.IO.Path.GetFileNameWithoutExtension(SceneUtility.GetScenePathByBuildIndex(i));
+                sceneList.Add(sceneName);
+            }
+            
+            string[] sceneOptions = sceneList.ToArray();
             int selected = GetIndexInArray(sceneOptions, actionParams[0]);
 
             EditorGUILayout.BeginHorizontal();
