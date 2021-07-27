@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Feeding Minigame.unity
     guid: 0022e1ba86f7d82428cbb0b53b9ea217
+  - enabled: 1
+    path: Assets/Scenes/Inflation Minigame.unity
+    guid: 09ee8ccbbc3fecf4c8170d809243d4b7
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c825447fe685b604aa8d91e846008178, type: 2}

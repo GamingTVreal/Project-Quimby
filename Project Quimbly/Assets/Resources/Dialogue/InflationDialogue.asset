@@ -57,8 +57,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 337
-    y: 252
+    x: 351
+    y: 263
     width: 250
     height: 120
   onEnterAction: 0
