@@ -267,14 +267,15 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1238
+    x: 1236
     y: 2173
     width: 250
-    height: 160
+    height: 200
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 5
+  onExitActionParameter:
+  - Inflation Minigame
   condition:
     and: []
   enterActionIndex: 0
@@ -476,8 +477,8 @@ MonoBehaviour:
   - 9d395168-6f01-4fc8-9bc5-62ad99afa741
   rect:
     serializedVersion: 2
-    x: 909
-    y: 417
+    x: 1233
+    y: 243
     width: 250
     height: 175
   onEnterAction: 0
@@ -615,8 +616,8 @@ MonoBehaviour:
   - f0c1bba1-63a1-4994-b362-fda8b4b18dce
   rect:
     serializedVersion: 2
-    x: 631
-    y: 594
+    x: 623
+    y: 808
     width: 250
     height: 180
   onEnterAction: 0
@@ -1419,8 +1420,8 @@ MonoBehaviour:
   - ac3cb6c0-1bef-4b81-a359-2b0fa381eecc
   rect:
     serializedVersion: 2
-    x: 736
-    y: 2214
+    x: 637
+    y: 2174
     width: 250
     height: 160
   onEnterAction: 0
