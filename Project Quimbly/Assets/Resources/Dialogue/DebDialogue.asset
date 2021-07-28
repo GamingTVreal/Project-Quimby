@@ -267,15 +267,14 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1199
-    y: 2159
+    x: 1238
+    y: 2173
     width: 250
-    height: 200
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 5
-  onExitActionParameter:
-  - Inflation Minigame
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0
@@ -547,8 +546,8 @@ MonoBehaviour:
   - 5cba4d44-a96c-42a4-97d6-663e5a703de1
   rect:
     serializedVersion: 2
-    x: 97
-    y: 2148
+    x: 18
+    y: 2147
     width: 250
     height: 195
   onEnterAction: 0
@@ -593,40 +592,6 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
---- !u!114 &-5863101993330441797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
-  m_Name: 85ad5f8d-9f2b-490f-befb-71716e8643a8
-  m_EditorClassIdentifier: 
-  isRoot: 1
-  conversationChainName: Fullness 1
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
-  isPlayerSpeaking: 0
-  speakerName: Deb
-  text: I'm halfway full keep it up
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 106
-    y: 2388
-    width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
-  condition:
-    and: []
-  enterActionIndex: 0
-  exitActionIndex: 0
 --- !u!114 &-5721203161176120042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,8 +615,8 @@ MonoBehaviour:
   - f0c1bba1-63a1-4994-b362-fda8b4b18dce
   rect:
     serializedVersion: 2
-    x: 14
-    y: 625
+    x: 631
+    y: 594
     width: 250
     height: 180
   onEnterAction: 0
@@ -685,8 +650,8 @@ MonoBehaviour:
   - 17edd838-3461-406e-9449-e66b13853462
   rect:
     serializedVersion: 2
-    x: 897
-    y: 1719
+    x: 884
+    y: 1711
     width: 250
     height: 175
   onEnterAction: 0
@@ -1454,8 +1419,8 @@ MonoBehaviour:
   - ac3cb6c0-1bef-4b81-a359-2b0fa381eecc
   rect:
     serializedVersion: 2
-    x: 640
-    y: 2167
+    x: 736
+    y: 2214
     width: 250
     height: 160
   onEnterAction: 0
@@ -1501,40 +1466,6 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
---- !u!114 &-586277316724400802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
-  m_Name: fd2307a9-9708-4516-8617-4b727d5ac901
-  m_EditorClassIdentifier: 
-  isRoot: 1
-  conversationChainName: Fullness 2
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
-  isPlayerSpeaking: 0
-  speakerName: Deb
-  text: 
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 10
-    y: 2560
-    width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
-  condition:
-    and: []
-  enterActionIndex: 0
-  exitActionIndex: 0
 --- !u!114 &-401783312524019519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,8 +1489,8 @@ MonoBehaviour:
   - fb59cd72-eb01-47d1-84e7-818a669db60f
   rect:
     serializedVersion: 2
-    x: 23
-    y: 52
+    x: -2
+    y: 53
     width: 250
     height: 195
   onEnterAction: 0
@@ -1666,8 +1597,6 @@ MonoBehaviour:
   - {fileID: -2881250104108995003}
   - {fileID: -6422116064698725684}
   - {fileID: 5514395203828790304}
-  - {fileID: -5863101993330441797}
-  - {fileID: -586277316724400802}
   - {fileID: -1057715633640548911}
   - {fileID: 1740771953759947706}
   - {fileID: -7496624263737188752}
@@ -1682,8 +1611,8 @@ MonoBehaviour:
   - {fileID: 5762078360868113615}
   - {fileID: -3243214290853200765}
   - {fileID: -6422116064698725684}
-  - {fileID: -5863101993330441797}
-  - {fileID: -586277316724400802}
+  - {fileID: 0}
+  - {fileID: 0}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &55627009834382245
 MonoBehaviour:
@@ -2024,8 +1953,8 @@ MonoBehaviour:
   - 9c29f0c5-a4df-45d1-8ae1-79a0501462a1
   rect:
     serializedVersion: 2
-    x: 913
-    y: 2171
+    x: 918
+    y: 2168
     width: 250
     height: 175
   onEnterAction: 0
@@ -2899,8 +2828,8 @@ MonoBehaviour:
   - c75287af-ccf7-4ea5-a5b4-f672dcc62a03
   rect:
     serializedVersion: 2
-    x: 16
-    y: 1127
+    x: 29
+    y: 1126
     width: 250
     height: 160
   onEnterAction: 0

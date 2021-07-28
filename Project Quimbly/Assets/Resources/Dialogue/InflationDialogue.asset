@@ -1,5 +1,110 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7047963363738928221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: c81f4ea3-84aa-4cfd-a8f8-bf898b0df1b0
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Deb
+  text: It's so round and tight oh my god!
+  children:
+  - 3130d569-b085-43fb-a2da-2df1c7599286
+  rect:
+    serializedVersion: 2
+    x: 939
+    y: 79
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-6611289365116452523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: d61f6336-24c4-4547-b22c-9b2ea031669c
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Deb
+  text: I LOVE IT!
+  children:
+  - 45f0edfc-7e73-4f14-8aaa-1ce59f590b0d
+  rect:
+    serializedVersion: 2
+    x: 1839
+    y: 79
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-6366063401450681062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: ed12dcab-06af-4369-96b5-1400b56ea977
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Deb
+  text: Like it?
+  children:
+  - d61f6336-24c4-4547-b22c-9b2ea031669c
+  rect:
+    serializedVersion: 2
+    x: 1539
+    y: 79
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-2473976628778437349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,17 +118,17 @@ MonoBehaviour:
   m_Name: 776e0ada-0710-4ab5-ba71-92cdfdaf2906
   m_EditorClassIdentifier: 
   isRoot: 1
-  conversationChainName: Fullness 1
+  conversationChainName: DebMax
   girlToDisplay: None
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: Deb
-  text: wao i'm half full~~~
+  text: This is perfect
   children:
-  - 2bcdf2e1-bc5b-4e16-9a3a-8240eebf31f8
+  - 2aa0e26b-06bc-4a73-97c6-3de5a1d5822e
   rect:
     serializedVersion: 2
-    x: 37
+    x: 39
     y: 78
     width: 250
     height: 160
@@ -35,7 +140,7 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
---- !u!114 &-2320428047320723896
+--- !u!114 &-1674550756970101386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,7 +150,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
-  m_Name: fd965ea4-70ea-4591-b8a6-dec993e77687
+  m_Name: 2aa0e26b-06bc-4a73-97c6-3de5a1d5822e
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
@@ -53,14 +158,85 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 1
   speakerName: Deb
-  text: wow rude
-  children: []
+  text: What is?
+  children:
+  - 5c1ec520-53af-4160-98dd-cc3cd972c8af
   rect:
     serializedVersion: 2
-    x: 351
-    y: 263
+    x: 339
+    y: 78
     width: 250
     height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-706202797350330845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 3130d569-b085-43fb-a2da-2df1c7599286
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Deb
+  text: So you like it I'd imagine
+  children:
+  - ed12dcab-06af-4369-96b5-1400b56ea977
+  rect:
+    serializedVersion: 2
+    x: 1239
+    y: 79
+    width: 250
+    height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-211272806766974852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 90923cbb-83cd-4412-ba25-2ba285900de3
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Deb
+  text: I Can't wait to test all my other pumps on you!
+  children:
+  - c11efac9-7cc3-4d98-aa90-a6f348601160
+  rect:
+    serializedVersion: 2
+    x: 2439
+    y: 81
+    width: 250
+    height: 135
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -86,13 +262,20 @@ MonoBehaviour:
   nodes:
   - {fileID: -2473976628778437349}
   - {fileID: 7175816119508108231}
-  - {fileID: 5621478438780244361}
-  - {fileID: -2320428047320723896}
+  - {fileID: -1674550756970101386}
+  - {fileID: 657482466026046517}
+  - {fileID: -7047963363738928221}
+  - {fileID: -706202797350330845}
+  - {fileID: -6366063401450681062}
+  - {fileID: -6611289365116452523}
+  - {fileID: 6713168248532006303}
+  - {fileID: -211272806766974852}
+  - {fileID: 718700820958301895}
   rootNodes:
   - {fileID: -2473976628778437349}
   - {fileID: 7175816119508108231}
   newNodeOffset: {x: 300, y: 0}
---- !u!114 &5621478438780244361
+--- !u!114 &657482466026046517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,7 +285,77 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
-  m_Name: 2bcdf2e1-bc5b-4e16-9a3a-8240eebf31f8
+  m_Name: 5c1ec520-53af-4160-98dd-cc3cd972c8af
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Deb
+  text: My tight belly...
+  children:
+  - c81f4ea3-84aa-4cfd-a8f8-bf898b0df1b0
+  rect:
+    serializedVersion: 2
+    x: 639
+    y: 78
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &718700820958301895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: c11efac9-7cc3-4d98-aa90-a6f348601160
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Deb
+  text: '[p], You really know how to get a gal horny!'
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2739
+    y: 81
+    width: 250
+    height: 195
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 5
+  onExitActionParameter:
+  - Home
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &6713168248532006303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 45f0edfc-7e73-4f14-8aaa-1ce59f590b0d
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
@@ -110,12 +363,13 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 1
   speakerName: Deb
-  text: kk
-  children: []
+  text: 'That''s fantastic to hear! '
+  children:
+  - 90923cbb-83cd-4412-ba25-2ba285900de3
   rect:
     serializedVersion: 2
-    x: 336
-    y: 78
+    x: 2139
+    y: 81
     width: 250
     height: 120
   onEnterAction: 0
@@ -145,8 +399,7 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   speakerName: Deb
   text: wao i'm totes full~~
-  children:
-  - fd965ea4-70ea-4591-b8a6-dec993e77687
+  children: []
   rect:
     serializedVersion: 2
     x: 37

@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: Tutorial
   m_EditorClassIdentifier: 
   defaultSpeakerName: 
+  alternateSpeaker: 0
   nodes:
   - {fileID: -8890539171753416171}
   - {fileID: -8720389198996686177}
@@ -340,10 +341,9 @@ MonoBehaviour:
     x: 1507
     y: 110
     width: 250
-    height: 195
-  onEnterAction: 3
-  onEnterActionParameter:
-  - 500
+    height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:

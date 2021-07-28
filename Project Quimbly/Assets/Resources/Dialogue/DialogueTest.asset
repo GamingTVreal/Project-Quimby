@@ -26,10 +26,9 @@ MonoBehaviour:
     x: 47
     y: 97
     width: 250
-    height: 220
-  onEnterAction: 1
-  onEnterActionParameter:
-  - JobAgency
+    height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -49,6 +48,7 @@ MonoBehaviour:
   m_Name: DialogueTest
   m_EditorClassIdentifier: 
   defaultSpeakerName: Speaker
+  alternateSpeaker: 0
   nodes:
   - {fileID: -3956809402897789680}
   - {fileID: 800585512623981193}
@@ -81,12 +81,11 @@ MonoBehaviour:
     x: 358
     y: 145
     width: 250
-    height: 180
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 1
-  onExitActionParameter:
-  - FeedingRoom
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0
@@ -116,12 +115,11 @@ MonoBehaviour:
     x: 679
     y: 133
     width: 250
-    height: 200
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 1
-  onExitActionParameter:
-  - Home
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0

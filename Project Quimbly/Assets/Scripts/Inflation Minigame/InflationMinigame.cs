@@ -20,7 +20,10 @@ public class InflationMinigame : MonoBehaviour
         Fullness = Fullness + Random.Range(1, 7);
         int x = Random.Range(0, 4);
         source.PlayOneShot(SFX[x]);
-
+        if (Fullness >= 100)
+        {
+            GetComponent<AIConversant>().StartDialogue("DebMax");
+        }
         if(Pressure >= 75)
         {
             source.PlayOneShot(VoiceLines[Random.Range(3, 5)]);
