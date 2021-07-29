@@ -335,12 +335,11 @@ MonoBehaviour:
     x: 2739
     y: 81
     width: 250
-    height: 195
+    height: 155
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 5
-  onExitActionParameter:
-  - Home
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0

@@ -6,6 +6,7 @@ using ProjectQuimbly.Dialogue;
 
 public class InflationMinigame : MonoBehaviour
 {
+    public GameObject GameOver, PumpObject;
     public TMP_Text Pressure2, Fullness2;
     private float Pressure, Fullness;
     public AudioClip[] SFX;
@@ -27,6 +28,11 @@ public class InflationMinigame : MonoBehaviour
         if(Pressure >= 75)
         {
             source.PlayOneShot(VoiceLines[Random.Range(3, 5)]);
+        }
+        if (Pressure >= 100)
+        {
+            PumpObject.SetActive(false);
+            GameOver.SetActive(true);
         }
 
     }

@@ -267,8 +267,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1236
-    y: 2173
+    x: 1232
+    y: 2156
     width: 250
     height: 200
   onEnterAction: 0
@@ -1039,7 +1039,7 @@ MonoBehaviour:
     x: 2690
     y: 1508
     width: 250
-    height: 190
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
