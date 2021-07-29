@@ -739,6 +739,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!224 &250760616 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8437736031548731182, guid: c58e073619d697b4db8df8812b2a06b1, type: 3}
+  m_PrefabInstance: {fileID: 1649524523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &342171245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3955,9 +3960,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 24300002, guid: efaecbd361a67494b9305c39f04467c8, type: 2}
     - target: {fileID: 5987764519267387708, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
+      propertyPath: choiceRoot
+      value: 
+      objectReference: {fileID: 250760616}
+    - target: {fileID: 5987764519267387708, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 504209319}
+    - target: {fileID: 5987764519267387708, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
+      propertyPath: textContainer
+      value: 
+      objectReference: {fileID: 888452726}
     - target: {fileID: 5987764519267387708, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: characterImage
       value: 

@@ -11,6 +11,7 @@ namespace ProjectQuimbly.Dialogue
         Dialogue currentDialogue;
         DialogueNode currentNode = null;
         AIConversant currentConversant = null;
+        bool isChoosing = false;
 
         public event Action onConversationStart;
         public event Action onConversationEnd;
@@ -48,6 +49,7 @@ namespace ProjectQuimbly.Dialogue
             currentConversant = null;
             currentDialogue = null;
             currentNode = null;
+            isChoosing = false;
             onConversationEnd?.Invoke();
         }
 
@@ -58,7 +60,7 @@ namespace ProjectQuimbly.Dialogue
 
         public bool IsChoosing()
         {
-            return false;
+            return isChoosing;
         }
 
         public string GetText()
@@ -117,17 +119,33 @@ namespace ProjectQuimbly.Dialogue
         {
             currentNode = chosenNode;
             TriggerEnterAction();
-            Next();
+            if(HasNext())
+            {
+                Next();
+            }
+            else
+            {
+                Quit();
+            }
         }
 
         public void Next()
         {
+            int numPlayerResponses = FilterOnCondition(currentDialogue.GetPlayerChildren(currentNode)).Count();
             DialogueNode[] children = FilterOnCondition(currentDialogue.GetAllChildren(currentNode)).ToArray();
             TriggerExitAction();
 
-            int randomIndex = UnityEngine.Random.Range(0, children.Length);
-            currentNode = children[randomIndex];
-            TriggerEnterAction();
+            if(numPlayerResponses > 1)
+            {
+                isChoosing = true;
+            }
+            else
+            {
+                isChoosing = false;
+                int randomIndex = UnityEngine.Random.Range(0, children.Length);
+                currentNode = children[randomIndex];
+                TriggerEnterAction();
+            }
         }
 
         public bool HasNext()

@@ -16,16 +16,32 @@ namespace ButtonGame.UI
         [SerializeField] Image characterImage;
         [SerializeField] TextMeshProUGUI conversantName;
         [SerializeField] TextMeshProUGUI dialogueText;
-        [SerializeField] GameObject dialogueContainer;
+        [SerializeField] GameObject textContainer;
         [SerializeField] GameObject speakerContainer;
+        [SerializeField] Transform choiceRoot;
+        [SerializeField] GameObject choicePrefab;
+
+        List<string> hotkeys = new List<string>();
+        List<Button> choiceButtons = new List<Button>();
+        int choiceCount;
+        bool isWaitingOnChoice = false;
 
         // Action for the end of the coroutine
         public event Action textboxCloseEvent;
         string parsedContent;
         bool isScriptComplete;
 
-        private void Awake() 
+        private void Awake()
         {
+            foreach (Transform item in choiceRoot)
+            {
+                choiceButtons.Add(item.GetComponent<Button>());
+                item.gameObject.SetActive(false);
+            }
+
+            // Hotkey list for choice buttons
+            hotkeys = new List<string> {"Button0", "Button1", "Button2", "Button3", "Button4"};
+
             playerConversant = GetComponent<PlayerConversant>();
             playerConversant.onConversationStart += StartCoroutine;
         }
@@ -38,7 +54,7 @@ namespace ButtonGame.UI
 
         private void StartCoroutine()
         {
-            if(!dialogueContainer.activeSelf)
+            if(!textContainer.activeSelf)
             {
                 StartCoroutine(ShowText());
             }
@@ -47,7 +63,8 @@ namespace ButtonGame.UI
         // Print current node's dialog to textbox
         IEnumerator ShowText()
         {
-            dialogueContainer.SetActive(true);
+            textContainer.SetActive(true);
+            speakerContainer.SetActive(true);
             characterImage.gameObject.SetActive(true);
             SetupTextboxGroup();
 
@@ -55,21 +72,40 @@ namespace ButtonGame.UI
 
             while (playerConversant.IsActive())
             {
-                // timeSinceLastSubstring += Time.deltaTime;
-                if(dialogueText.maxVisibleCharacters < parsedContent.Length)
+                if(playerConversant.IsChoosing())
                 {
-                    dialogueText.maxVisibleCharacters++;
+                    if(!isWaitingOnChoice)
+                    {
+                        ReturnChoicesToPool(choiceCount);
+                        BuildChoiceList();
+                    }
+                    for (int i = 0; i < choiceButtons.Count; i++)
+                    {
+                        if (choiceButtons[i].IsActive() && Input.GetButtonDown(hotkeys[i]))
+                        {
+                            choiceButtons[i].onClick.Invoke();
+                        }
+                    }
                 }
-                // Check if user is trying to advance text
-                if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Mouse0))
+                else
                 {
-                    AdvanceTextbox();
+                    // timeSinceLastSubstring += Time.deltaTime;
+                    if (dialogueText.maxVisibleCharacters < parsedContent.Length)
+                    {
+                        dialogueText.maxVisibleCharacters++;
+                    }
+                    // Check if user is trying to advance text
+                    if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Mouse0))
+                    {
+                        AdvanceTextbox();
+                    }
                 }
                 yield return null;
             }
 
             characterImage.gameObject.SetActive(false);
-            dialogueContainer.SetActive(false);
+            textContainer.SetActive(false);
+            speakerContainer.SetActive(false);
         }
 
         private void AdvanceTextbox()
@@ -97,10 +133,62 @@ namespace ButtonGame.UI
             if (!playerConversant.IsActive()) return;
 
             SetNameAndSprite();
+            textContainer.SetActive(true);
             dialogueText.text = ReplaceSubstringVariables(playerConversant.GetText());
             dialogueText.maxVisibleCharacters = 0;
             dialogueText.ForceMeshUpdate();
             parsedContent = dialogueText.GetParsedText();
+        }
+
+        private void BuildChoiceList()
+        {
+            choiceCount = 0;
+            foreach (DialogueNode choiceNode in playerConversant.GetChoices())
+            {
+                Button button;
+                if (choiceButtons.Count > choiceCount)
+                {
+                    button = choiceButtons[choiceCount];
+                    button.gameObject.SetActive(true);
+                }
+                else
+                {
+                    GameObject choiceInstance = Instantiate(choicePrefab, choiceRoot);
+                    button = choiceInstance.GetComponent<Button>();
+                    choiceButtons.Add(button);
+                }
+                button.onClick.AddListener(() =>
+                {
+                    isWaitingOnChoice = false;
+                    playerConversant.SelectChoice(choiceNode);
+                    SetupTextboxGroup();
+                    ReturnChoicesToPool();
+                });
+                TextMeshProUGUI buttonTextComponent = button.GetComponentInChildren<TextMeshProUGUI>();
+                buttonTextComponent.text = ReplaceSubstringVariables(choiceNode.GetText());
+                choiceCount++;
+            }
+
+            speakerContainer.SetActive(false);
+            textContainer.SetActive(false);
+            isWaitingOnChoice = true;
+        }
+
+        private void ReturnChoicesToPool()
+        {
+            foreach (Transform child in choiceRoot)
+            {
+                child.gameObject.SetActive(false);
+            }
+        }
+
+        private void ReturnChoicesToPool(int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                choiceButtons[i].onClick.RemoveAllListeners();
+                choiceButtons[i].gameObject.SetActive(false);
+            }
         }
 
         private string ReplaceSubstringVariables(string sInput)

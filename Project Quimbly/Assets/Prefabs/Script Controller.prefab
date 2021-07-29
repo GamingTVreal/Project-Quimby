@@ -266,8 +266,10 @@ MonoBehaviour:
   characterImage: {fileID: 0}
   conversantName: {fileID: 0}
   dialogueText: {fileID: 0}
-  dialogueContainer: {fileID: 0}
+  textContainer: {fileID: 0}
   speakerContainer: {fileID: 0}
+  choiceRoot: {fileID: 0}
+  choicePrefab: {fileID: 4053382274634877735, guid: 315d38962b111b64385bae4991647ec1, type: 3}
 --- !u!114 &6361723965474188241
 MonoBehaviour:
   m_ObjectHideFlags: 0
