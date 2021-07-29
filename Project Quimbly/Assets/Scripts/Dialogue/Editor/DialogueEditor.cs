@@ -207,7 +207,7 @@ namespace ProjectQuimbly.Dialogue.Editor
             {
                 GUILayout.BeginHorizontal();
                 EditorGUILayout.LabelField("Convo Name:", GUILayout.Width(79));
-                GUI.SetNextControlName("RootNameField");
+                GUI.SetNextControlName("RootNameField" + node.name);
                 node.SetRootName(EditorGUILayout.TextField(node.GetConversationChainName()));
                 GUILayout.EndHorizontal();
             }
@@ -253,13 +253,13 @@ namespace ProjectQuimbly.Dialogue.Editor
             {
                 GUILayout.BeginHorizontal();
                 EditorGUILayout.LabelField("Speaker:", GUILayout.Width(51));
-                GUI.SetNextControlName("SpeakerNameField");
+                GUI.SetNextControlName("SpeakerNameField" + node.name);
                 node.SetSpeaker(EditorGUILayout.TextField(node.GetSpeaker()));
                 GUILayout.EndHorizontal();
             }
 
             // Dialogue Text
-            GUI.SetNextControlName("MainTextField");
+            GUI.SetNextControlName("MainTextField" + node.name);
             node.SetText(EditorGUILayout.TextArea(node.GetText(), wrapStyle));
 
 
@@ -354,11 +354,11 @@ namespace ProjectQuimbly.Dialogue.Editor
                     break;
                 case OnDialogueAction.GiveItem:
                     dialogueActions.Add(GenerateItemSelect(actionParams[0]));
-                    dialogueActions.Add(GenerateItemCountField(actionParams[1]));
+                    dialogueActions.Add(GenerateItemCountField(actionParams[1], node.name));
                     break;
                 case OnDialogueAction.GiveMoney:
                 case OnDialogueAction.GiveEnergy:
-                    dialogueActions.Add(GenerateNumberField(actionParams[0], "Amount:", 47));
+                    dialogueActions.Add(GenerateNumberField(actionParams[0], "Amount:", 47, node.name));
                     break;
                 case OnDialogueAction.LoadScene:
                     dialogueActions.Add(GenerateSceneSelect(actionParams, dialogueActions));
@@ -466,7 +466,7 @@ namespace ProjectQuimbly.Dialogue.Editor
             }
         }
 
-        private static string GenerateItemCountField(string numString)
+        private static string GenerateItemCountField(string numString, string nodeID)
         {
             int newCount;
             if(!int.TryParse(numString, out newCount))
@@ -475,14 +475,14 @@ namespace ProjectQuimbly.Dialogue.Editor
             }
             GUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Item Count:", GUILayout.Width(70));
-            GUI.SetNextControlName("NumberField");
+            GUI.SetNextControlName("NumberField" + nodeID);
             newCount = EditorGUILayout.IntField(newCount);
             GUILayout.EndHorizontal();
             
             return newCount.ToString();
         }
 
-        private static string GenerateNumberField(string numString, string label, int width)
+        private static string GenerateNumberField(string numString, string label, int width, string nodeID)
         {
             int newCount;
             if (!int.TryParse(numString, out newCount))
@@ -491,7 +491,7 @@ namespace ProjectQuimbly.Dialogue.Editor
             }
             GUILayout.BeginHorizontal();
             EditorGUILayout.LabelField(label, GUILayout.Width(width));
-            GUI.SetNextControlName("NumberField");
+            GUI.SetNextControlName("NumberField" + nodeID);
             newCount = EditorGUILayout.IntField(newCount);
             GUILayout.EndHorizontal();
 
@@ -519,7 +519,7 @@ namespace ProjectQuimbly.Dialogue.Editor
                 string sceneName = System.IO.Path.GetFileNameWithoutExtension(SceneUtility.GetScenePathByBuildIndex(i));
                 sceneList.Add(sceneName);
             }
-            
+
             string[] sceneOptions = sceneList.ToArray();
             int selected = GetIndexInArray(sceneOptions, actionParams[0]);
 
