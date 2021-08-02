@@ -23,32 +23,32 @@ public class TextEvents : MonoBehaviour
     public LoadingScreenScript Load;
     static bool talked, MaxFed = false;
 
-    public void Start()
-    {
-    }
-    public void MeetingDeb()
-    {
-         if (MetDeb == true)
-        {
-            GirlMenu();
-        }
-        else if (MetDeb == false)
-        {
-            SpeakButton.interactable = false;
-            SpeakButton.GetComponent<AIConversant>().StartDialogue();
-            MetDeb = true;
-        }
+    // public void Start()
+    // {
+    // }
+    // public void MeetingDeb()
+    // {
+    //      if (MetDeb == true)
+    //     {
+    //         GirlMenu();
+    //     }
+    //     else if (MetDeb == false)
+    //     {
+    //         SpeakButton.interactable = false;
+    //         SpeakButton.GetComponent<AIConversant>().StartDialogue();
+    //         MetDeb = true;
+    //     }
         
-    }
-    public void GirlMenu()
-    {
-        MainCamera.SetActive(false);
-        MenuCamera.SetActive(true);
-    }
-    private void EnableGirlMenu()
-    {
+    // }
+    // public void GirlMenu()
+    // {
+    //     MainCamera.SetActive(false);
+    //     MenuCamera.SetActive(true);
+    // }
+    // private void EnableGirlMenu()
+    // {
         
-    }
+    // }
     public void Feeding()
     {
         GameObject FeedingButton = GameObject.Find("Feed");
@@ -135,45 +135,6 @@ public class TextEvents : MonoBehaviour
                 x = 0;
                 Music.Play();
             }
-        }
-    }
-    public void NoEnergy()
-    {
-        TextBox.currentline = 3;
-        TextBox.endatline = 10;
-        TextBox.ReloadScript(ErrorMessages);
-    }
-    public void NotEnoughEnergy()
-    {
-        TextBox.currentline = 14;
-        TextBox.endatline = 15;
-        TextBox.ReloadScript(ErrorMessages);
-    }
-
-    public void GoToWork()
-    {
-        if (PlayerStats.Instance.CurrentJob != 0)
-        {
-            if (PlayerStats.Instance.Energy == 0)
-            {
-                NoEnergy();
-            }
-            else if (PlayerStats.Instance.Energy < 15 && PlayerStats.Instance.Energy != 0)
-            {
-                NotEnoughEnergy();
-            }
-            else
-            {
-                PlayerStats.Instance.Energy = PlayerStats.Instance.Energy - 15;
-                Load.Work();
-            }
-        }
-        else
-        {
-            // Set line range, pass in script to display
-            TextBox.currentline = 19;
-            TextBox.endatline = 19;
-            TextBox.ReloadScript(ErrorMessages);
         }
     }
 

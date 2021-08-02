@@ -74,7 +74,7 @@ public class LoadingScreenScript : MonoBehaviour
             case 0:
                 break;
             case 1: 
-                    Area = "Dishwasher";
+                    Area = "Jobs/Dishwasher";
                     LoadScreenExample();
                 break;
 

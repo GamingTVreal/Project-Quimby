@@ -19,7 +19,7 @@ public class NameScript : MonoBehaviour
             {
                 characterName = null;
                 nameMenu.SetActive(false);
-                Debug.Log(BasicFunctions.Name);
+                // Debug.Log(BasicFunctions.Name);
             }
         }
     }

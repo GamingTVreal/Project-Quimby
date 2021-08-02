@@ -1279,26 +1279,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: Home
       objectReference: {fileID: 0}
-    - target: {fileID: 5504432221249572625, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1695842332}
-    - target: {fileID: 5504432221249572625, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1800135443}
-    - target: {fileID: 5504432221249572625, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToWork
-      objectReference: {fileID: 0}
-    - target: {fileID: 5504432221249572625, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 5504432221249572625, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6220589370101325409, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3744,17 +3724,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 264a6f967fef96b4d96095367616648a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1695842332 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2556943766880750430, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
-  m_PrefabInstance: {fileID: 1695842329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 228c8f22d25e8444184eb6c506a4c1b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1753201778

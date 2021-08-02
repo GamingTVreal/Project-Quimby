@@ -32,7 +32,7 @@ public class JobAssigner : MonoBehaviour, ISaveable
     public void AssignJob()
     {
         if(Currentjob == null) return;
-        
+
         PlayerStats.Instance.CurrentJob = AssignedJob;
 
         switch (AssignedJob)
@@ -51,7 +51,6 @@ public class JobAssigner : MonoBehaviour, ISaveable
 
     public object CaptureState()
     {
-        Debug.Log("Currently assigned job: " + PlayerStats.Instance.CurrentJob);
         return PlayerStats.Instance.CurrentJob;
     }
 
