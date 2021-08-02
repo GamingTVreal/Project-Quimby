@@ -5,7 +5,7 @@ using TMPro;
 
 public class NameText : MonoBehaviour
 {
-    private void Update()
+    private void Start()
     {
         GetComponent<TextMeshProUGUI>().text = PlayerStats.Instance.Name;
     }

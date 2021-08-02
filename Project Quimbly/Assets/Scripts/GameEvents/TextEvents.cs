@@ -15,7 +15,7 @@ public class TextEvents : MonoBehaviour
     bool BeenToJobAgency = false;
     [SerializeField] AudioSource SnoringSFX, Music;
     [SerializeField] Animator Fadeout;
-    [SerializeField] GameObject MainCamera, MenuCamera, JobMenu, DebMenu,FeedingStuff;
+    [SerializeField] GameObject MainCamera, MenuCamera, DebMenu,FeedingStuff;
     [SerializeField] Button SpeakButton, ChatButton;
     public TextBoxManager TextBox;
     public TextBoxManager TB2;
@@ -94,6 +94,7 @@ public class TextEvents : MonoBehaviour
         Leave2();
         Debug.Log("I made it here :)");
     }
+
     void Leave2()
     {
         if (TextBox.isTextboxActive == false && TB2.isTextboxActive == false || TextBox.isTextboxActive == false && TB2 == null)
@@ -110,85 +111,9 @@ public class TextEvents : MonoBehaviour
             TB2.textboxCloseEvent += Leave2;
         }
     }
-    private void FixedUpdate()
-    {
-        if (SpeakButton != null)
-        {
-            if (SpeakButton.interactable == false && TextBox.endatline < TextBox.currentline)
-            {
-                SpeakButton.interactable = true;
-            }
-        }
-    }
 
-
-    public void SmallTalk()
-    {
-        ChatButton.interactable = false;
-        int Descussion;
-        Descussion = UnityEngine.Random.Range(0,6);
-        
-        switch (Descussion)
-        {
-            case 0:
-                TB2.NextLine();
-                Debug.Log("Case0");
-                TB2.endatline = 90;
-                TB2.currentline = 56;
-                TB2.ReloadScript();
-                TB2.NextLine();
-                break;
-
-            case 1:
-                Debug.Log("Case1");
-                TB2.endatline = 156;
-                TB2.currentline = 131;
-                TB2.ReloadScript();
-                TB2.NextLine();
-                break;
-            case 2:
-                Debug.Log("Case2");
-                TB2.endatline = 126;
-                TB2.currentline = 95;
-                TB2.ReloadScript();
-                TB2.NextLine();
-                PlayerStats.Instance.AdjustMoney(100000);
-                break;
-            case 3:
-                Debug.Log("Case3");
-                TB2.endatline = 179;
-                TB2.currentline = 161;
-                TB2.ReloadScript();
-                TB2.NextLine();
-                break;
-
-            case 4:
-                Debug.Log("Case4");
-                TB2.endatline = 90;
-                TB2.currentline = 56;
-                TB2.ReloadScript();
-                TB2.NextLine();
-                break;
-            case 5:
-                Debug.Log("Case5");
-                TB2.endatline = 212;
-                TB2.currentline = 184;
-                TB2.ReloadScript();
-                TB2.NextLine();
-                break;
-            case 6:
-                Debug.Log("Case6");
-                TB2.endatline = 232;
-                TB2.currentline = 216;
-                TB2.ReloadScript();
-                TB2.NextLine();
-                break;
-        }
-        ChatButton.interactable = true;
-    }
     public void Sleep()
     {
-         
         Fadeout.SetBool("Fadeout", true);
         if (Fadeout.GetBool("Fadeout") == true)
         {
@@ -212,23 +137,6 @@ public class TextEvents : MonoBehaviour
             }
         }
     }
-
-    public void JobAgency()
-    {
-        SpeakButton.interactable = false;
-        if (BeenToJobAgency == true)
-        {
-            JobMenu.SetActive(true);
-        }
-        else
-        {
-            TextBox.currentline = 2;
-            TextBox.endatline = 15;
-            TextBox.ReloadScript();
-            BeenToJobAgency = true;
-        }
-        SpeakButton.interactable = true;
-    }
     public void NoEnergy()
     {
         TextBox.currentline = 3;
@@ -241,6 +149,7 @@ public class TextEvents : MonoBehaviour
         TextBox.endatline = 15;
         TextBox.ReloadScript(ErrorMessages);
     }
+
     public void GoToWork()
     {
         if (PlayerStats.Instance.CurrentJob != 0)

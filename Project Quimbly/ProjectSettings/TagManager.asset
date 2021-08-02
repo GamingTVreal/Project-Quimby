@@ -7,6 +7,8 @@ TagManager:
   - Dish
   - DebButton
   - BackgroundImage
+  - GirlContainer
+  - PhoneMenu
   layers:
   - Default
   - TransparentFX

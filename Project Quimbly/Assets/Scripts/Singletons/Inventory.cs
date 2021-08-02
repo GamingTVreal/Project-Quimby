@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using ProjectQuimbly.Inventories;
+using ProjectQuimbly.Saving;
 using UnityEngine;
 
 public class Inventory : Singleton<Inventory>
@@ -228,6 +229,17 @@ public class Inventory : Singleton<Inventory>
             item.filling = itemIconDB.GetFullness(item.itemType);
             item.isdrink = itemIconDB.GetWater(item.itemType);
             AddItem(item);
+        }
+    }
+
+    public void RestoreItemList(List<Item> itemRecord)
+    {
+        itemList = itemRecord;
+        foreach (var item in itemList)
+        {
+            item.icon = itemIconDB.GetSprite(item.itemType);
+            item.filling = itemIconDB.GetFullness(item.itemType);
+            item.isdrink = itemIconDB.GetWater(item.itemType);
         }
     }
 }

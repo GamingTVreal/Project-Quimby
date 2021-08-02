@@ -1,22 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using ProjectQuimbly.Dialogue;
 using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    public TextBoxManager Peter;
     public GameObject Store;
+    AIConversant conversant = null;
     bool TalkedToShopLady = false;
-    // Start is called before the first frame update
-    void Start()
+    
+    private void Awake() 
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        conversant = GetComponent<AIConversant>();
     }
 
    public void StartBrowsing()
@@ -27,9 +22,7 @@ public class Shop : MonoBehaviour
         }
         else
         {
-            Peter.currentline = 20;
-            Peter.endatline = 23;
-            Peter.ReloadScript();
+            conversant.StartDialogue();
             TalkedToShopLady = true;
         } 
     }

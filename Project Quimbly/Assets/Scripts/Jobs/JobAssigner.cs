@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using ProjectQuimbly.Saving;
 
-public class JobAssigner : MonoBehaviour
+public class JobAssigner : MonoBehaviour, ISaveable
 {
     [SerializeField] TMP_Text Currentjob;
     int AssignedJob;
     public string CurrentAssignedJob;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         if(PlayerStats.Instance.CurrentJob != 0)
         {
@@ -22,20 +22,18 @@ public class JobAssigner : MonoBehaviour
             AssignedJob = 0;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public void Dishwasher()
     {
         AssignedJob = 1;
         AssignJob();
     }
+
     public void AssignJob()
     {
-        PlayerStats.Instance.CurrentJob  = AssignedJob;
+        if(Currentjob == null) return;
+        
+        PlayerStats.Instance.CurrentJob = AssignedJob;
 
         switch (AssignedJob)
         {
@@ -49,5 +47,19 @@ public class JobAssigner : MonoBehaviour
                 break;
         }
         
+    }
+
+    public object CaptureState()
+    {
+        Debug.Log("Currently assigned job: " + PlayerStats.Instance.CurrentJob);
+        return PlayerStats.Instance.CurrentJob;
+    }
+
+    public void RestoreState(object state)
+    {
+        PlayerStats.Instance.CurrentJob = (int)state;
+        AssignedJob = (int)state;
+
+        AssignJob();
     }
 }

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+[System.Serializable]
 public class Item
 {
+    [System.Serializable]
     public enum ItemType
     {
         Cake,

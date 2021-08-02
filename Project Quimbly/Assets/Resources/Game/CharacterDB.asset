@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb901ed349f8ff428bb19b9e7d2ecc5, type: 3}
+  m_Name: CharacterDB
+  m_EditorClassIdentifier: 
+  characters:
+  - prefab: {fileID: 2339657948083030910, guid: 3bd74a736b3288f45b983d95f30b747c, type: 3}
+    girlName: Deb
+    biography: Deb is the debug girl of your dreams :)
+    age: 21
+    cupSize: D
+  - prefab: {fileID: 0}
+    girlName: Not Deb
+    biography: Not Deb is the debug girl of your dreams :)
+    age: 210
+    cupSize: B

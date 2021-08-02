@@ -8,7 +8,7 @@ using System;
 using System.Linq;
 using ProjectQuimbly.UI;
 
-namespace ButtonGame.UI
+namespace ProjectQuimbly.UI
 {
     public class DialogueUI : MonoBehaviour
     {

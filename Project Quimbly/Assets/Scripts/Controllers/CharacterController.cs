@@ -56,18 +56,20 @@ public class CharacterController : MonoBehaviour
     {
 
     }
+
     public void TalkToDeb()
     {
 
-        switch (Character)
-        {
-            case 0:
-                _textEvents.MeetingDeb();
-                spriteController.GetSprite();
-                UnlockCharacter();
-                break;
-        }
+        // switch (Character)
+        // {
+        //     case 0:
+        //         _textEvents.MeetingDeb();
+        //         spriteController.GetSprite();
+        //         UnlockCharacter();
+        //         break;
+        // }
     }
+
     void SetCharacters()
     {
         switch (Character)

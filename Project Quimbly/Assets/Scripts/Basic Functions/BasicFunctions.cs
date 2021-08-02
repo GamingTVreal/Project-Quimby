@@ -7,8 +7,11 @@ using ProjectQuimbly.UI;
 using ProjectQuimbly.Controllers;
 using ProjectQuimbly.Feeding;
 using System;
+using UnityEngine.UI;
+using ProjectQuimbly.Saving;
+using UnityEngine.SceneManagement;
 
-public class BasicFunctions : MonoBehaviour
+public class BasicFunctions : MonoBehaviour, ISaveable, ISlotInfo
 {
     
     [SerializeField] private Inventory_Ui Inventory_UI;
@@ -169,9 +172,29 @@ public class BasicFunctions : MonoBehaviour
 
     public void OpenthePhone()
     {
-        if (PhoneAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+        if (!Phone.activeSelf && PhoneAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
         {
             Phone.SetActive(true);
+        
+            return;
+        }
+        else if(!Phone.activeSelf)
+        {
+            StartCoroutine(PhoneOpen());
+        }
+    }
+
+    private IEnumerator PhoneOpen()
+    {
+        while (!Phone.activeSelf && PhoneAnimation.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)
+        {
+            yield return null;
+            if (Input.GetMouseButtonDown(0))
+            {
+                Phone.SetActive(true);
+                PhoneAnimation.Play("Normal");
+                // break;
+            }
         }
     }
 
@@ -241,6 +264,27 @@ public class BasicFunctions : MonoBehaviour
             }
         }
         return cursorMappings[0];
+    }
+
+    public object CaptureState()
+    {
+        var stateDict = new Dictionary<string, string>();
+        stateDict["name"] = Name;
+        stateDict["money"] = PlayerStats.Instance.GetMoney().ToString();
+        stateDict["energy"] = PlayerStats.Instance.GetEnergy().ToString();
+        stateDict["location"] = SceneManager.GetActiveScene().name;
+        stateDict["scene"] = SceneManager.GetActiveScene().buildIndex.ToString();
+
+        return stateDict;
+    }
+
+    public void RestoreState(object state)
+    {
+        var stateDict = (Dictionary<string, string>)state;
+        PlayerStats.Instance.Name = stateDict["name"];
+        Name = stateDict["name"];
+        PlayerStats.Instance.SetMoney(int.Parse(stateDict["money"]));
+        PlayerStats.Instance.SetEnergy(int.Parse(stateDict["energy"]));
     }
 }
 

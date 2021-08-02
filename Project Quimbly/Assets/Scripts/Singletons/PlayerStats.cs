@@ -23,6 +23,11 @@ public class PlayerStats : Singleton<PlayerStats>
             return _money;
     }
 
+    public void SetMoney(int amount)
+    {
+        _money = amount;
+    }
+
     public void AdjustMoney(int amount, bool max = false)
     {
         if (max)
@@ -45,5 +50,10 @@ public class PlayerStats : Singleton<PlayerStats>
             Energy = _maxEnergy;
         else
             Energy += amount;
+    }
+
+    public void SetEnergy(int amount)
+    {
+        Energy = amount;
     }
 }

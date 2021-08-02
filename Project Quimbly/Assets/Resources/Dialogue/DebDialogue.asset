@@ -267,8 +267,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1232
-    y: 2156
+    x: 1219
+    y: 2154
     width: 250
     height: 200
   onEnterAction: 0
@@ -616,8 +616,8 @@ MonoBehaviour:
   - f0c1bba1-63a1-4994-b362-fda8b4b18dce
   rect:
     serializedVersion: 2
-    x: 623
-    y: 808
+    x: 31
+    y: 604
     width: 250
     height: 180
   onEnterAction: 0
@@ -1039,7 +1039,7 @@ MonoBehaviour:
     x: 2690
     y: 1508
     width: 250
-    height: 175
+    height: 190
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1073,11 +1073,12 @@ MonoBehaviour:
     x: 1476
     y: 1921
     width: 250
-    height: 160
+    height: 200
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 5
+  onExitActionParameter:
+  - Feeding Minigame
   condition:
     and: []
   enterActionIndex: 0
@@ -1849,8 +1850,8 @@ MonoBehaviour:
   - a143e793-1842-48cf-a44b-06b5d5a876e0
   rect:
     serializedVersion: 2
-    x: 607
-    y: 539
+    x: 612
+    y: 596
     width: 250
     height: 175
   onEnterAction: 0
@@ -2409,8 +2410,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 184
-    y: 300
+    x: 63
+    y: 344
     width: 250
     height: 155
   onEnterAction: 0

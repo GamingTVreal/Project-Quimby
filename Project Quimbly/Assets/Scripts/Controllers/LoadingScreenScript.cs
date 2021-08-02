@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections;
+using ProjectQuimbly.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class LoadingScreenScript : MonoBehaviour
     public Slider slider;
     public GameObject Complete;
     public JobAssigner Job;
+
+    [SerializeField] GameObject chSceneObjPrefab;
 
     AsyncOperation async;
     public void InflationMinigame()
@@ -49,12 +52,20 @@ public class LoadingScreenScript : MonoBehaviour
     public void LoadNewArea(string newArea)
     {
         Area = newArea;
-        StartCoroutine(LoadingScreen());
+        ChangeSceneButton changeSceneObj = Instantiate(chSceneObjPrefab).GetComponent<ChangeSceneButton>();
+        changeSceneObj.SetSceneToLoad(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/" + Area + ".unity"));
+        changeSceneObj.SetDestination(Area);
+        changeSceneObj.ChangeScene();
+        // StartCoroutine(LoadingScreen());
     }
 
     public void LoadScreenExample()
     {
-        StartCoroutine(LoadingScreen());
+        ChangeSceneButton changeSceneObj = Instantiate(chSceneObjPrefab).GetComponent<ChangeSceneButton>();
+        changeSceneObj.SetSceneToLoad(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/" + Area + ".unity"));
+        changeSceneObj.SetDestination(Area);
+        changeSceneObj.ChangeScene();
+        // StartCoroutine(LoadingScreen());
     }
     public void Work()
     {
@@ -82,29 +93,35 @@ public class LoadingScreenScript : MonoBehaviour
             async.allowSceneActivation = true;
             loadingScreenObj.SetActive(false);
             Complete.SetActive(false);
+
+            // Autosave
+            SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+            savingWrapper.Save();
         }
 
     }
 
     IEnumerator LoadingScreen()
     {
-        loadingScreenObj.SetActive(true);
-        async = SceneManager.LoadSceneAsync(Area);
-        async.allowSceneActivation = false;
 
-        while (async.isDone == false)
-        {
-            slider.value = async.progress;
-            if (async.progress == 0.9f)
-            {
-                slider.value = 1f;
-                Complete.SetActive(true);
-            }
+
+        // loadingScreenObj.SetActive(true);
+        // async = SceneManager.LoadSceneAsync(Area);
+        // async.allowSceneActivation = false;
+
+        // while (async.isDone == false)
+        // {
+        //     slider.value = async.progress;
+        //     if (async.progress == 0.9f)
+        //     {
+        //         slider.value = 1f;
+        //         Complete.SetActive(true);
+        //     }
 
 
             yield return null;
 
-        }
+        // }
     }
 }
 

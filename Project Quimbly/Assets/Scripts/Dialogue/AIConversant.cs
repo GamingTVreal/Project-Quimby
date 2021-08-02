@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,46 +10,75 @@ namespace ProjectQuimbly.Dialogue
         [SerializeField] Dialogue dialogue;
         [SerializeField] string conversationChain;
         [SerializeField] int[] randomConvoOptions;
+
+        PlayerConversant player = null;
+
+        public event Action onConversationEnd;
+
+        private void Awake()
+        {
+            player = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>();
+        }
         
         public void StartDialogue()
         {
-            PlayerConversant player = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>();
             if(player != null)
             {
                 player.StartDialogue(this, dialogue);
+                player.onConversationEnd += OnConversationEnd;
             }
         }
 
         public void StartDialogue(Dialogue newDialogue)
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, newDialogue);
-        }
-
-        public void StartDialogue(bool randomConvo = false)
-        {
-            PlayerConversant player = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>();
-            if (player != null)
+            if(player != null)
             {
-                if (!randomConvo)
-                {
-                    player.StartDialogue(this, dialogue, conversationChain);
-                }
-                else
-                {
-                    int choice = Random.Range(0, randomConvoOptions.Length);
-                    choice = randomConvoOptions[choice];
-                    player.StartDialogue(this, dialogue, choice);
-                }
+                player.StartDialogue(this, newDialogue);
+                player.onConversationEnd += OnConversationEnd;
             }
         }
 
         public void StartDialogue(string convoStart)
         {
-            PlayerConversant player = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>();
             if (player != null)
             {
                 player.StartDialogue(this, dialogue, convoStart);
+                player.onConversationEnd += OnConversationEnd;
             }
+        }
+
+        public void StartDialogue(Dialogue newDialogue, string convoStart)
+        {
+            if (player != null)
+            {
+                player.StartDialogue(this, newDialogue, convoStart);
+                player.onConversationEnd += OnConversationEnd;
+            }
+        }
+
+        public void StartDialogue(bool randomConvo = false)
+        {
+            if (player != null)
+            {
+                if (!randomConvo)
+                {
+                    player.StartDialogue(this, dialogue, conversationChain);
+                    player.onConversationEnd += OnConversationEnd;
+                }
+                else
+                {
+                    int choice = UnityEngine.Random.Range(0, randomConvoOptions.Length);
+                    choice = randomConvoOptions[choice];
+                    player.StartDialogue(this, dialogue, choice);
+                    player.onConversationEnd += OnConversationEnd;
+                }
+            }
+        }
+
+        public void OnConversationEnd()
+        {
+            onConversationEnd?.Invoke();
+            player.onConversationEnd -= OnConversationEnd;
         }
     }
 }
