@@ -8,7 +8,7 @@ public class InflationMinigame : MonoBehaviour
 {
     public GameObject GameOver, PumpObject;
     public TMP_Text Pressure2, Fullness2;
-    private float Pressure, Fullness;
+    public float Pressure, Fullness;
     public AudioClip[] SFX;
     public AudioClip[] VoiceLines;
     public AudioSource source;
@@ -19,6 +19,8 @@ public class InflationMinigame : MonoBehaviour
     {
         Pressure = Pressure + 25;
         Fullness = Fullness + Random.Range(1, 7);
+        Fullness2.text = Fullness.ToString();
+        Debug.Log(Fullness);
         int x = Random.Range(0, 4);
         source.PlayOneShot(SFX[x]);
         if (Fullness >= 100)
@@ -71,7 +73,6 @@ public class InflationMinigame : MonoBehaviour
         }
 
         Pressure2.text = Pressure.ToString("0.00");
-        Fullness2.text = Fullness.ToString();
         if (Pressure > 0 && Pressure < 101)
         {
             Pressure = Pressure - Time.deltaTime;
