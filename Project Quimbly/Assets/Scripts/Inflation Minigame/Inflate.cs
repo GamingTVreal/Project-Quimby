@@ -8,12 +8,12 @@ public class Inflate : MonoBehaviour
     public InflationMinigame Inflation;
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("1");
+        //Debug.Log("1");
         Inflation.Inflate();
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("2");
+        //Debug.Log("2");
         Inflation.Recharge();
     }
 }
