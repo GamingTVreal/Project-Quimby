@@ -6,9 +6,9 @@ namespace ProjectQuimbly.SceneManagement
 {
     public class SavingWrapper : MonoBehaviour
     {
-        [SerializeField] KeyCode saveKey = KeyCode.K;
-        [SerializeField] KeyCode loadKey = KeyCode.L;
-        [SerializeField] KeyCode deleteKey = KeyCode.Delete;
+        // [SerializeField] KeyCode saveKey = KeyCode.K;
+        // [SerializeField] KeyCode loadKey = KeyCode.L;
+        // [SerializeField] KeyCode deleteKey = KeyCode.Delete;
         const string defaultSaveFile = "auto";
         
         private void Awake() 
