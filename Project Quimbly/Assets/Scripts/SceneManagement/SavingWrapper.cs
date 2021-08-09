@@ -20,21 +20,21 @@ namespace ProjectQuimbly.SceneManagement
             yield return GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile);
         }
 
-        private void Update() 
-        {
-            if (Input.GetKeyDown(saveKey))
-            {
-                Save();
-            }
-            if (Input.GetKeyDown(loadKey))
-            {
-                StartCoroutine(Load());
-            }
-            if (Input.GetKeyDown(deleteKey))
-            {
-                Delete();
-            }
-        }
+        // private void Update() 
+        // {
+        //     if (Input.GetKeyDown(saveKey))
+        //     {
+        //         Save();
+        //     }
+        //     if (Input.GetKeyDown(loadKey))
+        //     {
+        //         StartCoroutine(Load());
+        //     }
+        //     if (Input.GetKeyDown(deleteKey))
+        //     {
+        //         Delete();
+        //     }
+        // }
 
         public IEnumerator Load()
         {
