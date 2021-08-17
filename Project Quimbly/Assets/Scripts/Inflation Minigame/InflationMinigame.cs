@@ -102,4 +102,8 @@ public class InflationMinigame : MonoBehaviour
         FullnessSprites += Fullness;
         SpriteCheck();
     }
+    public void LeaveInflation()
+    {
+        GetComponent<AIConversant>().StartDialogue("LeaveDeb");
+    }
 }

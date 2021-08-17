@@ -897,6 +897,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 02934f1e8349c544c8369684207072d5, type: 3}
+    - target: {fileID: 7274509531241765169, guid: c1b6218e410b7ad4b86a69c135f9e560, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7274509531420174924, guid: c1b6218e410b7ad4b86a69c135f9e560, type: 3}
       propertyPath: m_text
       value: /0
@@ -2086,8 +2090,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 830446939}
-  m_RootOrder: 2
+  m_Father: {fileID: 1461905967}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.584}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2270,6 +2274,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5926896995322606292, guid: c58e073619d697b4db8df8812b2a06b1, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926896995322606292, guid: c58e073619d697b4db8df8812b2a06b1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926896995322606292, guid: c58e073619d697b4db8df8812b2a06b1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926896995322606292, guid: c58e073619d697b4db8df8812b2a06b1, type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5926896995322606292, guid: c58e073619d697b4db8df8812b2a06b1, type: 3}

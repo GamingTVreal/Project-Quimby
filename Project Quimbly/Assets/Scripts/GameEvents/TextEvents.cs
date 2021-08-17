@@ -223,6 +223,10 @@ public class TextEvents : MonoBehaviour
 
     }
 
+    public void LeavingInflation()
+    {
+
+    }
     public void FeedingSmalltalk()
     {
 

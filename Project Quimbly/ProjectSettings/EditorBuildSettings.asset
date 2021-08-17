@@ -30,4 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Inflation Minigame.unity
     guid: 09ee8ccbbc3fecf4c8170d809243d4b7
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: b147f2445fb89194d934a802e4b5f86b, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: c825447fe685b604aa8d91e846008178, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 333c5d7337520cd448e9cf12958d247d, type: 2}
