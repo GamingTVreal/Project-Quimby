@@ -48,6 +48,12 @@ public class LoadingScreenScript : MonoBehaviour
         Area = "JobAgency";
         LoadScreenExample();
     }
+    public void Beach()
+    {
+        Area = "Beach";
+        LoadScreenExample();
+    }
+
 
     public void LoadNewArea(string newArea)
     {

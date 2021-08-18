@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Inflation Minigame.unity
     guid: 09ee8ccbbc3fecf4c8170d809243d4b7
+  - enabled: 1
+    path: Assets/Scenes/Beach.unity
+    guid: 43c6bbc5e1ad1384dbe48138ae0b5ccb
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: b147f2445fb89194d934a802e4b5f86b, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: c825447fe685b604aa8d91e846008178, type: 2}
