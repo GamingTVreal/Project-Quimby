@@ -5,23 +5,8 @@ using UnityEngine;
 
 namespace ProjectQuimbly.Schedules
 {
-    public class AmberSchedule : MonoBehaviour, IScheduler, ISaveable
+    public class AmberSchedule : Scheduler
     {
-        [SerializeField] string location = "Beach";
-
-        public string GetLocation()
-        {
-            return location;
-        }
-
-        public object CaptureState()
-        {
-            return location;
-        }
-
-        public void RestoreState(object state)
-        {
-            location = (string)state;
-        }
+        
     }
 }

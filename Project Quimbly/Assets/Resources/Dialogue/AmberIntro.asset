@@ -45,10 +45,9 @@ MonoBehaviour:
     x: 341
     y: 151
     width: 250
-    height: 200
-  onEnterAction: 6
-  onEnterActionParameter:
-  - Close1
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -81,10 +80,9 @@ MonoBehaviour:
     x: 53
     y: 142
     width: 250
-    height: 220
-  onEnterAction: 6
-  onEnterActionParameter:
-  - gurgle1
+    height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
