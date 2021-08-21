@@ -18,8 +18,8 @@ MonoBehaviour:
     biography: Deb is the debug girl of your dreams :)
     age: 21
     cupSize: D
-  - prefab: {fileID: 0}
-    girlName: Not Deb
+  - prefab: {fileID: 7831626443754671777, guid: 32b21054d903fd043957ae52ec21b140, type: 3}
+    girlName: Amber
     biography: Not Deb is the debug girl of your dreams :)
     age: 210
     cupSize: B

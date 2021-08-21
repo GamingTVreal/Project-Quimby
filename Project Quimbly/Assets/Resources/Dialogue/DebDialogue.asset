@@ -270,12 +270,11 @@ MonoBehaviour:
     x: 1219
     y: 2154
     width: 250
-    height: 200
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 5
-  onExitActionParameter:
-  - Inflation Minigame
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0
@@ -1073,12 +1072,11 @@ MonoBehaviour:
     x: 1476
     y: 1921
     width: 250
-    height: 200
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 5
-  onExitActionParameter:
-  - Feeding Minigame
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0
@@ -1709,8 +1707,8 @@ MonoBehaviour:
   - 7258c0be-c94d-4d11-8df3-a3cb02a324be
   rect:
     serializedVersion: 2
-    x: 307
-    y: 65
+    x: 283
+    y: 59
     width: 250
     height: 160
   onEnterAction: 0
