@@ -153,7 +153,7 @@ AudioSource:
   m_GameObject: {fileID: 3241687173818506859}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: efaecbd361a67494b9305c39f04467c8, type: 2}
   m_audioClip: {fileID: 8300000, guid: b10b0e8994fcd234595a922320e1f932, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -369,6 +369,38 @@ MonoBehaviour:
         - m_Target: {fileID: 5987764519267387708}
           m_TargetAssemblyTypeName: ButtonGame.UI.DialogueUI, Assembly-CSharp
           m_MethodName: LoadScene
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - action: 6
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5987764519267387708}
+          m_TargetAssemblyTypeName: ProjectQuimbly.UI.DialogueUI, Assembly-CSharp
+          m_MethodName: PlayAudioSample
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - action: 7
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5987764519267387708}
+          m_TargetAssemblyTypeName: ProjectQuimbly.UI.DialogueUI, Assembly-CSharp
+          m_MethodName: ChangeMusicTrack
           m_Mode: 0
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

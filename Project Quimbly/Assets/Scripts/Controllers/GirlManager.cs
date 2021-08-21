@@ -30,7 +30,7 @@ namespace ProjectQuimbly.Controllers
             foreach (string girl in characterLookup.Keys)
             {
                 GameObject characterGO = characterDB.GetPrefab(girl);
-                if (curScene == characterGO.GetComponent<IScheduler>().GetLocation())
+                if (curScene == characterGO.GetComponent<Scheduler>().GetLocation())
                 {
                     // Spawn from prefab
                     GameObject charInstance = Instantiate(characterGO, transform);

@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 3844390285632302694}
   - component: {fileID: 3844390285632302682}
   m_Layer: 0
-  m_Name: SpeakToDeb
+  m_Name: SpeakToCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -238,6 +238,30 @@ namespace ProjectQuimbly.UI
             }
         }
 
+        public void PlayAudioSample(string[] audioString)
+        {
+            AudioClip clip = AudioCache.GetAudioByFilename(audioString[0]);
+            AudioSource source = GameObject.FindWithTag("GameController").GetComponent<AudioSource>();
+            if(source != null)
+            {
+                source.Stop();
+                source.clip = clip;
+                source.Play();
+            }
+        }
+
+        public void ChangeMusicTrack(string[] audioString)
+        {
+            AudioClip song = AudioCache.GetAudioByFilename(audioString[0]);
+            AudioSource source = GameObject.FindWithTag("MainCamera").GetComponent<AudioSource>();
+            if(source != null)
+            {
+                source.Stop();
+                source.clip = song;
+                source.Play();
+            }
+        }
+
         public void LoadScene(string[] newScene)
         {
             string sceneToLoad = newScene[0];

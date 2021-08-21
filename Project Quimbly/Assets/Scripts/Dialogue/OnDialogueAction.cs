@@ -7,6 +7,8 @@ namespace ProjectQuimbly.Dialogue
         GiveItem,
         GiveMoney,
         GiveEnergy,
-        LoadScene
+        LoadScene,
+        PlayAudioSample,
+        PlayMusicTrack
     }
 }

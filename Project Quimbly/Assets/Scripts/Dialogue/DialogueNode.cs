@@ -256,6 +256,14 @@ namespace ProjectQuimbly.Dialogue
                         actionParameter.Add("");
                     }
                     return;
+                case OnDialogueAction.PlayAudioSample:
+                case OnDialogueAction.PlayMusicTrack:
+                    if(paramLength != 1)
+                    {
+                        actionParameter.Clear();
+                        actionParameter.Add("");
+                    }
+                    return;
                 default:
                     actionParameter.Clear();
                     return;

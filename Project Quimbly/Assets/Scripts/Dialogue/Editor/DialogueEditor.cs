@@ -363,19 +363,19 @@ namespace ProjectQuimbly.Dialogue.Editor
                 case OnDialogueAction.LoadScene:
                     dialogueActions.Add(GenerateSceneSelect(actionParams, dialogueActions));
                     break;
-                    // case OnDialogueAction.GiveItem:
-                    //     InventoryItem item = InventoryItem.GetFromID(actionParams[0]);
-                    //     item = GenerateItemSelect(item);
-                    //     if (item != null)
-                    //     {
-                    //         dialogueActions.Add(item.GetItemID());
-                    //     }
-                    //     else
-                    //     {
-                    //         dialogueActions.Add("");
-                    //     }
-                    //     dialogueActions.Add(GenerateItemCountField(actionParams[1]));
-                    //     break;
+                case OnDialogueAction.PlayAudioSample:
+                case OnDialogueAction.PlayMusicTrack:
+                    AudioClip clip = AudioCache.GetAudioByFilename(actionParams[0]);
+                    clip = GenerateAudioSelect(clip);
+                    if(clip != null)
+                    {
+                        dialogueActions.Add(clip.name);
+                    }
+                    else
+                    {
+                        dialogueActions.Add("");
+                    }
+                    break;
             }
         }
 
@@ -542,6 +542,16 @@ namespace ProjectQuimbly.Dialogue.Editor
             itemType = (Item.ItemType)EditorGUILayout.EnumPopup(itemType);
             GUILayout.EndHorizontal();
             return itemType.ToString();
+        }
+
+        public static AudioClip GenerateAudioSelect(AudioClip clip)
+        {
+            GUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Audio:", GUILayout.Width(60));
+            clip = (AudioClip)EditorGUILayout.ObjectField(clip, typeof(AudioClip), false);
+            GUILayout.EndHorizontal();
+
+            return clip;
         }
 
         // private static InventoryItem GenerateItemSelect(InventoryItem item)
