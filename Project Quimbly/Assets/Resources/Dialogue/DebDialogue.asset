@@ -2199,8 +2199,8 @@ MonoBehaviour:
   - e1429393-c8e7-49a8-bfc7-7468e466ee4a
   rect:
     serializedVersion: 2
-    x: 1211
-    y: 847
+    x: 1245
+    y: 882
     width: 250
     height: 155
   onEnterAction: 0
@@ -2657,9 +2657,10 @@ MonoBehaviour:
     x: 906
     y: 859
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 200
+  onEnterAction: 6
+  onEnterActionParameter:
+  - DEB_Short_3
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2829,8 +2830,8 @@ MonoBehaviour:
   - e1bf77bc-a803-4bcf-8ec6-a4eb081b601b
   rect:
     serializedVersion: 2
-    x: 2378
-    y: 1254
+    x: 2398
+    y: 1437
     width: 250
     height: 160
   onEnterAction: 0
