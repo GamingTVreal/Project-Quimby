@@ -26,7 +26,7 @@ public class Menu : MonoBehaviour
     }
    public void Discord()
     {
-        Application.OpenURL("https://discord.gg/B3ddMNkT");
+        Application.OpenURL("https://discord.gg/vpqseunFQa");
     }
    public void Itch()
     {
@@ -34,7 +34,7 @@ public class Menu : MonoBehaviour
     }
    public void WeightGaming()
     {
-        Application.OpenURL("https://forum.weightgaming.com/t/project-quimbly/14160");
+        Application.OpenURL("");
     }
     public void Patreon()
     {
