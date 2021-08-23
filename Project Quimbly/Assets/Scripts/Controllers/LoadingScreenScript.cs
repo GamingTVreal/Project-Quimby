@@ -53,7 +53,11 @@ public class LoadingScreenScript : MonoBehaviour
         Area = "Beach";
         LoadScreenExample();
     }
-
+    public void MainMenu()
+    {
+        Area = "Main Menu";
+        LoadScreenExample();
+    }
 
     public void LoadNewArea(string newArea)
     {

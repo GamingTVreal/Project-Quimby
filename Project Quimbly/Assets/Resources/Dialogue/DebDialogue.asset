@@ -374,10 +374,9 @@ MonoBehaviour:
     x: 2681
     y: 608
     width: 250
-    height: 200
-  onEnterAction: 6
-  onEnterActionParameter:
-  - DEB_Short_2
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -410,10 +409,9 @@ MonoBehaviour:
     x: 341
     y: 1128
     width: 250
-    height: 200
-  onEnterAction: 6
-  onEnterActionParameter:
-  - DEB_Short_1
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -1214,10 +1212,9 @@ MonoBehaviour:
     x: 2208
     y: 25
     width: 250
-    height: 200
-  onEnterAction: 6
-  onEnterActionParameter:
-  - DEB_Short_5
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -1354,10 +1351,9 @@ MonoBehaviour:
     x: 2821
     y: 234
     width: 250
-    height: 215
-  onEnterAction: 6
-  onEnterActionParameter:
-  - DEB_Short_4
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -1850,10 +1846,9 @@ MonoBehaviour:
     x: 590
     y: 569
     width: 250
-    height: 215
-  onEnterAction: 6
-  onEnterActionParameter:
-  - DEB_Short_6
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2586,10 +2581,9 @@ MonoBehaviour:
     x: 1806
     y: 1090
     width: 250
-    height: 230
-  onEnterAction: 6
-  onEnterActionParameter:
-  - DEB_1
+    height: 190
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2657,10 +2651,9 @@ MonoBehaviour:
     x: 906
     y: 859
     width: 250
-    height: 200
-  onEnterAction: 6
-  onEnterActionParameter:
-  - DEB_Short_3
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
