@@ -34,7 +34,7 @@ public class Menu : MonoBehaviour
     }
    public void WeightGaming()
     {
-        Application.OpenURL("");
+        Application.OpenURL("https://forum.weightgaming.com/t/about-the-project-quimbly-development-name-category/18431/4");
     }
     public void Patreon()
     {
