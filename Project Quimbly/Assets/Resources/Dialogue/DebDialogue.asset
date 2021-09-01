@@ -235,12 +235,11 @@ MonoBehaviour:
     x: 1219
     y: 2154
     width: 250
-    height: 200
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 5
-  onExitActionParameter:
-  - Inflation Minigame
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0
@@ -1072,12 +1071,11 @@ MonoBehaviour:
     x: 1476
     y: 1921
     width: 250
-    height: 200
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 5
-  onExitActionParameter:
-  - Feeding Minigame
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0
