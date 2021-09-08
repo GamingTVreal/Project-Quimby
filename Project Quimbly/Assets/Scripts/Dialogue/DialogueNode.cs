@@ -257,6 +257,13 @@ namespace ProjectQuimbly.Dialogue
                     }
                     return;
                 case OnDialogueAction.PlayAudioSample:
+                    if(paramLength != 2)
+                    {
+                        actionParameter.Clear();
+                        actionParameter.Add("");
+                        actionParameter.Add("");
+                    }
+                    break;
                 case OnDialogueAction.PlayMusicTrack:
                     if(paramLength != 1)
                     {

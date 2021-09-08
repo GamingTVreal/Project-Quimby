@@ -50,7 +50,6 @@ public class BasicFunctions : MonoBehaviour, ISaveable, ISlotInfo
             SetName();
         }
         
-
         //Inventory.Instance.InventoryN(UseItem);
         //inventory = new Inventory(UseItem);
         //Inventory_UI.SetItems(this);

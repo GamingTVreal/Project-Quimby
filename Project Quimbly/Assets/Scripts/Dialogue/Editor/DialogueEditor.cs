@@ -349,8 +349,7 @@ namespace ProjectQuimbly.Dialogue.Editor
                 case OnDialogueAction.None:
                     break;
                 case OnDialogueAction.ChangeBackground:
-                    string newPhoto = BackgroundPhotoSelect(actionParams[0]);
-                    dialogueActions.Add(newPhoto);
+                    dialogueActions.Add(GeneratePhotoSelect(actionParams[0]));
                     break;
                 case OnDialogueAction.GiveItem:
                     dialogueActions.Add(GenerateItemSelect(actionParams[0]));
@@ -364,17 +363,12 @@ namespace ProjectQuimbly.Dialogue.Editor
                     dialogueActions.Add(GenerateSceneSelect(actionParams, dialogueActions));
                     break;
                 case OnDialogueAction.PlayAudioSample:
+                    string groupName = GenerateSampleGroupSelect(actionParams[0]);
+                    dialogueActions.Add(groupName);
+                    dialogueActions.Add(GenerateSampleSelect(groupName, actionParams[1]));
+                    break;
                 case OnDialogueAction.PlayMusicTrack:
-                    AudioClip clip = AudioCache.GetAudioByFilename(actionParams[0]);
-                    clip = GenerateAudioSelect(clip);
-                    if(clip != null)
-                    {
-                        dialogueActions.Add(clip.name);
-                    }
-                    else
-                    {
-                        dialogueActions.Add("");
-                    }
+                    dialogueActions.Add(GenerateMusicSelect(actionParams[0]));
                     break;
             }
         }
@@ -498,7 +492,7 @@ namespace ProjectQuimbly.Dialogue.Editor
             return newCount.ToString();
         }
 
-        private static string BackgroundPhotoSelect(string locationName)
+        private static string GeneratePhotoSelect(string locationName)
         {
             UI.BGPhotoDB bgPhotoDB = (UI.BGPhotoDB)Resources.Load("Game/BGPhotoDB");
             string[] bgOptions = bgPhotoDB.GetAllLocationNames().ToArray();
@@ -509,6 +503,45 @@ namespace ProjectQuimbly.Dialogue.Editor
             selected = EditorGUILayout.Popup(selected, bgOptions);
             GUILayout.EndHorizontal();
             return bgOptions[selected];
+        }
+
+        public static string GenerateSampleGroupSelect(string sampleGroup)
+        {
+            AudioSampleDB audioSampleDB = (AudioSampleDB)Resources.Load("Game/AudioSampleDB");
+            string[] sampleOptions = audioSampleDB.GetGroupNames().ToArray();
+            int selected = GetIndexInArray(sampleOptions, sampleGroup);
+
+            GUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Type:", GUILayout.Width(40));
+            selected = EditorGUILayout.Popup(selected, sampleOptions);
+            GUILayout.EndHorizontal();
+            return sampleOptions[selected];
+        }
+
+        public static string GenerateSampleSelect(string sampleGroup, string sampleName)
+        {
+            AudioSampleDB audioSampleDB = (AudioSampleDB)Resources.Load("Game/AudioSampleDB");
+            string[] sampleOptions = audioSampleDB.GetSampleNames(sampleGroup).ToArray();
+            int selected = GetIndexInArray(sampleOptions, sampleName);
+
+            GUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Sample:", GUILayout.Width(50));
+            selected = EditorGUILayout.Popup(selected, sampleOptions);
+            GUILayout.EndHorizontal();
+            return sampleOptions[selected];
+        }
+
+        public static string GenerateMusicSelect(string clipName)
+        {
+            MusicTrackDB musicTrackDB = (MusicTrackDB)Resources.Load("Game/MusicTrackDB");
+            string[] musicOptions = musicTrackDB.GetAllTrackNames().ToArray();
+            int selected = GetIndexInArray(musicOptions, clipName);
+
+            GUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Music:", GUILayout.Width(40));
+            selected = EditorGUILayout.Popup(selected, musicOptions);
+            GUILayout.EndHorizontal();
+            return musicOptions[selected];
         }
 
         private static string GenerateSceneSelect(string[] actionParams, List<string> dialogueActions)
@@ -542,16 +575,6 @@ namespace ProjectQuimbly.Dialogue.Editor
             itemType = (Item.ItemType)EditorGUILayout.EnumPopup(itemType);
             GUILayout.EndHorizontal();
             return itemType.ToString();
-        }
-
-        public static AudioClip GenerateAudioSelect(AudioClip clip)
-        {
-            GUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Audio:", GUILayout.Width(60));
-            clip = (AudioClip)EditorGUILayout.ObjectField(clip, typeof(AudioClip), false);
-            GUILayout.EndHorizontal();
-
-            return clip;
         }
 
         // private static InventoryItem GenerateItemSelect(InventoryItem item)

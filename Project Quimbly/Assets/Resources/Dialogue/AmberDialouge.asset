@@ -23,8 +23,8 @@ MonoBehaviour:
   - 1b9f0973-2d5a-4604-960d-8f596d058379
   rect:
     serializedVersion: 2
-    x: 1542
-    y: 151
+    x: 1548
+    y: 140
     width: 250
     height: 160
   onEnterAction: 0
@@ -161,8 +161,8 @@ MonoBehaviour:
   - 93ba27b9-55c4-41c1-85b0-ef04abf6f106
   rect:
     serializedVersion: 2
-    x: 943
-    y: 151
+    x: 935
+    y: 143
     width: 250
     height: 155
   onEnterAction: 0
@@ -264,8 +264,8 @@ MonoBehaviour:
   - f3dc57b9-f474-4762-be5f-50100c08f578
   rect:
     serializedVersion: 2
-    x: 3041
-    y: 153
+    x: 3034
+    y: 140
     width: 250
     height: 160
   onEnterAction: 0
@@ -347,8 +347,8 @@ MonoBehaviour:
   - fe881802-4fd5-4c93-b9e9-6b1721abd6b5
   rect:
     serializedVersion: 2
-    x: 2430
-    y: 149
+    x: 2437
+    y: 140
     width: 250
     height: 160
   onEnterAction: 0
@@ -451,8 +451,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 3341
-    y: 153
+    x: 3345
+    y: 135
     width: 250
     height: 170
   onEnterAction: 0
@@ -555,8 +555,8 @@ MonoBehaviour:
   - 9f13d555-71ec-4d04-8906-a1f339b9a5c8
   rect:
     serializedVersion: 2
-    x: 1243
-    y: 151
+    x: 1244
+    y: 143
     width: 250
     height: 155
   onEnterAction: 0
@@ -697,8 +697,8 @@ MonoBehaviour:
   - ae8edc8d-6018-4c47-84c5-56093c4e6d4f
   rect:
     serializedVersion: 2
-    x: 1858
-    y: 155
+    x: 1857
+    y: 135
     width: 250
     height: 170
   onEnterAction: 0
@@ -733,8 +733,8 @@ MonoBehaviour:
   - d87bccd4-5c4a-45ac-97de-f60d989f4ed0
   rect:
     serializedVersion: 2
-    x: 2142
-    y: 151
+    x: 2146
+    y: 135
     width: 250
     height: 170
   onEnterAction: 0
@@ -768,8 +768,8 @@ MonoBehaviour:
   - 5fd1fbda-4676-4b1c-ba12-03fe616e3d78
   rect:
     serializedVersion: 2
-    x: 341
-    y: 151
+    x: 346
+    y: 141
     width: 250
     height: 160
   onEnterAction: 0
@@ -803,8 +803,8 @@ MonoBehaviour:
   - 5e8f0bb3-569b-4b9a-ab05-e3fb301a5699
   rect:
     serializedVersion: 2
-    x: 2742
-    y: 151
+    x: 2743
+    y: 133
     width: 250
     height: 175
   onEnterAction: 0
@@ -872,8 +872,8 @@ MonoBehaviour:
   - fad42c79-0d0b-4376-80e8-015c64026e9c
   rect:
     serializedVersion: 2
-    x: 53
-    y: 142
+    x: 46
+    y: 143
     width: 250
     height: 155
   onEnterAction: 0

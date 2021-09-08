@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ad4793728e1ac49bd775ec75244041, type: 3}
+  m_Name: AudioSampleDB
+  m_EditorClassIdentifier: 
+  sampleGroups:
+  - name: Burps
+    sfxSamples:
+    - sfxName: burp 1
+      clip: {fileID: 8300000, guid: 5390a7e7edbc4e04eae25f1469b99123, type: 3}
+    - sfxName: burp 2
+      clip: {fileID: 8300000, guid: 9141944cd7efd214e8d8ef3b558db984, type: 3}
+    - sfxName: burp 3
+      clip: {fileID: 8300000, guid: 696279a5b5f2e544e9ad47b74655ca41, type: 3}
+    - sfxName: burp 4
+      clip: {fileID: 8300000, guid: bcbaa1397a8f5e9478f91dea1bdae389, type: 3}
+    - sfxName: burp 5
+      clip: {fileID: 8300000, guid: adc90916249ab89469f94c52d6e6e54f, type: 3}
+  - name: Glugs
+    sfxSamples: []
+  - name: Gurgles
+    sfxSamples:
+    - sfxName: belly 1
+      clip: {fileID: 8300000, guid: b10b0e8994fcd234595a922320e1f932, type: 3}
+    - sfxName: gurgle 1
+      clip: {fileID: 8300000, guid: c59b5112212b89a4794c9d98ee75eaf9, type: 3}
+    - sfxName: gurgle 2
+      clip: {fileID: 8300000, guid: 2a3e2d9ac0e58fc4da96b7ee7f4a5ee4, type: 3}
+    - sfxName: gurgle 3
+      clip: {fileID: 8300000, guid: 7816f9afa081a5e44ab403b0c9881735, type: 3}
+    - sfxName: gurgle 4
+      clip: {fileID: 8300000, guid: 211556892006dd94bb4417b33679628f, type: 3}
+    - sfxName: gurgle 5
+      clip: {fileID: 8300000, guid: 454a709689fbb654b92c5b2d7b4a4ca8, type: 3}
+    - sfxName: gurgle 6
+      clip: {fileID: 8300000, guid: 2fc4b811da41e3f4f8a4cc266d93d76a, type: 3}
+    - sfxName: gurgle 7
+      clip: {fileID: 8300000, guid: 33aa28b0b06df55448aff352c5d05337, type: 3}
+    - sfxName: gurgle 8
+      clip: {fileID: 8300000, guid: c52f5594b6cb2344d863940cd0dd9cf2, type: 3}
+    - sfxName: gurgle 9
+      clip: {fileID: 8300000, guid: 2b17576ad06323643b0561b7b9388b4f, type: 3}
+    - sfxName: gurgle 10
+      clip: {fileID: 8300000, guid: 04e63a2636b62ae4bb522ae1f4ad5a29, type: 3}
+  - name: PumpSFX
+    sfxSamples: []
+  - name: Sloshes
+    sfxSamples:
+    - sfxName: slosh 1
+      clip: {fileID: 8300000, guid: 5bcc73c6dde7d5e41b7ed7e6e141e7b2, type: 3}
+    - sfxName: slosh 2
+      clip: {fileID: 8300000, guid: 38831e2bcc0b2284db3c28d9fca6bb83, type: 3}
+    - sfxName: slosh 3
+      clip: {fileID: 8300000, guid: 8aec9811831148e40b8091552fcc78b3, type: 3}
+    - sfxName: slosh 4
+      clip: {fileID: 8300000, guid: c798ac248692dc04fb36a72bbebd06ad, type: 3}

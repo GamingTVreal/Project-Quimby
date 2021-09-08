@@ -273,6 +273,7 @@ MonoBehaviour:
   speakerContainer: {fileID: 0}
   choiceRoot: {fileID: 0}
   choicePrefab: {fileID: 4053382274634877735, guid: 315d38962b111b64385bae4991647ec1, type: 3}
+  audioSampleDB: {fileID: 11400000, guid: 980f550564f6c3d46a6bb779b52035d8, type: 2}
 --- !u!114 &6361723965474188241
 MonoBehaviour:
   m_ObjectHideFlags: 0

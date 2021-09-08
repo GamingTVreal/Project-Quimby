@@ -20,6 +20,8 @@ namespace ProjectQuimbly.UI
         [SerializeField] GameObject speakerContainer;
         [SerializeField] Transform choiceRoot;
         [SerializeField] GameObject choicePrefab;
+        [SerializeField] AudioSampleDB audioSampleDB;
+        [SerializeField] MusicTrackDB musicTrackDB;
 
         List<string> hotkeys = new List<string>();
         List<Button> choiceButtons = new List<Button>();
@@ -171,6 +173,7 @@ namespace ProjectQuimbly.UI
 
             speakerContainer.SetActive(false);
             textContainer.SetActive(false);
+            choiceRoot.gameObject.SetActive(true);
             isWaitingOnChoice = true;
         }
 
@@ -180,6 +183,7 @@ namespace ProjectQuimbly.UI
             {
                 child.gameObject.SetActive(false);
             }
+            choiceRoot.gameObject.SetActive(false);
         }
 
         private void ReturnChoicesToPool(int count)
@@ -240,7 +244,7 @@ namespace ProjectQuimbly.UI
 
         public void PlayAudioSample(string[] audioString)
         {
-            AudioClip clip = AudioCache.GetAudioByFilename(audioString[0]);
+            AudioClip clip = audioSampleDB.GetAudioClip(audioString[0], audioString[1]);
             AudioSource source = GameObject.FindWithTag("GameController").GetComponent<AudioSource>();
             if(source != null)
             {
@@ -252,7 +256,7 @@ namespace ProjectQuimbly.UI
 
         public void ChangeMusicTrack(string[] audioString)
         {
-            AudioClip song = AudioCache.GetAudioByFilename(audioString[0]);
+            AudioClip song = musicTrackDB.GetAudioClip(audioString[0]);
             AudioSource source = GameObject.FindWithTag("MainCamera").GetComponent<AudioSource>();
             if(source != null)
             {

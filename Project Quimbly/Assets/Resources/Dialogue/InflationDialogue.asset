@@ -618,8 +618,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 882
-    y: 530
+    x: 1509
+    y: 454
     width: 250
     height: 120
   onEnterAction: 0
