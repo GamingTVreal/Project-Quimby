@@ -77,6 +77,15 @@ public class LoadingScreenScript : MonoBehaviour
         changeSceneObj.ChangeScene();
         // StartCoroutine(LoadingScreen());
     }
+
+    public void ReturnToMainMenu()
+    {
+        ChangeSceneButton changeSceneObj = Instantiate(chSceneObjPrefab).GetComponent<ChangeSceneButton>();
+        changeSceneObj.SetSceneToLoad(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/" + Area + ".unity"));
+        changeSceneObj.SetDestination(Area);
+        changeSceneObj.ReturnToMainMenu();
+    }
+
     public void Work()
     {
         switch (PlayerStats.Instance.CurrentJob)

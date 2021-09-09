@@ -30,6 +30,13 @@ namespace ProjectQuimbly.SceneManagement
             StartCoroutine(Transition(saveFile));
         }
 
+        public void ReturnToMainMenu()
+        {
+            transform.SetParent(null);
+            onSceneChange?.Invoke();
+            StartCoroutine(ExitToMenu());
+        }
+
         public void SetSceneToLoad(int newScene)
         {
             sceneToLoad = newScene;
@@ -84,6 +91,20 @@ namespace ProjectQuimbly.SceneManagement
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
 
             yield return savingWrapper.Load(saveFile);
+
+            loadFader.FadeInImmediate();
+            Time.timeScale = 1f;
+
+            Destroy(this.gameObject);
+        }
+
+        private IEnumerator ExitToMenu()
+        {
+            DontDestroyOnLoad(this.gameObject);
+            LoadFader loadFader = FindObjectOfType<LoadFader>();
+            loadFader.FadeOutImmediate();
+
+            yield return SceneManager.LoadSceneAsync(0);
 
             loadFader.FadeInImmediate();
             Time.timeScale = 1f;
