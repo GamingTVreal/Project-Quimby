@@ -257,6 +257,7 @@ namespace ProjectQuimbly.Dialogue
                     }
                     return;
                 case OnDialogueAction.PlayAudioSample:
+                case OnDialogueAction.PlayVoiceLine:
                     if(paramLength != 2)
                     {
                         actionParameter.Clear();

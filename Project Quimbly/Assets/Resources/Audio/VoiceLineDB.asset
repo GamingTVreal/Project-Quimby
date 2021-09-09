@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1c47d580d03a34a9a067d990cc9213, type: 3}
+  m_Name: VoiceLineDB
+  m_EditorClassIdentifier: 
+  characterVoices:
+  - name: Deb
+    voiceLines:
+    - lineName: Deb 1
+      voiceClip: {fileID: 8300000, guid: 0e7bcc5c97330274384a366d6358ab2c, type: 3}
+    - lineName: Deb 2
+      voiceClip: {fileID: 8300000, guid: ecb191fc7b41e434b98c7918938b805f, type: 3}
+    - lineName: Deb 3
+      voiceClip: {fileID: 8300000, guid: a0bb6076d87e4b2449b475ce98fd561c, type: 3}
+    - lineName: Deb 4
+      voiceClip: {fileID: 8300000, guid: c3a13fd441658ca4fb59bfdeb915d5b5, type: 3}
+    - lineName: Deb 5
+      voiceClip: {fileID: 8300000, guid: 01e28cbc59eaaaa4c92991485cef2111, type: 3}
+    - lineName: Deb 6
+      voiceClip: {fileID: 8300000, guid: 4a4429a0e1a2c8448ab49b3e24a1c832, type: 3}
+    - lineName: Deb Short 1
+      voiceClip: {fileID: 8300000, guid: 51906fb14705475429c7e382537bb625, type: 3}
+    - lineName: Deb Short 2
+      voiceClip: {fileID: 8300000, guid: 9143e6cf710c9634591fad479e3727ec, type: 3}
+    - lineName: Deb Short 3
+      voiceClip: {fileID: 8300000, guid: 00ec1423fa608164a96b43bcb4ad4045, type: 3}
+    - lineName: Deb Short 4
+      voiceClip: {fileID: 8300000, guid: 3410cc424db30e04fba32f9ae7d65382, type: 3}
+    - lineName: Deb Short 5
+      voiceClip: {fileID: 8300000, guid: 36eca43adcf66ff469c382791495530a, type: 3}
+    - lineName: Deb Short 6
+      voiceClip: {fileID: 8300000, guid: c117824c5f992184b9cf2d46beb4cf98, type: 3}
+  - name: Amber
+    voiceLines: []

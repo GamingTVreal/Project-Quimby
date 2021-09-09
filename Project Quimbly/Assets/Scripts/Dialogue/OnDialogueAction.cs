@@ -9,6 +9,7 @@ namespace ProjectQuimbly.Dialogue
         GiveEnergy,
         LoadScene,
         PlayAudioSample,
-        PlayMusicTrack
+        PlayMusicTrack,
+        PlayVoiceLine
     }
 }

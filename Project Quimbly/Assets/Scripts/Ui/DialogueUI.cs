@@ -22,6 +22,7 @@ namespace ProjectQuimbly.UI
         [SerializeField] GameObject choicePrefab;
         [SerializeField] AudioSampleDB audioSampleDB;
         [SerializeField] MusicTrackDB musicTrackDB;
+        [SerializeField] VoiceLineDB voiceLineDB;
 
         List<string> hotkeys = new List<string>();
         List<Button> choiceButtons = new List<Button>();
@@ -262,6 +263,18 @@ namespace ProjectQuimbly.UI
             {
                 source.Stop();
                 source.clip = song;
+                source.Play();
+            }
+        }
+
+        public void PlayVoiceLine(string[] audioString)
+        {
+            AudioClip clip = voiceLineDB.GetVoiceClip(audioString[0], audioString[1]);
+            AudioSource source = GameObject.FindWithTag("GameController").GetComponent<AudioSource>();
+            if (source != null)
+            {
+                source.Stop();
+                source.clip = clip;
                 source.Play();
             }
         }

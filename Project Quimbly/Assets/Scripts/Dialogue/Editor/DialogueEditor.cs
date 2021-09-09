@@ -370,6 +370,11 @@ namespace ProjectQuimbly.Dialogue.Editor
                 case OnDialogueAction.PlayMusicTrack:
                     dialogueActions.Add(GenerateMusicSelect(actionParams[0]));
                     break;
+                case OnDialogueAction.PlayVoiceLine:
+                    string characterName = GenerateCharacterVoiceSelect(actionParams[0]);
+                    dialogueActions.Add(characterName);
+                    dialogueActions.Add(GenerateVoiceLineSelect(characterName, actionParams[1]));
+                    break;
             }
         }
 
@@ -507,7 +512,7 @@ namespace ProjectQuimbly.Dialogue.Editor
 
         public static string GenerateSampleGroupSelect(string sampleGroup)
         {
-            AudioSampleDB audioSampleDB = (AudioSampleDB)Resources.Load("Game/AudioSampleDB");
+            AudioSampleDB audioSampleDB = (AudioSampleDB)Resources.Load("Audio/AudioSampleDB");
             string[] sampleOptions = audioSampleDB.GetGroupNames().ToArray();
             int selected = GetIndexInArray(sampleOptions, sampleGroup);
 
@@ -520,7 +525,7 @@ namespace ProjectQuimbly.Dialogue.Editor
 
         public static string GenerateSampleSelect(string sampleGroup, string sampleName)
         {
-            AudioSampleDB audioSampleDB = (AudioSampleDB)Resources.Load("Game/AudioSampleDB");
+            AudioSampleDB audioSampleDB = (AudioSampleDB)Resources.Load("Audio/AudioSampleDB");
             string[] sampleOptions = audioSampleDB.GetSampleNames(sampleGroup).ToArray();
             int selected = GetIndexInArray(sampleOptions, sampleName);
 
@@ -531,9 +536,35 @@ namespace ProjectQuimbly.Dialogue.Editor
             return sampleOptions[selected];
         }
 
+        public static string GenerateCharacterVoiceSelect(string characterName)
+        {
+            VoiceLineDB voiceLineDB = (VoiceLineDB)Resources.Load("Audio/VoiceLineDB");
+            string[] characterOptions = voiceLineDB.GetCharacterNames().ToArray();
+            int selected = GetIndexInArray(characterOptions, characterName);
+
+            GUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Type:", GUILayout.Width(40));
+            selected = EditorGUILayout.Popup(selected, characterOptions);
+            GUILayout.EndHorizontal();
+            return characterOptions[selected];
+        }
+
+        public static string GenerateVoiceLineSelect(string characterName, string lineName)
+        {
+            VoiceLineDB voiceLineDB = (VoiceLineDB)Resources.Load("Audio/VoiceLineDB");
+            string[] voiceLineOptions = voiceLineDB.GetVoiceLines(characterName).ToArray();
+            int selected = GetIndexInArray(voiceLineOptions, lineName);
+
+            GUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Sample:", GUILayout.Width(50));
+            selected = EditorGUILayout.Popup(selected, voiceLineOptions);
+            GUILayout.EndHorizontal();
+            return voiceLineOptions[selected];
+        }
+
         public static string GenerateMusicSelect(string clipName)
         {
-            MusicTrackDB musicTrackDB = (MusicTrackDB)Resources.Load("Game/MusicTrackDB");
+            MusicTrackDB musicTrackDB = (MusicTrackDB)Resources.Load("Audio/MusicTrackDB");
             string[] musicOptions = musicTrackDB.GetAllTrackNames().ToArray();
             int selected = GetIndexInArray(musicOptions, clipName);
 
