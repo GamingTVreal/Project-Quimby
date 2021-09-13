@@ -58,8 +58,8 @@ MonoBehaviour:
   - 84c2dcdc-4c99-4bbd-8dfa-362567afb1be
   rect:
     serializedVersion: 2
-    x: 1513
-    y: 647
+    x: 1487
+    y: 634
     width: 250
     height: 140
   onEnterAction: 0
@@ -232,8 +232,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1219
-    y: 2154
+    x: 1172
+    y: 2176
     width: 250
     height: 160
   onEnterAction: 0
@@ -545,8 +545,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1486
-    y: 1751
+    x: 1494
+    y: 1732
     width: 250
     height: 160
   onEnterAction: 0
@@ -1068,8 +1068,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1476
-    y: 1921
+    x: 1495
+    y: 1904
     width: 250
     height: 160
   onEnterAction: 0
@@ -1209,8 +1209,8 @@ MonoBehaviour:
   - 58947f26-151d-4a6f-822a-fdca0f839ad5
   rect:
     serializedVersion: 2
-    x: 2208
-    y: 25
+    x: 2166
+    y: 4
     width: 250
     height: 160
   onEnterAction: 0
@@ -1348,8 +1348,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 2821
-    y: 234
+    x: 3203
+    y: 33
     width: 250
     height: 175
   onEnterAction: 0
@@ -1489,7 +1489,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: -2
-    y: 53
+    y: 54
     width: 250
     height: 195
   onEnterAction: 0
@@ -1632,8 +1632,8 @@ MonoBehaviour:
   - 70b458bf-98f7-4148-9b0a-155d16ebe554
   rect:
     serializedVersion: 2
-    x: 2540
-    y: 394
+    x: 2717
+    y: 208
     width: 250
     height: 160
   onEnterAction: 0
@@ -1843,8 +1843,8 @@ MonoBehaviour:
   - a143e793-1842-48cf-a44b-06b5d5a876e0
   rect:
     serializedVersion: 2
-    x: 590
-    y: 569
+    x: 587
+    y: 566
     width: 250
     height: 175
   onEnterAction: 0
@@ -2333,8 +2333,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 21
-    y: 346
+    x: -7
+    y: 300
     width: 250
     height: 155
   onEnterAction: 0
@@ -2823,8 +2823,8 @@ MonoBehaviour:
   - e1bf77bc-a803-4bcf-8ec6-a4eb081b601b
   rect:
     serializedVersion: 2
-    x: 2398
-    y: 1437
+    x: 2368
+    y: 1523
     width: 250
     height: 160
   onEnterAction: 0

@@ -61,11 +61,9 @@ MonoBehaviour:
     x: 7
     y: 130
     width: 250
-    height: 240
-  onEnterAction: 6
-  onEnterActionParameter:
-  - Burps
-  - burp 1
+    height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -118,11 +116,9 @@ MonoBehaviour:
     x: 295
     y: 32
     width: 250
-    height: 200
-  onEnterAction: 6
-  onEnterActionParameter:
-  - Sloshes
-  - slosh 2
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
