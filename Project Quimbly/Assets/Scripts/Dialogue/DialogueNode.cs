@@ -45,7 +45,7 @@ namespace ProjectQuimbly.Dialogue
         [SerializeField]
         int exitActionIndex;
 
-        private void start()
+        private void Awake()
         {
             hasOnEnterAction = onEnterAction > 0;
             hasOnExitAction = onExitAction > 0;
