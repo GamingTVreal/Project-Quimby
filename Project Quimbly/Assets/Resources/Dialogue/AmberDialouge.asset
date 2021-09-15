@@ -824,7 +824,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: Amber
-  text: What was your senior prank like
+  text: What was your senior prank like?
   children:
   - d411ebdf-98f2-4ac6-8966-e60e6b2445db
   - e1d5ede1-2094-46da-83af-c06e42c2da29
@@ -1530,8 +1530,8 @@ MonoBehaviour:
   - d5591bf3-c39a-4d02-bb75-f7e513793526
   rect:
     serializedVersion: 2
-    x: 704
-    y: 837
+    x: 1243
+    y: 854
     width: 250
     height: 160
   onEnterAction: 0
@@ -1791,7 +1791,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
   isPlayerSpeaking: 0
   speakerName: Amber
-  text: I remeber mine was pretty sweet
+  text: I remember mine was pretty sweet
   children:
   - d13af0b1-dcf1-450d-b328-d0f175232381
   rect:
@@ -2002,7 +2002,7 @@ MonoBehaviour:
   conversationChainName: Chat 5
   girlToDisplay: Amber
   spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
-  isPlayerSpeaking: 0
+  isPlayerSpeaking: 1
   speakerName: Amber
   text: 
   children: []
@@ -2011,7 +2011,7 @@ MonoBehaviour:
     x: 10
     y: 1495
     width: 250
-    height: 180
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0

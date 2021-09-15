@@ -114,27 +114,34 @@ public class TextEvents : MonoBehaviour
 
     public void Sleep()
     {
-        Fadeout.SetBool("Fadeout", true);
-        if (Fadeout.GetBool("Fadeout") == true)
+        if (PlayerStats.Instance.Energy < 20)
         {
-            if (x != 4)
+            Fadeout.SetBool("Fadeout", true);
+            if (Fadeout.GetBool("Fadeout") == true)
             {
-                Music.Pause();
-                SnoringSFX.Play();
-                x = 4;
-            }
+                if (x != 4)
+                {
+                    Music.Pause();
+                    SnoringSFX.Play();
+                    x = 4;
+                }
 
-            if (SnoringSFX.isPlaying)
-            {
-                Invoke("Sleep", 4f);
+                if (SnoringSFX.isPlaying)
+                {
+                    Invoke("Sleep", 4f);
+                }
+                if (!SnoringSFX.isPlaying)
+                {
+                    PlayerStats.Instance.AdjustEnergy(1, true);
+                    Fadeout.SetBool("Fadeout", false);
+                    x = 0;
+                    Music.Play();
+                }
             }
-            if (!SnoringSFX.isPlaying) 
-            {
-                PlayerStats.Instance.AdjustEnergy(1,true);
-                Fadeout.SetBool("Fadeout", false);
-                x = 0;
-                Music.Play();
-            }
+        }
+        else
+        {
+            GetComponent<AIConversant>().StartDialogue("Can't Sleep");
         }
     }
 

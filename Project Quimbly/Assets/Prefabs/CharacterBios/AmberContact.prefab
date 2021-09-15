@@ -39,7 +39,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4209294605265821285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 4254}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7267326672118572119}
@@ -47,7 +47,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 562.42, y: 147.3984}
+  m_AnchoredPosition: {x: 504.60492, y: 55.395966}
   m_SizeDelta: {x: 142.94, y: 142.9392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &786659473232528593
@@ -170,7 +170,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5201656048484562803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 4254}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7267326672118572119}
@@ -178,7 +178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 562.81506, y: 474.00244}
+  m_AnchoredPosition: {x: 505, y: 382}
   m_SizeDelta: {x: 150.0459, y: 91.0729}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3768649217849180970
@@ -305,7 +305,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9101163525307833552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 4254}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7267326672118572119}
@@ -313,7 +313,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 560.84, y: 327.1107}
+  m_AnchoredPosition: {x: 503.02496, y: 235.10825}
   m_SizeDelta: {x: 146.1, y: 129.4069}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4964992538144864184
@@ -469,6 +469,14 @@ PrefabInstance:
         girl, she is also a very mischevious girl. She likes to pull pranks on others
         around her! She absolutely adores stuffing herself and will not hesitate
         to do so on someone else's dime!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878048712879279599, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 963
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878048712879279599, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -481
       objectReference: {fileID: 0}
     - target: {fileID: 5947856833050207123, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
       propertyPath: m_text

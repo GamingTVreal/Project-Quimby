@@ -46,6 +46,14 @@ PrefabInstance:
         a never ending love of pumping her belly BIG! On her off time she actually
         loves to play chess.
       objectReference: {fileID: 0}
+    - target: {fileID: 5878048712879279599, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 937
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878048712879279599, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -485
+      objectReference: {fileID: 0}
     - target: {fileID: 5947856833050207123, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
       propertyPath: m_text
       value: 'Weight Gain
