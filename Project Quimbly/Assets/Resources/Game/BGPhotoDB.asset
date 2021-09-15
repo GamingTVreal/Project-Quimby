@@ -23,5 +23,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 02934f1e8349c544c8369684207072d5, type: 3}
   - location: Store
     sprite: {fileID: 21300000, guid: 7fb7aa7d18b8af1438b26509778677c3, type: 3}
-  - location: FeedingRoom
-    sprite: {fileID: 21300000, guid: 67828a062a7a5a04c873671e2365056c, type: 3}
+  - location: Beach
+    sprite: {fileID: 21300000, guid: 5ae46e489319abc4d89fff65f69a3e9c, type: 3}
+  - location: AmberCG
+    sprite: {fileID: 21300000, guid: cda1d8e046bb6d4438e19fc1c24378ad, type: 3}

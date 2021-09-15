@@ -26,8 +26,8 @@ public class SettingsMenu : MonoBehaviour
             Screen.fullScreen = false;
         }
     }
-    List<int> widths = new List<int>() { 568, 960, 1280, 1920 };
-    List<int> heights = new List<int>() { 329, 540, 800, 1080 };
+    List<int> widths = new List<int>() { 1920, 1280, 960, 568};
+    List<int> heights = new List<int>() { 1080, 800, 540, 320};
 
     public void SetScreenSize(int index)
     {

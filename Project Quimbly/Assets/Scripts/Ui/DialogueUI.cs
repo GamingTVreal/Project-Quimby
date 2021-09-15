@@ -275,7 +275,7 @@ namespace ProjectQuimbly.UI
             {
                 source.Stop();
                 source.clip = clip;
-                source.Play();
+                source.PlayOneShot(clip, 5.00f);
             }
         }
 
