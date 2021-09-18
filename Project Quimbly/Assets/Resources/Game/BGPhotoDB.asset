@@ -27,3 +27,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 5ae46e489319abc4d89fff65f69a3e9c, type: 3}
   - location: AmberCG
     sprite: {fileID: 21300000, guid: cda1d8e046bb6d4438e19fc1c24378ad, type: 3}
+  - location: Cafe
+    sprite: {fileID: 21300000, guid: fa7d5dc2b3955c34797241a2dd1dedc1, type: 3}
+  - location: Diner
+    sprite: {fileID: 21300000, guid: 476d8bb4f1ace864ebf7b4cb16adf725, type: 3}

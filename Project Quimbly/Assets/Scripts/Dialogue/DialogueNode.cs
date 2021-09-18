@@ -271,6 +271,14 @@ namespace ProjectQuimbly.Dialogue
                         actionParameter.Clear();
                         actionParameter.Add("");
                     }
+                    break;
+                case OnDialogueAction.ModifyDP:
+                    if(paramLength != 1)
+                    {
+                        actionParameter.Clear();
+                        actionParameter.Add("");
+                    }
+
                     return;
                 default:
                     actionParameter.Clear();

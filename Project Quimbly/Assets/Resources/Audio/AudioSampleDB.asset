@@ -63,3 +63,9 @@ MonoBehaviour:
       clip: {fileID: 8300000, guid: 8aec9811831148e40b8091552fcc78b3, type: 3}
     - sfxName: slosh 4
       clip: {fileID: 8300000, guid: c798ac248692dc04fb36a72bbebd06ad, type: 3}
+  - name: SFX
+    sfxSamples:
+    - sfxName: Good Date
+      clip: {fileID: 8300000, guid: c70243927e5dd114cb6956f73eb19f83, type: 3}
+    - sfxName: Bad Date
+      clip: {fileID: 8300000, guid: ccfc71ed2b8bfce4a9b76d156130e717, type: 3}

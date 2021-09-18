@@ -10,6 +10,8 @@ namespace ProjectQuimbly.Dialogue
         LoadScene,
         PlayAudioSample,
         PlayMusicTrack,
-        PlayVoiceLine
+        PlayVoiceLine,
+        ModifyDP,
+        EndDate
     }
 }

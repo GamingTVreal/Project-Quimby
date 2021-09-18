@@ -9,6 +9,7 @@ TagManager:
   - BackgroundImage
   - GirlContainer
   - PhoneMenu
+  - DateController
   layers:
   - Default
   - TransparentFX

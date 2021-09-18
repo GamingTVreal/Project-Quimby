@@ -357,6 +357,7 @@ namespace ProjectQuimbly.Dialogue.Editor
                     break;
                 case OnDialogueAction.GiveMoney:
                 case OnDialogueAction.GiveEnergy:
+                case OnDialogueAction.ModifyDP:
                     dialogueActions.Add(GenerateNumberField(actionParams[0], "Amount:", 47, node.name));
                     break;
                 case OnDialogueAction.LoadScene:

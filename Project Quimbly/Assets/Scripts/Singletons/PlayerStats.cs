@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerStats : Singleton<PlayerStats>
 {
     private int _maxMoney = 1000;
-    private int _money;
+    public int Money;
 
     private int _maxEnergy = 20;
     public int Energy;
@@ -20,12 +20,12 @@ public class PlayerStats : Singleton<PlayerStats>
         if (max)
             return _maxMoney;
         else
-            return _money;
+            return Money;
     }
 
     public void SetMoney(int amount)
     {
-        _money = amount;
+        Money = amount;
     }
 
     public void AdjustMoney(int amount, bool max = false)
@@ -33,7 +33,7 @@ public class PlayerStats : Singleton<PlayerStats>
         if (max)
             _maxMoney += amount;
         else
-            _money += amount;
+            Money += amount;
     }
 
     public int GetEnergy(bool max = false)

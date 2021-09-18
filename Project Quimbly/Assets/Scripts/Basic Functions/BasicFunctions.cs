@@ -159,7 +159,18 @@ public class BasicFunctions : MonoBehaviour, ISaveable, ISlotInfo
             PlayerStats.Instance.AdjustEnergy(value);
         }
     }
+    public void ModifyDP(string[] amount)
+    {
+        DateScript DS = GameObject.FindWithTag("DateController").GetComponent<DateScript>();
 
+        if (amount == null) return;
+
+        int value;
+        if (int.TryParse(amount[0], out value))
+        {
+            DS.ModifyDP(value);
+        }
+    }
     public void AddItem(string[] itemParameters)
     {
         Item.ItemType itemType;

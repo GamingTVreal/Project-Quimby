@@ -9,6 +9,7 @@ public class GirlController : MonoBehaviour, ISaveable
 {
     // Character variables
     bool hasMet = false;
+    static int DateLevel;
 
     // Cache
     AIConversant girlConversant = null;
@@ -36,7 +37,14 @@ public class GirlController : MonoBehaviour, ISaveable
             transform.GetChild(1).gameObject.SetActive(true);
         }
     }
-
+    public int GetDateLevel()
+    {
+        return DateLevel;
+    }
+    public void IncreaseDateLevel(int amount)
+    {
+        DateLevel = amount;
+    }
     public void TryFeeding()
     {
         if(PlayerStats.Instance.Energy >= 15)
@@ -62,6 +70,18 @@ public class GirlController : MonoBehaviour, ISaveable
         {
             Dialogue errorDialogue = (Dialogue)Resources.Load("Dialogue/ErrorMessages");
             girlConversant.StartDialogue(errorDialogue, "Low Energy");
+        }
+    }
+    public void TryDating()
+    {
+        if (PlayerStats.Instance.Energy >= 5 && PlayerStats.Instance.Money >= 50)
+        {
+            girlConversant.StartDialogue("Date");
+        }
+        else
+        {
+            
+            girlConversant.StartDialogue("CannotAffordDate");
         }
     }
 
