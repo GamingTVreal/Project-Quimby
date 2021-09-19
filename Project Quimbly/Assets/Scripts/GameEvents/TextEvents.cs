@@ -128,7 +128,7 @@ public class TextEvents : MonoBehaviour
 
                 if (SnoringSFX.isPlaying)
                 {
-                    Invoke("Sleep", 4f);
+                    Invoke("Sleep", 0.25f);
                 }
                 if (!SnoringSFX.isPlaying)
                 {

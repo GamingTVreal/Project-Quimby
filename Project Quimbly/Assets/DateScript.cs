@@ -39,7 +39,7 @@ public class DateScript : MonoBehaviour
     }
    public void EndDate()
     {
-        if (DP == 5)
+        if (DP >= 5)
         {
             Datelevel += 1;
             Music.Stop();
