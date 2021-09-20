@@ -17,7 +17,7 @@ public class DateScript : MonoBehaviour
     {
         Fill.color = Gradient.Evaluate(DateSlider.normalizedValue);
         Datelevel = GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().GetDateLevel();
-       /// Datelevel = 0; //Comment this out 
+        Datelevel = 2; //Comment this out 
         GetComponentInChildren<AIConversant>().StartDialogue("Date " + Datelevel);
     }
     // Update is called once per frame

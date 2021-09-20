@@ -31,3 +31,5 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: fa7d5dc2b3955c34797241a2dd1dedc1, type: 3}
   - location: Diner
     sprite: {fileID: 21300000, guid: 476d8bb4f1ace864ebf7b4cb16adf725, type: 3}
+  - location: Club
+    sprite: {fileID: 21300000, guid: aa7f7354f1691a9459fe5efeacdf8434, type: 3}
