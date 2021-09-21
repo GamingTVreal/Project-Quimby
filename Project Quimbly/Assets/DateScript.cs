@@ -37,28 +37,56 @@ public class DateScript : MonoBehaviour
            GetComponent<AIConversant>().StartDialogue("BadDate");
         }
     }
-   public void EndDate()
+    public void EndDate()
     {
-        if (DP >= 5)
+        if (Datelevel >= 2)
         {
-            Datelevel += 1;
-            Music.Stop();
-            GetComponent<AIConversant>().StartDialogue("BestDate");
-            GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().IncreaseDateLevel(Datelevel);
-            Debug.Log(GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().GetDateLevel());
+            if (DP >= 5)
+            {
+                Datelevel += 1;
+                Music.Stop();
+                GetComponent<AIConversant>().StartDialogue("BestDate");
+                GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().IncreaseDateLevel(Datelevel);
+                Debug.Log(GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().GetDateLevel());
+            }
+            else if (DP >= 0 && DP < 5)
+            {
+                Datelevel += 1;
+                Music.Stop();
+                GetComponent<AIConversant>().StartDialogue("GoodDate");
+                GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().IncreaseDateLevel(Datelevel);
+                Debug.Log(GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().GetDateLevel());
+            }
+            else
+            {
+                Music.Stop();
+                GetComponent<AIConversant>().StartDialogue("FinalDateFail");
+            }
         }
-        else if (DP >= 0 && DP < 5)
-        {
-            Datelevel += 1;
-            Music.Stop();
-            GetComponent<AIConversant>().StartDialogue("GoodDate");
-            GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().IncreaseDateLevel(Datelevel);
-            Debug.Log(GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().GetDateLevel());
-        }
+
         else
         {
-            Music.Stop();
-            GetComponent<AIConversant>().StartDialogue("BadDate");
+            if (DP >= 5)
+            {
+                Datelevel += 1;
+                Music.Stop();
+                GetComponent<AIConversant>().StartDialogue("BestDate");
+                GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().IncreaseDateLevel(Datelevel);
+                Debug.Log(GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().GetDateLevel());
+            }
+            else if (DP >= 0 && DP < 5)
+            {
+                Datelevel += 1;
+                Music.Stop();
+                GetComponent<AIConversant>().StartDialogue("GoodDate");
+                GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().IncreaseDateLevel(Datelevel);
+                Debug.Log(GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().GetDateLevel());
+            }
+            else
+            {
+                Music.Stop();
+                GetComponent<AIConversant>().StartDialogue("BadDate");
+            }
         }
     }
 

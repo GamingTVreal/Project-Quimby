@@ -1207,6 +1207,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-6574657846864707491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 69ae0c1b-2f06-4de7-87a2-40914ca33d9d
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: It let me know what kind of person you really are!
+  children:
+  - 2a79c1fc-135b-447a-aaf8-53c78957f3de
+  rect:
+    serializedVersion: 2
+    x: 2119
+    y: 3062
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-6115828145864836364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1584,8 +1619,8 @@ MonoBehaviour:
   - 41e3cda4-d513-43b2-94c3-571caece4058
   rect:
     serializedVersion: 2
-    x: 19
-    y: 2836
+    x: 11
+    y: 2834
     width: 250
     height: 175
   onEnterAction: 0
@@ -2828,7 +2863,7 @@ MonoBehaviour:
     x: 1565
     y: 2825
     width: 250
-    height: 175
+    height: 155
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2960,7 +2995,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
-  text: I'm down to do anything my partner watns...
+  text: I'm down to do anything my partner wants...
   children:
   - 23583c67-316e-40ce-a2ad-88b8c12f0f3a
   rect:
@@ -3224,6 +3259,8 @@ MonoBehaviour:
   - {fileID: -3356159361541588803}
   - {fileID: 7233137412279090987}
   - {fileID: 2154430781563179218}
+  - {fileID: -6574657846864707491}
+  - {fileID: 5303632565821241464}
   rootNodes:
   - {fileID: -5632801751525264431}
   - {fileID: -4992452287651583284}
@@ -3475,7 +3512,7 @@ MonoBehaviour:
     height: 200
   onEnterAction: 7
   onEnterActionParameter:
-  - Summit
+  - ClubMusic
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -3884,11 +3921,12 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
   isPlayerSpeaking: 0
-  speakerName: Speaker
-  text: 
-  children: []
+  speakerName: DEB
+  text: I'm happy we had this date
+  children:
+  - 69ae0c1b-2f06-4de7-87a2-40914ca33d9d
   rect:
     serializedVersion: 2
     x: 1867
@@ -4991,6 +5029,40 @@ MonoBehaviour:
     width: 250
     height: 175
   onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &5303632565821241464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 2a79c1fc-135b-447a-aaf8-53c78957f3de
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Speaker
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2376
+    y: 3066
+    width: 250
+    height: 180
+  onEnterAction: 10
   onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
