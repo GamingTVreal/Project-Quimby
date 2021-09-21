@@ -426,6 +426,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-7888723610107059423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 14fb32cc-6803-4822-933c-a0b684af6f64
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: I feel...
+  children:
+  - 4fef4723-1e45-48dc-a712-2daf664eb94a
+  rect:
+    serializedVersion: 2
+    x: 2203
+    y: 2764
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-7855048492389373483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,6 +817,77 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-7089467628338391075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: b7b14022-53b9-4709-a2f2-50a732dd2389
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: <color=#00ffffff>The only thing that was different this time was that her
+    belly was far more swollen
+  children:
+  - 91985b8b-0fbc-4718-bca1-3784f20f7430
+  rect:
+    serializedVersion: 2
+    x: 534
+    y: 2683
+    width: 250
+    height: 150
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-7082697472702688159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: a1cd02db-ef8e-40d4-9620-d3ff1fd6fd53
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: I mean so far the both of us like inflation, so there's that!
+  children:
+  - 74ce9535-ca15-4a9f-a73c-4e83235389da
+  rect:
+    serializedVersion: 2
+    x: 3010
+    y: 2779
+    width: 250
+    height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-6969874022958474050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,7 +1049,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: f4a397d6aa0628a4b884cad63f456cdc, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
-  text: Hey, I'm doing this for you
+  text: Hey, I'm doing this for color=#ffff00ff>you
   children:
   - 26fc8ec4-359d-4f43-a930-ad85f0d4504a
   rect:
@@ -951,7 +1057,7 @@ MonoBehaviour:
     x: 3054
     y: 2436
     width: 250
-    height: 160
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1341,6 +1447,41 @@ MonoBehaviour:
     y: 2122
     width: 250
     height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-5516923229833200486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 4e5f0f2b-6f31-4535-a073-1e7a274861f8
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: It's an act of love so I want to feel that love returned right?
+  children:
+  - 41e3cda4-d513-43b2-94c3-571caece4058
+  rect:
+    serializedVersion: 2
+    x: 19
+    y: 2836
+    width: 250
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1863,15 +2004,18 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   speakerName: DEB
   text: ...bloated
-  children: []
+  children:
+  - 6099212d-3f6f-46b5-98fc-3981da457057
   rect:
     serializedVersion: 2
-    x: 2538
-    y: 2402
+    x: 2529
+    y: 2369
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 6
+  onEnterActionParameter:
+  - Burps
+  - burp 1
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2057,6 +2201,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-2665373753559099730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: b7e462c5-a4c1-460d-89f2-5a02a94d9185
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: What are your oppinions on sex?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 784
+    y: 2875
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-2626151262510736895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2232,6 +2410,42 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-1487532634098056219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 4fef4723-1e45-48dc-a712-2daf664eb94a
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: Like incredibly more close to you right now...
+  children:
+  - b386a8e4-bb5f-46a4-bd08-0390b567ba42
+  rect:
+    serializedVersion: 2
+    x: 2494
+    y: 2751
+    width: 250
+    height: 215
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 1
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-1426369771206735462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2267,6 +2481,42 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-971585824401609461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: fa939b95-93b8-41f8-bb2e-4e4e5f751f04
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: Like, I think any sexual act is an act of love so I do not like to be degraded
+    in doing so
+  children:
+  - 4e5f0f2b-6f31-4535-a073-1e7a274861f8
+  rect:
+    serializedVersion: 2
+    x: 3514
+    y: 2761
+    width: 250
+    height: 190
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-905003368403223554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2294,6 +2544,112 @@ MonoBehaviour:
     y: 57
     width: 250
     height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-682687126851367621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 96a0917e-9528-43e6-be42-acd202cfad2e
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: Uhhh...
+  children:
+  - 5487850c-2799-4f4b-85b0-da3ceab59a6b
+  rect:
+    serializedVersion: 2
+    x: 1299
+    y: 2655
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-667743416355103104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 91985b8b-0fbc-4718-bca1-3784f20f7430
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: God...
+  children:
+  - de8e22b6-f070-42c6-bb65-d8953a70c22a
+  - 55ec70ea-9000-46dd-982b-28224d8dbb3c
+  rect:
+    serializedVersion: 2
+    x: 786
+    y: 2696
+    width: 250
+    height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-594360216936235919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 32932c6e-c663-4020-8bdb-842b099163e6
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: I want my belly to become big round and tight color=#ffff00ff> just for you...
+  children:
+  - 8ce1af33-0d48-4c68-9d64-ec0750a4912b
+  rect:
+    serializedVersion: 2
+    x: 1565
+    y: 2825
+    width: 250
+    height: 155
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2364,6 +2720,41 @@ MonoBehaviour:
     y: 908
     width: 250
     height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-213780639295130462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 55ec70ea-9000-46dd-982b-28224d8dbb3c
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: You look so hot!
+  children:
+  - 4e6b7016-3ab7-4118-8ea2-5dc7d59a6659
+  rect:
+    serializedVersion: 2
+    x: 1041
+    y: 2773
+    width: 250
+    height: 120
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2588,6 +2979,27 @@ MonoBehaviour:
   - {fileID: -3538159940058829655}
   - {fileID: 5809450928924882085}
   - {fileID: -3294647643320078979}
+  - {fileID: 1490955850223871626}
+  - {fileID: 7185198869321484059}
+  - {fileID: -7089467628338391075}
+  - {fileID: -667743416355103104}
+  - {fileID: 3919719429682043461}
+  - {fileID: -213780639295130462}
+  - {fileID: -682687126851367621}
+  - {fileID: 9198701199812929990}
+  - {fileID: 4064176217009161029}
+  - {fileID: -594360216936235919}
+  - {fileID: 4934453412110943326}
+  - {fileID: -7888723610107059423}
+  - {fileID: -1487532634098056219}
+  - {fileID: 8855978785055692861}
+  - {fileID: -7082697472702688159}
+  - {fileID: 1697774979690471654}
+  - {fileID: -971585824401609461}
+  - {fileID: -5516923229833200486}
+  - {fileID: 7327646788447701038}
+  - {fileID: 317596630950410067}
+  - {fileID: -2665373753559099730}
   rootNodes:
   - {fileID: -5632801751525264431}
   - {fileID: -4992452287651583284}
@@ -2767,6 +3179,43 @@ MonoBehaviour:
     height: 160
   onEnterAction: 0
   onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &317596630950410067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: eac89284-775e-470a-9b95-5c0102aaaa04
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: I think it's gross because I cannot love another person as much as I love
+    you,,,,
+  children:
+  - b7e462c5-a4c1-460d-89f2-5a02a94d9185
+  rect:
+    serializedVersion: 2
+    x: 531
+    y: 2849
+    width: 250
+    height: 215
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 1
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2985,6 +3434,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &1490955850223871626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 6099212d-3f6f-46b5-98fc-3981da457057
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: <color=#00ffffff>Once again DEB started grinding against me...
+  children:
+  - cd03376a-e19a-4143-85d3-c7544d31f8d5
+  rect:
+    serializedVersion: 2
+    x: 26
+    y: 2683
+    width: 250
+    height: 135
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &1563110713626197314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3009,7 +3493,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 2238
-    y: 2170
+    y: 2168
     width: 250
     height: 140
   onEnterAction: 0
@@ -3047,6 +3531,42 @@ MonoBehaviour:
     y: 1420
     width: 250
     height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &1697774979690471654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 74ce9535-ca15-4a9f-a73c-4e83235389da
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: Well of course there's that but I think theres a couple more things we could
+    be compatible in
+  children:
+  - fa939b95-93b8-41f8-bb2e-4e4e5f751f04
+  rect:
+    serializedVersion: 2
+    x: 3261
+    y: 2762
+    width: 250
+    height: 190
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -3832,6 +4352,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &3919719429682043461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: de8e22b6-f070-42c6-bb65-d8953a70c22a
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: You look like such a bloated bitch
+  children:
+  - 96a0917e-9528-43e6-be42-acd202cfad2e
+  rect:
+    serializedVersion: 2
+    x: 1045
+    y: 2664
+    width: 250
+    height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &3971807475511606967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3862,6 +4417,42 @@ MonoBehaviour:
   onEnterAction: 9
   onEnterActionParameter:
   - 1
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &4064176217009161029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 4e6b7016-3ab7-4118-8ea2-5dc7d59a6659
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: You know this is all just for you...
+  children:
+  - 32932c6e-c663-4020-8bdb-842b099163e6
+  rect:
+    serializedVersion: 2
+    x: 1299
+    y: 2785
+    width: 250
+    height: 180
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 2
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -4072,6 +4663,42 @@ MonoBehaviour:
     height: 175
   onEnterAction: 0
   onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &4934453412110943326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 8ce1af33-0d48-4c68-9d64-ec0750a4912b
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: At any rate I'm glad you're enjoying this...
+  children:
+  - 14fb32cc-6803-4822-933c-a0b684af6f64
+  rect:
+    serializedVersion: 2
+    x: 1937
+    y: 2736
+    width: 250
+    height: 215
+  onEnterAction: 1
+  onEnterActionParameter:
+  - Club
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -4397,6 +5024,42 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &7185198869321484059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: cd03376a-e19a-4143-85d3-c7544d31f8d5
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: <color=#00ffffff>I could still feel the vibration of the pump against my
+    pelvis
+  children:
+  - b7b14022-53b9-4709-a2f2-50a732dd2389
+  rect:
+    serializedVersion: 2
+    x: 282
+    y: 2691
+    width: 250
+    height: 135
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &7297839842252500908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4424,6 +5087,41 @@ MonoBehaviour:
     y: 1564
     width: 250
     height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &7327646788447701038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 41e3cda4-d513-43b2-94c3-571caece4058
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: I also don't like threesomes that much either
+  children:
+  - eac89284-775e-470a-9b95-5c0102aaaa04
+  rect:
+    serializedVersion: 2
+    x: 275
+    y: 2842
+    width: 250
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -4781,6 +5479,77 @@ MonoBehaviour:
   onEnterAction: 9
   onEnterActionParameter:
   - 1
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8855978785055692861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: b386a8e4-bb5f-46a4-bd08-0390b567ba42
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: I just hope we're compatible sexually
+  children:
+  - a1cd02db-ef8e-40d4-9620-d3ff1fd6fd53
+  rect:
+    serializedVersion: 2
+    x: 2757
+    y: 2771
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &9198701199812929990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 5487850c-2799-4f4b-85b0-da3ceab59a6b
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: I don't really like the degrading stuff...
+  children:
+  - 8ce1af33-0d48-4c68-9d64-ec0750a4912b
+  rect:
+    serializedVersion: 2
+    x: 1599
+    y: 2655
+    width: 250
+    height: 180
+  onEnterAction: 9
+  onEnterActionParameter:
+  - -1
   onExitAction: 0
   onExitActionParameter: []
   condition:
