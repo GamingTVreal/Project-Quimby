@@ -21,6 +21,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 22f46be2d6a93864ca99b6df68737aa8, type: 3}
     - {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
     - {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+    - {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
+    - {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
+    - {fileID: 21300000, guid: f4a397d6aa0628a4b884cad63f456cdc, type: 3}
+    - {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
   - girlName: Amber
     girlSprites:
     - {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}

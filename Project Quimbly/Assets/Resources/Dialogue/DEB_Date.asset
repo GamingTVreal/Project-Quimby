@@ -370,7 +370,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Aw, sorry I wanted to pick something you'd like...
@@ -378,12 +378,13 @@ MonoBehaviour:
   - 2edd0653-0d39-4f23-8e77-29aead4626d8
   rect:
     serializedVersion: 2
-    x: 1737
-    y: 2486
+    x: 1692
+    y: 2449
     width: 250
-    height: 175
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 215
+  onEnterAction: 9
+  onEnterActionParameter:
+  - -1
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -618,7 +619,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: Yikes....
@@ -724,7 +725,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: You're just like me hahahha
@@ -732,8 +733,8 @@ MonoBehaviour:
   - e7344f0d-3ea3-40fd-8401-de6e004a3106
   rect:
     serializedVersion: 2
-    x: 3047
-    y: 2238
+    x: 3091
+    y: 2221
     width: 250
     height: 200
   onEnterAction: 9
@@ -796,7 +797,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Isn't working
@@ -804,8 +805,8 @@ MonoBehaviour:
   - 1ec39958-0703-4864-b59e-9e30511e9f4c
   rect:
     serializedVersion: 2
-    x: 301
-    y: 2435
+    x: 331
+    y: 2428
     width: 250
     height: 160
   onEnterAction: 0
@@ -831,7 +832,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: f4a397d6aa0628a4b884cad63f456cdc, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: The least you could do is not be an asshole
@@ -902,7 +903,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Good thing it's dark in here otherwise someone would notice, eh?
@@ -939,7 +940,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: f4a397d6aa0628a4b884cad63f456cdc, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Hey, I'm doing this for you
@@ -1009,7 +1010,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff>Hmm... What could she be thinking?
@@ -1612,7 +1613,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: I'm yours and only yours....
@@ -1788,15 +1789,85 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: I guess I could've picked something else
+  children:
+  - 97b26fb6-b624-4284-b8ab-d40c71f9906d
+  rect:
+    serializedVersion: 2
+    x: 1943
+    y: 2478
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-3538159940058829655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: f8ed55c5-4199-4936-8370-62df7c4d901a
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: I wanted to pick something I thought you would enjoy!
+  children:
+  - 97b26fb6-b624-4284-b8ab-d40c71f9906d
+  rect:
+    serializedVersion: 2
+    x: 1987
+    y: 2297
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-3294647643320078979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: baf7d5d2-9724-42cb-a951-4bfccf24fe3b
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: ...bloated
   children: []
   rect:
     serializedVersion: 2
-    x: 1994
-    y: 2495
+    x: 2538
+    y: 2402
     width: 250
     height: 160
   onEnterAction: 0
@@ -1897,7 +1968,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: Yeah
-  children: []
+  children:
+  - a4faa032-df57-4fda-bea5-81c78a5b9841
   rect:
     serializedVersion: 2
     x: 1434
@@ -2245,7 +2317,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff>DEB looks around the establishment before she winks at me
@@ -2512,6 +2584,10 @@ MonoBehaviour:
   - {fileID: 114537933829691050}
   - {fileID: -8265530396590083291}
   - {fileID: -3622741164719720635}
+  - {fileID: 623048403387393483}
+  - {fileID: -3538159940058829655}
+  - {fileID: 5809450928924882085}
+  - {fileID: -3294647643320078979}
   rootNodes:
   - {fileID: -5632801751525264431}
   - {fileID: -4992452287651583284}
@@ -2579,8 +2655,8 @@ MonoBehaviour:
   - c0f37498-3670-4c16-b9ac-dd14771e0e50
   rect:
     serializedVersion: 2
-    x: 1437
-    y: 2487
+    x: 1423
+    y: 2481
     width: 250
     height: 140
   onEnterAction: 0
@@ -2677,7 +2753,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: I want you all to myself, hehe
@@ -2762,6 +2838,42 @@ MonoBehaviour:
     height: 180
   onEnterAction: 0
   onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &623048403387393483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: a4faa032-df57-4fda-bea5-81c78a5b9841
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: Oh, I'm so glad!
+  children:
+  - f8ed55c5-4199-4936-8370-62df7c4d901a
+  rect:
+    serializedVersion: 2
+    x: 1685
+    y: 2287
+    width: 250
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 1
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -3417,7 +3529,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: There's something I want to show you
@@ -3452,7 +3564,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff> After the bad date I decided to go home
@@ -4143,6 +4255,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &5809450928924882085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 97b26fb6-b624-4284-b8ab-d40c71f9906d
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: I'm starting to feel a little
+  children:
+  - baf7d5d2-9724-42cb-a951-4bfccf24fe3b
+  rect:
+    serializedVersion: 2
+    x: 2281
+    y: 2406
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &6231912729025298347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4479,7 +4626,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Look at my thigh cutie...
@@ -4487,8 +4634,8 @@ MonoBehaviour:
   - 66295071-c98d-401f-abcb-d96d185b69fc
   rect:
     serializedVersion: 2
-    x: 1489
-    y: 2152
+    x: 1480
+    y: 2150
     width: 250
     height: 160
   onEnterAction: 0
@@ -4549,7 +4696,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: What is it?
