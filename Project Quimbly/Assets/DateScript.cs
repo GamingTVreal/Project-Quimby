@@ -45,7 +45,7 @@ public class DateScript : MonoBehaviour
             {
                 Datelevel += 1;
                 Music.Stop();
-                GetComponent<AIConversant>().StartDialogue("BestDate");
+                GetComponent<AIConversant>().StartDialogue("DateFinale");
                 GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().IncreaseDateLevel(Datelevel);
                 Debug.Log(GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().GetDateLevel());
             }
@@ -53,7 +53,7 @@ public class DateScript : MonoBehaviour
             {
                 Datelevel += 1;
                 Music.Stop();
-                GetComponent<AIConversant>().StartDialogue("GoodDate");
+                GetComponent<AIConversant>().StartDialogue("DateFinale");
                 GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().IncreaseDateLevel(Datelevel);
                 Debug.Log(GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlController>().GetDateLevel());
             }
