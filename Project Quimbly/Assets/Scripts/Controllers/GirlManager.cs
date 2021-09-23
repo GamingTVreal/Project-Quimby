@@ -29,10 +29,41 @@ namespace ProjectQuimbly.Controllers
 
             foreach (string girl in characterLookup.Keys)
             {
-                GameObject characterGO = characterDB.GetPrefab(girl);
-                if (curScene == characterGO.GetComponent<Scheduler>().GetLocation())
+                // Get schedule from save
+                string scheduleName = "ProjectQuimbly.Schedules." + girl + "Schedule";
+                string girlLocation;
+                Dictionary<string, object> stateDict = (Dictionary<string, object>)characterLookup[girl].state;
+                if(stateDict == null)
+                {
+                    Scheduler defaultScheduler = characterDB.GetBasePrefab(girl).GetComponent<Scheduler>();
+                    girlLocation = defaultScheduler.GetLocation();
+                }
+                else
+                {
+                    Scheduler scheduler = new Scheduler();
+                    scheduler.RestoreState(stateDict[scheduleName]);
+                    girlLocation = scheduler.GetLocation();
+                }
+                
+                if (curScene == girlLocation)
                 {
                     // Spawn from prefab
+                    GameObject characterGO = null;
+                    switch (curScene)
+                    {
+                        case "Dates":
+                            characterGO = characterDB.GetDatePrefab(girl);
+                            break;
+                        case "Feeding Minigame":
+                            characterGO = characterDB.GetFeedingPrefab(girl);
+                            break;
+                        case "Inflation Minigame":
+                            characterGO = characterDB.GetInflationPrefab(girl);
+                            break;
+                        default:
+                            characterGO = characterDB.GetBasePrefab(girl);
+                            break;
+                    } 
                     GameObject charInstance = Instantiate(characterGO, transform);
 
                     // Offset position if multiple
@@ -65,7 +96,7 @@ namespace ProjectQuimbly.Controllers
             string[] characters = characterDB.GetNames();
             foreach (string character in characters)
             {
-                GameObject characterGO = characterDB.GetPrefab(character);
+                GameObject characterGO = characterDB.GetBasePrefab(character);
                 if(characterGO != null)
                 {
                     CharacterRecord record = new CharacterRecord();

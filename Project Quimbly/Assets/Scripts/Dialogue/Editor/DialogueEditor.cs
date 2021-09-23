@@ -361,6 +361,7 @@ namespace ProjectQuimbly.Dialogue.Editor
                     dialogueActions.Add(GenerateNumberField(actionParams[0], "Amount:", 47, node.name));
                     break;
                 case OnDialogueAction.LoadScene:
+                case OnDialogueAction.ChangeGirlLocation:
                     dialogueActions.Add(GenerateSceneSelect(actionParams, dialogueActions));
                     break;
                 case OnDialogueAction.PlayAudioSample:

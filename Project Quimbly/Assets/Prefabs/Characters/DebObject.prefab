@@ -20,6 +20,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2970277558838394265, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
+      propertyPath: dateDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d03298c6186f4648bf613f2893ed535, type: 2}
     - target: {fileID: 3844390285523576394, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1

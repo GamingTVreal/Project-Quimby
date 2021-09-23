@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using ProjectQuimbly.Dialogue;
 using ProjectQuimbly.Saving;
+using ProjectQuimbly.Schedules;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,15 +10,14 @@ public class GirlController : MonoBehaviour, ISaveable
 {
     // Character variables
     bool hasMet = false;
-    static int DateLevel;
+    static int dateLevel;
 
     // Cache
     AIConversant girlConversant = null;
 
     private void Awake() 
     {
-        GameObject go = transform.GetChild(0).gameObject;
-        girlConversant = go.GetComponent<AIConversant>();
+        girlConversant = GetComponent<AIConversant>();
     }
 
     public void TalkWithGirl()
@@ -25,7 +25,7 @@ public class GirlController : MonoBehaviour, ISaveable
         if(!hasMet)
         {
             // Get Speak Button object
-            girlConversant.GetComponent<Button>().interactable = false;
+            transform.GetChild(0).GetComponent<Button>().interactable = false;
             girlConversant.StartDialogue();
             hasMet = true;
 
@@ -39,12 +39,14 @@ public class GirlController : MonoBehaviour, ISaveable
     }
     public int GetDateLevel()
     {
-        return DateLevel;
+        return dateLevel;
     }
+
     public void IncreaseDateLevel(int amount)
     {
-        DateLevel = amount;
+        dateLevel = amount;
     }
+
     public void TryFeeding()
     {
         if(PlayerStats.Instance.Energy >= 15)
@@ -72,15 +74,20 @@ public class GirlController : MonoBehaviour, ISaveable
             girlConversant.StartDialogue(errorDialogue, "Low Energy");
         }
     }
+
     public void TryDating()
     {
         if (PlayerStats.Instance.Energy >= 5 && PlayerStats.Instance.Money >= 50)
         {
+            Scheduler schedule = GetComponent<Scheduler>();
+            if(schedule != null)
+            {
+                schedule.ChangeLocation("Dates");
+            }
             girlConversant.StartDialogue("Date");
         }
         else
         {
-            
             girlConversant.StartDialogue("CannotAffordDate");
         }
     }
@@ -93,11 +100,23 @@ public class GirlController : MonoBehaviour, ISaveable
 
     public object CaptureState()
     {
-        return hasMet;
+        CharRecord saveRecord = new CharRecord();
+        saveRecord.hasMet = hasMet;
+        saveRecord.dateLevel = dateLevel;
+        return saveRecord;
     }
 
     public void RestoreState(object state)
     {
-        hasMet = (bool)state;
+        CharRecord saveRecord = (CharRecord)state;
+        hasMet = saveRecord.hasMet;
+        dateLevel = saveRecord.dateLevel;
+    }
+
+    [System.Serializable]
+    private class CharRecord
+    {
+        public bool hasMet;
+        public int dateLevel;
     }
 }

@@ -7,6 +7,11 @@ namespace ProjectQuimbly.Schedules
     {
         [SerializeField] protected string location = "Park";
 
+        public void ChangeLocation(string newLocation)
+        {
+            location = newLocation;
+        }
+
         public string GetLocation()
         {
             return location;

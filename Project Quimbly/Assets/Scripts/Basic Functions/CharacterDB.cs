@@ -22,27 +22,60 @@ public class CharacterDB : ScriptableObject
         return s.ToArray();
     }
 
-    public GameObject GetPrefab(string charName)
+    public GameObject GetBasePrefab(string charName)
     {
         BuildLookup();
 
         if(characterLookup.ContainsKey(charName))
         {
-            return characterLookup[charName].prefab;
+            return characterLookup[charName].basePrefab;
         }
         return null;
     }
 
-    public string GetBio(string charName)
+    public GameObject GetDatePrefab(string charName)
     {
         BuildLookup();
 
-        if(characterLookup.ContainsKey(charName))
+        if (characterLookup.ContainsKey(charName))
         {
-            return characterLookup[charName].biography;
+            return characterLookup[charName].datePrefab;
         }
-        return "No bio set.";
+        return null;
     }
+
+    public GameObject GetFeedingPrefab(string charName)
+    {
+        BuildLookup();
+
+        if (characterLookup.ContainsKey(charName))
+        {
+            return characterLookup[charName].feedingPrefab;
+        }
+        return null;
+    }
+
+    public GameObject GetInflationPrefab(string charName)
+    {
+        BuildLookup();
+
+        if (characterLookup.ContainsKey(charName))
+        {
+            return characterLookup[charName].inflationPrefab;
+        }
+        return null;
+    }
+
+    // public string GetBio(string charName)
+    // {
+    //     BuildLookup();
+
+    //     if(characterLookup.ContainsKey(charName))
+    //     {
+    //         return characterLookup[charName].biography;
+    //     }
+    //     return "No bio set.";
+    // }
 
     private void BuildLookup()
     {
@@ -59,10 +92,13 @@ public class CharacterDB : ScriptableObject
     [System.Serializable]
     private class CharacterEntry
     {
-        public GameObject prefab;
         public string girlName;
-        public string biography;
-        public int age;
-        public string cupSize;
+        public GameObject basePrefab;
+        public GameObject datePrefab;
+        public GameObject feedingPrefab;
+        public GameObject inflationPrefab;
+        // public string biography;
+        // public int age;
+        // public string cupSize;
     }
 }

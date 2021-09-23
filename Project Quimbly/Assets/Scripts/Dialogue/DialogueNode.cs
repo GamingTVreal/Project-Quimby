@@ -250,6 +250,7 @@ namespace ProjectQuimbly.Dialogue
                     }
                     return;
                 case OnDialogueAction.LoadScene:
+                case OnDialogueAction.ChangeGirlLocation:
                     if(paramLength != 1)
                     {
                         actionParameter.Clear();

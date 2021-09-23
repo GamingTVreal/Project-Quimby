@@ -3292,11 +3292,12 @@ MonoBehaviour:
     x: 1416
     y: 2647
     width: 250
-    height: 160
+    height: 200
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 11
+  onExitActionParameter:
+  - Park
   condition:
     and: []
   enterActionIndex: 0
