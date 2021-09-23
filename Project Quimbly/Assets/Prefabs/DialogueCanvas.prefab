@@ -536,6 +536,10 @@ PrefabInstance:
       propertyPath: Deb.Array.data[2]
       value: 
       objectReference: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+    - target: {fileID: 7980442660141397160, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
 --- !u!1 &8343291203046496778 stripped
