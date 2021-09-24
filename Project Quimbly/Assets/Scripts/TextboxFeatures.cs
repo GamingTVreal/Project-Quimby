@@ -29,9 +29,7 @@ public class TextboxFeatures : MonoBehaviour
     }
     void CheckText()
     {
-        Debug.Log(WrittenText);
         PreviousText = DefaultText.text;
-        Debug.Log(PreviousText);
         if (PreviousText == WrittenText)
         {
             

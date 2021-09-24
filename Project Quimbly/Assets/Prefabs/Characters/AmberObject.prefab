@@ -20,6 +20,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3451490461715575067, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: ba8a79a1ea06e7c4095a3964f8f3e904, type: 2}
     - target: {fileID: 3844390285431793747, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_SizeDelta.x
       value: 205.96

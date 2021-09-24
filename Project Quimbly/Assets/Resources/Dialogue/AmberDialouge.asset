@@ -249,6 +249,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-7024910461880518915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: da272224-281e-47b9-9eb3-24f8b32d348d
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Although, hearing someone else say it is a little refreshing...
+  children:
+  - 701c2142-4a17-4878-bf82-d91f5996ac03
+  rect:
+    serializedVersion: 2
+    x: 543
+    y: 1508
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-6783736665338342436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,7 +334,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Amber
-  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
   isPlayerSpeaking: 1
   speakerName: Amber
   text: Sorry that was my tourettes
@@ -441,14 +476,15 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 1
   speakerName: Amber
-  text: <color=#00ffffff> I should take her on a date first (Not Implemented currently)
+  text: <color=#00ffffff> I should take her on a couple dates first (Not Implemented
+    currently)
   children: []
   rect:
     serializedVersion: 2
     x: 5
     y: 2533
     width: 250
-    height: 155
+    height: 170
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -472,7 +508,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Amber
-  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
   isPlayerSpeaking: 1
   speakerName: Amber
   text: <color=#00ffffff> At any rate...
@@ -701,6 +737,75 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-3994245166364470110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 2fc81e78-a07d-4bfa-8950-46b8e3be5b40
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: Date
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Team Quimbly
+  text: Can't do that yet
+  children:
+  - a4b97603-f7f1-4029-a418-c4b6b6810aec
+  rect:
+    serializedVersion: 2
+    x: 8
+    y: 2697
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-3973261012958714264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: a4b97603-f7f1-4029-a418-c4b6b6810aec
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Team Quimbly
+  text: Sorry...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 308
+    y: 2697
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-3942915822720070194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,7 +999,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Amber
-  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
   isPlayerSpeaking: 1
   speakerName: Amber
   text: <color=#00ffffff> I don't have tourettes, I totally panicked
@@ -902,8 +1007,8 @@ MonoBehaviour:
   - 7104e593-8c3e-4ad8-850a-c3069db2fa7e
   rect:
     serializedVersion: 2
-    x: 904
-    y: 2354
+    x: 880
+    y: 2336
     width: 250
     height: 155
   onEnterAction: 0
@@ -1347,7 +1452,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Amber
-  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
   isPlayerSpeaking: 0
   speakerName: Amber
   text: What the fuck?
@@ -1355,8 +1460,8 @@ MonoBehaviour:
   - e288b9e3-40e4-4d52-ba9c-bfa69ae433cf
   rect:
     serializedVersion: 2
-    x: 304
-    y: 2354
+    x: 332
+    y: 2351
     width: 250
     height: 160
   onEnterAction: 0
@@ -1691,6 +1796,11 @@ MonoBehaviour:
   - {fileID: -3281595322143851032}
   - {fileID: -5632605083452988901}
   - {fileID: 4378678553538060766}
+  - {fileID: 6624160342257984225}
+  - {fileID: -7024910461880518915}
+  - {fileID: 2738975913801356799}
+  - {fileID: -3994245166364470110}
+  - {fileID: -3973261012958714264}
   rootNodes:
   - {fileID: 8096435568872595532}
   - {fileID: 6298658254599561406}
@@ -1702,6 +1812,7 @@ MonoBehaviour:
   - {fileID: -4113766185884273424}
   - {fileID: -5779234639396236963}
   - {fileID: 6327730405521159734}
+  - {fileID: -3994245166364470110}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &52085816761016269
 MonoBehaviour:
@@ -2004,8 +2115,9 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
   isPlayerSpeaking: 1
   speakerName: Amber
-  text: 
-  children: []
+  text: Man, you're like really freakn' hot
+  children:
+  - 24e61992-b531-4dfa-a7bd-68a66fcb5734
   rect:
     serializedVersion: 2
     x: 10
@@ -2047,6 +2159,40 @@ MonoBehaviour:
     y: 862
     width: 250
     height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &2738975913801356799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 701c2142-4a17-4878-bf82-d91f5996ac03
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Amber
+  text: Anytime.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 843
+    y: 1508
+    width: 250
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2319,10 +2465,10 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Amber
-  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
   isPlayerSpeaking: 1
   speakerName: Amber
-  text: <color=#00ffffff> I do not want to ask that ever again
+  text: <color=#00ffffff> I do not want to ask that until we're a little closer
   children: []
   rect:
     serializedVersion: 2
@@ -2931,6 +3077,41 @@ MonoBehaviour:
     y: 135
     width: 250
     height: 170
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &6624160342257984225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 24e61992-b531-4dfa-a7bd-68a66fcb5734
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Well of fuckin' course
+  children:
+  - da272224-281e-47b9-9eb3-24f8b32d348d
+  rect:
+    serializedVersion: 2
+    x: 277
+    y: 1508
+    width: 250
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
