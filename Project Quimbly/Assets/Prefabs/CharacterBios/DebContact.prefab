@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6090924040836143103
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 459849710241927561, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1203.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 459849710241927561, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 41.955994
+      objectReference: {fileID: 0}
+    - target: {fileID: 459849710241927561, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.582916
+      objectReference: {fileID: 0}
+    - target: {fileID: 461167549314792761, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 594.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 461167549314792761, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000014067
+      objectReference: {fileID: 0}
+    - target: {fileID: 461167549314792761, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00025177002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821407621326942737, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -954.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 2978118055934154325, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_Name
+      value: DebContact
+      objectReference: {fileID: 0}
+    - target: {fileID: 5279090095257819535, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_text
+      value: DEB is a program created by Team Quimbly to satisfy all of your inflation/stuffing
+        hopes and dreams. She is programmed with a never ending love for you and
+        a never ending love of pumping her belly BIG! On her off time she actually
+        loves to play chess.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878048712879279599, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 937
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878048712879279599, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -485
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947856833050207123, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_text
+      value: 'Weight Gain
+
+        Pregnancy'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978162492447151382, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599884737004078835, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -638.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599884737004078835, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 486
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.514125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.577
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -13.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -41.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833728969237573055, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106264280005665460, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_text
+      value: "Stuffing\nInflation \nBloating"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067344031628999748, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -484.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067344031628999748, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.584
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086859467614554440, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086859467614554440, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086859467614554440, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 9066636323750478250}
+    - target: {fileID: 9086859467614554440, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086859467614554440, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086859467614554440, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086859467614554440, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+--- !u!1 &9066636323750478250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2978118055934154325, guid: 992259ff9092f8345b1c34a13f16c650, type: 3}
+  m_PrefabInstance: {fileID: 6090924040836143103}
+  m_PrefabAsset: {fileID: 0}

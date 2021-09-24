@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d33f89b196e88b428306136f6cfbe92, type: 3}
+  m_Name: GirlDialogueSpriteDB
+  m_EditorClassIdentifier: 
+  girlSprites:
+  - girlName: Deb
+    girlSprites:
+    - {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
+    - {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
+    - {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+    - {fileID: 21300000, guid: 22f46be2d6a93864ca99b6df68737aa8, type: 3}
+    - {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
+    - {fileID: 21300000, guid: edd335a56197c4a4fab26bcf2b95d050, type: 3}
+    - {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
+    - {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
+    - {fileID: 21300000, guid: f4a397d6aa0628a4b884cad63f456cdc, type: 3}
+    - {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
+  - girlName: Amber
+    girlSprites:
+    - {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+    - {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+    - {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+    - {fileID: 21300000, guid: eacc2840443e3524ebc1d86721d149f0, type: 3}
+    - {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+    - {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}

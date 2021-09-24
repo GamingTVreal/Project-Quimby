@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1c47d580d03a34a9a067d990cc9213, type: 3}
+  m_Name: VoiceLineDB
+  m_EditorClassIdentifier: 
+  characterVoices:
+  - name: Deb
+    voiceLines:
+    - lineName: Deb 1
+      voiceClip: {fileID: 8300000, guid: 0e7bcc5c97330274384a366d6358ab2c, type: 3}
+    - lineName: Deb 2
+      voiceClip: {fileID: 8300000, guid: ecb191fc7b41e434b98c7918938b805f, type: 3}
+    - lineName: Deb 3
+      voiceClip: {fileID: 8300000, guid: a0bb6076d87e4b2449b475ce98fd561c, type: 3}
+    - lineName: Deb 4
+      voiceClip: {fileID: 8300000, guid: c3a13fd441658ca4fb59bfdeb915d5b5, type: 3}
+    - lineName: Deb 5
+      voiceClip: {fileID: 8300000, guid: 01e28cbc59eaaaa4c92991485cef2111, type: 3}
+    - lineName: Deb 6
+      voiceClip: {fileID: 8300000, guid: 4a4429a0e1a2c8448ab49b3e24a1c832, type: 3}
+    - lineName: '"Okay"'
+      voiceClip: {fileID: 8300000, guid: 51906fb14705475429c7e382537bb625, type: 3}
+    - lineName: '"Nah"'
+      voiceClip: {fileID: 8300000, guid: 9143e6cf710c9634591fad479e3727ec, type: 3}
+    - lineName: '"This will be so exciting"'
+      voiceClip: {fileID: 8300000, guid: 00ec1423fa608164a96b43bcb4ad4045, type: 3}
+    - lineName: '"Let''s do this"'
+      voiceClip: {fileID: 8300000, guid: 3410cc424db30e04fba32f9ae7d65382, type: 3}
+    - lineName: '"Sorry"'
+      voiceClip: {fileID: 8300000, guid: 36eca43adcf66ff469c382791495530a, type: 3}
+    - lineName: '"My Bad"'
+      voiceClip: {fileID: 8300000, guid: c117824c5f992184b9cf2d46beb4cf98, type: 3}
+    - lineName: Introduction 1
+      voiceClip: {fileID: 8300000, guid: 4d2915ecffde9834d906d2c909b458dc, type: 3}
+    - lineName: Introduction2
+      voiceClip: {fileID: 8300000, guid: 28c1f428f28b0dc4b83cfe6a19888dbb, type: 3}
+    - lineName: '"I Know Something About you"'
+      voiceClip: {fileID: 8300000, guid: 469be417be31c7c418b399b22b7c11de, type: 3}
+    - lineName: '"Something You Wouldn''t Want Others to know"'
+      voiceClip: {fileID: 8300000, guid: 3391d8fccab419c428adf046a87110f5, type: 3}
+    - lineName: '"You''re Into Belly Inflation"'
+      voiceClip: {fileID: 8300000, guid: a3a98efd5da278d4ba1df30db27919d8, type: 3}
+    - lineName: '"If it makes you feel any better I like it too"'
+      voiceClip: {fileID: 8300000, guid: e235a69af66281b4988e523da80f941c, type: 3}
+    - lineName: '"I was programmed to after all"'
+      voiceClip: {fileID: 8300000, guid: 6ab85ccc6e1fbd3418324c99d544d62a, type: 3}
+    - lineName: '"Are you ready for your training"'
+      voiceClip: {fileID: 8300000, guid: fe5ebd724ec9c4e4188208a54e2ce5b0, type: 3}
+    - lineName: '"Get Ready to flirt with a real robot woman"'
+      voiceClip: {fileID: 8300000, guid: 6fca4bebc5a237942814f58025f4a4a4, type: 3}
+    - lineName: '"You Must Not Be Familiar With Your Existance"'
+      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
+    - lineName: '"You Must Not Be Familiar With Your Existance"'
+      voiceClip: {fileID: 8300000, guid: 198270d0afae79e45969e33af0de301c, type: 3}
+    - lineName: '"You Must Not Be Familiar With Your Existance"'
+      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
+    - lineName: '"You Must Not Be Familiar With Your Existance"'
+      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
+    - lineName: '"You Must Not Be Familiar With Your Existance"'
+      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
+    - lineName: '"You Must Not Be Familiar With Your Existance"'
+      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
+    - lineName: '"You Must Not Be Familiar With Your Existance"'
+      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
+    - lineName: '"You Must Not Be Familiar With Your Existance"'
+      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
+    - lineName: '"You Must Not Be Familiar With Your Existance"'
+      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
+  - name: Amber
+    voiceLines:
+    - lineName: MeetAmber1
+      voiceClip: {fileID: 8300000, guid: 6f9769f3efa90344396821454d48b3ae, type: 3}
+    - lineName: MeetAmber2
+      voiceClip: {fileID: 8300000, guid: eb25ba69fe24f9d499c8aaf77d5325b2, type: 3}
+    - lineName: MeetAmber3
+      voiceClip: {fileID: 8300000, guid: 35fb1e7fa9a88cd459caed741b44b298, type: 3}
+    - lineName: MeetAmber4
+      voiceClip: {fileID: 8300000, guid: 78e73e1732e5eec479bd8ab60934b376, type: 3}
+    - lineName: MeetAmber5
+      voiceClip: {fileID: 8300000, guid: 55612d0b3883a244b9ea1fdf8425d46f, type: 3}
+  - name: ShyGirl
+    voiceLines: []

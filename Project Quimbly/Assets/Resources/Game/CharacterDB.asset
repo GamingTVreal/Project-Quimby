@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb901ed349f8ff428bb19b9e7d2ecc5, type: 3}
+  m_Name: CharacterDB
+  m_EditorClassIdentifier: 
+  characters:
+  - girlName: Deb
+    basePrefab: {fileID: 2339657948083030910, guid: 3bd74a736b3288f45b983d95f30b747c, type: 3}
+    datePrefab: {fileID: 2961291967668336133, guid: 230b8df405c18f94ca49638af52dcdad, type: 3}
+    feedingPrefab: {fileID: 3095148403507097135, guid: 35a7376693a77a541a82ad7e689a2ef7, type: 3}
+    inflationPrefab: {fileID: 2654811142980758392, guid: 4066ebc213951cb4197413ff8c47ae5b, type: 3}
+  - girlName: Amber
+    basePrefab: {fileID: 7831626443754671777, guid: 32b21054d903fd043957ae52ec21b140, type: 3}
+    datePrefab: {fileID: 2473395646233674262, guid: 4d0c2ace2b07ff24f84c17e19a40ecaf, type: 3}
+    feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}
+    inflationPrefab: {fileID: 6320371722615389297, guid: 24bb1d2837ce0c44380a979b58d36386, type: 3}
