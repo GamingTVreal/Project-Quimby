@@ -1163,9 +1163,10 @@ MonoBehaviour:
     x: 2491
     y: 2152
     width: 250
-    height: 175
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 215
+  onEnterAction: 1
+  onEnterActionParameter:
+  - Club
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2289,16 +2290,17 @@ MonoBehaviour:
   - 6099212d-3f6f-46b5-98fc-3981da457057
   rect:
     serializedVersion: 2
-    x: 2529
-    y: 2369
+    x: 2537
+    y: 2356
     width: 250
-    height: 220
+    height: 260
   onEnterAction: 6
   onEnterActionParameter:
   - Burps
   - burp 1
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 1
+  onExitActionParameter:
+  - DEB_Final 2
   condition:
     and: []
   enterActionIndex: 0
@@ -2885,8 +2887,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Uhhh...
@@ -2897,7 +2899,7 @@ MonoBehaviour:
     x: 1299
     y: 2655
     width: 250
-    height: 140
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2930,14 +2932,15 @@ MonoBehaviour:
   - 55ec70ea-9000-46dd-982b-28224d8dbb3c
   rect:
     serializedVersion: 2
-    x: 786
-    y: 2696
+    x: 771
+    y: 2690
     width: 250
-    height: 120
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 1
+  onExitActionParameter:
+  - Club
   condition:
     and: []
   enterActionIndex: 0
@@ -2956,8 +2959,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: I want my belly to become big round and tight <color=#ffff00ff> just for
@@ -2969,7 +2972,7 @@ MonoBehaviour:
     x: 1565
     y: 2825
     width: 250
-    height: 170
+    height: 190
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -3800,12 +3803,13 @@ MonoBehaviour:
   - d7224d2e-28cf-408f-aa91-500d1cfb0351
   rect:
     serializedVersion: 2
-    x: 2
+    x: 3
     y: 3180
     width: 250
-    height: 170
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 210
+  onEnterAction: 1
+  onEnterActionParameter:
+  - DEB_Final 3
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -5025,8 +5029,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 8beeb16bb6aeece42b5b28c597c28273, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: You know this is all just for you...
@@ -5034,10 +5038,10 @@ MonoBehaviour:
   - 32932c6e-c663-4020-8bdb-842b099163e6
   rect:
     serializedVersion: 2
-    x: 1299
-    y: 2785
+    x: 1308
+    y: 2754
     width: 250
-    height: 180
+    height: 200
   onEnterAction: 9
   onEnterActionParameter:
   - 2
@@ -6025,14 +6029,15 @@ MonoBehaviour:
   - 66295071-c98d-401f-abcb-d96d185b69fc
   rect:
     serializedVersion: 2
-    x: 1480
-    y: 2150
+    x: 1489
+    y: 2129
     width: 250
-    height: 160
+    height: 200
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 1
+  onExitActionParameter:
+  - DEB_Final 1
   condition:
     and: []
   enterActionIndex: 0
@@ -6298,8 +6303,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: f1a262f12ba8693458e6608552559c86, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: I don't really like the degrading stuff...
@@ -6310,7 +6315,7 @@ MonoBehaviour:
     x: 1599
     y: 2655
     width: 250
-    height: 180
+    height: 200
   onEnterAction: 9
   onEnterActionParameter:
   - -1
