@@ -2972,7 +2972,7 @@ MonoBehaviour:
     x: 1565
     y: 2825
     width: 250
-    height: 190
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -4862,8 +4862,8 @@ MonoBehaviour:
   - 73f0085e-45c7-49ec-af18-8943bed65eda
   rect:
     serializedVersion: 2
-    x: 2114
-    y: 751
+    x: 2117
+    y: 732
     width: 250
     height: 160
   onEnterAction: 0
@@ -5179,7 +5179,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 846
-    y: 516
+    y: 517
     width: 250
     height: 195
   onEnterAction: 0
