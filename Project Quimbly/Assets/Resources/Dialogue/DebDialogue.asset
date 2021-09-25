@@ -623,8 +623,8 @@ MonoBehaviour:
   - f0c1bba1-63a1-4994-b362-fda8b4b18dce
   rect:
     serializedVersion: 2
-    x: 2
-    y: 548
+    x: -2
+    y: 581
     width: 250
     height: 180
   onEnterAction: 0
@@ -1803,6 +1803,8 @@ MonoBehaviour:
   - {fileID: 8738371214733726614}
   - {fileID: 8783697876166739390}
   - {fileID: -308850646414280650}
+  - {fileID: 1211571947616074799}
+  - {fileID: 1583369813303524846}
   rootNodes:
   - {fileID: -401783312524019519}
   - {fileID: -5721203161176120042}
@@ -1818,6 +1820,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: -76215528903363742}
   - {fileID: 810186544217988004}
+  - {fileID: 1211571947616074799}
+  - {fileID: 1583369813303524846}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &55627009834382245
 MonoBehaviour:
@@ -2100,6 +2104,74 @@ MonoBehaviour:
   onEnterActionParameter:
   - Deb
   - '"My Bad"'
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &1211571947616074799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: d2b8edc2-e4e8-4600-a167-13300817cf40
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: AllDatesComplete
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: 22f46be2d6a93864ca99b6df68737aa8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Deb
+  text: You already finished all our dates silly
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 247
+    y: 276
+    width: 250
+    height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &1583369813303524846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 113cbc91-770d-4bff-bac7-e40e882fa244
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: InflateBeforeDate
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Deb
+  text: I do not know her well enough to ask this...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 244
+    y: 447
+    width: 250
+    height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:

@@ -49,10 +49,14 @@ public class GirlController : MonoBehaviour, ISaveable
 
     public void TryFeeding()
     {
-        if(PlayerStats.Instance.Energy >= 15)
+        if(PlayerStats.Instance.Energy >= 15 && dateLevel > 2)
         {
             PlayerStats.Instance.Energy -= 15;
             girlConversant.StartDialogue("Feeding");
+        }
+        else if(dateLevel < 3)
+        {
+            girlConversant.StartDialogue("InflateBeforeDate");
         }
         else
         {
@@ -63,10 +67,14 @@ public class GirlController : MonoBehaviour, ISaveable
 
     public void TryInflation()
     {
-        if(PlayerStats.Instance.Energy >= 15)
+        if(PlayerStats.Instance.Energy >= 15 && dateLevel > 2)
         {
             PlayerStats.Instance.Energy -= 15;
             girlConversant.StartDialogue("Inflation");
+        }
+        else if (dateLevel < 3)
+        {
+            girlConversant.StartDialogue("InflateBeforeDate");
         }
         else
         {
@@ -77,7 +85,7 @@ public class GirlController : MonoBehaviour, ISaveable
 
     public void TryDating()
     {
-        if (PlayerStats.Instance.Energy >= 5 && PlayerStats.Instance.Money >= 50)
+        if (PlayerStats.Instance.Energy >= 5 && PlayerStats.Instance.Money >= 50 && dateLevel < 3)
         {
             Scheduler schedule = GetComponent<Scheduler>();
             if(schedule != null)
@@ -86,6 +94,12 @@ public class GirlController : MonoBehaviour, ISaveable
             }
             girlConversant.StartDialogue("Date");
         }
+        else if (dateLevel >= 3)
+        {
+            girlConversant.StartDialogue("AllDatesComplete");
+        }
+        
+        
         else
         {
             girlConversant.StartDialogue("CannotAffordDate");

@@ -2991,7 +2991,7 @@ MonoBehaviour:
   m_Name: a23e66cd-5c5f-4a67-988d-f3b3a020b68c
   m_EditorClassIdentifier: 
   isRoot: 1
-  conversationChainName: Inflation
+  conversationChainName: InflateBeforeDate
   girlToDisplay: Amber
   spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
   isPlayerSpeaking: 1

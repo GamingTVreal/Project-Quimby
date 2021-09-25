@@ -41,7 +41,7 @@ public class TextboxFeatures : MonoBehaviour
         }
         
     }
-    void HideTextbox()
+    public void HideTextbox()
     {
         WrittenText = DefaultText.text;
 

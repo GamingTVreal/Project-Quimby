@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using ProjectQuimbly.Dialogue;
 using UnityEngine.UI;
+using ProjectQuimbly.Schedules;
 
 public class DateScript : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class DateScript : MonoBehaviour
     [SerializeField] Image Fill;
     [SerializeField] AudioSource musicSource;
 
-    int dateLevel;
+
+int dateLevel;
     AIConversant conversant = null;
     GirlController girlController = null;
 
@@ -46,6 +48,7 @@ public class DateScript : MonoBehaviour
 
     public void EndDate()
     {
+        Scheduler schedule = GetComponent<Scheduler>();
         if (dateLevel >= 2)
         {
             if (DP >= 5)
@@ -55,19 +58,27 @@ public class DateScript : MonoBehaviour
                 conversant.StartDialogue("DateFinale");
                 girlController.IncreaseDateLevel(dateLevel);
                 Debug.Log(girlController.GetDateLevel());
+                schedule.ChangeLocation("Park");
+                
+
             }
             else if (DP >= 0 && DP < 5)
             {
+                Debug.Log(girlController.GetDateLevel());
                 dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("DateFinale");
                 girlController.IncreaseDateLevel(dateLevel);
                 Debug.Log(girlController.GetDateLevel());
+                schedule.ChangeLocation("Park");
             }
             else
             {
                 musicSource.Stop();
                 conversant.StartDialogue("FinalDateFail");
+                Debug.Log(girlController.GetDateLevel());
+                schedule.ChangeLocation("Park");
+                
             }
         }
 
@@ -80,6 +91,7 @@ public class DateScript : MonoBehaviour
                 conversant.StartDialogue("BestDate");
                 girlController.IncreaseDateLevel(dateLevel);
                 Debug.Log(girlController.GetDateLevel());
+                schedule.ChangeLocation("Park");
             }
             else if (DP >= 0 && DP < 5)
             {
@@ -88,11 +100,13 @@ public class DateScript : MonoBehaviour
                 conversant.StartDialogue("GoodDate");
                 girlController.IncreaseDateLevel(dateLevel);
                 Debug.Log(girlController.GetDateLevel());
+                schedule.ChangeLocation("Park");
             }
             else
             {
                 musicSource.Stop();
                 conversant.StartDialogue("BadDate");
+                schedule.ChangeLocation("Park");
             }
         }
     }
