@@ -7,8 +7,8 @@ public class TextboxFeatures : MonoBehaviour
 {
     [SerializeField] GameObject Textbox, Namebox, Textbox2;
     [SerializeField] TMP_Text DefaultText;
-    string WrittenText, PreviousText;
-    bool Hideable;
+    public string WrittenText, PreviousText;
+    public bool Hidden;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +22,8 @@ public class TextboxFeatures : MonoBehaviour
         {
             HideTextbox();
         }
-        if (Input.GetKeyDown("enter") || Input.GetMouseButtonDown(0))
-        {
-            CheckText();
-        }
     }
-    void CheckText()
+    public void CheckText()
     {
         PreviousText = DefaultText.text;
         if (PreviousText == WrittenText)
@@ -43,12 +39,11 @@ public class TextboxFeatures : MonoBehaviour
     }
     public void HideTextbox()
     {
-        WrittenText = DefaultText.text;
-
         if (Textbox.activeInHierarchy == true && Namebox.activeInHierarchy == true)
         {
             Textbox.SetActive(false);
             Namebox.SetActive(false);
+            Hidden = true;
         }
         else if (Textbox2.activeInHierarchy == true)
         {
@@ -58,11 +53,13 @@ public class TextboxFeatures : MonoBehaviour
         {
             Textbox.SetActive(true);
             Namebox.SetActive(true);
+            Hidden = false;
         }
         else if (Textbox2.activeInHierarchy == true)
         {
             Textbox2.SetActive(true);
         }
 
+        Debug.Log(WrittenText);
     }
 }

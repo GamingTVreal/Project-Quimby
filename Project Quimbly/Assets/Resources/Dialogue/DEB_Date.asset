@@ -1830,14 +1830,15 @@ MonoBehaviour:
   - 43f021cb-f41a-41ee-b503-4b97ae37f5d6
   rect:
     serializedVersion: 2
-    x: -6
-    y: 361
+    x: 26
+    y: 293
     width: 250
-    height: 180
+    height: 220
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 11
+  onExitActionParameter:
+  - Park
   condition:
     and: []
   enterActionIndex: 0
@@ -2109,7 +2110,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff> After the bad date I decided to go home
-  children: []
+  children:
+  - 0b4da843-6420-4fd2-8717-cdd7c21786f3
   rect:
     serializedVersion: 2
     x: 286
@@ -2581,9 +2583,10 @@ MonoBehaviour:
     x: 1166
     y: 723
     width: 250
-    height: 180
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 11
+  onEnterActionParameter:
+  - Park
   onExitAction: 5
   onExitActionParameter:
   - Home
@@ -3414,6 +3417,7 @@ MonoBehaviour:
   - {fileID: 1229731234800594952}
   - {fileID: -6403579746899795716}
   - {fileID: 1876900267789928465}
+  - {fileID: 8033984063962971948}
   rootNodes:
   - {fileID: -5632801751525264431}
   - {fileID: -4992452287651583284}
@@ -5178,12 +5182,13 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 846
-    y: 517
+    x: 848
+    y: 489
     width: 250
-    height: 195
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 235
+  onEnterAction: 11
+  onEnterActionParameter:
+  - Park
   onExitAction: 5
   onExitActionParameter:
   - Home
@@ -5850,8 +5855,8 @@ MonoBehaviour:
   - 61fdb145-ed54-4ae6-80fe-709c09f0f914
   rect:
     serializedVersion: 2
-    x: 295
-    y: 536
+    x: 271
+    y: 544
     width: 250
     height: 160
   onEnterAction: 0
@@ -6000,6 +6005,41 @@ MonoBehaviour:
   onEnterActionParameter:
   - Deb
   - '"This will be so exciting"'
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8033984063962971948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 0b4da843-6420-4fd2-8717-cdd7c21786f3
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 586
+    y: 297
+    width: 250
+    height: 160
+  onEnterAction: 11
+  onEnterActionParameter:
+  - Park
   onExitAction: 0
   onExitActionParameter: []
   condition:

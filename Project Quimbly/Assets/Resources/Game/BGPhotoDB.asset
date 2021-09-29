@@ -39,3 +39,5 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 7364984c6e03e904d8122b640d19cc42, type: 3}
   - location: DEB_Final 3
     sprite: {fileID: 21300000, guid: ffa76e59826e28e48a58f77b41792aff, type: 3}
+  - location: TennisCourt
+    sprite: {fileID: 21300000, guid: a9af419c3c6b6724c97f1d0ab0b8b783, type: 3}

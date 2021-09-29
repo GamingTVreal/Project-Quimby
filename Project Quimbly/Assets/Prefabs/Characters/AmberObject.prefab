@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3844390285523576395, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: TryDating
       objectReference: {fileID: 0}
     - target: {fileID: 3844390285632302680, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_Sprite

@@ -20,6 +20,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4666471244525811636, guid: 757fc13094754624d930450dfd694c9d, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 4654ca8781710e545b677b80048f4bf2, type: 2}
     - target: {fileID: 6520805503096795797, guid: 757fc13094754624d930450dfd694c9d, type: 3}
       propertyPath: uniqueIdentifier
       value: Amber

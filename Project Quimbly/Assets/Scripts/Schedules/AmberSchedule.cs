@@ -7,6 +7,6 @@ namespace ProjectQuimbly.Schedules
 {
     public class AmberSchedule : Scheduler
     {
-        
+
     }
 }

@@ -203,9 +203,11 @@ MonoBehaviour:
     x: 319
     y: 1707
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - Deb
+  - '"Force Feeding?"'
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -241,7 +243,7 @@ MonoBehaviour:
   onEnterAction: 8
   onEnterActionParameter:
   - Deb
-  - None
+  - '"bring it on make my belly biiiiig :P"'
   onExitAction: 5
   onExitActionParameter:
   - Inflation Minigame
@@ -376,12 +378,14 @@ MonoBehaviour:
   - 07cd8e5b-dc3e-4a1f-a62e-15a004081d16
   rect:
     serializedVersion: 2
-    x: 2681
-    y: 608
+    x: 2732
+    y: 611
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - Deb
+  - '"Nah"'
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -414,9 +418,11 @@ MonoBehaviour:
     x: 341
     y: 1128
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - Deb
+  - '"I Like Chess"'
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -483,8 +489,8 @@ MonoBehaviour:
   - 6828548f-59d5-47ce-8cd2-c16c562c48b7
   rect:
     serializedVersion: 2
-    x: 1187
-    y: 1737
+    x: 1174
+    y: 1713
     width: 250
     height: 155
   onEnterAction: 0
@@ -1153,9 +1159,11 @@ MonoBehaviour:
     x: 1502
     y: 1887
     width: 250
-    height: 200
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 260
+  onEnterAction: 8
+  onEnterActionParameter:
+  - Deb
+  - '"Fill me up"'
   onExitAction: 5
   onExitActionParameter:
   - Feeding Minigame
@@ -1441,9 +1449,11 @@ MonoBehaviour:
     x: 2106
     y: 1107
     width: 250
-    height: 175
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 235
+  onEnterAction: 8
+  onEnterActionParameter:
+  - Deb
+  - '"Wait a minute"'
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -1884,11 +1894,13 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 904
-    y: 1122
+    y: 1093
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - Deb
+  - '"I like Eating"'
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2096,8 +2108,8 @@ MonoBehaviour:
   - a143e793-1842-48cf-a44b-06b5d5a876e0
   rect:
     serializedVersion: 2
-    x: 587
-    y: 566
+    x: 627
+    y: 553
     width: 250
     height: 235
   onEnterAction: 8

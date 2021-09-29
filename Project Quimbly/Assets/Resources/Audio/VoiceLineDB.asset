@@ -59,22 +59,24 @@ MonoBehaviour:
       voiceClip: {fileID: 8300000, guid: 6fca4bebc5a237942814f58025f4a4a4, type: 3}
     - lineName: '"You Must Not Be Familiar With Your Existance"'
       voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
-    - lineName: '"You Must Not Be Familiar With Your Existance"'
+    - lineName: '"I Like Chess"'
       voiceClip: {fileID: 8300000, guid: 198270d0afae79e45969e33af0de301c, type: 3}
-    - lineName: '"You Must Not Be Familiar With Your Existance"'
-      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
-    - lineName: '"You Must Not Be Familiar With Your Existance"'
-      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
-    - lineName: '"You Must Not Be Familiar With Your Existance"'
-      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
-    - lineName: '"You Must Not Be Familiar With Your Existance"'
-      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
-    - lineName: '"You Must Not Be Familiar With Your Existance"'
-      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
-    - lineName: '"You Must Not Be Familiar With Your Existance"'
-      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
-    - lineName: '"You Must Not Be Familiar With Your Existance"'
-      voiceClip: {fileID: 8300000, guid: c6617d86636037744b558f2908a8ee45, type: 3}
+    - lineName: '"Yes, Got it"'
+      voiceClip: {fileID: 8300000, guid: ba95f06ecc66bae4c9c1ecc74c11773b, type: 3}
+    - lineName: '"Force Feeding?"'
+      voiceClip: {fileID: 8300000, guid: e8d9b6d4037731049b58c006b898174d, type: 3}
+    - lineName: '"I like Eating"'
+      voiceClip: {fileID: 8300000, guid: 85d3885abb73d3f4194e627fccf5a9a7, type: 3}
+    - lineName: '"I like that"'
+      voiceClip: {fileID: 8300000, guid: 647c04de28f8b8244b55fb99c965f859, type: 3}
+    - lineName: '"I''m not good at that"'
+      voiceClip: {fileID: 8300000, guid: a67525953eb76ce4e99d75bbbef7c095, type: 3}
+    - lineName: '"bring it on make my belly biiiiig :P"'
+      voiceClip: {fileID: 8300000, guid: 8c1a216361aefa4489e45e2509e595ef, type: 3}
+    - lineName: '"Fill me up"'
+      voiceClip: {fileID: 8300000, guid: aedce38eb36037149848c7fe0c93cb73, type: 3}
+    - lineName: '"Wait a minute"'
+      voiceClip: {fileID: 8300000, guid: f0259acda260e074a959005cafba19f3, type: 3}
   - name: Amber
     voiceLines:
     - lineName: MeetAmber1

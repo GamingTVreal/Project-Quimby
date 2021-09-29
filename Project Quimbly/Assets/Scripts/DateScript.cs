@@ -15,7 +15,7 @@ public class DateScript : MonoBehaviour
     [SerializeField] AudioSource musicSource;
 
 
-int dateLevel;
+    int dateLevel;
     AIConversant conversant = null;
     GirlController girlController = null;
 
@@ -58,9 +58,6 @@ int dateLevel;
                 conversant.StartDialogue("DateFinale");
                 girlController.IncreaseDateLevel(dateLevel);
                 Debug.Log(girlController.GetDateLevel());
-                schedule.ChangeLocation("Park");
-                
-
             }
             else if (DP >= 0 && DP < 5)
             {
@@ -77,8 +74,6 @@ int dateLevel;
                 musicSource.Stop();
                 conversant.StartDialogue("FinalDateFail");
                 Debug.Log(girlController.GetDateLevel());
-                schedule.ChangeLocation("Park");
-                
             }
         }
 
@@ -91,22 +86,20 @@ int dateLevel;
                 conversant.StartDialogue("BestDate");
                 girlController.IncreaseDateLevel(dateLevel);
                 Debug.Log(girlController.GetDateLevel());
-                schedule.ChangeLocation("Park");
             }
             else if (DP >= 0 && DP < 5)
             {
                 dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("GoodDate");
+                Debug.Log("Dialouge Started?");
                 girlController.IncreaseDateLevel(dateLevel);
                 Debug.Log(girlController.GetDateLevel());
-                schedule.ChangeLocation("Park");
             }
             else
             {
                 musicSource.Stop();
                 conversant.StartDialogue("BadDate");
-                schedule.ChangeLocation("Park");
             }
         }
     }

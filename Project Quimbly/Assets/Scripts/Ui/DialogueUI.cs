@@ -13,6 +13,7 @@ namespace ProjectQuimbly.UI
     public class DialogueUI : MonoBehaviour
     {
         PlayerConversant playerConversant;
+        TextboxFeatures TF;
         [SerializeField] Image characterImage;
         [SerializeField] TextMeshProUGUI conversantName;
         [SerializeField] TextMeshProUGUI dialogueText;
@@ -66,68 +67,86 @@ namespace ProjectQuimbly.UI
         // Print current node's dialog to textbox
         IEnumerator ShowText()
         {
-            textContainer.SetActive(true);
-            speakerContainer.SetActive(true);
-            characterImage.gameObject.SetActive(true);
-            SetupTextboxGroup();
+                TF = GameObject.FindGameObjectWithTag("DialougeController").GetComponent<TextboxFeatures>();
+                TF.WrittenText = "TalkingStart";
+                textContainer.SetActive(true);
+                speakerContainer.SetActive(true);
+                characterImage.gameObject.SetActive(true);
+                SetupTextboxGroup();
 
-            // float timeSinceLastSubstring = Mathf.Infinity;
+                // float timeSinceLastSubstring = Mathf.Infinity;
 
-            while (playerConversant.IsActive())
-            {
-                if(playerConversant.IsChoosing())
+                while (playerConversant.IsActive())
                 {
-                    if(!isWaitingOnChoice)
+                    if (playerConversant.IsChoosing())
                     {
-                        ReturnChoicesToPool(choiceCount);
-                        BuildChoiceList();
-                    }
-                    for (int i = 0; i < choiceButtons.Count; i++)
-                    {
-                        if (choiceButtons[i].IsActive() && Input.GetButtonDown(hotkeys[i]))
+                        if (!isWaitingOnChoice)
                         {
-                            choiceButtons[i].onClick.Invoke();
+                            ReturnChoicesToPool(choiceCount);
+                            BuildChoiceList();
+                        }
+                        for (int i = 0; i < choiceButtons.Count; i++)
+                        {
+                            if (choiceButtons[i].IsActive() && Input.GetButtonDown(hotkeys[i]))
+                            {
+                                choiceButtons[i].onClick.Invoke();
+                            }
                         }
                     }
-                }
-                else
-                {
-                    // timeSinceLastSubstring += Time.deltaTime;
-                    if (dialogueText.maxVisibleCharacters < parsedContent.Length)
+                    else
                     {
-                        dialogueText.maxVisibleCharacters++;
+                        // timeSinceLastSubstring += Time.deltaTime;
+                        if (dialogueText.maxVisibleCharacters < parsedContent.Length)
+                        {
+                            dialogueText.maxVisibleCharacters++;
+                        }
+                        // Check if user is trying to advance text
+                        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Mouse0))
+                        {
+                            if (TF.Hidden == false)
+                            {
+                                AdvanceTextbox();
+                            }
+                            else
+                            {
+                                TF.HideTextbox();
+                            }
+                           
+                        }
                     }
-                    // Check if user is trying to advance text
-                    if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Mouse0))
-                    {
-                        AdvanceTextbox();
-                    }
+                    yield return null;
                 }
-                yield return null;
-            }
+                TF.WrittenText = "New Text";
+                characterImage.gameObject.SetActive(false);
+                textContainer.SetActive(false);
+                speakerContainer.SetActive(false);
+            
 
-            characterImage.gameObject.SetActive(false);
-            textContainer.SetActive(false);
-            speakerContainer.SetActive(false);
         }
 
         private void AdvanceTextbox()
         {
-            if (dialogueText.maxVisibleCharacters < parsedContent.Length)
+
             {
-                dialogueText.maxVisibleCharacters = parsedContent.Length;
-            }
-            else
-            {
-                if (playerConversant.HasNext())
+                if (dialogueText.maxVisibleCharacters < parsedContent.Length)
                 {
-                    playerConversant.Next();
-                    SetupTextboxGroup();
+                    dialogueText.maxVisibleCharacters = parsedContent.Length;
                 }
                 else
                 {
-                    playerConversant.Quit();
+                    if (playerConversant.HasNext())
+                    {
+                        playerConversant.Next();
+                        SetupTextboxGroup();
+                    }
+                    else
+                    {
+                        playerConversant.Quit();
+                    }
                 }
+
+
+
             }
         }
 

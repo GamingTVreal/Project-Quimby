@@ -15,6 +15,7 @@ public class TextBoxManager : MonoBehaviour
     public TextMeshProUGUI speakerText;
     public bool isTextboxActive = false;
     [SerializeField] Button Sleep;
+    [SerializeField] TextboxFeatures TF;
     // Use this for initialization
 
     public SpriteController Sprite;
@@ -112,7 +113,7 @@ public class TextBoxManager : MonoBehaviour
         {
             currentline += 3;
             // Check if lines are left to display
-            if (currentline <= endatline)
+            if (currentline <= endatline && TF.Hidden == false)
             {
                 SetupNextLine(coTextLines);
             }
@@ -203,7 +204,10 @@ public class TextBoxManager : MonoBehaviour
     
     public void NextLine()
     {
-        showTextCoroutine = StartCoroutine(ShowText(defaultTextlines));
+        if (TF.Hidden == false)
+        {
+            showTextCoroutine = StartCoroutine(ShowText(defaultTextlines));
+        }
     }
 
     void EnableNameBox()

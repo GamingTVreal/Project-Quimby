@@ -19,12 +19,18 @@ public class GirlController : MonoBehaviour, ISaveable
     {
         girlConversant = GetComponent<AIConversant>();
     }
+    private void Start()
+    {
+        dateLevel = 0; //comment this out again
+        Debug.Log(dateLevel);
+    }
 
     public void TalkWithGirl()
     {
         if(!hasMet)
         {
             // Get Speak Button object
+            dateLevel = 0;
             transform.GetChild(0).GetComponent<Button>().interactable = false;
             girlConversant.StartDialogue();
             hasMet = true;
