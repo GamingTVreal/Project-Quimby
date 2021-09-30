@@ -26,6 +26,7 @@ namespace ProjectQuimbly.Dialogue.Editor
         DialogueNode linkingParentNode = null;
 
         Vector2 scrollPosition;
+        Rect scrollRect;
         [NonSerialized]
         DialogueNode draggingNode = null;
         [NonSerialized]
@@ -35,7 +36,7 @@ namespace ProjectQuimbly.Dialogue.Editor
         [NonSerialized]
         Vector2 draggingCanvasOffset;
 
-        const float canvasSize = 4000;
+        const float canvasSize = 8000;
         const float backgroundSize = 50;
 
         [MenuItem("Window/Dialogue/Dialogue Editor")]
@@ -104,6 +105,7 @@ namespace ProjectQuimbly.Dialogue.Editor
                 ProcessEvents();
 
                 scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition, true, true);
+                scrollRect = new Rect(scrollPosition.x - 250, scrollPosition.y - 200, 1500, 900);
 
                 Rect canvas = GUILayoutUtility.GetRect(canvasSize, canvasSize);
                 Texture2D backgroundTex = Resources.Load("background") as Texture2D;
@@ -124,7 +126,12 @@ namespace ProjectQuimbly.Dialogue.Editor
                 }
                 foreach (DialogueNode node in selectedDialogue.GetAllNodes())
                 {
-                    DrawNode(node);
+                    Rect nodeRect = node.GetRect();
+                    Vector2 nodePosition = new Vector2(nodeRect.x, nodeRect.y);
+                    if (scrollRect.Contains(nodePosition))
+                    {
+                        DrawNode(node);
+                    }
                 }
 
                 EditorGUILayout.EndScrollView();

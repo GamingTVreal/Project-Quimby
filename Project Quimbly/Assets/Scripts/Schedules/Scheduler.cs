@@ -6,10 +6,27 @@ namespace ProjectQuimbly.Schedules
     public class Scheduler : MonoBehaviour, ISaveable
     {
         [SerializeField] protected string location = "Park";
+        protected bool isDefaultLocation = true;
+
+        // Cache
+        protected string defaultLocation;
+
+        // Placeholder for now until time/date system can be put in place to determine normal locations
+        private void Awake() 
+        {
+            defaultLocation = location;
+        }
 
         public void ChangeLocation(string newLocation)
         {
             location = newLocation;
+            isDefaultLocation = false;
+        }
+
+        public void ResetLocation()
+        {
+            location = defaultLocation;
+            isDefaultLocation = true;
         }
 
         public string GetLocation()
@@ -25,6 +42,13 @@ namespace ProjectQuimbly.Schedules
         public void RestoreState(object state)
         {
             location = (string)state;
+        }
+
+        [System.Serializable]
+        private class ScheduleRecord
+        {
+            public string location;
+            public bool isDefaultLocation;
         }
     }
 }

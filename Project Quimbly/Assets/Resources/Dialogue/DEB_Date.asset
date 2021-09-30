@@ -164,8 +164,8 @@ MonoBehaviour:
   - 0785e767-1bd6-4584-871f-f0c39957231c
   rect:
     serializedVersion: 2
-    x: 1296
-    y: 245
+    x: 1279
+    y: 319
     width: 250
     height: 140
   onEnterAction: 0
@@ -1160,8 +1160,8 @@ MonoBehaviour:
   - a44dfc37-54d6-482f-9ed6-21aa3cf6fb0b
   rect:
     serializedVersion: 2
-    x: 2491
-    y: 2152
+    x: 2489
+    y: 2125
     width: 250
     height: 215
   onEnterAction: 1
@@ -1504,7 +1504,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 22f46be2d6a93864ca99b6df68737aa8, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: You're the only person in my life!
@@ -1512,8 +1512,8 @@ MonoBehaviour:
   - 288e16b6-a1ed-4bfe-b334-92e36f3454c3
   rect:
     serializedVersion: 2
-    x: 1057
-    y: 1250
+    x: 894
+    y: 1409
     width: 250
     height: 160
   onEnterAction: 0
@@ -1690,8 +1690,8 @@ MonoBehaviour:
   - eae53261-5667-487a-9a03-080bd1df937a
   rect:
     serializedVersion: 2
-    x: 2793
-    y: 2122
+    x: 2778
+    y: 2133
     width: 250
     height: 140
   onEnterAction: 0
@@ -1725,8 +1725,8 @@ MonoBehaviour:
   - 41e3cda4-d513-43b2-94c3-571caece4058
   rect:
     serializedVersion: 2
-    x: 11
-    y: 2834
+    x: 512
+    y: 2773
     width: 250
     height: 175
   onEnterAction: 0
@@ -1938,8 +1938,8 @@ MonoBehaviour:
   - f8300362-17c0-4fbb-965e-90b5d0963c0d
   rect:
     serializedVersion: 2
-    x: 3053
-    y: 2032
+    x: 3103
+    y: 2010
     width: 250
     height: 200
   onEnterAction: 9
@@ -2045,8 +2045,8 @@ MonoBehaviour:
   - f7f23b70-1cd8-4402-8d50-5b057dd3e150
   rect:
     serializedVersion: 2
-    x: 2794
-    y: 2413
+    x: 2799
+    y: 2443
     width: 250
     height: 140
   onEnterAction: 0
@@ -2292,8 +2292,8 @@ MonoBehaviour:
   - 6099212d-3f6f-46b5-98fc-3981da457057
   rect:
     serializedVersion: 2
-    x: 2537
-    y: 2356
+    x: 2536
+    y: 2361
     width: 250
     height: 260
   onEnterAction: 6
@@ -3241,7 +3241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587a94579930f974ea9763a0959d39dc, type: 3}
   m_Name: DEB_Date
   m_EditorClassIdentifier: 
-  defaultSpeakerName: Speaker
+  defaultSpeakerName: DEB
   alternateSpeaker: 0
   nodes:
   - {fileID: -5632801751525264431}
@@ -3592,7 +3592,7 @@ MonoBehaviour:
   - 9975f228-8c22-4e8a-b99f-8a8c2661a10f
   rect:
     serializedVersion: 2
-    x: 3300
+    x: 3481
     y: 2048
     width: 250
     height: 160

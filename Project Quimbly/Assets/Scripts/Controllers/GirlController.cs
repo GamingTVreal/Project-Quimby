@@ -14,10 +14,12 @@ public class GirlController : MonoBehaviour, ISaveable
 
     // Cache
     AIConversant girlConversant = null;
+    Scheduler girlSchedule = null;
 
     private void Awake() 
     {
         girlConversant = GetComponent<AIConversant>();
+        girlSchedule = GetComponent<Scheduler>();
     }
     private void Start()
     {
@@ -51,6 +53,11 @@ public class GirlController : MonoBehaviour, ISaveable
     public void IncreaseDateLevel(int amount)
     {
         dateLevel = amount;
+    }
+
+    public void ResetLocation()
+    {
+        girlSchedule.ResetLocation();
     }
 
     public void TryFeeding()

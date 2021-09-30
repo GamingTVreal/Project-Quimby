@@ -538,8 +538,8 @@ MonoBehaviour:
     x: 3571
     y: 212
     width: 250
-    height: 160
-  onEnterAction: 0
+    height: 180
+  onEnterAction: 10
   onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
@@ -856,10 +856,10 @@ MonoBehaviour:
     x: 3020
     y: 187
     width: 250
-    height: 195
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 10
+  onExitAction: 0
   onExitActionParameter: []
   condition:
     and: []
