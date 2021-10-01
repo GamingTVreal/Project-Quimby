@@ -29,7 +29,6 @@ public class DateScript : MonoBehaviour
     {
         Fill.color = Gradient.Evaluate(dateSlider.normalizedValue);
         dateLevel = girlController.GetDateLevel();
-        girlController.ResetLocation();
        // dateLevel = 2; //Comment this out 
         conversant.StartDialogue("Date " + dateLevel);
     }
@@ -41,9 +40,9 @@ public class DateScript : MonoBehaviour
         Fill.color = Gradient.Evaluate(dateSlider.normalizedValue);
         if (DP <= -5)
         {
-
-           GameObject.FindWithTag("GameController").GetComponent<PlayerConversant>().Quit();
+            GameObject.FindWithTag("GameController").GetComponent<PlayerConversant>().Quit();
             conversant.StartDialogue("BadDate");
+            conversant.onConversationEnd += ResetGirlLocation;
         }
     }
 
@@ -101,6 +100,13 @@ public class DateScript : MonoBehaviour
                 conversant.StartDialogue("BadDate");
             }
         }
+        conversant.onConversationEnd += ResetGirlLocation;
+    }
+
+    public void ResetGirlLocation()
+    {
+        girlController.ResetLocation();
+        conversant.onConversationEnd -= ResetGirlLocation;
     }
 
     

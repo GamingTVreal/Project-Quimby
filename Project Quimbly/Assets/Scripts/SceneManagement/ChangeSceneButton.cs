@@ -55,6 +55,8 @@ namespace ProjectQuimbly.SceneManagement
                 yield break;
             }
 
+            yield return null;
+
             DontDestroyOnLoad(this.gameObject);
             LoadFader loadFader = FindObjectOfType<LoadFader>();
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();

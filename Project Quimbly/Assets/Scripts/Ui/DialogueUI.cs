@@ -302,6 +302,7 @@ namespace ProjectQuimbly.UI
            DateScript DS = GameObject.FindWithTag("DateController").GetComponent<DateScript>();
            DS.EndDate();
         }
+        
         public void LoadScene(string[] newScene)
         {
             string sceneToLoad = newScene[0];

@@ -448,8 +448,8 @@ MonoBehaviour:
   - 2ba4f8e5-bfd6-4e7b-bf06-174c1055af5d
   rect:
     serializedVersion: 2
-    x: 767
-    y: 1013
+    x: 795
+    y: 1056
     width: 250
     height: 155
   onEnterAction: 0
@@ -1168,6 +1168,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-5827955840180116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 86693eb6-1448-4171-8775-602e735b1bb3
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Speaker
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 7762
+    y: 719
+    width: 250
+    height: 180
+  onEnterAction: 10
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,6 +1292,7 @@ MonoBehaviour:
   - {fileID: 2610184056420640660}
   - {fileID: -7222979556535952272}
   - {fileID: 1677524931044308888}
+  - {fileID: -5827955840180116}
   rootNodes:
   - {fileID: -7995045523325922971}
   - {fileID: 4475540409334174076}
@@ -1357,8 +1392,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1037
-    y: 970
+    x: 1073
+    y: 1042
     width: 250
     height: 240
   onEnterAction: 6
@@ -1711,16 +1746,17 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   speakerName: Amber
   text: Just don't play any porn games
-  children: []
+  children:
+  - 86693eb6-1448-4171-8775-602e735b1bb3
   rect:
     serializedVersion: 2
-    x: 7647
+    x: 7648
     y: 545
     width: 250
-    height: 180
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 10
+  onExitAction: 0
   onExitActionParameter: []
   condition:
     and: []
