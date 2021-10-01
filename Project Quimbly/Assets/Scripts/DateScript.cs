@@ -62,13 +62,11 @@ public class DateScript : MonoBehaviour
             }
             else if (DP >= 0 && DP < 5)
             {
-                Debug.Log(girlController.GetDateLevel());
                 dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("DateFinale");
                 girlController.IncreaseDateLevel(dateLevel);
                 Debug.Log(girlController.GetDateLevel());
-                schedule.ChangeLocation("Park");
             }
             else
             {

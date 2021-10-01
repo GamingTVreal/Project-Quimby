@@ -229,7 +229,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
-  text: So who are the most important people in your life?
+  text: So who are the most important people in  your life?
   children:
   - 009c6ee0-6f54-4c7e-b24e-e0765a9aa2e5
   - ec423e98-9734-4981-b254-c2024302eb18
