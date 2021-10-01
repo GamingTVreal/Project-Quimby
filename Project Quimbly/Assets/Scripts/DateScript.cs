@@ -56,22 +56,17 @@ public class DateScript : MonoBehaviour
                 dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("DateFinale");
-                girlController.IncreaseDateLevel(dateLevel);
-                Debug.Log(girlController.GetDateLevel());
             }
             else if (DP >= 0 && DP < 5)
             {
                 dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("DateFinale");
-                girlController.IncreaseDateLevel(dateLevel);
-                Debug.Log(girlController.GetDateLevel());
             }
             else
             {
                 musicSource.Stop();
                 conversant.StartDialogue("FinalDateFail");
-                Debug.Log(girlController.GetDateLevel());
             }
         }
 
@@ -82,8 +77,6 @@ public class DateScript : MonoBehaviour
                 dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("BestDate");
-                girlController.IncreaseDateLevel(dateLevel);
-                Debug.Log(girlController.GetDateLevel());
             }
             else if (DP >= 0 && DP < 5)
             {
@@ -91,8 +84,6 @@ public class DateScript : MonoBehaviour
                 musicSource.Stop();
                 conversant.StartDialogue("GoodDate");
                 Debug.Log("Dialouge Started?");
-                girlController.IncreaseDateLevel(dateLevel);
-                Debug.Log(girlController.GetDateLevel());
             }
             else
             {
@@ -106,6 +97,11 @@ public class DateScript : MonoBehaviour
     public void ResetGirlLocation()
     {
         girlController.ResetLocation();
+        if(DP >=0)
+        {
+            girlController.IncreaseDateLevel(dateLevel);
+            Debug.Log(girlController.GetDateLevel());
+        }
         conversant.onConversationEnd -= ResetGirlLocation;
     }
 
