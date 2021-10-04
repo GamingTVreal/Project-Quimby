@@ -1,5 +1,42 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9187222692102604346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 73922f93-b5f8-4eff-84a0-85c1f31256ea
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: Date 1
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Ha, remember this place
+  children:
+  - da24cd17-e5e2-4de3-ab4a-8e51c1d9c1e0
+  - ac16d2eb-3444-4350-8ff5-f7e8f1ec4cee
+  rect:
+    serializedVersion: 2
+    x: -4
+    y: 1289
+    width: 250
+    height: 240
+  onEnterAction: 1
+  onEnterActionParameter:
+  - Beach
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-9115725946212691142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,8 +485,8 @@ MonoBehaviour:
   - 2ba4f8e5-bfd6-4e7b-bf06-174c1055af5d
   rect:
     serializedVersion: 2
-    x: 795
-    y: 1056
+    x: 767
+    y: 1013
     width: 250
     height: 155
   onEnterAction: 0
@@ -676,6 +713,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-5441627429685535763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 313bac44-ca29-479d-937a-d1484d5e784d
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: It's the place where we first met
+  children:
+  - 55ef8a80-7510-430f-a9c2-b1935bc3097c
+  rect:
+    serializedVersion: 2
+    x: 563
+    y: 1283
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-5012497833889478477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,6 +813,42 @@ MonoBehaviour:
     height: 160
   onEnterAction: 0
   onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-4891388026629527326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 55ef8a80-7510-430f-a9c2-b1935bc3097c
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Aww, that's kinda sweet!
+  children:
+  - 6dc415b4-1bc3-48c1-a127-7bc23ba5c2cb
+  rect:
+    serializedVersion: 2
+    x: 815
+    y: 1254
+    width: 250
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 1
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -1062,6 +1170,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-2206497248162680598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: da24cd17-e5e2-4de3-ab4a-8e51c1d9c1e0
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Of course
+  children:
+  - 313bac44-ca29-479d-937a-d1484d5e784d
+  rect:
+    serializedVersion: 2
+    x: 310
+    y: 1283
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-1545652195439752061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1292,12 +1435,23 @@ MonoBehaviour:
   - {fileID: 2610184056420640660}
   - {fileID: -7222979556535952272}
   - {fileID: 1677524931044308888}
-  - {fileID: -5827955840180116}
+  - {fileID: 1037958354424646234}
+  - {fileID: -9187222692102604346}
+  - {fileID: -2206497248162680598}
+  - {fileID: 4072019994998641924}
+  - {fileID: -5441627429685535763}
+  - {fileID: -4891388026629527326}
+  - {fileID: 4388457292178973761}
+  - {fileID: 1636369233435030854}
+  - {fileID: 8002479640540024705}
+  - {fileID: 1599217732753894030}
+  - {fileID: 2486664301676815026}
   rootNodes:
   - {fileID: -7995045523325922971}
   - {fileID: 4475540409334174076}
   - {fileID: -227727313507803037}
   - {fileID: -4384785043592754142}
+  - {fileID: -9187222692102604346}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &25613080763358496
 MonoBehaviour:
@@ -1392,8 +1546,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1073
-    y: 1042
+    x: 1037
+    y: 970
     width: 250
     height: 240
   onEnterAction: 6
@@ -1586,6 +1740,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &1037958354424646234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 9f02854e-739b-4fdd-ae2d-5605ef9ff4f2
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Speaker
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 7896
+    y: 543
+    width: 250
+    height: 180
+  onEnterAction: 10
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &1191068585924788052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1680,8 +1868,8 @@ MonoBehaviour:
   - e8c77b04-f39e-44b7-8283-b682ecdc7625
   rect:
     serializedVersion: 2
-    x: 5925
-    y: 38
+    x: 5922
+    y: 33
     width: 250
     height: 160
   onEnterAction: 0
@@ -1727,6 +1915,77 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &1599217732753894030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: b7a38239-efe1-44c9-a502-49eb05f9b9a4
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Amber
+  text: What's so good about this place?
+  children:
+  - 7f443884-04a9-4076-9ddf-ed2397310f20
+  rect:
+    serializedVersion: 2
+    x: 1355
+    y: 1361
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &1636369233435030854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 2f0ef3ba-05e0-48de-b9e5-ffde81527624
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: This is where we first met!
+  children:
+  - 6dc415b4-1bc3-48c1-a127-7bc23ba5c2cb
+  rect:
+    serializedVersion: 2
+    x: 812
+    y: 1431
+    width: 250
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - -1
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &1677524931044308888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1747,13 +2006,47 @@ MonoBehaviour:
   speakerName: Amber
   text: Just don't play any porn games
   children:
-  - 86693eb6-1448-4171-8775-602e735b1bb3
+  - 9f02854e-739b-4fdd-ae2d-5605ef9ff4f2
   rect:
     serializedVersion: 2
-    x: 7648
+    x: 7647
     y: 545
     width: 250
     height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &2486664301676815026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 7f443884-04a9-4076-9ddf-ed2397310f20
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: The air is super fresh and the wet sand makes the perfect running zone!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1608
+    y: 1358
+    width: 250
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1820,8 +2113,8 @@ MonoBehaviour:
   - 03087674-c431-45ca-9f7d-2d355ef2c3a5
   rect:
     serializedVersion: 2
-    x: 265
-    y: 817
+    x: 257
+    y: 842
     width: 250
     height: 155
   onEnterAction: 0
@@ -2114,6 +2407,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &4072019994998641924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: ac16d2eb-3444-4350-8ff5-f7e8f1ec4cee
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Where?
+  children:
+  - a184dece-afd7-4808-ad86-94673f6457e2
+  rect:
+    serializedVersion: 2
+    x: 310
+    y: 1442
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &4111646240714760245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2139,6 +2467,41 @@ MonoBehaviour:
     serializedVersion: 2
     x: 5422
     y: 38
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &4388457292178973761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: a184dece-afd7-4808-ad86-94673f6457e2
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: How do you not remember?
+  children:
+  - 2f0ef3ba-05e0-48de-b9e5-ffde81527624
+  rect:
+    serializedVersion: 2
+    x: 561
+    y: 1432
     width: 250
     height: 160
   onEnterAction: 0
@@ -2385,8 +2748,8 @@ MonoBehaviour:
   - 1875d36d-0acf-4c50-9f22-5203a5fe1c6b
   rect:
     serializedVersion: 2
-    x: 5929
-    y: 195
+    x: 5947
+    y: 186
     width: 250
     height: 170
   onEnterAction: 0
@@ -2708,6 +3071,41 @@ MonoBehaviour:
     y: 167
     width: 250
     height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8002479640540024705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 6dc415b4-1bc3-48c1-a127-7bc23ba5c2cb
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Yup, this here is where I like to jog!
+  children:
+  - b7a38239-efe1-44c9-a502-49eb05f9b9a4
+  rect:
+    serializedVersion: 2
+    x: 1104
+    y: 1351
+    width: 250
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
