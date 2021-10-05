@@ -23,7 +23,7 @@ public class GirlController : MonoBehaviour, ISaveable
     }
     private void Start()
     {
-        dateLevel = 0; //comment this out again
+        //dateLevel = 0; //comment this out again
         Debug.Log(dateLevel);
     }
 

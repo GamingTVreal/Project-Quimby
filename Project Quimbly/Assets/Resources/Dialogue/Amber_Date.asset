@@ -27,7 +27,7 @@ MonoBehaviour:
     x: -4
     y: 1289
     width: 250
-    height: 240
+    height: 220
   onEnterAction: 1
   onEnterActionParameter:
   - Beach
@@ -419,6 +419,41 @@ MonoBehaviour:
     y: 533
     width: 250
     height: 190
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-7208997703775038185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 18f8fdf1-8d9a-483e-833d-46cea2850692
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: the dry sand is also fun because it's more fun to run and try not to fall
+  children:
+  - d8aa5b8c-79ca-409e-a2e3-0c7591bc049b
+  rect:
+    serializedVersion: 2
+    x: 1858
+    y: 1365
+    width: 250
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1100,6 +1135,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-2381259064464457516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: d8aa5b8c-79ca-409e-a2e3-0c7591bc049b
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Sounds absolutely "riviting".
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2110
+    y: 1383
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-2260294915687022726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1446,6 +1515,8 @@ MonoBehaviour:
   - {fileID: 8002479640540024705}
   - {fileID: 1599217732753894030}
   - {fileID: 2486664301676815026}
+  - {fileID: -7208997703775038185}
+  - {fileID: -2381259064464457516}
   rootNodes:
   - {fileID: -7995045523325922971}
   - {fileID: 4475540409334174076}
@@ -2040,10 +2111,11 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   speakerName: Amber
   text: The air is super fresh and the wet sand makes the perfect running zone!
-  children: []
+  children:
+  - 18f8fdf1-8d9a-483e-833d-46cea2850692
   rect:
     serializedVersion: 2
-    x: 1608
+    x: 1606
     y: 1358
     width: 250
     height: 175
