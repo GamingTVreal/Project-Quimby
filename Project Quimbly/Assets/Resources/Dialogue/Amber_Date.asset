@@ -178,6 +178,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-8789964301052694556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 077c5c75-969e-4f3c-b65f-d439c3974097
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: I bet you won't make it THAT far hahahah
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2866
+    y: 1375
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-8733883272520342401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,7 +1188,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: Sounds absolutely "riviting".
-  children: []
+  children:
+  - 2d214b1f-7b60-41c4-aa77-10f557ecd994
   rect:
     serializedVersion: 2
     x: 2110
@@ -1517,6 +1552,9 @@ MonoBehaviour:
   - {fileID: 2486664301676815026}
   - {fileID: -7208997703775038185}
   - {fileID: -2381259064464457516}
+  - {fileID: 6655861716419955832}
+  - {fileID: 5561774684244950701}
+  - {fileID: -8789964301052694556}
   rootNodes:
   - {fileID: -7995045523325922971}
   - {fileID: 4475540409334174076}
@@ -2832,6 +2870,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &5561774684244950701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 124e3b81-aaba-4c41-810b-e4408c1aab0e
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Besides let's see you try sprinting on dry sand
+  children:
+  - 077c5c75-969e-4f3c-b65f-d439c3974097
+  rect:
+    serializedVersion: 2
+    x: 2614
+    y: 1370
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &6412662040252945486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2968,6 +3041,41 @@ MonoBehaviour:
   onEnterAction: 9
   onEnterActionParameter:
   - 1
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &6655861716419955832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 2d214b1f-7b60-41c4-aa77-10f557ecd994
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Hey, no need for sarcasm
+  children:
+  - 124e3b81-aaba-4c41-810b-e4408c1aab0e
+  rect:
+    serializedVersion: 2
+    x: 2363
+    y: 1371
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
