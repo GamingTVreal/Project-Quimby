@@ -69,3 +69,5 @@ MonoBehaviour:
       clip: {fileID: 8300000, guid: c70243927e5dd114cb6956f73eb19f83, type: 3}
     - sfxName: Bad Date
       clip: {fileID: 8300000, guid: ccfc71ed2b8bfce4a9b76d156130e717, type: 3}
+    - sfxName: SandFall
+      clip: {fileID: 8300000, guid: 9350991e84c95ee4884e8ecb181bb020, type: 3}

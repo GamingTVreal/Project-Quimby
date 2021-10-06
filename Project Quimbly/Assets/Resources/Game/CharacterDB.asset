@@ -23,3 +23,8 @@ MonoBehaviour:
     datePrefab: {fileID: 2473395646233674262, guid: 4d0c2ace2b07ff24f84c17e19a40ecaf, type: 3}
     feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}
     inflationPrefab: {fileID: 6320371722615389297, guid: 24bb1d2837ce0c44380a979b58d36386, type: 3}
+  - girlName: Sophia
+    basePrefab: {fileID: 1383477655420371385, guid: 7890c9520450380458b34ae13021d169, type: 3}
+    datePrefab: {fileID: 2473395646233674262, guid: 4d0c2ace2b07ff24f84c17e19a40ecaf, type: 3}
+    feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}
+    inflationPrefab: {fileID: 6320371722615389297, guid: 24bb1d2837ce0c44380a979b58d36386, type: 3}
