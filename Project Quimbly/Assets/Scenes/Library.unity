@@ -1567,10 +1567,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GirlCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 6684004418352311677, guid: d81752984f7299e409fc4fd94415403f, type: 3}
-      propertyPath: uniqueIdentifier
-      value: Sophia
-      objectReference: {fileID: 0}
     - target: {fileID: 6684004418352311678, guid: d81752984f7299e409fc4fd94415403f, type: 3}
       propertyPath: m_Pivot.x
       value: 0

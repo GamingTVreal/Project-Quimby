@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class LoadingScreenScript : MonoBehaviour
 {
-    public string Area;
+    public string areaToLoad;
     public GameObject loadingScreenObj;
     public Slider slider;
     public GameObject Complete;
@@ -19,52 +19,52 @@ public class LoadingScreenScript : MonoBehaviour
     AsyncOperation async;
     public void InflationMinigame()
     {
-        Area = "Inflation Minigame";
+        areaToLoad = "Inflation Minigame";
         LoadScreenExample();
     }
     public void FeedingRoom()
     {
-        Area = "Feeding Minigame";
+        areaToLoad = "Feeding Minigame";
         LoadScreenExample();
     }
     public void GroceryStore()
     {
-        Area = "Grocery Store";
+        areaToLoad = "Grocery Store";
         LoadScreenExample();
     }
     public void Park()
     {
-        Area = "Park";
+        areaToLoad = "Park";
         LoadScreenExample();
     }
 
     public void Home()
     {
-        Area = "Home";
+        areaToLoad = "Home";
         LoadScreenExample();
     }
     public void JobAgency()
     {
-        Area = "JobAgency";
+        areaToLoad = "JobAgency";
         LoadScreenExample();
     }
     public void Beach()
     {
-        Area = "Beach";
+        areaToLoad = "Beach";
         LoadScreenExample();
     }
     public void MainMenu()
     {
-        Area = "Main Menu";
+        areaToLoad = "Main Menu";
         LoadScreenExample();
     }
 
     public void LoadNewArea(string newArea)
     {
-        Area = newArea;
+        areaToLoad = newArea;
         ChangeSceneButton changeSceneObj = Instantiate(chSceneObjPrefab).GetComponent<ChangeSceneButton>();
-        changeSceneObj.SetSceneToLoad(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/" + Area + ".unity"));
-        changeSceneObj.SetDestination(Area);
+        changeSceneObj.SetSceneToLoad(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/" + areaToLoad + ".unity"));
+        changeSceneObj.SetDestination(areaToLoad);
         changeSceneObj.ChangeScene();
         // StartCoroutine(LoadingScreen());
     }
@@ -72,8 +72,8 @@ public class LoadingScreenScript : MonoBehaviour
     public void LoadScreenExample()
     {
         ChangeSceneButton changeSceneObj = Instantiate(chSceneObjPrefab).GetComponent<ChangeSceneButton>();
-        changeSceneObj.SetSceneToLoad(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/" + Area + ".unity"));
-        changeSceneObj.SetDestination(Area);
+        changeSceneObj.SetSceneToLoad(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/" + areaToLoad + ".unity"));
+        changeSceneObj.SetDestination(areaToLoad);
         changeSceneObj.ChangeScene();
         // StartCoroutine(LoadingScreen());
     }
@@ -81,8 +81,8 @@ public class LoadingScreenScript : MonoBehaviour
     public void ReturnToMainMenu()
     {
         ChangeSceneButton changeSceneObj = Instantiate(chSceneObjPrefab).GetComponent<ChangeSceneButton>();
-        changeSceneObj.SetSceneToLoad(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/" + Area + ".unity"));
-        changeSceneObj.SetDestination(Area);
+        changeSceneObj.SetSceneToLoad(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/" + areaToLoad + ".unity"));
+        changeSceneObj.SetDestination(areaToLoad);
         changeSceneObj.ReturnToMainMenu();
     }
 
@@ -93,7 +93,7 @@ public class LoadingScreenScript : MonoBehaviour
             case 0:
                 break;
             case 1: 
-                    Area = "Jobs/Dishwasher";
+                    areaToLoad = "Jobs/Dishwasher";
                     LoadScreenExample();
                 break;
 
@@ -102,7 +102,7 @@ public class LoadingScreenScript : MonoBehaviour
     }
     public void Feed()
     {
-        Area = "Feeding Minigame";
+        areaToLoad = "Feeding Minigame";
         LoadScreenExample();
     }
 
