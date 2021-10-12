@@ -248,6 +248,76 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-8669075374982823911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 31972f0b-4973-4619-b645-b071bf36337d
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: ' Okay, gonorrhea-boy...'
+  children:
+  - eab46346-bfa4-4b6e-841c-428b2bbe1b66
+  rect:
+    serializedVersion: 2
+    x: 1819
+    y: 1500
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-8601266050305172919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 4bc95897-4605-4172-ae74-ef92d9dc0f11
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: I'm snoring back here
+  children:
+  - bdf7647c-7bc8-4a50-a0b9-154e068c9238
+  rect:
+    serializedVersion: 2
+    x: 3182
+    y: 1932
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-8426996916099896214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +498,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-7998685107803799486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 49459251-f843-41b8-9062-c206eaa8d411
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: I think so?
+  children:
+  - cb592d31-df11-4d83-835f-e146134df508
+  rect:
+    serializedVersion: 2
+    x: 1034
+    y: 1594
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-7995045523325922971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +604,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-7674270913753711403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 75afebf1-fa25-4ecc-959f-9ce4cf218fa2
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: No, I don't have gonorrhea
+  children:
+  - b6e04723-377d-4580-98ad-1c746621bde7
+  rect:
+    serializedVersion: 2
+    x: 1030
+    y: 1854
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-7594287745053755876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,6 +664,77 @@ MonoBehaviour:
     serializedVersion: 2
     x: 515
     y: 642
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-7533495293143189303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 3c07ae3f-da8a-49c7-9003-2437caab3f28
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Oooh, interesting question [p]
+  children:
+  - 65fe0c98-1788-451b-9338-547deca3fe36
+  rect:
+    serializedVersion: 2
+    x: 3173
+    y: 1747
+    width: 250
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 1
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-7471401925383406635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: eab46346-bfa4-4b6e-841c-428b2bbe1b66
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Amber
+  text: Hey, this date has been pretty fun!
+  children:
+  - e4479e56-3843-4dda-8b76-41bc4f56b3e2
+  rect:
+    serializedVersion: 2
+    x: 2168
+    y: 1746
     width: 250
     height: 140
   onEnterAction: 0
@@ -710,6 +921,78 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-6791429671230807946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: f6f312ba-5f4e-484e-839d-b27851441921
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Speaker
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 4757
+    y: 1773
+    width: 250
+    height: 180
+  onEnterAction: 10
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-6646616135010084120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 00eed24a-b4fb-455a-92f6-b97e17090937
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Don't you ever get a feeling like that
+  children:
+  - 75afebf1-fa25-4ecc-959f-9ce4cf218fa2
+  - c941de6d-75b4-4c1e-b196-c70085c71c4d
+  - c77a2b96-c5f7-4340-a2b4-c36584752f18
+  - 49459251-f843-41b8-9062-c206eaa8d411
+  rect:
+    serializedVersion: 2
+    x: 768
+    y: 1633
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-6641084565886703627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,6 +1170,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-6116009037320968086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 7b58168c-e13f-4f86-8f45-6b990901f485
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Where do you want to go on our next date?
+  children:
+  - 21d6f2cd-07af-4773-a10a-6d9114200739
+  rect:
+    serializedVersion: 2
+    x: 2934
+    y: 1611
+    width: 250
+    height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-6092276270771918128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -949,6 +1267,41 @@ MonoBehaviour:
     y: 382
     width: 250
     height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-5613588356742466874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: c941de6d-75b4-4c1e-b196-c70085c71c4d
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: I don't think so...
+  children:
+  - ab0b9bfa-b6a9-4533-b348-a916f83a2acd
+  rect:
+    serializedVersion: 2
+    x: 1030
+    y: 1723
+    width: 250
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1173,6 +1526,42 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-4722108789469611852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 19bdec69-70b4-4fc3-9a55-49aa3d3d9045
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: No need to lie
+  children:
+  - 45814b5b-fb3b-49bb-912c-fdf48d236806
+  rect:
+    serializedVersion: 2
+    x: 1319
+    y: 1440
+    width: 250
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - -2
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-4548400270322701793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,6 +1704,42 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-4077572803175263053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: ab0b9bfa-b6a9-4533-b348-a916f83a2acd
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Lame
+  children:
+  - f1d0121e-e40d-4551-bffb-9d179ca52929
+  rect:
+    serializedVersion: 2
+    x: 1284
+    y: 1692
+    width: 250
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - -1
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-3681201771698767558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,6 +1802,41 @@ MonoBehaviour:
     y: 1627
     width: 250
     height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-3276218063528291214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 65aad241-c4a9-4126-90ac-37a69c7601fe
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: I think it's time we end it here though
+  children:
+  - f6f312ba-5f4e-484e-839d-b27851441921
+  rect:
+    serializedVersion: 2
+    x: 4457
+    y: 1773
+    width: 250
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1490,6 +1950,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-2376969724141556102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 4655466a-6f22-4c2a-a0bf-8313631ca6e2
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: I always liked her
+  children:
+  - cbf6c712-4514-46b7-857b-ec5d301b5a7b
+  rect:
+    serializedVersion: 2
+    x: 5440
+    y: 1454
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-2260294915687022726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,6 +2084,42 @@ MonoBehaviour:
     height: 140
   onEnterAction: 0
   onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-1692781012088293719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: bdf7647c-7bc8-4a50-a0b9-154e068c9238
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Oh you're totally on!
+  children:
+  - 377e223a-77c1-4167-b9dd-08b23dddccde
+  rect:
+    serializedVersion: 2
+    x: 3434
+    y: 1921
+    width: 250
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 2
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -1760,8 +2291,78 @@ MonoBehaviour:
   - 067a615c-53bd-423f-8448-ba0b3a7c2a27
   rect:
     serializedVersion: 2
-    x: 5186
-    y: 1300
+    x: 5182
+    y: 1281
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-749532426230390385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: e4479e56-3843-4dda-8b76-41bc4f56b3e2
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Haha, whatever you say
+  children:
+  - aed72ca6-02ba-4e98-906d-78ab82515733
+  rect:
+    serializedVersion: 2
+    x: 2419
+    y: 1736
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-238957197803820232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 159addc5-f9ed-480b-8548-fcf0acc3d13b
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: I'm enjoying this opportunity to talk about myself like this...
+  children:
+  - 92ad1765-aa51-4867-8f3c-47a2354b6d20
+  rect:
+    serializedVersion: 2
+    x: 7468
+    y: 1545
     width: 250
     height: 175
   onEnterAction: 0
@@ -1970,6 +2571,50 @@ MonoBehaviour:
   - {fileID: 1829357269554636928}
   - {fileID: -3317946558804050268}
   - {fileID: 6923155033782598212}
+  - {fileID: -2376969724141556102}
+  - {fileID: 1013018904729206711}
+  - {fileID: 1358849738936412125}
+  - {fileID: 5866020054510883080}
+  - {fileID: -238957197803820232}
+  - {fileID: 2273841916232700723}
+  - {fileID: 6027458215633711834}
+  - {fileID: 1867177758711072758}
+  - {fileID: 8338609282344033042}
+  - {fileID: -6646616135010084120}
+  - {fileID: -7674270913753711403}
+  - {fileID: -5613588356742466874}
+  - {fileID: 8156014871568789742}
+  - {fileID: -7998685107803799486}
+  - {fileID: 3792119553521090959}
+  - {fileID: 7917237928901375238}
+  - {fileID: -4077572803175263053}
+  - {fileID: 7475554105785842184}
+  - {fileID: 7667536319459712430}
+  - {fileID: -4722108789469611852}
+  - {fileID: 7049149736314609659}
+  - {fileID: -8669075374982823911}
+  - {fileID: 6208037940163280734}
+  - {fileID: -7471401925383406635}
+  - {fileID: -749532426230390385}
+  - {fileID: 5594666368808398361}
+  - {fileID: -6116009037320968086}
+  - {fileID: 6723175987686795492}
+  - {fileID: 7405733372468374380}
+  - {fileID: 6240669451368766256}
+  - {fileID: 4391087562212993762}
+  - {fileID: 2652701672376300136}
+  - {fileID: 7801042872731354827}
+  - {fileID: -7533495293143189303}
+  - {fileID: 2366034146460085114}
+  - {fileID: 8312954094414781877}
+  - {fileID: 6737884931924466796}
+  - {fileID: -8601266050305172919}
+  - {fileID: -1692781012088293719}
+  - {fileID: 2904594851470508052}
+  - {fileID: 2729444108388090759}
+  - {fileID: 8310628523104724106}
+  - {fileID: -3276218063528291214}
+  - {fileID: -6791429671230807946}
   rootNodes:
   - {fileID: -7995045523325922971}
   - {fileID: 4475540409334174076}
@@ -2300,6 +2945,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &1013018904729206711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: cbf6c712-4514-46b7-857b-ec5d301b5a7b
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Anyways, she used to take me to this beach resort every so often
+  children:
+  - 0137175b-ade8-4ae8-b94c-5d9d77203a63
+  rect:
+    serializedVersion: 2
+    x: 5690
+    y: 1454
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &1037958354424646234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2428,12 +3108,13 @@ MonoBehaviour:
   - 2917e4cf-2035-460b-b0c7-fac5b14d9a06
   rect:
     serializedVersion: 2
-    x: 5185
-    y: 1629
+    x: 5182
+    y: 1626
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 1
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2546,6 +3227,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &1358849738936412125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 0137175b-ade8-4ae8-b94c-5d9d77203a63
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: I guess I just moved here because it reminded me of that!
+  children:
+  - e42aa0cb-feb5-437e-8b57-14d2c5de9599
+  rect:
+    serializedVersion: 2
+    x: 5942
+    y: 1461
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &1555849537230168805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,16 +3350,18 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
   isPlayerSpeaking: 0
   speakerName: Amber
-  text: 
-  children: []
+  text: Well there used to be this girl that would take me out to eat a lot
+  children:
+  - 4655466a-6f22-4c2a-a0bf-8313631ca6e2
   rect:
     serializedVersion: 2
-    x: 5187
+    x: 5189
     y: 1446
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 215
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 1
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2740,13 +3458,119 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff>I can't stop thinking like this....
-  children: []
+  children:
+  - e42aa0cb-feb5-437e-8b57-14d2c5de9599
   rect:
     serializedVersion: 2
     x: 6954
     y: 1326
     width: 250
     height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &1867177758711072758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: da44cb32-6376-414e-a866-3929d3edcdeb
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Are you sure you don't just have gonorrhea
+  children:
+  - 3b2b6de4-3345-49fb-a778-0c5a4e178ef8
+  rect:
+    serializedVersion: 2
+    x: 267
+    y: 1643
+    width: 250
+    height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &2273841916232700723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 92ad1765-aa51-4867-8f3c-47a2354b6d20
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Man you're such a loser...
+  children:
+  - 63eef883-0b66-4f10-a6e3-15fbed70c91f
+  rect:
+    serializedVersion: 2
+    x: 7719
+    y: 1552
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &2366034146460085114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 65fe0c98-1788-451b-9338-547deca3fe36
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: I think I would rent my own island
+  children:
+  - 7bdc6f6b-ebbf-4972-bef1-5d46acb246ec
+  rect:
+    serializedVersion: 2
+    x: 3425
+    y: 1767
+    width: 250
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2825,6 +3649,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &2652701672376300136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: ac093146-43f3-4f36-9a23-746222ab89ce
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Oh man than I guess a buffet is the perfect place for a big eater like you.
+  children:
+  - 5948ea49-d3ca-4fff-bd6d-8fa451ee18f2
+  rect:
+    serializedVersion: 2
+    x: 3676
+    y: 1593
+    width: 250
+    height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &2721226380915317287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2852,6 +3711,41 @@ MonoBehaviour:
     y: 842
     width: 250
     height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &2729444108388090759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: e63796ee-bcc5-4528-b6eb-82f7700aa962
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: '*haah* oh my god that was good'
+  children:
+  - ac6077e6-ce30-489a-b261-48622b9b2602
+  rect:
+    serializedVersion: 2
+    x: 3936
+    y: 1938
+    width: 250
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2925,6 +3819,41 @@ MonoBehaviour:
   onEnterAction: 9
   onEnterActionParameter:
   - 2
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &2904594851470508052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 377e223a-77c1-4167-b9dd-08b23dddccde
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: <color=#00ffffff>Me and amber chase eachother until we're both out of breath
+  children:
+  - e63796ee-bcc5-4528-b6eb-82f7700aa962
+  rect:
+    serializedVersion: 2
+    x: 3685
+    y: 1930
+    width: 250
+    height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -3107,6 +4036,42 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &3792119553521090959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: b6e04723-377d-4580-98ad-1c746621bde7
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Haha, you're such an asshole
+  children:
+  - 6edb4afa-b369-4e3d-b30a-a2e851a7bf15
+  rect:
+    serializedVersion: 2
+    x: 1284
+    y: 1852
+    width: 250
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 2
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &4021051401797885605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3241,6 +4206,43 @@ MonoBehaviour:
     height: 160
   onEnterAction: 0
   onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &4391087562212993762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: ebd49bcd-e464-462c-a154-e086be63673b
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: All our excersize dates leave me unbearibly hungry
+  children:
+  - ac093146-43f3-4f36-9a23-746222ab89ce
+  rect:
+    serializedVersion: 2
+    x: 3424
+    y: 1556
+    width: 250
+    height: 235
+  onEnterAction: 6
+  onEnterActionParameter:
+  - Gurgles
+  - gurgle 1
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -3600,6 +4602,113 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &5594666368808398361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: aed72ca6-02ba-4e98-906d-78ab82515733
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: I just wanted to ask you...
+  children:
+  - 7b58168c-e13f-4f86-8f45-6b990901f485
+  - d550987d-4cc9-4894-b9a0-c78b89d20131
+  - fbe35159-cffb-4b6c-862f-077a799bc7f8
+  rect:
+    serializedVersion: 2
+    x: 2671
+    y: 1735
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &5866020054510883080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: e42aa0cb-feb5-437e-8b57-14d2c5de9599
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Hey, that's super interesting!
+  children:
+  - 159addc5-f9ed-480b-8548-fcf0acc3d13b
+  rect:
+    serializedVersion: 2
+    x: 7213
+    y: 1556
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &6027458215633711834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 63eef883-0b66-4f10-a6e3-15fbed70c91f
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: You got me feelin' all weird and stuff
+  children:
+  - da44cb32-6376-414e-a866-3929d3edcdeb
+  rect:
+    serializedVersion: 2
+    x: 6
+    y: 1645
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &6043197039595490299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3628,6 +4737,76 @@ MonoBehaviour:
     y: 1312
     width: 250
     height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &6208037940163280734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 6d30d313-5737-4142-be12-b653c5fe1452
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: well, that's how you make me feel hehe
+  children:
+  - eab46346-bfa4-4b6e-841c-428b2bbe1b66
+  rect:
+    serializedVersion: 2
+    x: 1547
+    y: 1565
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &6240669451368766256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 21d6f2cd-07af-4773-a10a-6d9114200739
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: I would love to go to a nice buffet
+  children:
+  - ebd49bcd-e464-462c-a154-e086be63673b
+  rect:
+    serializedVersion: 2
+    x: 3172
+    y: 1593
+    width: 250
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -3813,6 +4992,76 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &6723175987686795492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: d550987d-4cc9-4894-b9a0-c78b89d20131
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: If you could do anything for free what would it be?
+  children:
+  - 3c07ae3f-da8a-49c7-9003-2437caab3f28
+  rect:
+    serializedVersion: 2
+    x: 2932
+    y: 1740
+    width: 250
+    height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &6737884931924466796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: c90f2b6e-e1aa-44d8-ab20-089720505334
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: And secondly to run in solitude, on a vast beach
+  children:
+  - ac6077e6-ce30-489a-b261-48622b9b2602
+  rect:
+    serializedVersion: 2
+    x: 3929
+    y: 1759
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &6923155033782598212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3831,14 +5080,50 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
   isPlayerSpeaking: 0
   speakerName: Amber
-  text: 
-  children: []
+  text: Hence why I do it here so often
+  children:
+  - e42aa0cb-feb5-437e-8b57-14d2c5de9599
   rect:
     serializedVersion: 2
     x: 5943
     y: 1635
     width: 250
     height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &7049149736314609659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 45814b5b-fb3b-49bb-912c-fdf48d236806
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: But I'm not lying?!
+  children:
+  - 31972f0b-4973-4619-b645-b071bf36337d
+  rect:
+    serializedVersion: 2
+    x: 1566
+    y: 1499
+    width: 250
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -3883,6 +5168,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &7405733372468374380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: fbe35159-cffb-4b6c-862f-077a799bc7f8
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Can you run any faster
+  children:
+  - 4bc95897-4605-4172-ae74-ef92d9dc0f11
+  rect:
+    serializedVersion: 2
+    x: 2931
+    y: 1934
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &7438429931956231879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3910,6 +5230,41 @@ MonoBehaviour:
     y: 49
     width: 250
     height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &7475554105785842184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: f1d0121e-e40d-4551-bffb-9d179ca52929
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: You totally gotta get some new experiances...
+  children:
+  - eab46346-bfa4-4b6e-841c-428b2bbe1b66
+  rect:
+    serializedVersion: 2
+    x: 1536
+    y: 1711
+    width: 250
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -4024,6 +5379,77 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &7667536319459712430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: cb592d31-df11-4d83-835f-e146134df508
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: ah, that's nice
+  children:
+  - 6d30d313-5737-4142-be12-b653c5fe1452
+  rect:
+    serializedVersion: 2
+    x: 1291
+    y: 1543
+    width: 250
+    height: 200
+  onEnterAction: 9
+  onEnterActionParameter:
+  - 1
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &7801042872731354827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 5948ea49-d3ca-4fff-bd6d-8fa451ee18f2
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: You know it!
+  children:
+  - ac6077e6-ce30-489a-b261-48622b9b2602
+  rect:
+    serializedVersion: 2
+    x: 3928
+    y: 1592
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &7804677652297862822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4094,6 +5520,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &7917237928901375238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 6edb4afa-b369-4e3d-b30a-a2e851a7bf15
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Just like me
+  children:
+  - eab46346-bfa4-4b6e-841c-428b2bbe1b66
+  rect:
+    serializedVersion: 2
+    x: 1536
+    y: 1873
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &8002479640540024705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4129,6 +5590,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &8156014871568789742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: c77a2b96-c5f7-4340-a2b4-c36584752f18
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Yeah all the time
+  children:
+  - 19bdec69-70b4-4fc3-9a55-49aa3d3d9045
+  rect:
+    serializedVersion: 2
+    x: 1065
+    y: 1483
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &8186221127760418411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4156,6 +5652,111 @@ MonoBehaviour:
     y: 500
     width: 250
     height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8310628523104724106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: ac6077e6-ce30-489a-b261-48622b9b2602
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Man, this has certainly been an intersting date!
+  children:
+  - 65aad241-c4a9-4126-90ac-37a69c7601fe
+  rect:
+    serializedVersion: 2
+    x: 4206
+    y: 1768
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8312954094414781877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 7bdc6f6b-ebbf-4972-bef1-5d46acb246ec
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: First to get away from creeps like you...
+  children:
+  - c90f2b6e-e1aa-44d8-ab20-089720505334
+  rect:
+    serializedVersion: 2
+    x: 3676
+    y: 1768
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8338609282344033042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 3b2b6de4-3345-49fb-a778-0c5a4e178ef8
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Amber
+  spriteToDisplay: {fileID: 21300000, guid: 3695a40696ecadf4ebc34d9b82899e26, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: Shut up, hahahah!
+  children:
+  - 00eed24a-b4fb-455a-92f6-b97e17090937
+  rect:
+    serializedVersion: 2
+    x: 518
+    y: 1633
+    width: 250
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
