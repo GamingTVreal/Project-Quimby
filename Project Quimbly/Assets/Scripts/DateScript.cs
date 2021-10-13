@@ -29,7 +29,7 @@ public class DateScript : MonoBehaviour
     {
         Fill.color = Gradient.Evaluate(dateSlider.normalizedValue);
         dateLevel = girlController.GetDateLevel();
-        dateLevel = 1; //Comment this out 
+        // dateLevel = 1
         conversant.StartDialogue("Date " + dateLevel);
     }
 
@@ -53,13 +53,11 @@ public class DateScript : MonoBehaviour
         {
             if (DP >= 5)
             {
-                dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("DateFinale");
             }
             else if (DP >= 0 && DP < 5)
             {
-                dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("DateFinale");
             }
@@ -74,13 +72,11 @@ public class DateScript : MonoBehaviour
         {
             if (DP >= 5)
             {
-                dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("BestDate");
             }
             else if (DP >= 0 && DP < 5)
             {
-                dateLevel += 1;
                 musicSource.Stop();
                 conversant.StartDialogue("GoodDate");
                 Debug.Log("Dialouge Started?");
@@ -99,7 +95,7 @@ public class DateScript : MonoBehaviour
         girlController.ResetLocation();
         if(DP >=0)
         {
-            girlController.IncreaseDateLevel(dateLevel);
+            girlController.IncreaseDateLevel();
             Debug.Log(girlController.GetDateLevel());
         }
         conversant.onConversationEnd -= ResetGirlLocation;

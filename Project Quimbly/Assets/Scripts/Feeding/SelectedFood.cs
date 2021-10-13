@@ -13,13 +13,9 @@ namespace ProjectQuimbly.Feeding
     {
         [SerializeField] Item item = new Item();
         [SerializeField] Image foodImage = null;
-        private CharacterController Character;
-        private PlateSelector Plate;
+
         private void Awake() 
         {
-            Character = FindObjectOfType<CharacterController>();
-            Plate = FindObjectOfType<PlateSelector>();
-
             if (!foodImage)
             {
                 foodImage = GetComponent<Image>();

@@ -15,10 +15,13 @@ namespace ProjectQuimbly.Feeding
         public int selectedItemIndex;
         bool isSelectionChanging = false;
 
+        FoodDragItem foodDragItem = null;
+
         private void Start()
         {
             BuildConsumableList();
             DisplayStartingFood();
+            foodDragItem = food.GetComponent<FoodDragItem>();
         }
 
         // Loop through inventory and build list of consumable foods for session
@@ -78,7 +81,7 @@ namespace ProjectQuimbly.Feeding
 
         // On mouth trigger, event is called when item is consumed.
         // Decrements consumable item list and updates text/plate.
-        public void FromConsumeEvent()
+        public void OnItemConsumeEvent()
         {
             if(items.Count == 0) BuildConsumableList();
             int itemCount = Inventory.Instance.GetItemAmount(items[selectedItemIndex].itemType);
@@ -88,7 +91,7 @@ namespace ProjectQuimbly.Feeding
                 items.Remove(items[selectedItemIndex]);
                 ChangeSelectedFood(true);
             }
-            
+            foodDragItem.CancelDrag();
         }
 
         // Used via arrow or button controls to change selected food
@@ -110,6 +113,12 @@ namespace ProjectQuimbly.Feeding
                 selectedItemIndex = items.Count - 1;
             }
             SetFoodUI(items[selectedItemIndex]);
+        }
+
+        // Called by FeedingRoom for audio sfx
+        public Item GetSelectedItem()
+        {
+            return items[selectedItemIndex];
         }
 
         // On empty inventory, disable interactable food and update text

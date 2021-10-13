@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using System;
 using System.Linq;
 using ProjectQuimbly.UI;
+using ProjectQuimbly.Schedules;
 
 namespace ProjectQuimbly.UI
 {
@@ -126,27 +127,21 @@ namespace ProjectQuimbly.UI
 
         private void AdvanceTextbox()
         {
-
+            if (dialogueText.maxVisibleCharacters < parsedContent.Length)
             {
-                if (dialogueText.maxVisibleCharacters < parsedContent.Length)
+                dialogueText.maxVisibleCharacters = parsedContent.Length;
+            }
+            else
+            {
+                if (playerConversant.HasNext())
                 {
-                    dialogueText.maxVisibleCharacters = parsedContent.Length;
+                    playerConversant.Next();
+                    SetupTextboxGroup();
                 }
                 else
                 {
-                    if (playerConversant.HasNext())
-                    {
-                        playerConversant.Next();
-                        SetupTextboxGroup();
-                    }
-                    else
-                    {
-                        playerConversant.Quit();
-                    }
+                    playerConversant.Quit();
                 }
-
-
-
             }
         }
 
@@ -307,6 +302,12 @@ namespace ProjectQuimbly.UI
         {
             string sceneToLoad = newScene[0];
             GetComponent<LoadingScreenScript>().LoadNewArea(sceneToLoad);
+        }
+
+        public void ChangeGirlLocation(string[] newLocation)
+        {
+            Scheduler girlSchedule = GameObject.FindWithTag("GirlContainer").GetComponentInChildren<Scheduler>();
+            girlSchedule.ChangeLocation(newLocation[0]);
         }
     }
 }

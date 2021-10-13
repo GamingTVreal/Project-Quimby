@@ -22,33 +22,7 @@ public class TextEvents : MonoBehaviour
     public PlayerStats Player;
     public LoadingScreenScript Load;
     static bool talked, MaxFed = false;
-
-    // public void Start()
-    // {
-    // }
-    // public void MeetingDeb()
-    // {
-    //      if (MetDeb == true)
-    //     {
-    //         GirlMenu();
-    //     }
-    //     else if (MetDeb == false)
-    //     {
-    //         SpeakButton.interactable = false;
-    //         SpeakButton.GetComponent<AIConversant>().StartDialogue();
-    //         MetDeb = true;
-    //     }
-        
-    // }
-    // public void GirlMenu()
-    // {
-    //     MainCamera.SetActive(false);
-    //     MenuCamera.SetActive(true);
-    // }
-    // private void EnableGirlMenu()
-    // {
-        
-    // }
+    
     public void Feeding()
     {
         GameObject FeedingButton = GameObject.Find("Feed");
@@ -143,91 +117,6 @@ public class TextEvents : MonoBehaviour
         {
             GetComponent<AIConversant>().StartDialogue("Can't Sleep");
         }
-    }
-
-    public void HighestFullnessValue()
-    {
-        FeedingStuff.SetActive(false);
-        if (MaxFed == false)
-        {
-            TextBox.currentline = 193;
-            TextBox.endatline = 247;
-            TextBox.ReloadScript();
-            MaxFed = true;
-        }
-        else
-        {
-            TextBox.currentline = 252;
-            TextBox.endatline = 270;
-            TextBox.ReloadScript();
-        }
-        TooFullToContinue2();
-    }
-    public void TooFullToContinue()
-    {
-        //talked = true;
-        FeedingStuff.SetActive(false);
-        int x = UnityEngine.Random.Range(0, 6);
-        if (TextBox.isTextboxActive == false && talked == false)
-        {
-            TextBox.currentline = 17;
-            TextBox.endatline = 35;
-            TextBox.ReloadScript();
-            talked = true;
-        }
-        else if (TextBox.isTextboxActive == false && talked == true)
-        {
-            switch (x)
-            {
-                case 0:
-                    TextBox.currentline = 17;
-                    TextBox.endatline = 23;
-                    TextBox.ReloadScript();
-                    break;
-                case 1:
-                    TextBox.currentline = 66;
-                    TextBox.endatline = 102;
-                    TextBox.ReloadScript();
-                    break;
-                case 2:
-                    TextBox.currentline = 107;
-                    TextBox.endatline = 125;
-                    TextBox.ReloadScript();
-                    break;
-                case 3:
-                    TextBox.currentline = 130;
-                    TextBox.endatline = 145;
-                    TextBox.ReloadScript();
-                    break;
-                case 4:
-                    TextBox.currentline = 150;
-                    TextBox.endatline = 171;
-                    TextBox.ReloadScript();
-                    break;
-                case 5:
-                    TextBox.currentline = 176;
-                    TextBox.endatline = 188;
-                    TextBox.ReloadScript();
-                    break;
-            }
-        }
-
-        TooFullToContinue2(); 
-        
-    }
-    public void TooFullToContinue2()
-    {
-        
-        if (TextBox.isTextboxActive == false)
-        {
-            Load.Home();
-        }
-        else
-        {
-            Invoke("TooFullToContinue2", 1f);
-        }
-        
-
     }
 
     public void LeavingInflation()

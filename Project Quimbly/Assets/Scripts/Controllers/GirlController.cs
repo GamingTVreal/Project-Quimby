@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using ProjectQuimbly.Dialogue;
@@ -10,7 +11,8 @@ public class GirlController : MonoBehaviour, ISaveable
 {
     // Character variables
     bool hasMet = false;
-    static int dateLevel;
+    int dateLevel;
+    int bellyCapacity = 25;
 
     // Cache
     AIConversant girlConversant = null;
@@ -23,8 +25,8 @@ public class GirlController : MonoBehaviour, ISaveable
     }
     private void Start()
     {
-        //dateLevel = 0; //comment this out again
-        Debug.Log(dateLevel);
+        // dateLevel = 0; //comment this out again
+        // Debug.Log(dateLevel);
     }
 
     public void TalkWithGirl()
@@ -50,9 +52,19 @@ public class GirlController : MonoBehaviour, ISaveable
         return dateLevel;
     }
 
-    public void IncreaseDateLevel(int amount)
+    public void IncreaseDateLevel()
     {
-        dateLevel = amount;
+        dateLevel++;
+    }
+
+    internal void ModifyBellyCapacity(int amount)
+    {
+        bellyCapacity += amount;
+    }
+
+    internal int GetBellyCapacity()
+    {
+        return bellyCapacity;
     }
 
     public void ResetLocation()
@@ -62,20 +74,21 @@ public class GirlController : MonoBehaviour, ISaveable
 
     public void TryFeeding()
     {
-        if(PlayerStats.Instance.Energy >= 15 && dateLevel > 2)
+        // if(PlayerStats.Instance.Energy >= 15 && dateLevel > 2)
+        if(true)
         {
             PlayerStats.Instance.Energy -= 15;
             girlConversant.StartDialogue("Feeding");
         }
-        else if(dateLevel < 3)
-        {
-            girlConversant.StartDialogue("InflateBeforeDate");
-        }
-        else
-        {
-            Dialogue errorDialogue = (Dialogue)Resources.Load("Dialogue/ErrorMessages");
-            girlConversant.StartDialogue(errorDialogue, "Feeding No Energy");
-        }
+        // else if(dateLevel < 3)
+        // {
+        //     girlConversant.StartDialogue("InflateBeforeDate");
+        // }
+        // else
+        // {
+        //     Dialogue errorDialogue = (Dialogue)Resources.Load("Dialogue/ErrorMessages");
+        //     girlConversant.StartDialogue(errorDialogue, "Feeding No Energy");
+        // }
     }
 
     public void TryInflation()
@@ -130,6 +143,7 @@ public class GirlController : MonoBehaviour, ISaveable
         CharRecord saveRecord = new CharRecord();
         saveRecord.hasMet = hasMet;
         saveRecord.dateLevel = dateLevel;
+        saveRecord.bellyCapacity = bellyCapacity;
         return saveRecord;
     }
 
@@ -138,6 +152,7 @@ public class GirlController : MonoBehaviour, ISaveable
         CharRecord saveRecord = (CharRecord)state;
         hasMet = saveRecord.hasMet;
         dateLevel = saveRecord.dateLevel;
+        bellyCapacity = saveRecord.bellyCapacity;
     }
 
     [System.Serializable]
@@ -145,5 +160,6 @@ public class GirlController : MonoBehaviour, ISaveable
     {
         public bool hasMet;
         public int dateLevel;
+        public int bellyCapacity;
     }
 }

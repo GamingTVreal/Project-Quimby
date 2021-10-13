@@ -100,14 +100,7 @@ public class BasicFunctions : MonoBehaviour, ISaveable, ISlotInfo
     {
         //Inventory.Instance.AddItem(new Item { itemType = Item.ItemType.Soda, amount = 1 });
         DontDestroyOnLoad(ScriptHolder);
-        // if (TextBox.activeInHierarchy)
-        // {
-        //     phoneObject.SetActive(false);
-        // }
-        // else
-        // {
-        //     phoneObject.SetActive(true);
-        // }
+        
         if (Name == null)
         {
             FirstTimeSetup();
@@ -118,8 +111,6 @@ public class BasicFunctions : MonoBehaviour, ISaveable, ISlotInfo
     void Update()
     {
         ChangeCursorOnUI();
-        //MoneyText.text = Money.ToString();
-        //EnergyText.text = Energy.ToString();
     }
 
     void FirstTimeSetup()

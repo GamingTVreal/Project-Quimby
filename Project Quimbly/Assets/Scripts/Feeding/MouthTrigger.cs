@@ -9,8 +9,7 @@ namespace ProjectQuimbly.Feeding
 {
     public class MouthTrigger : MonoBehaviour, IDragDestination
     {
-        private CharacterController Character;
-        private FeedingRoom Feed;
+        [SerializeField] GirlFeeding feedingScript = null;
 
         [SerializeField] int biteSize = 1;
         [SerializeField][Range(0, 3f)]
@@ -22,9 +21,24 @@ namespace ProjectQuimbly.Feeding
 
         private void Awake()
         {
-            Character = FindObjectOfType<CharacterController>();
-            Feed = FindObjectOfType<FeedingRoom>();
+            if(feedingScript == null)
+            {
+                feedingScript = GetComponentInParent<GirlFeeding>();
+            }
+
+            // Setting up trigger events
+            FeedingRoom feedingRoom = GameObject.FindWithTag("MainCamera").GetComponentInChildren<FeedingRoom>();
+            BasicFunctions basicFunctions = GameObject.FindWithTag("GameController").GetComponent<BasicFunctions>();
+
+            onMouthEvent.AddListener(() => 
+            {
+                basicFunctions.CancelUIDrag();
+                feedingRoom.ConsumeItem();
+                feedingRoom.PlaySFX();
+                feedingRoom.UpdateFullnessText();
+            });
         }
+
         private void Update() 
         {
             timeSinceLastBite += Time.deltaTime;
@@ -52,10 +66,8 @@ namespace ProjectQuimbly.Feeding
                 SelectedFood food = other.GetComponent<SelectedFood>();
                 if (food != null)
                 {
-                    Feed.GetSFX(0);
                     float foodFillAmount = food.GetItem().filling;
-                    Character.fullness = foodFillAmount + Character.fullness;
-                    Feed.GetFullnessSprite(foodFillAmount);
+                    feedingScript.IncreaseFullness(foodFillAmount);
                     timeSinceLastBite = 0;
                     food.RemoveItems(biteSize);
                     onMouthEvent?.Invoke();

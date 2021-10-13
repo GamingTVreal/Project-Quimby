@@ -9,7 +9,7 @@ public class SpriteController : MonoBehaviour
     public int x = 0;
     public int y = 0;
     public int z = 0;
-    public Sprite[] Deb, Extras, Bellies, BelliesS;
+    public Sprite[] Deb, Extras, foodBellies, BelliesS;
     public TextBoxManager textboxmanager;
     public Image Feedee;
     private void Start()
@@ -26,13 +26,23 @@ public class SpriteController : MonoBehaviour
         
         SetSprite();
     }
+
+    // Called by feeding script on Girl Object
+    public void UpdateFeedingSprite(int spriteLevel)
+    {
+        if(spriteLevel >= foodBellies.GetLowerBound(0) && spriteLevel <= foodBellies.GetUpperBound(0))
+        {
+            Feedee.sprite = foodBellies[spriteLevel];
+        }
+    }
+
     public void GetBelly()
     {
-        if(y >= Bellies.GetUpperBound(0))
+        if(y >= foodBellies.GetUpperBound(0))
         {
-            y = Bellies.GetUpperBound(0);
+            y = foodBellies.GetUpperBound(0);
         }
-        Feedee.sprite = Bellies[y];
+        Feedee.sprite = foodBellies[y];
     }
     public void GetBellyS()
     {

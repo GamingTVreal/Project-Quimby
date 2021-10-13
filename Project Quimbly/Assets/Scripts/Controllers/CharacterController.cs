@@ -20,7 +20,7 @@ public class CharacterController : MonoBehaviour
     public GameObject[] ContactButtons = new GameObject[5]; 
     bool UnlockGirl;
 
-    public float fullness;
+    // public float fullness;
     public int happiness;
     public float interestlevel;
 
@@ -40,16 +40,6 @@ public class CharacterController : MonoBehaviour
         }
 
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(FeedingFullness != null)
-        {
-            FeedingFullness.text = fullness.ToString();
-        }
-        
     }
 
     private void UnlockCharacter()
