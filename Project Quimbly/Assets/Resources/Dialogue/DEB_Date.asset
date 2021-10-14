@@ -1332,18 +1332,18 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff>I gotta go home though.
-  children:
-  - 3906435c-9d94-4f71-96dc-18438c168e00
+  children: []
   rect:
     serializedVersion: 2
-    x: 892
-    y: 3366
+    x: 900
+    y: 3380
     width: 250
-    height: 135
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 5
+  onExitActionParameter:
+  - Home
   condition:
     and: []
   enterActionIndex: 0
@@ -1974,8 +1974,8 @@ MonoBehaviour:
   - c7ad9df3-b2ac-4640-ad68-5aabadfd3263
   rect:
     serializedVersion: 2
-    x: -28
-    y: 2113
+    x: -4
+    y: 2112
     width: 250
     height: 220
   onEnterAction: 1
@@ -3042,8 +3042,8 @@ MonoBehaviour:
   - 172ee0db-fb33-48d8-bb13-07b4760e9f00
   rect:
     serializedVersion: 2
-    x: -11
-    y: 3363
+    x: 12
+    y: 3364
     width: 250
     height: 140
   onEnterAction: 0
@@ -3416,7 +3416,6 @@ MonoBehaviour:
   - {fileID: 8401473893289033588}
   - {fileID: 1229731234800594952}
   - {fileID: -6403579746899795716}
-  - {fileID: 1876900267789928465}
   - {fileID: 8033984063962971948}
   rootNodes:
   - {fileID: -5632801751525264431}
@@ -3807,8 +3806,8 @@ MonoBehaviour:
   - d7224d2e-28cf-408f-aa91-500d1cfb0351
   rect:
     serializedVersion: 2
-    x: 3
-    y: 3180
+    x: -1
+    y: 3132
     width: 250
     height: 210
   onEnterAction: 1
@@ -4095,41 +4094,6 @@ MonoBehaviour:
     height: 160
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
-  condition:
-    and: []
-  enterActionIndex: 0
-  exitActionIndex: 0
---- !u!114 &1876900267789928465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
-  m_Name: 3906435c-9d94-4f71-96dc-18438c168e00
-  m_EditorClassIdentifier: 
-  isRoot: 0
-  conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
-  isPlayerSpeaking: 1
-  speakerName: Speaker
-  text: 
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 1147
-    y: 3352
-    width: 250
-    height: 160
-  onEnterAction: 5
-  onEnterActionParameter:
-  - Home
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -4581,7 +4545,7 @@ MonoBehaviour:
   - 548ccb2b-0360-4b2d-892e-8bcba2dcaa12
   rect:
     serializedVersion: 2
-    x: 234
+    x: 244
     y: 2153
     width: 250
     height: 140
