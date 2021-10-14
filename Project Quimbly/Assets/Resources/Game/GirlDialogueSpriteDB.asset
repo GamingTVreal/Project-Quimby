@@ -32,8 +32,11 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
     - {fileID: 21300000, guid: eacc2840443e3524ebc1d86721d149f0, type: 3}
     - {fileID: 21300000, guid: 6f5471c676f620149bc9a82c898c3df8, type: 3}
-    - {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
-    - {fileID: 21300000, guid: 52d57e6e696158d4d8b764613af7b8ee, type: 3}
+    - {fileID: 21300000, guid: f234386af37473b40b7fdf9005a64f7a, type: 3}
+    - {fileID: 21300000, guid: e58cc09b495c49e41b195ec48a159d7a, type: 3}
+    - {fileID: 21300000, guid: 7cee305ef97aa654e8c4bb467fd6c243, type: 3}
+    - {fileID: 21300000, guid: 368e52e38170f5d41b239e77cfe7e160, type: 3}
+    - {fileID: 21300000, guid: 9d5a3d8a5a26fd049b45737d90f9ccf8, type: 3}
   - girlName: Sophia
     girlSprites:
     - {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}

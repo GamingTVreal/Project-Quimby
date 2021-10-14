@@ -26,7 +26,9 @@ MonoBehaviour:
     - sfxName: burp 5
       clip: {fileID: 8300000, guid: adc90916249ab89469f94c52d6e6e54f, type: 3}
   - name: Glugs
-    sfxSamples: []
+    sfxSamples:
+    - sfxName: Eating
+      clip: {fileID: 8300000, guid: b01b789fc6367e047b366f2d60035d29, type: 3}
   - name: Gurgles
     sfxSamples:
     - sfxName: belly 1
