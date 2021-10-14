@@ -87,6 +87,7 @@ public class DateScript : MonoBehaviour
                 conversant.StartDialogue("BadDate");
             }
         }
+
         conversant.onConversationEnd += ResetGirlLocation;
     }
 

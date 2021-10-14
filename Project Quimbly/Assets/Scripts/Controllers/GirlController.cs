@@ -74,21 +74,20 @@ public class GirlController : MonoBehaviour, ISaveable
 
     public void TryFeeding()
     {
-        // if(PlayerStats.Instance.Energy >= 15 && dateLevel > 2)
-        if(true)
+         if(PlayerStats.Instance.Energy >= 15 && dateLevel > 2)
         {
             PlayerStats.Instance.Energy -= 15;
             girlConversant.StartDialogue("Feeding");
         }
-        // else if(dateLevel < 3)
-        // {
-        //     girlConversant.StartDialogue("InflateBeforeDate");
-        // }
-        // else
-        // {
-        //     Dialogue errorDialogue = (Dialogue)Resources.Load("Dialogue/ErrorMessages");
-        //     girlConversant.StartDialogue(errorDialogue, "Feeding No Energy");
-        // }
+         else if(dateLevel < 3)
+         {
+             girlConversant.StartDialogue("InflateBeforeDate");
+         }
+         else
+         {
+             Dialogue errorDialogue = (Dialogue)Resources.Load("Dialogue/ErrorMessages");
+             girlConversant.StartDialogue(errorDialogue, "Feeding No Energy");
+         }
     }
 
     public void TryInflation()
