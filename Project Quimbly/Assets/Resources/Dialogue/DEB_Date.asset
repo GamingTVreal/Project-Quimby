@@ -1504,7 +1504,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 75407f20a731890479a03555130e9f85, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 22f46be2d6a93864ca99b6df68737aa8, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: You're the only person in my life!
@@ -1512,8 +1512,8 @@ MonoBehaviour:
   - 288e16b6-a1ed-4bfe-b334-92e36f3454c3
   rect:
     serializedVersion: 2
-    x: 894
-    y: 1409
+    x: 1056
+    y: 1239
     width: 250
     height: 160
   onEnterAction: 0
@@ -5077,8 +5077,8 @@ MonoBehaviour:
   - 91ccf86c-fca1-4ea6-915e-d9a51f8b4e1c
   rect:
     serializedVersion: 2
-    x: 796
-    y: 1409
+    x: 788
+    y: 1415
     width: 250
     height: 160
   onEnterAction: 0
