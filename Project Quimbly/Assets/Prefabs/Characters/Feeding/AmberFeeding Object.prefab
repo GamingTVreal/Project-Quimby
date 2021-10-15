@@ -20,6 +20,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5688907877717992527, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 3a686441378d60d4fa43ff093d7796f3, type: 2}
     - target: {fileID: 6075113196282929427, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
       propertyPath: m_Name
       value: AmberFeeding Object
