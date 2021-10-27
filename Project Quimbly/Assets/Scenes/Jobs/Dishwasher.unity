@@ -1442,8 +1442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.2, y: 15.691992}
-  m_SizeDelta: {x: 619.4376, y: 542.2131}
+  m_AnchoredPosition: {x: -66.11218, y: 150.71948}
+  m_SizeDelta: {x: 635.2133, y: 707.8566}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1190520791
 GameObject:
@@ -1814,6 +1814,10 @@ PrefabInstance:
     - target: {fileID: 2189319218016332705, guid: 9e6b8bb1f484e084ab58be4bf0cbd52a, type: 3}
       propertyPath: m_Name
       value: Dirt
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189319218016332705, guid: 9e6b8bb1f484e084ab58be4bf0cbd52a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3122181402039277436, guid: 9e6b8bb1f484e084ab58be4bf0cbd52a, type: 3}
       propertyPath: m_AnchoredPosition.x

@@ -14,6 +14,6 @@ public class DirtyDishScript : MonoBehaviour
         
         Dish = GameObject.Find("Game").GetComponent<DishwashingMinigame>();
         Dish.AddToTotal();
-        Destroy(Dish.DirtObj);
+        Destroy(Dirt);
     }
 }

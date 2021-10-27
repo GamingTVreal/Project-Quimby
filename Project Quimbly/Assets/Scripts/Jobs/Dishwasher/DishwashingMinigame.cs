@@ -14,7 +14,10 @@ public class DishwashingMinigame : MonoBehaviour
     [SerializeField] private GameObject DirtPrefab,EndPage;
     [SerializeField] private TMP_Text Pay,DirtCleaned,Bonus,TimeText;
     public GameObject DirtObj;
+    int AmountSpawned = 0;
     [SerializeField] RectTransform SpawnArea;
+
+
 
     private float _timeRemaining,_maxTime;
     //float minutes = Mathf.FloorToInt(timeRemaining / 60);
@@ -30,21 +33,34 @@ public class DishwashingMinigame : MonoBehaviour
                 _maxTime = 30;
                 break;
         }
-        _timeRemaining = _maxTime;
+        _timeRemaining = Mathf.FloorToInt(_maxTime);
         DishTransform = GameObject.Find("Dirt Spawn Area").transform;
         CreateDirtOnDish();
     }
     private void Update()
     {
         TimeText.text = _timeRemaining.ToString();
-        _timeRemaining -= Time.deltaTime ;
-        if (SpawnArea.childCount > 1)
+        
+        _timeRemaining -= Time.deltaTime;
+        DisplayTime(_timeRemaining);
+
+            if (SpawnArea.childCount < 3)
         {
             foreach (Transform child in SpawnArea)
             {
-                Destroy(child.gameObject);
+                if (child.gameObject.activeInHierarchy == false)
+                {
+                    Destroy(child.gameObject);
+                    CancelInvoke();
+                    CreateDirtOnDish();
+                }
+
             }
         }
+        
+           
+            
+        
         Pay.text = _pay.ToString();
         DirtCleaned.text = _dirtCleaned.ToString();
         if (_timeRemaining <= 0)
@@ -53,19 +69,39 @@ public class DishwashingMinigame : MonoBehaviour
             EndPage.SetActive(true);
         }    
     }
-    public void CreateDirtOnDish()
+    void DisplayTime(float timeToDisplay)
     {
-        DirtObj = Instantiate(DirtPrefab, new Vector3(Random.Range(SpawnArea.rect.xMin - 5, SpawnArea.rect.xMax - 5),
-       Random.Range(SpawnArea.rect.yMin - 5, SpawnArea.rect.yMax - 5), 0) + SpawnArea.transform.position, Quaternion.identity,SpawnArea);
+        timeToDisplay += 1;
+
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        TimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+public void CreateDirtOnDish()
+    {
+        Debug.Log(AmountSpawned + "If this is less than 3 than there should be dirt appearing");
+        AmountSpawned = 0;
+        while (AmountSpawned < 3)
+        {
+            DirtObj = Instantiate(DirtPrefab, new Vector3(Random.Range(SpawnArea.rect.xMin, SpawnArea.rect.xMax),
+            Random.Range(SpawnArea.rect.yMin, SpawnArea.rect.yMax), 0) + SpawnArea.transform.position, Quaternion.identity, SpawnArea);
+            AmountSpawned += 1;
+        }
+       if (AmountSpawned > 3)
+        {
+            Invoke("CreateDirtOnDish", Random.Range(1f, 5f));
+        }
         //Instantiate(DirtPrefab, SpawnArea);
         /*Instantiate(DirtPrefab, new Vector3(Random.Range(SpawnArea.rect.xMin, SpawnArea.rect.xMax),
        Random.Range(SpawnArea.rect.yMin, SpawnArea.rect.yMax), 0) + SpawnArea.transform.position, Quaternion.identity);*/
-        Invoke("CreateDirtOnDish", Random.Range(1f, 5f));
+       
         
     }
     public void AddToTotal()
     {
-        DirtyDish.Amounttoadd = Random.Range(1, 20);
+        DirtyDish.Amounttoadd = Random.Range(1, 8);
         _pay = _pay + DirtyDish.Amounttoadd;
         _dirtCleaned = _dirtCleaned + 1;
         _bonus = _pay / 2;
