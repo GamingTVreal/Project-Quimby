@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Name: e25fa204-409a-4895-b363-d6f4638e8b63
   m_EditorClassIdentifier: 
   isRoot: 1
-  conversationChainName: Inflate
+  conversationChainName: Inflation
   girlToDisplay: Amber
   spriteToDisplay: {fileID: 21300000, guid: 0ee3dde46f2123f43932f7123c5e93d0, type: 3}
   isPlayerSpeaking: 1
@@ -912,6 +912,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-4067416608974419532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: d9beeebe-3577-486a-8f8e-7f04077e5f3d
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Amber
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 5
+    y: 3269
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-3994245166364470110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,8 +969,8 @@ MonoBehaviour:
   - a4b97603-f7f1-4029-a418-c4b6b6810aec
   rect:
     serializedVersion: 2
-    x: 8
-    y: 2697
+    x: 2
+    y: 2691
     width: 250
     height: 195
   onEnterAction: 0
@@ -2026,6 +2060,7 @@ MonoBehaviour:
   - {fileID: 3237904714019819005}
   - {fileID: -7439711118309778292}
   - {fileID: -5193769671134268509}
+  - {fileID: -4067416608974419532}
   rootNodes:
   - {fileID: 8096435568872595532}
   - {fileID: 6298658254599561406}
@@ -2040,6 +2075,7 @@ MonoBehaviour:
   - {fileID: -3994245166364470110}
   - {fileID: -6947056574072474931}
   - {fileID: -7439711118309778292}
+  - {fileID: -4067416608974419532}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &52085816761016269
 MonoBehaviour:

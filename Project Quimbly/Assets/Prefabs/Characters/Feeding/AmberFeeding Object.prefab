@@ -20,6 +20,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4268092733610904678, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 74c62f3c746d9ae4c8369dda9301ccdd, type: 3}
     - target: {fileID: 5688907877717992527, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
       propertyPath: dialogue
       value: 
@@ -116,6 +120,86 @@ PrefabInstance:
       propertyPath: uniqueIdentifier
       value: Amber
       objectReference: {fileID: 0}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 74c62f3c746d9ae4c8369dda9301ccdd, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 98d34075a75f21d47b04d12449e7eab1, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f6fb1c5ed072d94fa4ab0fd68ca32db, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: f0816a9936ddccb46a1990bd74ac88e8, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 824c0d7acc9f7774ab383029445a8582, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6fec5fb571fd6ac41b4800faf0fce367, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 831a5516dfe476245adf2b05e538b2c5, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 06d27f2cf8b094d41974d4aeb8c0ca17, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 36a06c7756d48044ca294a3bd292fa5c, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: c9c306a97605f764c8bcc2270aea01f7, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: 967b03dae6d26cc4690ac458f20ab0f9, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3ead77418f079bc4ba517a8e211e757d, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7202120e5aeebe745a4bda0953948de6, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[13]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5cbafc3fb3e9d4a4aa29a825c54185f2, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[14]
+      value: 
+      objectReference: {fileID: 21300000, guid: 107a9da964dbfa843b2d89f367e9cb0b, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[15]
+      value: 
+      objectReference: {fileID: 21300000, guid: ebd5095601b4cbb48a6e6c7029afbcda, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: 31c678783351b92459d6f2c6241f8ce2, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[17]
+      value: 
+      objectReference: {fileID: 21300000, guid: e049b9c800a8f0a4da6fa7abdb399581, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[18]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3464326f71167b24ca3d9610c6473763, type: 3}
+    - target: {fileID: 7994469942826941605, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
+      propertyPath: foodBellies.Array.data[19]
+      value: 
+      objectReference: {fileID: 21300000, guid: 90d001bf6df319f44828646a83211451, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
 --- !u!1 &2323063222657794081 stripped

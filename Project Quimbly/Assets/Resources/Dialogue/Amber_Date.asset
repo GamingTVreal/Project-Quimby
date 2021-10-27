@@ -3346,8 +3346,8 @@ MonoBehaviour:
   - 3d2106f0-6888-4713-bec9-ae9318c8c8b6
   rect:
     serializedVersion: 2
-    x: 4934
-    y: 1301
+    x: 4923
+    y: 1297
     width: 250
     height: 140
   onEnterAction: 0
