@@ -56,6 +56,7 @@ public class GirlFeeding : MonoBehaviour
         AIConversant conversant = GetComponent<AIConversant>();
         if(capacity >= 100)
         {
+            capacity = 100;
             int randomConvo = Random.Range(0, numMaxFullConvos) + 1;
             conversant.StartDialogue("Max Full " + randomConvo);
         }

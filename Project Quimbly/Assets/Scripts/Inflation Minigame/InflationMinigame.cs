@@ -32,6 +32,7 @@ public class InflationMinigame : MonoBehaviour
         source.PlayOneShot(SFX[x]);
         if (Fullness >= 100)
         {
+            Fullness = 100;
             GetComponent<AIConversant>().StartDialogue("DebMax");
         }
         if(Pressure >= 75)
@@ -82,6 +83,10 @@ public class InflationMinigame : MonoBehaviour
                 if (Pressure > 1)
                 {
                     Pressure = Pressure - Time.deltaTime * 3;
+                }
+                if (Pressure < 1)
+                {
+                    Pressure = 0;
                 }
                 
             }
