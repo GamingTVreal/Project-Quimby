@@ -90,4 +90,14 @@ MonoBehaviour:
     - lineName: MeetAmber5
       voiceClip: {fileID: 8300000, guid: 55612d0b3883a244b9ea1fdf8425d46f, type: 3}
   - name: ShyGirl
-    voiceLines: []
+    voiceLines:
+    - lineName: Er-eh-hi
+      voiceClip: {fileID: 8300000, guid: 1143097e7b9e05048b005be1f17a4ed8, type: 3}
+    - lineName: A book, sorry
+      voiceClip: {fileID: 8300000, guid: e1716d34d2148a94ea0d09ef32020aaa, type: 3}
+    - lineName: cute
+      voiceClip: {fileID: 8300000, guid: bd33af68596a2954187e20d77a1e00c3, type: 3}
+    - lineName: Sophia
+      voiceClip: {fileID: 8300000, guid: 862c07d4d9ef14948852ee29e348442f, type: 3}
+    - lineName: 
+      voiceClip: {fileID: 0}

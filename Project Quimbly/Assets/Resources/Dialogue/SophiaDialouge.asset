@@ -127,12 +127,14 @@ MonoBehaviour:
   - 186c15f9-4075-45eb-a406-3b38b26ad85a
   rect:
     serializedVersion: 2
-    x: 1823
-    y: 78
+    x: 1832
+    y: 40
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - ShyGirl
+  - Er-eh-hi
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -514,12 +516,14 @@ MonoBehaviour:
   - 63a045a1-b536-4873-bc99-f740c96c179e
   rect:
     serializedVersion: 2
-    x: 3589
+    x: 3588
     y: 101
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - ShyGirl
+  - cute
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -1069,13 +1073,13 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
-  text: <color=#00ffffff> I walk over to the girl''s desk
+  text: <color=#00ffffff> I walk over to the girl's desk
   children:
   - bdac26b9-a822-4bf8-b6b4-786057c5f735
   rect:
     serializedVersion: 2
-    x: 813
-    y: 62
+    x: 810
+    y: 55
     width: 250
     height: 155
   onEnterAction: 0
@@ -2691,9 +2695,11 @@ MonoBehaviour:
     x: 2328
     y: 76
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - ShyGirl
+  - A book, sorry
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -2934,8 +2940,8 @@ MonoBehaviour:
   - ff0def52-9212-4bce-a7f1-ef4c91733ddb
   rect:
     serializedVersion: 2
-    x: 1317
-    y: 56
+    x: 1319
+    y: 58
     width: 250
     height: 160
   onEnterAction: 0
@@ -3003,8 +3009,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1561
-    y: 729
+    x: 1569
+    y: 695
     width: 250
     height: 160
   onEnterAction: 0
@@ -3038,11 +3044,13 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 4344
-    y: 107
+    y: 78
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - ShyGirl
+  - Sophia
   onExitAction: 0
   onExitActionParameter: []
   condition:
