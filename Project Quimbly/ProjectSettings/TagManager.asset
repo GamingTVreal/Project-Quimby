@@ -12,6 +12,7 @@ TagManager:
   - DateController
   - DialougeController
   - FoodUI
+  - EnemaBag
   layers:
   - Default
   - TransparentFX

@@ -8,28 +8,55 @@ using UnityEngine.UI;
 public class InflationMinigame : MonoBehaviour
 {
     public Image InflatedGirl;
-    public Sprite[] Deb;
+    public Sprite[] Deb , DebW;
     public GameObject GameOver, PumpObject;
     public TMP_Text Pressure2, Fullness2;
-    public float Pressure;
+    public float Pressure, Fullness;
     public AudioClip[] SFX;
     public AudioClip[] VoiceLines;
     public AudioSource source;
+    public int CurrentPump;
     bool InfLine = false;
     bool hasDoneDialogue1 = false;
-    private int Fullness, FullnessSprites, x;
+    private int FullnessSprites, x;
+    int currentSprite = 0;
     //0-4 Releasing Pump, 5-10 Charging Pump
-    public void Inflate()
-    {
-        Pressure = Pressure + 25;
-        Fullness = Fullness + Random.Range(1, 7);
-        FullnessSprites += Fullness;
-        SpriteCheck();
 
-        Fullness2.text = Fullness.ToString();
-        Debug.Log(Fullness);
-        int x = Random.Range(0, 4);
-        source.PlayOneShot(SFX[x]);
+    public void ChoosePump(int choice)
+    {
+        CurrentPump = choice;
+        Debug.Log(CurrentPump + " is the current pump");
+    }
+    public void Inflate()
+    {  
+        if (CurrentPump == 0)
+        {
+            Pressure = Pressure + 25;
+            Fullness = Fullness + Random.Range(1, 7);
+            SpriteCheck();
+
+            int x = Random.Range(0, 4);
+            source.PlayOneShot(SFX[x]);
+
+                
+            
+            Fullness2.text = Fullness.ToString();
+            Debug.Log(Fullness);
+           
+
+        }
+        else if (CurrentPump == 1)
+        {
+            InfLine = false;
+            Pressure = Pressure + (Time.deltaTime * 5) ;
+            Fullness = Fullness + Time.deltaTime;
+            SpriteCheck();
+
+            Fullness2.text = Fullness.ToString("0.00");
+            Debug.Log(Fullness);
+
+        }
+
         if (Fullness >= 100)
         {
             Fullness = 100;
@@ -37,7 +64,12 @@ public class InflationMinigame : MonoBehaviour
         }
         if(Pressure >= 75)
         {
-            source.PlayOneShot(VoiceLines[Random.Range(3, 5)]);
+            if (source.isPlaying == false)
+            {
+                source.PlayOneShot(VoiceLines[Random.Range(3, 5)]);
+            }
+
+            
         }
         if (Pressure >= 100)
         {
@@ -48,12 +80,20 @@ public class InflationMinigame : MonoBehaviour
     }
     public void SpriteCheck()
     {
-        if (FullnessSprites > 5 && x < 19)
+        int spriteLevel = Mathf.FloorToInt(Fullness / 5);
+        if (spriteLevel > currentSprite)
         {
-            x = x + 1;
-            FullnessSprites = FullnessSprites - 5;
+            currentSprite = spriteLevel;
+            if (CurrentPump == 0)
+            {
+                InflatedGirl.sprite = Deb[spriteLevel];
+            }
+            if (CurrentPump == 1)
+            {
+                InflatedGirl.sprite = DebW[spriteLevel];
+            }
+
         }
-        InflatedGirl.sprite = Deb[x];
     }
     public void Recharge()
     {
@@ -63,10 +103,11 @@ public class InflationMinigame : MonoBehaviour
     }
     private void Update()
     {
+        Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
         if (Input.GetMouseButton(0))
         {
-            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
+            
            
             if (hit.collider != null && hit.collider.name == "BellyRubArea")
             {
@@ -98,17 +139,38 @@ public class InflationMinigame : MonoBehaviour
         {
             Pressure = Pressure - Time.deltaTime;
         }
+        
+
     
-    
+    }
+    public void WaterInflate()
+    {
+        Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
+        
+        if (CurrentPump == 1 && Input.GetMouseButton(0) && hit.collider.name == "Enemabag")
+        {
+            Debug.Log(hit.collider.name);
+            Inflate();
+          
+        }
     }
     public void test()
     {
         Fullness += 5;
-        FullnessSprites += Fullness;
+        FullnessSprites += Mathf.FloorToInt(Fullness);
         SpriteCheck();
     }
     public void LeaveInflation()
     {
-        GetComponent<AIConversant>().StartDialogue("LeaveDeb");
+        if (Fullness < 99)
+        {
+            GetComponent<AIConversant>().StartDialogue("LeaveDeb");
+        }
+        else
+        {
+            GetComponent<AIConversant>().StartDialogue("MaxDeb");
+        }
+
     }
 }

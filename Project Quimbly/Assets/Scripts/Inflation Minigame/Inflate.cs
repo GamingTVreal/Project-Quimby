@@ -16,5 +16,10 @@ public class Inflate : MonoBehaviour
         //Debug.Log("2");
         Inflation.Recharge();
     }
+
+    public void WaterInflate()
+    {
+        Inflation.WaterInflate();
+    }
 }
 
