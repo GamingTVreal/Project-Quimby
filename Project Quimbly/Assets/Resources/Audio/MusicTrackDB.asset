@@ -27,3 +27,9 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 5a734bf4a9760e742b6fd98fd729260f, type: 3}
   - trackName: ClubMusic
     clip: {fileID: 8300000, guid: 5a734bf4a9760e742b6fd98fd729260f, type: 3}
+  - trackName: SadSong
+    clip: {fileID: 8300000, guid: 268f419eb0d89d24aa516654479c43c6, type: 3}
+  - trackName: SadSong
+    clip: {fileID: 8300000, guid: 268f419eb0d89d24aa516654479c43c6, type: 3}
+  - trackName: DateSong
+    clip: {fileID: 8300000, guid: a78cf51668e5b9643b801b8f63449932, type: 3}
