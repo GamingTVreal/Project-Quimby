@@ -46,6 +46,10 @@ public class DateScript : MonoBehaviour
         }
     }
 
+    public void EndDateNoDialog()
+    {
+        conversant.onConversationEnd += ResetGirlLocation;
+    }
     public void EndDate()
     {
         Scheduler schedule = GetComponent<Scheduler>();

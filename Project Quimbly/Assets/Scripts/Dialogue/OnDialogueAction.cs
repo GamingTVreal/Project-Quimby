@@ -13,6 +13,7 @@ namespace ProjectQuimbly.Dialogue
         PlayVoiceLine,
         ModifyDP,
         EndDate,
-        ChangeGirlLocation
+        ChangeGirlLocation,
+        EndDateWithNoDialog
     }
 }
