@@ -7,7 +7,7 @@ namespace ProjectQuimbly.UI
     [CreateAssetMenu(fileName = "BGPhotoDB", menuName = "Project Quimbly/BGPhotoDB", order = 0)]
     public class BGPhotoDB : ScriptableObject
     {
-        [SerializeField] BGSprite[] bgSprites;
+        [SerializeField] BGSprite[] bgSprites, bgSpritesn;
         Dictionary<string, Sprite> spriteLookup = null;
 
         public Sprite GetSprite(string location)

@@ -75,6 +75,10 @@ namespace ProjectQuimbly.Dialogue
             }
         }
 
+        public void SetNewDialog(Dialogue newDialog)
+        {
+            dialogue = newDialog;
+        }
         public void OnConversationEnd()
         {
             onConversationEnd?.Invoke();

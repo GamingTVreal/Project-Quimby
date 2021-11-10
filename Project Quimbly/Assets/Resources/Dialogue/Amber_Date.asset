@@ -669,7 +669,7 @@ MonoBehaviour:
   onEnterActionParameter: []
   onExitAction: 1
   onExitActionParameter:
-  - None
+  - Black
   condition:
     and: []
   enterActionIndex: 0
