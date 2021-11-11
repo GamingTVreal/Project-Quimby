@@ -14,6 +14,7 @@ namespace ProjectQuimbly.Dialogue
         ModifyDP,
         EndDate,
         ChangeGirlLocation,
-        EndDateWithNoDialog
+        EndDateWithNoDialog,
+        ChangeCG
     }
 }

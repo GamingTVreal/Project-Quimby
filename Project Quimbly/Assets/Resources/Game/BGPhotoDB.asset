@@ -14,25 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgSprites:
   - location: Home
-    sprite: {fileID: 21300000, guid: e97ef4f1b5969164cb8a86c7a06104cc, type: 3}
+    sprite: {fileID: 21300000, guid: 9487fce927baac444bef1ca5fbf52846, type: 3}
   - location: Park
-    sprite: {fileID: 21300000, guid: 84ff71d017bb4384da7b20c55c274154, type: 3}
+    sprite: {fileID: 21300000, guid: a1728912631a86742b2d2207ac45111c, type: 3}
   - location: ParkBlur
-    sprite: {fileID: 21300000, guid: 73ea87a4d756d7442b520221a386de1d, type: 3}
+    sprite: {fileID: 21300000, guid: ad9555f6585eac4448a0ea0513a2fa63, type: 3}
   - location: JobAgency
-    sprite: {fileID: 21300000, guid: 02934f1e8349c544c8369684207072d5, type: 3}
+    sprite: {fileID: 21300000, guid: 6ccbc47c160b1334db3b0c1558beebfc, type: 3}
   - location: Store
-    sprite: {fileID: 21300000, guid: 7fb7aa7d18b8af1438b26509778677c3, type: 3}
+    sprite: {fileID: 21300000, guid: 76f1ed6d2aae86843b26d80f5d6d5212, type: 3}
   - location: Beach
-    sprite: {fileID: 21300000, guid: 5ae46e489319abc4d89fff65f69a3e9c, type: 3}
+    sprite: {fileID: 21300000, guid: 52cb6e9777c627149b0cedfc56328e1b, type: 3}
   - location: AmberCG
     sprite: {fileID: 21300000, guid: cda1d8e046bb6d4438e19fc1c24378ad, type: 3}
   - location: Cafe
-    sprite: {fileID: 21300000, guid: fa7d5dc2b3955c34797241a2dd1dedc1, type: 3}
+    sprite: {fileID: 21300000, guid: e5641961f86256d478fb5dcf790829b5, type: 3}
   - location: Diner
-    sprite: {fileID: 21300000, guid: 476d8bb4f1ace864ebf7b4cb16adf725, type: 3}
+    sprite: {fileID: 21300000, guid: 82ba5839989484c45a8195025f0f59c5, type: 3}
   - location: Club
-    sprite: {fileID: 21300000, guid: aa7f7354f1691a9459fe5efeacdf8434, type: 3}
+    sprite: {fileID: 21300000, guid: 278b81a549d951348a1f87883ae94fbb, type: 3}
   - location: DEB_Final 1
     sprite: {fileID: 21300000, guid: bb8f6f2a4e9965f4dad892cb26c63722, type: 3}
   - location: DEB_Final 2
@@ -40,9 +40,9 @@ MonoBehaviour:
   - location: DEB_Final 3
     sprite: {fileID: 21300000, guid: ffa76e59826e28e48a58f77b41792aff, type: 3}
   - location: TennisCourt
-    sprite: {fileID: 21300000, guid: a9af419c3c6b6724c97f1d0ab0b8b783, type: 3}
+    sprite: {fileID: 21300000, guid: 44ace3362010f6340990aeb7852601bd, type: 3}
   - location: Buffet
-    sprite: {fileID: 21300000, guid: 15d99a11bb73d8042bcb9baf6626fcc4, type: 3}
+    sprite: {fileID: 21300000, guid: 8eb98b19a924dc44c8c991cf62c5a924, type: 3}
   - location: Home_n
     sprite: {fileID: 21300000, guid: e59c6d61eb5caac4d941620f3a183fcc, type: 3}
   - location: Black

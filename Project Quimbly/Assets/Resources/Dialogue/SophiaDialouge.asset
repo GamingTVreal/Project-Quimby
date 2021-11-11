@@ -130,11 +130,9 @@ MonoBehaviour:
     x: 1832
     y: 40
     width: 250
-    height: 220
-  onEnterAction: 8
-  onEnterActionParameter:
-  - ShyGirl
-  - Er-eh-hi
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -424,6 +422,76 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-6470925878392119547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: c3ccb312-50fb-4bb2-937e-2ae300d2aaad
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: Feeding
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: hey-
+  children:
+  - 28133252-dc5e-47a1-a5f2-155202930e98
+  rect:
+    serializedVersion: 2
+    x: 41
+    y: 2076
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-6328032110203363860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 8d76f8c1-8a1d-4a7a-ad0c-735844016faa
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: fdf463341a129f3489f1b90ac8dac100, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Speaker
+  text: 'YEAH! '
+  children:
+  - 4968a75f-8aea-4019-83c4-2f5cb89dd1c4
+  rect:
+    serializedVersion: 2
+    x: 295
+    y: 1901
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-6278528140668955170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,6 +633,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-5770015426209464394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: af5a6220-6b31-4c20-987c-1f6c81f1cef7
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Speaker
+  text: Sorry, I just really, really don't want to get fat
+  children:
+  - dfb6855d-b0d8-4041-a201-bda35b5b191f
+  rect:
+    serializedVersion: 2
+    x: 545
+    y: 2088
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-5691434606750418327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,14 +726,12 @@ MonoBehaviour:
   - 63a045a1-b536-4873-bc99-f740c96c179e
   rect:
     serializedVersion: 2
-    x: 3588
+    x: 3589
     y: 101
     width: 250
-    height: 220
-  onEnterAction: 8
-  onEnterActionParameter:
-  - ShyGirl
-  - cute
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -1723,6 +1824,15 @@ MonoBehaviour:
   - {fileID: -7874897623615583889}
   - {fileID: -2011028426174221782}
   - {fileID: -542321188657353548}
+  - {fileID: 3796185279475738678}
+  - {fileID: -6470925878392119547}
+  - {fileID: -6328032110203363860}
+  - {fileID: 3060186242744929463}
+  - {fileID: 7864114497529599869}
+  - {fileID: -5770015426209464394}
+  - {fileID: 1696830113087604499}
+  - {fileID: 5648573879140553927}
+  - {fileID: 8814947475337040632}
   rootNodes:
   - {fileID: -1530217775108367040}
   - {fileID: -5977191028841104757}
@@ -1733,6 +1843,8 @@ MonoBehaviour:
   - {fileID: 7617729306399081450}
   - {fileID: 617015552176419331}
   - {fileID: -6523102262755113973}
+  - {fileID: 3796185279475738678}
+  - {fileID: -6470925878392119547}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &101356130990062637
 MonoBehaviour:
@@ -2190,6 +2302,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &1696830113087604499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: dfb6855d-b0d8-4041-a201-bda35b5b191f
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Do I sense some fat shaming?
+  children:
+  - 5e20563f-cbf0-4e95-806d-80992b3312ac
+  rect:
+    serializedVersion: 2
+    x: 796
+    y: 2097
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &1729974605163124242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2435,6 +2582,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &3060186242744929463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 4968a75f-8aea-4019-83c4-2f5cb89dd1c4
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: fdf463341a129f3489f1b90ac8dac100, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Speaker
+  text: I thought you'd never ask!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 549
+    y: 1883
+    width: 250
+    height: 200
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 5
+  onExitActionParameter:
+  - Inflation Minigame
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &3343298184436218726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2575,6 +2757,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &3796185279475738678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: c5f872dc-abca-436d-83ee-940f62706042
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: Inflation
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: 1b93260e60a567c44b00a6bd0f965d1f, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: 
+  text: Hey wanna inflate now
+  children:
+  - 8d76f8c1-8a1d-4a7a-ad0c-735844016faa
+  rect:
+    serializedVersion: 2
+    x: 43
+    y: 1900
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &4478971887383565624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2672,6 +2889,41 @@ MonoBehaviour:
     y: 242
     width: 250
     height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &5648573879140553927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 5e20563f-cbf0-4e95-806d-80992b3312ac
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: c0ed6a8c0315a7446bca9ed114d8dae4, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: NO, IT'S NOT THAT!
+  children:
+  - 1de0017a-4f88-4223-a5b8-9e9b2d3dbc05
+  rect:
+    serializedVersion: 2
+    x: 1055
+    y: 2086
+    width: 250
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -3022,11 +3274,9 @@ MonoBehaviour:
     x: 2328
     y: 76
     width: 250
-    height: 220
-  onEnterAction: 8
-  onEnterActionParameter:
-  - ShyGirl
-  - A book, sorry
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -3131,6 +3381,41 @@ MonoBehaviour:
     y: 1090
     width: 250
     height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &7864114497529599869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 28133252-dc5e-47a1-a5f2-155202930e98
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Speaker
+  text: I'm going to stop you right there as I'm totally not into that at all...
+  children:
+  - af5a6220-6b31-4c20-987c-1f6c81f1cef7
+  rect:
+    serializedVersion: 2
+    x: 292
+    y: 2081
+    width: 250
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -3373,11 +3658,43 @@ MonoBehaviour:
     x: 4344
     y: 78
     width: 250
-    height: 220
-  onEnterAction: 8
-  onEnterActionParameter:
-  - ShyGirl
-  - Sophia
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8814947475337040632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 1de0017a-4f88-4223-a5b8-9e9b2d3dbc05
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: c0ed6a8c0315a7446bca9ed114d8dae4, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: I just kind of just struggle with my body image...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1308
+    y: 2077
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
   condition:

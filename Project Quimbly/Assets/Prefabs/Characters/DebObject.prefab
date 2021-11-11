@@ -24,6 +24,14 @@ PrefabInstance:
       propertyPath: dateDialogue
       value: 
       objectReference: {fileID: 11400000, guid: 5d03298c6186f4648bf613f2893ed535, type: 2}
+    - target: {fileID: 3844390285431793748, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844390285431793748, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ad9555f6585eac4448a0ea0513a2fa63, type: 3}
     - target: {fileID: 3844390285523576394, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1

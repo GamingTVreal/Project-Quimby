@@ -9098,8 +9098,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: Amber is now availible to be stuffed, Still on the fence about inflating
-    however
+  text: <color=#008000>Amber is now availible to be stuffed, Still on the fence about
+    inflating however
   children:
   - 562f9514-02c5-49fd-93a6-38512782280c
   rect:

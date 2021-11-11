@@ -24,6 +24,7 @@ namespace ProjectQuimbly.UI
         [SerializeField] GameObject choicePrefab;
         [SerializeField] AudioSampleDB audioSampleDB;
         [SerializeField] MusicTrackDB musicTrackDB;
+        [SerializeField] CGPhotoDB CGPhotoDB;
         [SerializeField] VoiceLineDB voiceLineDB;
 
         List<string> hotkeys = new List<string>();
@@ -256,6 +257,28 @@ namespace ProjectQuimbly.UI
                 bgImage.sprite = photo;
             }
         }
+
+        public void ChangeCG(string[] newCG)
+        {
+            Sprite photo;
+            CGPhotoDB bgPhotoDB = (CGPhotoDB)Resources.Load("Game/CGPhotoDB");
+            photo = bgPhotoDB.GetSprite(newCG[0]);
+            Image bgImage = GameObject.FindGameObjectWithTag("CGObject").GetComponent<Image>();
+            Color c = characterImage.color;
+            if (photo != null)
+            {
+                Debug.Log(photo);
+                Debug.Log(bgImage);
+                bgImage.sprite = photo;
+                characterImage.color = new Color(c.r, c.g, c.b, 255);
+            }
+            else
+            {
+                characterImage.color = new Color(c.r, c.g, c.b, 0);
+            }
+            
+        }
+    
 
         public void PlayAudioSample(string[] audioString)
         {

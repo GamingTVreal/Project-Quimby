@@ -7731,7 +7731,11 @@ PrefabInstance:
     - target: {fileID: 3893403611719400710, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: da4fe2e729f26534a8c1e20bdc6a23a0, type: 3}
+      objectReference: {fileID: 21300000, guid: f1b236c2716b024448c2e74006a21426, type: 3}
+    - target: {fileID: 3893403611740706532, guid: da0b6814dce790043878a6fe7758312c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3893403611740706553, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Name
       value: Library
@@ -7913,7 +7917,11 @@ PrefabInstance:
     - target: {fileID: 3893403611719400710, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fb7aa7d18b8af1438b26509778677c3, type: 3}
+      objectReference: {fileID: 21300000, guid: 76f1ed6d2aae86843b26d80f5d6d5212, type: 3}
+    - target: {fileID: 3893403611740706532, guid: da0b6814dce790043878a6fe7758312c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3893403611740706553, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Name
       value: Grocery Store
@@ -8284,7 +8292,11 @@ PrefabInstance:
     - target: {fileID: 3893403611719400710, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5ae46e489319abc4d89fff65f69a3e9c, type: 3}
+      objectReference: {fileID: 21300000, guid: 52cb6e9777c627149b0cedfc56328e1b, type: 3}
+    - target: {fileID: 3893403611740706532, guid: da0b6814dce790043878a6fe7758312c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3893403611740706553, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Name
       value: Beach
@@ -8600,7 +8612,11 @@ PrefabInstance:
     - target: {fileID: 3893403611719400710, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 02934f1e8349c544c8369684207072d5, type: 3}
+      objectReference: {fileID: 21300000, guid: 6ccbc47c160b1334db3b0c1558beebfc, type: 3}
+    - target: {fileID: 3893403611740706532, guid: da0b6814dce790043878a6fe7758312c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3893403611740706553, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Name
       value: Job Agency
@@ -8779,6 +8795,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9015601318006440299}
     m_Modifications:
+    - target: {fileID: 3893403611719400710, guid: da0b6814dce790043878a6fe7758312c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a1728912631a86742b2d2207ac45111c, type: 3}
     - target: {fileID: 3893403611740706553, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Name
       value: Park
@@ -9130,7 +9150,11 @@ PrefabInstance:
     - target: {fileID: 3893403611719400710, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e97ef4f1b5969164cb8a86c7a06104cc, type: 3}
+      objectReference: {fileID: 21300000, guid: 9487fce927baac444bef1ca5fbf52846, type: 3}
+    - target: {fileID: 3893403611740706532, guid: da0b6814dce790043878a6fe7758312c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3893403611740706553, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_Name
       value: Home

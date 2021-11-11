@@ -13,6 +13,7 @@ TagManager:
   - DialougeController
   - FoodUI
   - EnemaBag
+  - CGObject
   layers:
   - Default
   - TransparentFX

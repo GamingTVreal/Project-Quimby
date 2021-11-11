@@ -6099,7 +6099,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: DEB is now availible as an inflatee and stuffer now!
+  text: <color=#008000>DEB is now availible as an inflatee and stuffer now!
   children:
   - 2ca95ebc-bf28-40a4-93d1-81f5e7a8851e
   rect:

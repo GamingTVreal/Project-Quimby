@@ -227,6 +227,7 @@ namespace ProjectQuimbly.Dialogue
             switch (dialogueAction)
             {
                 case OnDialogueAction.ChangeBackground:
+                case OnDialogueAction.ChangeCG:
                     if (paramLength != 1)
                     {
                         actionParameter.Clear();

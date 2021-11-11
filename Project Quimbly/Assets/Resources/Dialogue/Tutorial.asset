@@ -18,15 +18,16 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: Hey there [p], welcome to [Project Quimbly] (The name isn't in place yet)
+  text: <color=#008000>Hey there [p], welcome to [Project Quimbly] (The name isn't
+    in place yet)
   children:
   - 8795f72d-19ba-4692-826a-f585b9d369b5
   rect:
     serializedVersion: 2
-    x: 46
-    y: 106
+    x: 28
+    y: 77
     width: 250
-    height: 175
+    height: 190
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -53,15 +54,15 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: As you may be wondering. What's even going on right now?
+  text: <color=#008000>As you may be wondering. What's even going on right now?
   children:
   - b3eabbfa-54d8-45ef-9cd0-5b52819c2994
   rect:
     serializedVersion: 2
-    x: 346
-    y: 110
+    x: 311
+    y: 87
     width: 250
-    height: 155
+    height: 170
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -88,7 +89,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: that right there is your energy, talking to girls and working reduces it.
+  text: <color=#008000>that right there is your energy, talking to girls and working
+    reduces it.
   children:
   - b4b26a85-15f8-4dc4-a37d-670519f1e79a
   rect:
@@ -96,7 +98,7 @@ MonoBehaviour:
     x: 1223
     y: 125
     width: 250
-    height: 155
+    height: 170
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -123,8 +125,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: there are many apps on there. It's also how you navigate to the different
-    scenes.
+  text: <color=#008000>there are many apps on there. It's also how you navigate to
+    the different scenes.
   children:
   - 46d75b95-7a9f-4f3c-90db-6705d708e26e
   rect:
@@ -159,13 +161,13 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: well lucky for you I have created this short tutorial.
+  text: <color=#008000>well lucky for you I have created this short tutorial.
   children:
   - 02fd9a88-4562-418c-99eb-9c00a8a452df
   rect:
     serializedVersion: 2
-    x: 635
-    y: 115
+    x: 563
+    y: 123
     width: 250
     height: 155
   onEnterAction: 0
@@ -194,8 +196,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: Anyways, I'll let you go soon, in this demo there is only 1 girl so how about
-    you go find her :)
+  text: <color=#008000>Anyways, I'll let you go soon, in this demo there is only
+    1 girl so how about you go find her :)
   children:
   - 2d0a2a3a-77ab-47fd-855f-54f6fe20a73a
   rect:
@@ -261,8 +263,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: See on the right over there? That little thing that says 20/20 with a lightning
-    bolt icon?
+  text: <color=#008000>See on the right over there? That little thing that says 20/20
+    with a lightning bolt icon?
   children:
   - 53bbde20-7456-4912-9435-0cfd276479fe
   rect:
@@ -297,8 +299,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: Anyways you can also see that you have a phone on the bottom left of your
-    screen. You can use it to contact girls you meet!
+  text: <color=#008000>Anyways you can also see that you have a phone on the bottom
+    left of your screen. You can use it to contact girls you meet!
   children:
   - 8bdecbf1-d126-4c3b-9359-3aa02be63ae5
   rect:
@@ -333,7 +335,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: On the other hand you have money! Here's $500 to start!
+  text: <color=#008000>On the other hand you have money! Here's $500 to start!
   children:
   - 87456478-0180-4aa2-993b-60b68fb8ca44
   rect:
@@ -369,7 +371,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: Money makes the world go round honey!
+  text: <color=#008000>Money makes the world go round honey!
   children:
   - e9a37e9d-167f-4762-a89c-11a8b19312cc
   rect:
@@ -404,8 +406,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: Later on in the game you can use the grocery store to buy groceries to learn
-    food recipies (For all you feeders out there ;) )
+  text: <color=#008000>Later on in the game you can use the grocery store to buy
+    groceries to learn food recipies (For all you feeders out there ;) )
   children:
   - c91fee68-7a1b-481e-9081-d15b884c7e9a
   rect:
@@ -440,7 +442,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: Happy Hunting!
+  text: <color=#008000>Happy Hunting!
   children: []
   rect:
     serializedVersion: 2
@@ -474,7 +476,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: You can use that to buy gifts and pay rent for your luxorious apartment!
+  text: <color=#008000>You can use that to buy gifts and pay rent for your luxorious
+    apartment!
   children:
   - e85395e5-7231-48de-ab7a-11a5164a807e
   rect:
@@ -482,7 +485,7 @@ MonoBehaviour:
     x: 2103
     y: 119
     width: 250
-    height: 155
+    height: 170
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0

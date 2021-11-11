@@ -55,3 +55,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 5a048128ddc0a7f44bd3bd9b812bd7b4, type: 3}
     - {fileID: 21300000, guid: 5a048128ddc0a7f44bd3bd9b812bd7b4, type: 3}
     - {fileID: 21300000, guid: 5a048128ddc0a7f44bd3bd9b812bd7b4, type: 3}
+  - girlName: CGs
+    girlSprites:
+    - {fileID: 21300000, guid: 2d592852890fb874eaffee2110e0a2a4, type: 3}
+    - {fileID: 21300000, guid: 419f2d108a902d946841133b1708be01, type: 3}
+    - {fileID: 21300000, guid: 4765984ae6fbf9c45b0ab5d7e5c38083, type: 3}

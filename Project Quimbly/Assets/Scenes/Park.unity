@@ -377,6 +377,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1431214701429234586, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
+      propertyPath: actionTriggerPairs.Array.data[12].action
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 2556943766880750430, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: TB2
       value: 
@@ -2031,7 +2035,7 @@ PrefabInstance:
     - target: {fileID: 7274509531241765167, guid: c1b6218e410b7ad4b86a69c135f9e560, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 84ff71d017bb4384da7b20c55c274154, type: 3}
+      objectReference: {fileID: 21300000, guid: a1728912631a86742b2d2207ac45111c, type: 3}
     - target: {fileID: 7274509531241765167, guid: c1b6218e410b7ad4b86a69c135f9e560, type: 3}
       propertyPath: m_Enabled
       value: 1

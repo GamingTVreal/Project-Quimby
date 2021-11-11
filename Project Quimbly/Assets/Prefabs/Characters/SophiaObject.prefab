@@ -25,7 +25,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80a4cd12f95322f4b9421e0317851647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: ba8a79a1ea06e7c4095a3964f8f3e904, type: 2}
+  dialogue: {fileID: 11400000, guid: bdc330022dde3d044a0f2036f982482e, type: 2}
 --- !u!1001 &2767775332433343998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44,7 +44,7 @@ PrefabInstance:
     - target: {fileID: 3844390285431793748, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: da4fe2e729f26534a8c1e20bdc6a23a0, type: 3}
+      objectReference: {fileID: 21300000, guid: f1b236c2716b024448c2e74006a21426, type: 3}
     - target: {fileID: 3844390285523576394, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -113,6 +113,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -477.66046
       objectReference: {fileID: 0}
+    - target: {fileID: 3844390286428193717, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: bdc330022dde3d044a0f2036f982482e, type: 2}
     - target: {fileID: 3844390286451868461, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -237,6 +241,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -477.66046
       objectReference: {fileID: 0}
+    - target: {fileID: 3844390286611726765, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: bdc330022dde3d044a0f2036f982482e, type: 2}
     - target: {fileID: 3844390286724858474, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_IsActive
       value: 0

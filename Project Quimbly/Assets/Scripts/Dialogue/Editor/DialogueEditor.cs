@@ -384,6 +384,9 @@ namespace ProjectQuimbly.Dialogue.Editor
                     dialogueActions.Add(characterName);
                     dialogueActions.Add(GenerateVoiceLineSelect(characterName, actionParams[1]));
                     break;
+                case OnDialogueAction.ChangeCG:
+                    dialogueActions.Add(GenerateCGSelect(actionParams[0]));
+                    break;
             }
         }
 
@@ -518,6 +521,19 @@ namespace ProjectQuimbly.Dialogue.Editor
             GUILayout.EndHorizontal();
             return bgOptions[selected];
         }
+                private static string GenerateCGSelect(string locationName)
+        {
+            UI.CGPhotoDB bgPhotoDB = (UI.CGPhotoDB)Resources.Load("Game/CGPhotoDB");
+            string[] bgOptions = bgPhotoDB.GetCGTitles().ToArray();
+            int selected = GetIndexInArray(bgOptions, locationName);
+
+            GUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Image:", GUILayout.Width(40));
+            selected = EditorGUILayout.Popup(selected, bgOptions);
+            GUILayout.EndHorizontal();
+            return bgOptions[selected];
+        }
+
 
         public static string GenerateSampleGroupSelect(string sampleGroup)
         {
