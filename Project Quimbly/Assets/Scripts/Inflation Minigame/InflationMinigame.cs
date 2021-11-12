@@ -2,175 +2,177 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using ProjectQuimbly.Dialogue;
 using UnityEngine.UI;
+using ProjectQuimbly.UI;
+using ProjectQuimbly.Schedules;
 
-public class InflationMinigame : MonoBehaviour
+namespace ProjectQuimbly.Inflation
 {
-    public Image InflatedGirl;
-    public Sprite[] Deb , DebW;
-    public GameObject GameOver, PumpObject;
-    public TMP_Text Pressure2, Fullness2;
-    public float Pressure, Fullness;
-    public AudioClip[] SFX;
-    public AudioClip[] VoiceLines;
-    public AudioSource source;
-    public int CurrentPump;
-    bool InfLine = false;
-    bool hasDoneDialogue1 = false;
-    private int FullnessSprites, x;
-    int currentSprite = 0;
-    //0-4 Releasing Pump, 5-10 Charging Pump
-
-    public void ChoosePump(int choice)
+    public class InflationMinigame : MonoBehaviour
     {
-        CurrentPump = choice;
-        Debug.Log(CurrentPump + " is the current pump");
-    }
-    public void Inflate()
-    {  
-        if (CurrentPump == 0)
+        [SerializeField] private const int GoodExitFullnessValue = 60;
+        public GameObject gameOver, pumpObject;
+        public TMP_Text pressureText, fullnessText;
+        public float pressure, fullness;
+        public AudioClip[] pumpSFX;            //0-4 Releasing Pump, 5-10 Charging Pump
+        public AudioSource source;
+        public int currentPump;
+
+        bool infLine = false;
+        bool hasDoneDialogue1 = false;
+        GirlInflation girlInflation = null;
+
+        // Used for cursor change
+        [SerializeField] LayerMask grabbableLayers;
+
+        private void Start()
         {
-            Pressure = Pressure + 25;
-            Fullness = Fullness + Random.Range(1, 7);
-            SpriteCheck();
+            // Get spawned girl obect
+            GameObject girlContainer = GameObject.FindWithTag("GirlContainer");
+            if (girlContainer.transform.childCount == 0) return;
 
-            int x = Random.Range(0, 4);
-            source.PlayOneShot(SFX[x]);
-
-                
-            
-            Fullness2.text = Fullness.ToString();
-            Debug.Log(Fullness);
-           
-
-        }
-        else if (CurrentPump == 1)
-        {
-            InfLine = false;
-            Pressure = Pressure + (Time.deltaTime * 5) ;
-            Fullness = Fullness + Time.deltaTime;
-            SpriteCheck();
-
-            Fullness2.text = Fullness.ToString("0.00");
-            Debug.Log(Fullness);
-
+            GameObject charPrefab = girlContainer.transform.GetChild(0).gameObject;
+            girlInflation = charPrefab.GetComponent<GirlInflation>();
         }
 
-        if (Fullness >= 100)
+        public void ChoosePump(int choice)
         {
-            Fullness = 100;
-            GetComponent<AIConversant>().StartDialogue("DebMax");
+            currentPump = choice;
+            Debug.Log(currentPump + " is the current pump");
         }
-        if(Pressure >= 75)
+
+        public void Inflate()
         {
-            if (source.isPlaying == false)
+            if (currentPump == 0)
             {
-                source.PlayOneShot(VoiceLines[Random.Range(3, 5)]);
+                pressure = pressure + 25;
+                fullness += Random.Range(1, 7);
+                girlInflation.UpdateFullnessSprite(fullness, true);
+
+                int x = Random.Range(0, 4);
+                source.PlayOneShot(pumpSFX[x]);
+
+                fullnessText.text = fullness.ToString();
+                Debug.Log("Fullness: " + fullness);
+            }
+            else if (currentPump == 1)
+            {
+                infLine = false;
+                pressure = pressure + (Time.deltaTime * 5);
+                fullness = fullness + Time.deltaTime;
+                girlInflation.UpdateFullnessSprite(fullness, false);
+
+                fullnessText.text = fullness.ToString("0.00");
+                Debug.Log("Fullness: " + fullness);
             }
 
-            
-        }
-        if (Pressure >= 100)
-        {
-            PumpObject.SetActive(false);
-            GameOver.SetActive(true);
-        }
-            
-    }
-    public void SpriteCheck()
-    {
-        int spriteLevel = Mathf.FloorToInt(Fullness / 5);
-        if (spriteLevel > currentSprite)
-        {
-            currentSprite = spriteLevel;
-            if (CurrentPump == 0)
+            if (fullness >= 100)
             {
-                InflatedGirl.sprite = Deb[spriteLevel];
-            }
-            if (CurrentPump == 1)
-            {
-                InflatedGirl.sprite = DebW[spriteLevel];
+                fullness = 100;
+                girlInflation.StartDialogue("DebMax");
             }
 
+            if (pressure >= 75)
+            {
+                if (source.isPlaying == false)
+                {
+                    source.PlayOneShot(girlInflation.GetPressureVoiceLine());
+                }
+            }
+
+            if (pressure >= 100)
+            {
+                pumpObject.SetActive(false);
+                gameOver.SetActive(true);
+            }
         }
-    }
-    public void Recharge()
-    {
-        InfLine = false;
-        int x = Random.Range(5, 9);
-        source.PlayOneShot(SFX[x]);
-    }
-    private void Update()
-    {
-        Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
-        if (Input.GetMouseButton(0))
+
+        public void Recharge()
         {
-            
-           
+            infLine = false;
+            int x = Random.Range(5, 9);
+            source.PlayOneShot(pumpSFX[x]);
+        }
+
+        private void Update()
+        {
+            CheckBellyRub();
+
+            pressureText.text = pressure.ToString("0.00");
+            if (pressure > 0 && pressure < 101)
+            {
+                pressure -= Time.deltaTime;
+            }
+        }
+
+        private void CheckBellyRub()
+        {
+            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, grabbableLayers);
             if (hit.collider != null && hit.collider.name == "BellyRubArea")
             {
-
-                if(InfLine == false)
+                if (Input.GetMouseButton(0))
                 {
-                    if(source.isPlaying == false)
+                    if (infLine == false)
                     {
-                        source.PlayOneShot(VoiceLines[Random.Range(0, 2)]);
+                        if (source.isPlaying == false)
+                        {
+                            source.PlayOneShot(girlInflation.GetBellyRubVoiceLine());
+                        }
+
+                        infLine = true;
                     }
-
-                    InfLine = true;
+                    if (pressure >= 1)
+                    {
+                        pressure = pressure - Time.deltaTime * 3;
+                    }
+                    if (pressure < 1)
+                    {
+                        pressure = 0;
+                    }
                 }
-                if (Pressure > 1)
-                {
-                    Pressure = Pressure - Time.deltaTime * 3;
-                }
-                if (Pressure < 1)
-                {
-                    Pressure = 0;
-                }
-                
             }
-
         }
 
-        Pressure2.text = Pressure.ToString("0.00");
-        if (Pressure > 0 && Pressure < 101)
+        public void WaterInflate()
         {
-            Pressure = Pressure - Time.deltaTime;
-        }
-        
+            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
 
-    
-    }
-    public void WaterInflate()
-    {
-        Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
-        
-        if (CurrentPump == 1 && Input.GetMouseButton(0) && hit.collider.name == "Enemabag")
-        {
-            Debug.Log(hit.collider.name);
-            Inflate();
-          
-        }
-    }
-    public void test()
-    {
-        Fullness += 5;
-        FullnessSprites += Mathf.FloorToInt(Fullness);
-        SpriteCheck();
-    }
-    public void LeaveInflation()
-    {
-        if (Fullness < 99)
-        {
-            GetComponent<AIConversant>().StartDialogue("LeaveDeb");
-        }
-        else
-        {
-            GetComponent<AIConversant>().StartDialogue("MaxDeb");
+            if (currentPump == 1 && Input.GetMouseButton(0) && hit.collider.name == "Enemabag")
+            {
+                Debug.Log(hit.collider.name);
+                Inflate();
+
+            }
         }
 
+        public void LeaveInflation()
+        {
+            ResetGirlLocation();
+            if (fullness < GoodExitFullnessValue)
+            {
+                girlInflation.StartDialogue("LeaveDeb");
+            }
+            else
+            {
+                girlInflation.StartDialogue("MaxDeb");
+            }
+        }
+
+        public void ExitFromGameOver()
+        {
+            ResetGirlLocation();
+            GetComponent<LoadingScreenScript>().Home();
+        }
+
+        private void ResetGirlLocation()
+        {
+            Scheduler schedule = girlInflation.GetComponent<Scheduler>();
+            if (schedule != null)
+            {
+                schedule.ResetLocation();
+            }
+        }
     }
 }

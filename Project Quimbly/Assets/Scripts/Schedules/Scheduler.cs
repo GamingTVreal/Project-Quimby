@@ -23,6 +23,9 @@ namespace ProjectQuimbly.Schedules
             isDefaultLocation = false;
         }
 
+        /// <summary>
+        /// Resets character to default location.
+        /// </summary>
         public void ResetLocation()
         {
             location = defaultLocation;

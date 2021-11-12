@@ -92,7 +92,8 @@ public class GirlController : MonoBehaviour, ISaveable
 
     public void TryInflation()
     {
-        if(PlayerStats.Instance.Energy >= 15 && dateLevel > 2)
+        // if(PlayerStats.Instance.Energy >= 15 && dateLevel > 2)
+        if(PlayerStats.Instance.Money > 0)
         {
             PlayerStats.Instance.Energy -= 15;
             girlConversant.StartDialogue("Inflation");

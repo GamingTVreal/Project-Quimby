@@ -2248,14 +2248,15 @@ MonoBehaviour:
   - 9c29f0c5-a4df-45d1-8ae1-79a0501462a1
   rect:
     serializedVersion: 2
-    x: 918
-    y: 2168
+    x: 926
+    y: 2105
     width: 250
-    height: 175
+    height: 215
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 11
+  onExitActionParameter:
+  - Inflation Minigame
   condition:
     and: []
   enterActionIndex: 0

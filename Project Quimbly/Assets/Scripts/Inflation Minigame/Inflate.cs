@@ -2,24 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inflate : MonoBehaviour
+namespace ProjectQuimbly.Inflation
 {
-    private int Pressure, Fullness;
-    public InflationMinigame Inflation;
-    void OnTriggerEnter2D(Collider2D other)
+    public class Inflate : MonoBehaviour
     {
-        //Debug.Log("1");
-        Inflation.Inflate();
-    }
-    void OnTriggerExit2D(Collider2D other)
-    {
-        //Debug.Log("2");
-        Inflation.Recharge();
-    }
+        public InflationMinigame Inflation;
 
-    public void WaterInflate()
-    {
-        Inflation.WaterInflate();
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            //Debug.Log("1");
+            Inflation.Inflate();
+        }
+        void OnTriggerExit2D(Collider2D other)
+        {
+            //Debug.Log("2");
+            Inflation.Recharge();
+        }
+
+        public void WaterInflate()
+        {
+            Inflation.WaterInflate();
+        }
     }
 }
 

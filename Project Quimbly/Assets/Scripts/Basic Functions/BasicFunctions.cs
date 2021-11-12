@@ -1,13 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.EventSystems;
 using ProjectQuimbly.UI;
 using ProjectQuimbly.Controllers;
 using ProjectQuimbly.Feeding;
 using System;
-using UnityEngine.UI;
 using ProjectQuimbly.Saving;
 using UnityEngine.SceneManagement;
 
@@ -211,7 +208,7 @@ public class BasicFunctions : MonoBehaviour, ISaveable, ISlotInfo
         {
             return true;
         }
-
+        
         // Raycast under mouse curse and see if top item is interactable (can be extended to get array and sort)
         RaycastHit2D hit = Physics2D.Raycast(Input.mousePosition, Vector2.zero, Mathf.Infinity, grabbableLayers);
         if(hit.collider != null)
