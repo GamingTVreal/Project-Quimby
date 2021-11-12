@@ -27,4 +27,4 @@ MonoBehaviour:
     basePrefab: {fileID: 1383477655420371385, guid: 7890c9520450380458b34ae13021d169, type: 3}
     datePrefab: {fileID: 1990943767418728481, guid: cea5587219e5d5244aa89091de84c914, type: 3}
     feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}
-    inflationPrefab: {fileID: 6320371722615389297, guid: 24bb1d2837ce0c44380a979b58d36386, type: 3}
+    inflationPrefab: {fileID: 2748125380380540493, guid: a6ca18847a4db134db5e08d122d4cfc3, type: 3}

@@ -483,11 +483,12 @@ MonoBehaviour:
     x: 295
     y: 1901
     width: 250
-    height: 160
+    height: 200
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 11
+  onExitActionParameter:
+  - Inflation Minigame
   condition:
     and: []
   enterActionIndex: 0
