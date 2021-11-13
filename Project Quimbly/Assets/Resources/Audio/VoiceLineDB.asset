@@ -92,12 +92,12 @@ MonoBehaviour:
   - name: ShyGirl
     voiceLines:
     - lineName: Er-eh-hi
-      voiceClip: {fileID: 8300000, guid: 1143097e7b9e05048b005be1f17a4ed8, type: 3}
+      voiceClip: {fileID: 8300000, guid: 5882aa659df790045bc6d59e9f7eb5cb, type: 3}
     - lineName: A book, sorry
-      voiceClip: {fileID: 8300000, guid: e1716d34d2148a94ea0d09ef32020aaa, type: 3}
+      voiceClip: {fileID: 8300000, guid: 45a5bf38b3b0ff646951af6b307cd26d, type: 3}
     - lineName: cute
-      voiceClip: {fileID: 8300000, guid: bd33af68596a2954187e20d77a1e00c3, type: 3}
+      voiceClip: {fileID: 8300000, guid: 6042b16b8a925c4429df4767f9770911, type: 3}
     - lineName: Sophia
-      voiceClip: {fileID: 8300000, guid: 862c07d4d9ef14948852ee29e348442f, type: 3}
-    - lineName: 
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 7447f26f725755244abfa7a5478a27bb, type: 3}
+    - lineName: '*anime grunting noise*'
+      voiceClip: {fileID: 8300000, guid: ee7bd37203bf86144ba97a27b2a95479, type: 3}

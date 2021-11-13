@@ -130,9 +130,11 @@ MonoBehaviour:
     x: 1832
     y: 40
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - ShyGirl
+  - Er-eh-hi
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -727,12 +729,14 @@ MonoBehaviour:
   - 63a045a1-b536-4873-bc99-f740c96c179e
   rect:
     serializedVersion: 2
-    x: 3589
-    y: 101
+    x: 3585
+    y: 76
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - ShyGirl
+  - cute
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -1356,8 +1360,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1823
-    y: 619
+    x: 1831
+    y: 616
     width: 250
     height: 160
   onEnterAction: 0
@@ -2851,8 +2855,8 @@ MonoBehaviour:
   - 84b3a01b-d76e-4ad9-ac69-418aa5546bb3
   rect:
     serializedVersion: 2
-    x: 548
-    y: 1238
+    x: 562
+    y: 1179
     width: 250
     height: 160
   onEnterAction: 0
@@ -3132,8 +3136,8 @@ MonoBehaviour:
   - f48ef292-0826-4d3a-80f0-7ec8440deb3e
   rect:
     serializedVersion: 2
-    x: 1302
-    y: 1103
+    x: 1314
+    y: 1039
     width: 250
     height: 160
   onEnterAction: 0
@@ -3272,12 +3276,14 @@ MonoBehaviour:
   - 26e45713-8730-43e2-8541-f219fff694e5
   rect:
     serializedVersion: 2
-    x: 2328
-    y: 76
+    x: 2337
+    y: 3
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - ShyGirl
+  - A book, sorry
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -3553,12 +3559,14 @@ MonoBehaviour:
   - ff0def52-9212-4bce-a7f1-ef4c91733ddb
   rect:
     serializedVersion: 2
-    x: 1319
-    y: 58
+    x: 1334
+    y: 20
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - ShyGirl
+  - '*anime grunting noise*'
   onExitAction: 0
   onExitActionParameter: []
   condition:
@@ -3657,11 +3665,13 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 4344
-    y: 78
+    y: 77
     width: 250
-    height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 220
+  onEnterAction: 8
+  onEnterActionParameter:
+  - ShyGirl
+  - Sophia
   onExitAction: 0
   onExitActionParameter: []
   condition:
