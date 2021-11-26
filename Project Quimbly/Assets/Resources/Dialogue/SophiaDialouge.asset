@@ -1547,6 +1547,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-765927286847986707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 235f83d2-6429-4804-87f2-6840b2d9d57a
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: AllDatesComplete
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: 1b93260e60a567c44b00a6bd0f965d1f, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: I think I know you pretty well now...
+  children:
+  - 1e474412-bf17-4084-819d-258b0dab6027
+  rect:
+    serializedVersion: 2
+    x: 27
+    y: 2302
+    width: 250
+    height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-542321188657353548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1838,6 +1873,8 @@ MonoBehaviour:
   - {fileID: 1696830113087604499}
   - {fileID: 5648573879140553927}
   - {fileID: 8814947475337040632}
+  - {fileID: -765927286847986707}
+  - {fileID: 1997757273242560337}
   rootNodes:
   - {fileID: -1530217775108367040}
   - {fileID: -5977191028841104757}
@@ -1850,6 +1887,7 @@ MonoBehaviour:
   - {fileID: -6523102262755113973}
   - {fileID: 3796185279475738678}
   - {fileID: -6470925878392119547}
+  - {fileID: -765927286847986707}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &101356130990062637
 MonoBehaviour:
@@ -2404,6 +2442,40 @@ MonoBehaviour:
     y: 1086
     width: 250
     height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &1997757273242560337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 1e474412-bf17-4084-819d-258b0dab6027
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: 1b93260e60a567c44b00a6bd0f965d1f, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: I want to get to know you in a "different way"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 279
+    y: 2312
+    width: 250
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
