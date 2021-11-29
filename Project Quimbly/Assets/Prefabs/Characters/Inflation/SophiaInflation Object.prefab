@@ -116,6 +116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SophiaInflation Object
       objectReference: {fileID: 0}
+    - target: {fileID: 1586204729116740286, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 856b03659f6ecf547ac27509edeb389e, type: 2}
     - target: {fileID: 7865354001916240363, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 68

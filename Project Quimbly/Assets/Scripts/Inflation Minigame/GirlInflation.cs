@@ -26,6 +26,10 @@ namespace ProjectQuimbly.Inflation
         public void UpdateFullnessSprite(float fullness, bool isAirPump)
         {
             int spriteLevel = Mathf.FloorToInt(fullness / 5);
+            if (spriteLevel > 19)
+            {
+                spriteLevel = 19;
+            }
             if (spriteLevel > currentSprite)
             {
                 currentSprite = spriteLevel;

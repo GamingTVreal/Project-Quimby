@@ -1412,8 +1412,25 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9141944cd7efd214e8d8ef3b558db984, type: 3}
   - {fileID: 8300000, guid: 696279a5b5f2e544e9ad47b74655ca41, type: 3}
   - {fileID: 8300000, guid: adc90916249ab89469f94c52d6e6e54f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  EatingSFX:
+  - {fileID: 8300000, guid: 784f97dd521e2db4ab2b9dc5637534e5, type: 3}
+  - {fileID: 8300000, guid: 6baf026cfd6ae6c4091bcd3463fb0773, type: 3}
+  - {fileID: 8300000, guid: 48989c7f5ad012543806e9b136e9ddcc, type: 3}
+  - {fileID: 8300000, guid: 42d3169c880c09a439aeb747f2b86e30, type: 3}
+  - {fileID: 8300000, guid: e00cb517d188e59498a11c33cb669408, type: 3}
+  - {fileID: 8300000, guid: 656c83ffdc45316448952ed5506c844c, type: 3}
   FeedingRoomAnimator: {fileID: 0}
   plate: {fileID: 770554580}
+  FoodItem: {fileID: 1472757449}
+  CurrentItem:
+    itemType: 0
+    icon: {fileID: 0}
+    amount: 0
+    filling: 0
+    isdrink: 0
   fullnessText: {fileID: 931545503}
 --- !u!1 &134501225
 GameObject:
@@ -6748,7 +6765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 775.19995, y: 227.7}
+  m_AnchoredPosition: {x: 775.19995, y: 21.398}
   m_SizeDelta: {x: 228.24731, y: 42.79637}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690198602

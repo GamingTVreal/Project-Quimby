@@ -19,7 +19,7 @@ public class GoToWork : MonoBehaviour
             {
                 NoEnergy();
             }
-            else if (PlayerStats.Instance.Energy <= 15 && PlayerStats.Instance.Energy > 0)
+            else if (PlayerStats.Instance.Energy < 15 && PlayerStats.Instance.Energy > 0)
             {
                 NotEnoughEnergy();
             }

@@ -22,8 +22,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 2311
-    y: 1109
+    x: 2325
+    y: 1116
     width: 250
     height: 160
   onEnterAction: 0
@@ -906,6 +906,41 @@ MonoBehaviour:
     serializedVersion: 2
     x: 33
     y: 2178
+    width: 250
+    height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-3087262179165373665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 76d7b6ab-b104-4dab-a0d4-ed906661ba4b
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: AllDatesComplete
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: 1b93260e60a567c44b00a6bd0f965d1f, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: I think I know you pretty well now...
+  children:
+  - 85c3b834-f22c-4138-a0b9-41904a74d1d3
+  rect:
+    serializedVersion: 2
+    x: 30
+    y: 2398
     width: 250
     height: 180
   onEnterAction: 0
@@ -1907,6 +1942,8 @@ MonoBehaviour:
   - {fileID: -2365228393186568811}
   - {fileID: -1745557572457063093}
   - {fileID: 6094391657192458760}
+  - {fileID: -3087262179165373665}
+  - {fileID: 8019037008751912394}
   rootNodes:
   - {fileID: -1530217775108367040}
   - {fileID: -5977191028841104757}
@@ -1919,6 +1956,7 @@ MonoBehaviour:
   - {fileID: -6523102262755113973}
   - {fileID: -527687589109585798}
   - {fileID: -3154025384207754051}
+  - {fileID: -3087262179165373665}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &101356130990062637
 MonoBehaviour:
@@ -2330,8 +2368,8 @@ MonoBehaviour:
   - a92db644-ec09-43b6-9a26-fd2bb420710d
   rect:
     serializedVersion: 2
-    x: 2066
-    y: 383
+    x: 2112
+    y: 392
     width: 250
     height: 160
   onEnterAction: 0
@@ -3492,6 +3530,40 @@ MonoBehaviour:
     y: 76
     width: 250
     height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8019037008751912394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 85c3b834-f22c-4138-a0b9-41904a74d1d3
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Sophia
+  spriteToDisplay: {fileID: 21300000, guid: 1b93260e60a567c44b00a6bd0f965d1f, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: I want to get to know you in a "different way"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 330
+    y: 2398
+    width: 250
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0

@@ -11,9 +11,11 @@ public class FeedingRoom : MonoBehaviour
     CursorMode Cursor;
     [SerializeField] AudioSource Audio, Audio2;
     [SerializeField] AudioClip[] Songs;
-    [SerializeField] AudioClip[] SFX;
+    [SerializeField] AudioClip[] SFX,EatingSFX;
     [SerializeField] Animator FeedingRoomAnimator;
     [SerializeField] PlateSelector plate;
+    [SerializeField] SelectedFood FoodItem;
+    [SerializeField] Item CurrentItem;
     // [SerializeField] Sprite[] BellyLevels;
     // [SerializeField] SpriteController SpriteController;
     // static int BellyCompacity = 25;
@@ -41,6 +43,7 @@ public class FeedingRoom : MonoBehaviour
     // From MouthTrigger event
     public void ConsumeItem()
     {
+        CurrentItem = FoodItem.GetItem();
         plate.OnItemConsumeEvent();
     }
 
@@ -54,19 +57,38 @@ public class FeedingRoom : MonoBehaviour
     // From MouthTrigger event
     public void PlaySFX()
     {
-        GetSFX(0);
+        GetSFX(0,0);
     }
-
+    // EatingSFX 0-2 drinking sfx 3-5 eating sfx
     // 1 - 10 = gurgles, 11 - 14 = sloshes, 15 - 19 = burps :)
-    public void GetSFX(int SFXChance)
+    public void GetSFX(int SFXChance,int GurgleChance)
     {
-        Audio2.PlayOneShot(SFX[Random.Range(15, 19)]);
+
+        if(CurrentItem.isdrink == false)
+        {
+            Audio2.PlayOneShot(EatingSFX[Random.Range(3, 5)]);
+        }
+        else if (CurrentItem.isdrink == true)
+        {
+            Audio2.PlayOneShot(EatingSFX[Random.Range(0, 2)]);
+        }
+        //Audio2.PlayOneShot(EatingSFX[Random.Range(15, 19)]);
 
         if(feedingScript.GetFullness() > 15)
         {
             if (!Audio.isPlaying)
             {
-                Audio2.PlayOneShot(SFX[Random.Range(0,10)]);
+                SFXChance = Random.Range(1, 5);
+                GurgleChance = Random.Range(1, 5);
+               //Debug.Log("GurgleChance = " + GurgleChance + "BurpChance =" + SFXChance);
+                if (SFXChance == 1)
+                {
+                    Audio2.PlayOneShot(SFX[Random.Range(15, 19)]);
+                }
+                if(GurgleChance == 1)
+                {
+                    Audio2.PlayOneShot(SFX[Random.Range(0, 10)]);
+                }
             }
             
         }

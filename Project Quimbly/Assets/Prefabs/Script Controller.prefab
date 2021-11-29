@@ -274,7 +274,7 @@ MonoBehaviour:
   choicePrefab: {fileID: 4053382274634877735, guid: 315d38962b111b64385bae4991647ec1, type: 3}
   audioSampleDB: {fileID: 11400000, guid: 980f550564f6c3d46a6bb779b52035d8, type: 2}
   musicTrackDB: {fileID: 11400000, guid: a32210a3b1672b54fbfb788fd17490b6, type: 2}
-  CGPhotoDB: {fileID: 0}
+  CGPhotoDB: {fileID: 11400000, guid: 4d4aca381a713664ea29c74d365e4f01, type: 2}
   voiceLineDB: {fileID: 11400000, guid: 78f15c9d8087d614a9f4332e6e8e1be4, type: 2}
 --- !u!114 &6361723965474188241
 MonoBehaviour:
