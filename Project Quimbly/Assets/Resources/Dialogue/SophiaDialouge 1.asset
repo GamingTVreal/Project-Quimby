@@ -545,16 +545,16 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Sophia
-  spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 1b93260e60a567c44b00a6bd0f965d1f, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
-  text: Aw, that's sweet
+  text: That's so wonderful to hear
   children:
-  - 33a52ac0-94d7-499c-80fb-e9e298a3c2d1
+  - 62a0ad84-fb2e-4103-98a8-b931b6157903
   rect:
     serializedVersion: 2
-    x: 1307
-    y: 391
+    x: 1308
+    y: 395
     width: 250
     height: 140
   onEnterAction: 0
@@ -1456,10 +1456,10 @@ MonoBehaviour:
   isRoot: 1
   conversationChainName: 'Chat 2 '
   girlToDisplay: Sophia
-  spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 1b93260e60a567c44b00a6bd0f965d1f, type: 3}
   isPlayerSpeaking: 0
   speakerName: Sophia
-  text: I'm sorry
+  text: I feel so nice
   children:
   - 46fff780-92e6-48ab-8e7a-49bd473322ec
   rect:
@@ -1700,15 +1700,15 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Sophia
-  spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 1b93260e60a567c44b00a6bd0f965d1f, type: 3}
   isPlayerSpeaking: 0
   speakerName: Sophia
-  text: y-y-yeah it really is...
+  text: Yeah it is!
   children: []
   rect:
     serializedVersion: 2
-    x: 2307
-    y: 250
+    x: 2347
+    y: 242
     width: 250
     height: 160
   onEnterAction: 0
@@ -1772,7 +1772,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: ab3bb6f322c8b4f4abc0136a3489418b, type: 3}
   isPlayerSpeaking: 0
   speakerName: Sophia
-  text: bad at talking
+  text: Trying to be more confident like you said!
   children:
   - 64ef28eb-6946-452b-b127-c6222bb0445a
   rect:
@@ -1780,7 +1780,7 @@ MonoBehaviour:
     x: 803
     y: 385
     width: 250
-    height: 160
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1871,7 +1871,6 @@ MonoBehaviour:
   - {fileID: -223558378261023251}
   - {fileID: 101356130990062637}
   - {fileID: -5906022178634835771}
-  - {fileID: 463887077056171423}
   - {fileID: 416765141533253582}
   - {fileID: 1267803488366134200}
   - {fileID: 1729974605163124242}
@@ -1976,7 +1975,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: ab3bb6f322c8b4f4abc0136a3489418b, type: 3}
   isPlayerSpeaking: 0
   speakerName: Sophia
-  text: But I really like you...
+  text: And I'm starting to feel less and less like I'm walking on eggshells when
+    I'm trying to talk to someone
   children:
   - 194e5a6b-48f8-49aa-8ed9-3b6efc9f3c9c
   rect:
@@ -1984,7 +1984,7 @@ MonoBehaviour:
     x: 1059
     y: 387
     width: 250
-    height: 160
+    height: 190
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2078,7 +2078,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Sophia
-  spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 1b93260e60a567c44b00a6bd0f965d1f, type: 3}
   isPlayerSpeaking: 0
   speakerName: Sophia
   text: I'm...
@@ -2086,8 +2086,8 @@ MonoBehaviour:
   - 698f4e7a-e048-4c33-91cc-cbb48f03a16a
   rect:
     serializedVersion: 2
-    x: 549
-    y: 386
+    x: 553
+    y: 407
     width: 250
     height: 160
   onEnterAction: 0
@@ -2121,8 +2121,8 @@ MonoBehaviour:
   - 7f5dd4f8-5f9d-4ddc-b609-8d697358664e
   rect:
     serializedVersion: 2
-    x: 1815
-    y: 382
+    x: 1777
+    y: 373
     width: 250
     height: 160
   onEnterAction: 0
@@ -2160,41 +2160,6 @@ MonoBehaviour:
     y: 687
     width: 250
     height: 175
-  onEnterAction: 0
-  onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
-  condition:
-    and: []
-  enterActionIndex: 0
-  exitActionIndex: 0
---- !u!114 &463887077056171423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
-  m_Name: 33a52ac0-94d7-499c-80fb-e9e298a3c2d1
-  m_EditorClassIdentifier: 
-  isRoot: 0
-  conversationChainName: 
-  girlToDisplay: Sophia
-  spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
-  isPlayerSpeaking: 1
-  speakerName: Speaker
-  text: You're quite adorable yourself
-  children:
-  - 62a0ad84-fb2e-4103-98a8-b931b6157903
-  rect:
-    serializedVersion: 2
-    x: 1562
-    y: 391
-    width: 250
-    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2363,7 +2328,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: fdf463341a129f3489f1b90ac8dac100, type: 3}
   isPlayerSpeaking: 0
   speakerName: Sophia
-  text: THIS IS LIKE A DREAM
+  text: THANK YOU SO MUCH!
   children:
   - a92db644-ec09-43b6-9a26-fd2bb420710d
   rect:
@@ -2717,8 +2682,8 @@ MonoBehaviour:
   - b96d5408-18e6-4d5c-844a-f53ea26fbb07
   rect:
     serializedVersion: 2
-    x: 1043
-    y: 524
+    x: 1060
+    y: 571
     width: 250
     height: 160
   onEnterAction: 0
@@ -2747,7 +2712,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: 32a40660fa8ced04d8bf811180017a99, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
-  text: What for?
+  text: Why's that?
   children:
   - 80327362-361c-4f11-9a7c-5c4ef7882372
   rect:
