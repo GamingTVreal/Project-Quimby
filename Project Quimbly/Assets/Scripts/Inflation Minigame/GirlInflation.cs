@@ -8,6 +8,7 @@ namespace ProjectQuimbly.Inflation
 {
     public class GirlInflation : MonoBehaviour
     {
+        CircleCollider2D BellyRubArea;
         [SerializeField] Image characterImage;
         [SerializeField] Sprite[] characterAirSprites;
         [SerializeField] Sprite[] characterWaterSprites;
@@ -25,10 +26,17 @@ namespace ProjectQuimbly.Inflation
 
         public void UpdateFullnessSprite(float fullness, bool isAirPump)
         {
+            float BellySize = 0.4f;
+            BellyRubArea = GameObject.FindWithTag("BellyRub").GetComponent<CircleCollider2D>();
             int spriteLevel = Mathf.FloorToInt(fullness / 5);
             if (spriteLevel > 19)
             {
                 spriteLevel = 19;
+            }
+            if(spriteLevel >= 10)
+            {
+                BellySize = 0.5f;
+                BellyRubArea.radius = BellySize;
             }
             if (spriteLevel > currentSprite)
             {

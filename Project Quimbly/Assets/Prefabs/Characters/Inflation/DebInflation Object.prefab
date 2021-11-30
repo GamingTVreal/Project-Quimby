@@ -112,6 +112,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebInflation Object
       objectReference: {fileID: 0}
+    - target: {fileID: 2415864990094978937, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -51.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415864990094978937, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 119.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
 --- !u!1 &2654811142980758392 stripped

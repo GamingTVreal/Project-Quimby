@@ -1876,7 +1876,6 @@ MonoBehaviour:
   - {fileID: 1729974605163124242}
   - {fileID: 4478971887383565624}
   - {fileID: 8716310842894117960}
-  - {fileID: 1548018142033331970}
   - {fileID: -2296602534501302137}
   - {fileID: -2972162389794928728}
   - {fileID: 6601926899009325539}
@@ -2333,44 +2332,10 @@ MonoBehaviour:
   - a92db644-ec09-43b6-9a26-fd2bb420710d
   rect:
     serializedVersion: 2
-    x: 2112
-    y: 392
+    x: 2034
+    y: 389
     width: 250
     height: 160
-  onEnterAction: 0
-  onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
-  condition:
-    and: []
-  enterActionIndex: 0
-  exitActionIndex: 0
---- !u!114 &1548018142033331970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
-  m_Name: e97762cd-9d40-49f7-abc5-746b9b4db181
-  m_EditorClassIdentifier: 
-  isRoot: 0
-  conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
-  isPlayerSpeaking: 1
-  speakerName: Speaker
-  text: but then realized she was in a library and retired to her origional position
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 2571
-    y: 411
-    width: 250
-    height: 135
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2397,15 +2362,14 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 1
   speakerName: Speaker
-  text: <color=#00ffffff>Sophia looks as though she was going to start jumping excitedly...
-  children:
-  - e97762cd-9d40-49f7-abc5-746b9b4db181
+  text: <color=#00ffffff>Sophia starts jumping excitedly
+  children: []
   rect:
     serializedVersion: 2
     x: 2320
     y: 403
     width: 250
-    height: 150
+    height: 135
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
