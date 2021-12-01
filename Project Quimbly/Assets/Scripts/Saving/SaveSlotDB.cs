@@ -19,7 +19,6 @@ namespace ProjectQuimbly.Saving
             public string playerName;
             public string money;
             public string energy;
-            // public string quest;
             public string location;
             public string scene;
         }
@@ -40,7 +39,6 @@ namespace ProjectQuimbly.Saving
             saveInfo["name"] = saveLookup[saveFile].playerName;
             saveInfo["money"] = saveLookup[saveFile].money;
             saveInfo["energy"] = saveLookup[saveFile].energy;
-            // saveInfo["quest"] = saveLookup[saveFile].quest;
             saveInfo["location"] = saveLookup[saveFile].location;
             saveInfo["scene"] = saveLookup[saveFile].scene;
 
@@ -62,7 +60,6 @@ namespace ProjectQuimbly.Saving
             newRecord.playerName = state["name"];
             newRecord.money = state["money"];
             newRecord.energy = state["energy"];
-            // newRecord.quest = state["quest"];
             newRecord.location = state["location"];
             newRecord.scene = state["scene"];
 
@@ -73,12 +70,28 @@ namespace ProjectQuimbly.Saving
         {
             saveLookup = new Dictionary<string, SaveRecord>();
 
-            List<string> filePaths = Directory.GetFiles(Application.persistentDataPath, "*.sav").ToList();
+            List<string> filePaths = Directory.GetFiles(Application.persistentDataPath, "*.dat").ToList();
+            // List<string> saveFiles = new List<string>();
+            // saveFiles.Add("auto");
+            // for (int i = 1; i < 20; i++)
+            // {
+            //     if(PlayerPrefs.HasKey("save" + i))
+            //     {
+            //         saveFiles.Add("save" + i);
+            //     }
+            // }
             foreach (var filePath in filePaths)
             {
-                string fileName = filePath.Replace(Application.persistentDataPath + "\\", "");
-                fileName = fileName.Replace(".sav", "");
+                // if(!PlayerPrefs.HasKey(filePath))
+                // {
+                //     continue;
+                // }
 
+                string fileName = filePath.Replace(Application.persistentDataPath + "\\", "");
+                fileName = fileName.Replace(".dat", "");
+
+                // string saveString = PlayerPrefs.GetString(saveFile);
+                // var stateDict = JsonUtility.FromJson<Dictionary<string, object>>(saveString);
                 var stateDict = new Dictionary<string, object>();
                 using (FileStream stream = File.Open(filePath, FileMode.Open))
                 {
@@ -93,7 +106,6 @@ namespace ProjectQuimbly.Saving
                 saveRecord.playerName = state["name"];
                 saveRecord.money = state["money"];
                 saveRecord.energy = state["energy"];
-                // saveRecord.quest = state["quest"];
                 saveRecord.location = state["location"];
                 saveRecord.scene = state["scene"];
 

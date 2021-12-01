@@ -425,7 +425,6 @@ GameObject:
   - component: {fileID: 3195114302811450052}
   - component: {fileID: 3195114302811450054}
   - component: {fileID: 3195114302811450053}
-  - component: {fileID: 3195114302811450055}
   m_Layer: 0
   m_Name: TextBox
   m_TagString: Untagged
@@ -492,36 +491,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3195114302811450055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195114302811450075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0afb5e794002ab48bd358c9f8fc326b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpriteImage: {fileID: 6406470215181712254}
-  Phone: {fileID: 0}
-  NameBox: {fileID: 3571428096130556653}
-  TextBox: {fileID: 3195114302811450075}
-  speed: -0.7
-  textboxText: {fileID: 3195114302688911225}
-  speakerText: {fileID: 2261417268358587308}
-  isTextboxActive: 0
-  Sleep: {fileID: 0}
-  TF: {fileID: 0}
-  Sprite: {fileID: 7702735474566224777}
-  textfile: {fileID: 4900000, guid: e338eadb667ff32429a2249ac6f818b1, type: 3}
-  defaultTextlines: []
-  currentline: 2
-  endatline: 0
-  nameLine: 0
-  SpriteFinder: 
-  currentSprite: 0
 --- !u!1 &3571428096130556653
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +653,6 @@ GameObject:
   - component: {fileID: 7980442660141397160}
   - component: {fileID: 9204386381008793348}
   - component: {fileID: 7495501643115547156}
-  - component: {fileID: 576519566650305462}
   m_Layer: 0
   m_Name: CGTextbox
   m_TagString: Untagged
@@ -751,36 +719,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &576519566650305462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4102321993003327494}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0afb5e794002ab48bd358c9f8fc326b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpriteImage: {fileID: 6406470215181712254}
-  Phone: {fileID: 0}
-  NameBox: {fileID: 3571428096130556653}
-  TextBox: {fileID: 4102321993003327494}
-  speed: -0.7
-  textboxText: {fileID: 2707487359332939499}
-  speakerText: {fileID: 2261417268358587308}
-  isTextboxActive: 0
-  Sleep: {fileID: 0}
-  TF: {fileID: 0}
-  Sprite: {fileID: 7702735474566224777}
-  textfile: {fileID: 4900000, guid: e338eadb667ff32429a2249ac6f818b1, type: 3}
-  defaultTextlines: []
-  currentline: 2
-  endatline: 0
-  nameLine: 0
-  SpriteFinder: 
-  currentSprite: 0
 --- !u!1 &4879465140300981289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,7 +953,7 @@ MonoBehaviour:
   Extras: []
   foodBellies: []
   BelliesS: []
-  textboxmanager: {fileID: 3195114302811450055}
+  textboxmanager: {fileID: 0}
   Feedee: {fileID: 0}
 --- !u!1 &7132646595134000932
 GameObject:

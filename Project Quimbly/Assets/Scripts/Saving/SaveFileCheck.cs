@@ -12,7 +12,7 @@ namespace ProjectQuimbly.Saving
         [SerializeField] TextMeshProUGUI buttonText;
         private void Start() 
         {
-            string[] saveFiles = Directory.GetFiles(Application.persistentDataPath, "*.sav");
+            string[] saveFiles = Directory.GetFiles(Application.persistentDataPath, "*.dat");
             if(saveFiles.Length == 0)
             {
                 GetComponent<Button>().interactable = false;
