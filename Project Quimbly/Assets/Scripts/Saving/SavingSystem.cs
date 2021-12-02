@@ -49,18 +49,29 @@ namespace ProjectQuimbly.Saving
 
         public void Delete(string saveFile)
         {
+            // PlayerPrefs.DeleteKey(saveFile);
             string path = GetPathFromSaveFile(saveFile);
             File.Delete(path);
         }
 
         public bool HasSaveFile(string saveFile)
         {
+            // return PlayerPrefs.HasKey(saveFile);
             string path = GetPathFromSaveFile(saveFile);
             return File.Exists(path);
         }
 
         private Dictionary<string, object> LoadFile(string saveFile)
         {
+            // if(PlayerPrefs.HasKey(saveFile))
+            // {
+            //     string saveString = PlayerPrefs.GetString(saveFile);
+            //     return JsonUtility.FromJson<Dictionary<string, object>>(saveString);
+            // }
+            // else
+            // {
+            //     return new Dictionary<string, object>();
+            // }
             string path = GetPathFromSaveFile(saveFile);
             if(!File.Exists(path))
             {
@@ -75,8 +86,11 @@ namespace ProjectQuimbly.Saving
 
         private void SaveFile(string saveFile, object state)
         {
+            // string saveString = JsonUtility.ToJson(state);
+            // Debug.Log("Save data length: " + saveString.Length);
+            // PlayerPrefs.SetString(saveFile, saveString);
+            // PlayerPrefs.Save();
             string path = GetPathFromSaveFile(saveFile);
-            // print("Saving to " + path);
             using (FileStream stream = File.Open(path, FileMode.Create))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
@@ -108,7 +122,7 @@ namespace ProjectQuimbly.Saving
 
         private string GetPathFromSaveFile(string saveFile)
         {
-            return Path.Combine(Application.persistentDataPath, saveFile + ".sav");
+            return Path.Combine(Application.persistentDataPath, saveFile + ".dat");
         }
     }
 }

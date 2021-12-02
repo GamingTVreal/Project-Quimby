@@ -20,10 +20,10 @@ public class Inventory : Singleton<Inventory>
         LoadList();
     }
 
-    private void Update()
-    {
-        SaveList();
-    }
+    // private void Update()
+    // {
+    //     SaveList();
+    // }
 
     public void InventoryN(Action<Item> useItemAction)
     {
