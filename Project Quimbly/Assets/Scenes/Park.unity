@@ -837,10 +837,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 441747818}
-    - target: {fileID: 1704406989795886527, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Beach
-      objectReference: {fileID: 0}
     - target: {fileID: 2081350683018306447, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
