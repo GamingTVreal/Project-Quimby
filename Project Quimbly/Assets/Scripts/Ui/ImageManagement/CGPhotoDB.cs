@@ -9,14 +9,29 @@ namespace ProjectQuimbly.UI
     {
         [SerializeField] BGSprite[] CGs;
         Dictionary<string, Sprite> spriteLookup = null;
+        Dictionary<string, bool> cgUnlockLookup = null;
 
         public Sprite GetSprite(string location)
         {
             BuildLookup();
             Sprite bgSprite = null;
+            bool isUnlocked = false;
             spriteLookup.TryGetValue(location, out bgSprite);
+            cgUnlockLookup.TryGetValue(location, out isUnlocked);
+            if(!isUnlocked)
+            {
+                cgUnlockLookup[location] = true;
+                foreach (BGSprite background in CGs)
+                {
+                    if(location == background.cgName)
+                    {
+                        background.isUnlocked = true;
+                    }
+                }
+            }
             return bgSprite;
         }
+
         public List<string> GetCGTitles()
         {
             BuildLookup();
@@ -29,22 +44,26 @@ namespace ProjectQuimbly.UI
             }
             return locationList;
         }
+
         private void BuildLookup()
         {
-            // if(spriteLookup != null) return;
+            if(spriteLookup != null) return;
 
             spriteLookup = new Dictionary<string, Sprite>();
+            cgUnlockLookup = new Dictionary<string, bool>();
             foreach (BGSprite background in CGs)
             {
-                spriteLookup[background.CGname] = background.CGsprite;
+                spriteLookup[background.cgName] = background.cgSprite;
+                cgUnlockLookup[background.cgName] = background.isUnlocked;
             }
         }
 
         [System.Serializable]
         private class BGSprite
         {
-            public string CGname;
-            public Sprite CGsprite;
+            public string cgName;
+            public Sprite cgSprite;
+            public bool isUnlocked;
         }
     }
 }
