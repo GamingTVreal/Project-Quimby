@@ -32,12 +32,20 @@ namespace ProjectQuimbly.UI
             return bgSprite;
         }
 
+        public bool IsSpriteUnlocked(string cgName)
+        {
+            BuildLookup();
+
+            bool isUnlocked = false;
+            cgUnlockLookup.TryGetValue(cgName, out isUnlocked);
+            return isUnlocked;
+        }
+
         public List<string> GetCGTitles()
         {
             BuildLookup();
 
             List<string> locationList = new List<string>();
-            locationList.Add("None");
             foreach (string location in spriteLookup.Keys)
             {
                 locationList.Add(location);
