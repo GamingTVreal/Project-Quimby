@@ -2662,12 +2662,13 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 765
-    y: 2916
+    x: 763
+    y: 2918
     width: 250
-    height: 140
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 180
+  onEnterAction: 4
+  onEnterActionParameter:
+  - 15
   onExitAction: 0
   onExitActionParameter: []
   condition:

@@ -16,9 +16,18 @@ MonoBehaviour:
   - cgName: None
     cgSprite: {fileID: 0}
     isUnlocked: 0
+  - cgName: DEBBelly1
+    cgSprite: {fileID: 21300000, guid: 09e407b90a3f3204da4857d8c96eee4d, type: 3}
+    isUnlocked: 1
+  - cgName: DEBBelly2
+    cgSprite: {fileID: 21300000, guid: e3043f402a703c84ba7f05eccd52030c, type: 3}
+    isUnlocked: 1
+  - cgName: DEBBelly3
+    cgSprite: {fileID: 21300000, guid: 9ac1ad7b8c370e04888be88bd55ae364, type: 3}
+    isUnlocked: 1
   - cgName: SophiaBelly1
     cgSprite: {fileID: 21300000, guid: 2d592852890fb874eaffee2110e0a2a4, type: 3}
-    isUnlocked: 0
+    isUnlocked: 1
   - cgName: SophiaBelly2
     cgSprite: {fileID: 21300000, guid: 419f2d108a902d946841133b1708be01, type: 3}
     isUnlocked: 1

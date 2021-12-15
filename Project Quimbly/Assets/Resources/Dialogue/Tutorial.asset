@@ -196,8 +196,8 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: 
-  text: <color=#008000>Anyways, I'll let you go soon, in this demo there is only
-    1 girl so how about you go find her :)
+  text: <color=#008000>Anyways, I'll let you go soon, in this demo there are 3 girls
+    so how about you go find them :)
   children:
   - 2d0a2a3a-77ab-47fd-855f-54f6fe20a73a
   rect:

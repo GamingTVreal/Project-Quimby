@@ -336,14 +336,15 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1533
-    y: 741
+    x: 1529
+    y: 724
     width: 250
-    height: 140
+    height: 180
   onEnterAction: 0
   onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+  onExitAction: 5
+  onExitActionParameter:
+  - Home
   condition:
     and: []
   enterActionIndex: 0
@@ -374,7 +375,7 @@ MonoBehaviour:
     x: 319
     y: 436
     width: 250
-    height: 140
+    height: 120
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
