@@ -17,6 +17,8 @@ public class Item
         Water,
         Pizza,
         Burger,
+        Cola,
+        Banana,
         Chocolates,
         Roses,
     }
