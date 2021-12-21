@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using ProjectQuimbly.Dialogue;
@@ -11,11 +12,15 @@ public class GirlFeeding : MonoBehaviour
     // Will need reworked if not all girls have the same dialogue counts
     [SerializeField] int numFullConvos;
     [SerializeField] int numMaxFullConvos;
+    [SerializeField] int bonusComboFullness = 10;
 
     // Cache
     int capacity;
     int currentSprite = 0;
     GameObject foodUI = null;
+    Item itemLastEaten;
+
+    public event Action OnItemCombo;
 
     // Set up references
     private void Start() 
@@ -23,6 +28,7 @@ public class GirlFeeding : MonoBehaviour
         capacity = GetComponent<GirlController>().GetBellyCapacity();
         spriteController = GetComponent<SpriteController>();
         foodUI = GameObject.FindWithTag("FoodUI");
+        itemLastEaten = new Item();
     }
 
     // Change sprite to next level every 5 fullness
@@ -48,6 +54,42 @@ public class GirlFeeding : MonoBehaviour
         }
     }
 
+    // From MouthTrigger event
+    public void ItemTypeConsumed(Item.ItemType newItemType)
+    {
+        // Debug.Log(newItemType.ToString());
+        if(itemLastEaten.itemType != newItemType)
+        {
+            if(IsItemCombination(newItemType))
+            {
+                IncreaseFullness(bonusComboFullness);
+                OnItemCombo?.Invoke();
+            }
+            itemLastEaten.itemType = newItemType;
+        }
+    }
+
+    private bool IsItemCombination(Item.ItemType newItemType)
+    {
+        switch (itemLastEaten.itemType)
+        {
+            case Item.ItemType.Cola:
+                if(newItemType == Item.ItemType.Mints)
+                    return true;
+                return false;
+            case Item.ItemType.Banana:
+                if(newItemType == Item.ItemType.Soda)
+                    return true;
+                return false;
+            case Item.ItemType.Soda:
+                if(newItemType == Item.ItemType.Banana)
+                    return true;
+                return false;
+            default:
+                return false;
+        }
+    }
+
     // Display conversation based on capacity
     private void CapacityReached()
     {
@@ -57,12 +99,12 @@ public class GirlFeeding : MonoBehaviour
         if(capacity >= 100)
         {
             capacity = 100;
-            int randomConvo = Random.Range(0, numMaxFullConvos) + 1;
+            int randomConvo = UnityEngine.Random.Range(0, numMaxFullConvos) + 1;
             conversant.StartDialogue("Max Full " + randomConvo);
         }
         else
         {
-            int randomConvo = Random.Range(0, numFullConvos) + 1;
+            int randomConvo = UnityEngine.Random.Range(0, numFullConvos) + 1;
             conversant.StartDialogue("Full " + randomConvo);
             GetComponent<GirlController>().ModifyBellyCapacity(5);
         }

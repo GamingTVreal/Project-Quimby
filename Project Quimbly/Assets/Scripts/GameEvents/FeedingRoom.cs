@@ -28,6 +28,10 @@ public class FeedingRoom : MonoBehaviour
     private void Start() 
     {
         feedingScript = GameObject.FindWithTag("GirlContainer").GetComponentInChildren<GirlFeeding>();
+        if(feedingScript != null)
+        {
+            feedingScript.OnItemCombo += ItemCombinationEvent;
+        }
         // SpriteController.GetBelly();
         Audio.volume = 0.100f;
         // Character = FindObjectOfType<CharacterController>();
@@ -59,6 +63,27 @@ public class FeedingRoom : MonoBehaviour
     {
         GetSFX(0,0);
     }
+
+    // From GirlFeeding item combination check
+    public void ItemCombinationEvent()
+    {
+        StartCoroutine(CombinationSFX());
+    }
+
+    // Pause music for sfx
+    private IEnumerator CombinationSFX()
+    {
+        yield return null;
+
+        Audio.Pause();
+        Audio2.Stop();
+
+        //Insert burp sfx selection here
+        Audio2.PlayOneShot(SFX[19]);
+        yield return new WaitForSeconds(2f);
+        Audio.UnPause();
+    }
+
     // EatingSFX 0-2 drinking sfx 3-5 eating sfx
     // 1 - 10 = gurgles, 11 - 14 = sloshes, 15 - 19 = burps :)
     public void GetSFX(int SFXChance,int GurgleChance)

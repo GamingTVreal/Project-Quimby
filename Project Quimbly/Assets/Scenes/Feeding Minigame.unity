@@ -500,17 +500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d997e09caee54e4ab276fa499a23149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &34548483 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3195114302811450055, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
-  m_PrefabInstance: {fileID: 34548480}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34548481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0afb5e794002ab48bd358c9f8fc326b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &76138469
 GameObject:
   m_ObjectHideFlags: 0
@@ -4536,7 +4525,7 @@ PrefabInstance:
     - target: {fileID: 2556943766880750430, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: TB2
       value: 
-      objectReference: {fileID: 34548483}
+      objectReference: {fileID: 0}
     - target: {fileID: 2556943766880750430, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: Music
       value: 
@@ -4548,7 +4537,7 @@ PrefabInstance:
     - target: {fileID: 2556943766880750430, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: TextBox
       value: 
-      objectReference: {fileID: 34548483}
+      objectReference: {fileID: 0}
     - target: {fileID: 2556943766880750430, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: MainCamera
       value: 
@@ -4628,7 +4617,7 @@ PrefabInstance:
     - target: {fileID: 3241687173818506856, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: ContactButtons.Array.data[0]
       value: 
-      objectReference: {fileID: 1418032442}
+      objectReference: {fileID: 0}
     - target: {fileID: 3241687173818506857, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5205,11 +5194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd3ebe84a228ce43832ee4c1774b85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1418032442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9015601318416324263, guid: cc4c95fcdef59544fa21fcad802eae88, type: 3}
-  m_PrefabInstance: {fileID: 1418032439}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1455445343
 GameObject:
   m_ObjectHideFlags: 0

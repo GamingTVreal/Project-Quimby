@@ -68,6 +68,7 @@ namespace ProjectQuimbly.Feeding
                 {
                     float foodFillAmount = food.GetItem().filling;
                     feedingScript.IncreaseFullness(foodFillAmount);
+                    feedingScript.ItemTypeConsumed(food.GetItem().itemType);
                     timeSinceLastBite = 0;
                     food.RemoveItems(biteSize);
                     onMouthEvent?.Invoke();
