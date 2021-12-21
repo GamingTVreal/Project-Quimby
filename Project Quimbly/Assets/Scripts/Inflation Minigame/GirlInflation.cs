@@ -38,15 +38,17 @@ namespace ProjectQuimbly.Inflation
                 BellySize = 0.5f;
                 BellyRubArea.radius = BellySize;
             }
-            if (spriteLevel > currentSprite)
+            if (spriteLevel > currentSprite || spriteLevel == 0)
             {
                 currentSprite = spriteLevel;
                 if (isAirPump)
                 {
+                    characterImage.color = new Color32(255, 255, 255, 255);
                     characterImage.sprite = characterAirSprites[spriteLevel];
                 }
                 else
                 {
+                    characterImage.color = new Color32(255, 255, 255, 255);
                     characterImage.sprite = characterWaterSprites[spriteLevel];
                 }
             }

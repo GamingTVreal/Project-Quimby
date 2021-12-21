@@ -39,8 +39,18 @@ namespace ProjectQuimbly.Inflation
         {
             currentPump = choice;
             Debug.Log(currentPump + " is the current pump");
-        }
+           
+            if (choice == 0)
+            {
+                Debug.Log("airpump");
+                girlInflation.UpdateFullnessSprite(3, true);
+            }
+            if(choice == 1)
+            {
+                girlInflation.UpdateFullnessSprite(3, false);
+            }
 
+        }
         public void Inflate()
         {
             if (currentPump == 0)

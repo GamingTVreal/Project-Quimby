@@ -29,7 +29,7 @@ public class DateScript : MonoBehaviour
     {
         Fill.color = Gradient.Evaluate(dateSlider.normalizedValue);
         dateLevel = girlController.GetDateLevel();
-        // dateLevel = 1
+        //dateLevel = 2;
         conversant.StartDialogue("Date " + dateLevel);
     }
 

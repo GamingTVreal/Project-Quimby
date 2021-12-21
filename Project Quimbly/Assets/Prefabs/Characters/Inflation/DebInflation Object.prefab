@@ -120,6 +120,166 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 119.3
       objectReference: {fileID: 0}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8c0b185fe42906740a032973eb3a1ff9, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: aeec497978d5ebb4ba3c979c6f367777, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e1ddaadaa9cd394f8f2bc945b4e23ea, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: d70c53ce66636144b8730ef04f9312ab, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: c066293306467404e91f17264b5a5b59, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: ee570bfc49f447f4d85a7d5baa405446, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: c55895d0db920204e81c81e38d40b43c, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2dda59149834fea4fbe1ec83214f9cf0, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 27e8d13e521fe9d4cb1c0e105f243324, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: ac6f7579b1ce2a34ebb5e944c8f17b1d, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c004f8a5a33d3e4ea5fee94528f3499, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5e0f215f7ca91034a8fa176c6a77ff92, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: eac50ca561549e1478a1e06b930cbdb1, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[13]
+      value: 
+      objectReference: {fileID: 21300000, guid: beaff4dab481bfb41b6b93a53b69ae46, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[14]
+      value: 
+      objectReference: {fileID: 21300000, guid: beaff4dab481bfb41b6b93a53b69ae46, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[15]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d9f8cbf445850d4a94b073e1fc1cf53, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: 42d55790038f23c4ba046fa4133051a8, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[17]
+      value: 
+      objectReference: {fileID: 21300000, guid: 25b41a10af488eb49b4220f6e008f6cc, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[18]
+      value: 
+      objectReference: {fileID: 21300000, guid: 367acbd237726ed4088faf55c44595ac, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterAirSprites.Array.data[19]
+      value: 
+      objectReference: {fileID: 21300000, guid: 336e2f51e68757142960313fa531db4f, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: d5b985dcdbe8a18469097674fd7f9a3e, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 946aaf7f56322f64e9166831ba9eb3ac, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: f2bf6fa9f7fa66d4282fc0dcfaefba53, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9fdc7945335df584bb43f323128e3196, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: d7a82f38d5c22a1419fc8f72bd030215, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 96978da6aa902854bac95dfce3913be8, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 640885fd875258940b316a7b8a2e86dc, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 510050fbebc84874399ec8a47798da5e, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 794faa6f64c897f4dbcdeb25e20b5eed, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4117634dbb0954b4983aba48668e28df, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3b3f0002442bfa645b52ab3c69ea1e7f, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: f1a8520a561ba9745a9e6d025e88d949, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e32606c6a655bb40844c463fcee9f47, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[13]
+      value: 
+      objectReference: {fileID: 21300000, guid: d4c45c153f1efb54e93859e6ad19d743, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[14]
+      value: 
+      objectReference: {fileID: 21300000, guid: aa2ce3386211ced4e9e226e9d4fbdd15, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[15]
+      value: 
+      objectReference: {fileID: 21300000, guid: 82400dd67f5a6434e82c6c37135c4edb, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: 531ed42c74951504eb9ec7843783289f, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[17]
+      value: 
+      objectReference: {fileID: 21300000, guid: 59cb89dcf52da6d42a40d00263651e57, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[18]
+      value: 
+      objectReference: {fileID: 21300000, guid: 40c19fbe74751b64aa531e4c00a26ca5, type: 3}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: characterWaterSprites.Array.data[19]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8797eea03c02ca44faac8936c7cd6a0d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
 --- !u!1 &2654811142980758392 stripped
