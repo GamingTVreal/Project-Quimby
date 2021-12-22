@@ -92,8 +92,8 @@ public class GirlController : MonoBehaviour, ISaveable
 
     public void TryInflation()
     {
-        PlayerStats.Instance.Energy = 10000;
-        dateLevel = 3;
+        //PlayerStats.Instance.Energy = 10000;
+        //dateLevel = 3;
         if(PlayerStats.Instance.Energy >= 15 && dateLevel > 2)
         {
             PlayerStats.Instance.Energy -= 15;
