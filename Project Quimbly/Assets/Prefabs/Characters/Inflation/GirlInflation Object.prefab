@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2415864990094978937}
   - component: {fileID: 962820306472076728}
-  - component: {fileID: 7281040666943684557}
   m_Layer: 9
   m_Name: BellyRubArea
   m_TagString: BellyRub
@@ -53,22 +52,6 @@ CircleCollider2D:
   m_Offset: {x: 0.025657948, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
---- !u!58 &7281040666943684557
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90772068440197854}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.1, y: -1.2}
-  serializedVersion: 2
-  m_Radius: 0.6981027
 --- !u!1 &366829666506192293
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +82,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2415864990094978937}
+  - {fileID: 4652353373263211297}
   m_Father: {fileID: 918584915324981149}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -237,6 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de97f8b6b4bd594fa381e1b1bd11c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AirPump: {fileID: 0}
+  WaterPump: {fileID: 0}
   characterImage: {fileID: 839533329849385723}
   characterAirSprites:
   - {fileID: 21300000, guid: d59389123c151e749899f841e22fbd85, type: 3}
@@ -288,3 +274,55 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c3a13fd441658ca4fb59bfdeb915d5b5, type: 3}
   - {fileID: 8300000, guid: 01e28cbc59eaaaa4c92991485cef2111, type: 3}
   - {fileID: 8300000, guid: 4a4429a0e1a2c8448ab49b3e24a1c832, type: 3}
+--- !u!1 &7483432571926030950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4652353373263211297}
+  - component: {fileID: 5975645550632812502}
+  m_Layer: 9
+  m_Name: BellyRubArea
+  m_TagString: BellyRub
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &4652353373263211297
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483432571926030950}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 125, y: 125, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7865354001916240363}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -51.9, y: 119.3}
+  m_SizeDelta: {x: 1.38, y: 1.44}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!58 &5975645550632812502
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483432571926030950}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1, y: -1.2}
+  serializedVersion: 2
+  m_Radius: 0.6981027

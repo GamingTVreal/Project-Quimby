@@ -12,7 +12,7 @@ public class GirlFeeding : MonoBehaviour
     // Will need reworked if not all girls have the same dialogue counts
     [SerializeField] int numFullConvos;
     [SerializeField] int numMaxFullConvos;
-    [SerializeField] int bonusComboFullness = 10;
+    [SerializeField] int bonusComboFullness = 5;
 
     // Cache
     int capacity;

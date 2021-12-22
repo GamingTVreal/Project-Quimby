@@ -129,6 +129,14 @@ PrefabInstance:
       value: -90.011
       objectReference: {fileID: 0}
     - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: AirPump
+      value: 
+      objectReference: {fileID: 5568220599833484233}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: WaterPump
+      value: 
+      objectReference: {fileID: 3161045159799208817}
+    - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
       propertyPath: bellyRubVoiceLines.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -333,5 +341,15 @@ PrefabInstance:
 --- !u!1 &2748125380380540493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 918584915324981218, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+  m_PrefabInstance: {fileID: 3070387750414545327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3161045159799208817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 90772068440197854, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+  m_PrefabInstance: {fileID: 3070387750414545327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5568220599833484233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7483432571926030950, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
   m_PrefabInstance: {fileID: 3070387750414545327}
   m_PrefabAsset: {fileID: 0}

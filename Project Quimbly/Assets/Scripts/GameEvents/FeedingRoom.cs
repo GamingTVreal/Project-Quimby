@@ -12,7 +12,7 @@ public class FeedingRoom : MonoBehaviour
     [SerializeField] AudioSource Audio, Audio2;
     [SerializeField] AudioClip[] Songs;
     [SerializeField] AudioClip[] SFX,EatingSFX;
-    [SerializeField] Animator FeedingRoomAnimator;
+    [SerializeField] Animator FeedingRoomAnimator, CameraAnimator;
     [SerializeField] PlateSelector plate;
     [SerializeField] SelectedFood FoodItem;
     [SerializeField] Item CurrentItem;
@@ -79,8 +79,12 @@ public class FeedingRoom : MonoBehaviour
         Audio2.Stop();
 
         //Insert burp sfx selection here
-        Audio2.PlayOneShot(SFX[19]);
+        Audio2.PlayOneShot(SFX[21]);
+        yield return new WaitForSeconds(1f);
+        CameraAnimator.SetBool("ScreenShake", true);
+        Audio2.PlayOneShot(SFX[20]);
         yield return new WaitForSeconds(2f);
+        CameraAnimator.SetBool("ScreenShake", false);
         Audio.UnPause();
     }
 

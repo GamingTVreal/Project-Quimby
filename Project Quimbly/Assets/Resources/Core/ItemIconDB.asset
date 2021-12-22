@@ -22,7 +22,7 @@ MonoBehaviour:
     filling: 3.4
     isdrink: 1
   - itemType: 2
-    sprite: {fileID: 21300000, guid: e97ef4f1b5969164cb8a86c7a06104cc, type: 3}
+    sprite: {fileID: 21300000, guid: 909f49575568ad04d9639a8f7ea06c60, type: 3}
     filling: 0.5
     isdrink: 0
   - itemType: 3
@@ -50,6 +50,6 @@ MonoBehaviour:
     filling: 3.2
     isdrink: 1
   - itemType: 9
-    sprite: {fileID: 21300000, guid: 1c12b96f93ac2a841a68e4aa62d65867, type: 3}
+    sprite: {fileID: 21300000, guid: bc1a926640df34840b95f926f49342cf, type: 3}
     filling: 0
     isdrink: 0

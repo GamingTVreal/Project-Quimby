@@ -9,6 +9,7 @@ namespace ProjectQuimbly.Inflation
     public class GirlInflation : MonoBehaviour
     {
         CircleCollider2D BellyRubArea;
+        public GameObject AirPump, WaterPump;
         [SerializeField] Image characterImage;
         [SerializeField] Sprite[] characterAirSprites;
         [SerializeField] Sprite[] characterWaterSprites;

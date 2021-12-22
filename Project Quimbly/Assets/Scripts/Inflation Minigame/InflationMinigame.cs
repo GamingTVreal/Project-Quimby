@@ -43,10 +43,16 @@ namespace ProjectQuimbly.Inflation
             if (choice == 0)
             {
                 Debug.Log("airpump");
+                girlInflation.AirPump.SetActive(true);
+                girlInflation.WaterPump.SetActive(false);
                 girlInflation.UpdateFullnessSprite(3, true);
+
+
             }
             if(choice == 1)
             {
+                girlInflation.AirPump.SetActive(false);
+                girlInflation.WaterPump.SetActive(true);
                 girlInflation.UpdateFullnessSprite(3, false);
             }
 
