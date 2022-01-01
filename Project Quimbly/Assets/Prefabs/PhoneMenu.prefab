@@ -519,7 +519,7 @@ RectTransform:
   m_GameObject: {fileID: 1863509132019422242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6655557872855584842}
   m_Father: {fileID: 9015601318108117773}
@@ -8212,18 +8212,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 5
       objectReference: {fileID: 0}
@@ -8234,7 +8222,7 @@ PrefabInstance:
     - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6774221956775992788}
     - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -8244,36 +8232,12 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadNewArea
-      objectReference: {fileID: 0}
-    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: LoadLocation
       objectReference: {fileID: 0}
     - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: LoadingScreenScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: ProjectQuimbly.SceneManagement.PhoneLocationHelper, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: Beach
       objectReference: {fileID: 0}
     - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
@@ -9235,11 +9199,19 @@ PrefabInstance:
     - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 9015601317646389276}
+      objectReference: {fileID: 6774221956775992788}
     - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 6774221956775992788}
+    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893403611740706555, guid: da0b6814dce790043878a6fe7758312c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Park
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da0b6814dce790043878a6fe7758312c, type: 3}
 --- !u!224 &9015601318422215709 stripped

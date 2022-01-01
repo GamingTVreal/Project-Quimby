@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quimbler.unity
     guid: 182ad7d1ffe75b5458859f188491a10b
+  - enabled: 1
+    path: Assets/Scenes/Jobs/Mechanic.unity
+    guid: 8b2834a7b34b0184ba23a91491dfaefa
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: b147f2445fb89194d934a802e4b5f86b, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: c825447fe685b604aa8d91e846008178, type: 2}

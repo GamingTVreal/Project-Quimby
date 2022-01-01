@@ -187,7 +187,7 @@ PrefabInstance:
     - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
       propertyPath: characterAirSprites.Array.data[14]
       value: 
-      objectReference: {fileID: 21300000, guid: beaff4dab481bfb41b6b93a53b69ae46, type: 3}
+      objectReference: {fileID: 21300000, guid: dcdb13f526c5be44aa8594c901e8def4, type: 3}
     - target: {fileID: 8769887699878920980, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
       propertyPath: characterAirSprites.Array.data[15]
       value: 

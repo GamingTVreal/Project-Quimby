@@ -96,7 +96,10 @@ public class LoadingScreenScript : MonoBehaviour
                     areaToLoad = "Jobs/Dishwasher";
                     LoadScreenExample();
                 break;
-
+            case 2:
+                areaToLoad = "Jobs/Mechanic";
+                LoadScreenExample();
+                break;
         }
         
     }

@@ -23,19 +23,14 @@ public class JobAssigner : MonoBehaviour, ISaveable
         }
     }
     
-    public void Dishwasher()
-    {
-        AssignedJob = 1;
-        AssignJob();
-    }
 
-    public void AssignJob()
+    public void AssignJob(int Job)
     {
         if(Currentjob == null) return;
 
-        PlayerStats.Instance.CurrentJob = AssignedJob;
+        PlayerStats.Instance.CurrentJob = Job;
 
-        switch (AssignedJob)
+        switch (Job)
         {
             case 0:
                 CurrentAssignedJob = "Unenployed";
@@ -45,8 +40,13 @@ public class JobAssigner : MonoBehaviour, ISaveable
                 CurrentAssignedJob = "Dishwasher";
                 Currentjob.text = CurrentAssignedJob;
                 break;
+            case 2:
+                CurrentAssignedJob = "Mechanic";
+                Currentjob.text = CurrentAssignedJob;
+                break;
         }
-        
+
+        AssignedJob = Job;
     }
 
     public object CaptureState()
@@ -59,6 +59,6 @@ public class JobAssigner : MonoBehaviour, ISaveable
         PlayerStats.Instance.CurrentJob = (int)state;
         AssignedJob = (int)state;
 
-        AssignJob();
+        AssignJob(PlayerStats.Instance.CurrentJob);
     }
 }
