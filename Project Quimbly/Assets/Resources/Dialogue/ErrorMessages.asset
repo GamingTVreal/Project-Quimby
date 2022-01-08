@@ -197,6 +197,8 @@ MonoBehaviour:
   - {fileID: -3286981270154096647}
   - {fileID: 8033196042670637835}
   - {fileID: 755871905920100965}
+  - {fileID: 8755808536587559718}
+  - {fileID: 6022823221851575016}
   rootNodes:
   - {fileID: -150673893430191056}
   - {fileID: -1229346360991452159}
@@ -205,6 +207,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 8033196042670637835}
   - {fileID: 755871905920100965}
+  - {fileID: 8755808536587559718}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &755871905920100965
 MonoBehaviour:
@@ -345,6 +348,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &6022823221851575016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 47d68b40-a479-4e28-90ee-dc9aa8f81f52
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: <color=#00ffffff> and hopefully a hot delivery chick
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 255
+    y: 916
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 5
+  onExitActionParameter:
+  - Home
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &8033196042670637835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +407,41 @@ MonoBehaviour:
     serializedVersion: 2
     x: -4
     y: 588
+    width: 250
+    height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8755808536587559718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 874a2576-8752-4172-93b8-8e0721edfdce
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: ChubhubOrder
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: <color=#00ffffff>I should get home to wait for the food to arrive...
+  children:
+  - 47d68b40-a479-4e28-90ee-dc9aa8f81f52
+  rect:
+    serializedVersion: 2
+    x: 5
+    y: 924
     width: 250
     height: 155
   onEnterAction: 0

@@ -31,6 +31,11 @@ namespace ProjectQuimbly.Schedules
             location = defaultLocation;
             isDefaultLocation = true;
         }
+        public void OrderFood()
+        {
+            location = "Home";
+            isDefaultLocation = false;
+        }
 
         public string GetLocation()
         {
