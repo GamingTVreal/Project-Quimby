@@ -17,6 +17,7 @@ namespace ProjectQuimbly.Inflation
         public AudioClip[] pumpSFX;            //0-4 Releasing Pump, 5-10 Charging Pump
         public AudioSource source;
         public int currentPump;
+        static int InflatedDatelevel;
 
         bool infLine = false;
         bool hasDoneDialogue1 = false;
@@ -166,7 +167,11 @@ namespace ProjectQuimbly.Inflation
         public void LeaveInflation()
         {
             ResetGirlLocation();
-            if (fullness < GoodExitFullnessValue)
+            if (fullness < GoodExitFullnessValue && InflatedDatelevel <= 2)
+            {
+                girlInflation.StartDialogue("DatePossiblity");
+            }
+            else if (fullness < GoodExitFullnessValue)
             {
                 girlInflation.StartDialogue("LeaveDeb");
             }

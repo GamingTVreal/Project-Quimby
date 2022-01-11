@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7814225611369990580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 52e1b12e-7212-47ed-b3ee-5cf0171e0542
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Speaker
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 10
+    y: 10
+    width: 250
+    height: 75
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587a94579930f974ea9763a0959d39dc, type: 3}
+  m_Name: DEB_Inflated_Dates
+  m_EditorClassIdentifier: 
+  defaultSpeakerName: Speaker
+  alternateSpeaker: 0
+  nodes:
+  - {fileID: -7814225611369990580}
+  rootNodes:
+  - {fileID: -7814225611369990580}
+  newNodeOffset: {x: 300, y: 0}
