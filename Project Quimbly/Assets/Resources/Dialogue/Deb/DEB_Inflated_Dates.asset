@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 52e1b12e-7212-47ed-b3ee-5cf0171e0542
   m_EditorClassIdentifier: 
   isRoot: 1
-  conversationChainName: 
+  conversationChainName: Date 0
   girlToDisplay: None
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
@@ -22,12 +22,13 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 10
-    y: 10
+    x: 8
+    y: 59
     width: 250
-    height: 75
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 200
+  onEnterAction: 1
+  onEnterActionParameter:
+  - Mall
   onExitAction: 0
   onExitActionParameter: []
   condition:

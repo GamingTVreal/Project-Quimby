@@ -47,8 +47,8 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: e59c6d61eb5caac4d941620f3a183fcc, type: 3}
   - location: Black
     sprite: {fileID: 21300000, guid: 13cc7bbac0c8c7647abbb2fb2b848484, type: 3}
-  - location: GreenScreen
-    sprite: {fileID: 21300000, guid: a64c0a3c0aaf12b41bdc58272333edb6, type: 3}
+  - location: Mall
+    sprite: {fileID: 21300000, guid: f7cecd4b4addb7248b96a4e9720fd590, type: 3}
   bgSpritesn:
   - location: Home_n
     sprite: {fileID: 21300000, guid: e59c6d61eb5caac4d941620f3a183fcc, type: 3}
