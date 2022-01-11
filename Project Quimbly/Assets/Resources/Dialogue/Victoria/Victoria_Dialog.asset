@@ -57,12 +57,14 @@ MonoBehaviour:
   - 636a3d19-d64a-4332-98f0-333a37c3b703
   rect:
     serializedVersion: 2
-    x: 4
-    y: 42
+    x: 21
+    y: -82
     width: 250
-    height: 180
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 240
+  onEnterAction: 8
+  onEnterActionParameter:
+  - None
+  - None
   onExitAction: 0
   onExitActionParameter: []
   condition:

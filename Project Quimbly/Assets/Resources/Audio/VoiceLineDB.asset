@@ -101,3 +101,19 @@ MonoBehaviour:
       voiceClip: {fileID: 8300000, guid: 7447f26f725755244abfa7a5478a27bb, type: 3}
     - lineName: '*anime grunting noise*'
       voiceClip: {fileID: 8300000, guid: ee7bd37203bf86144ba97a27b2a95479, type: 3}
+  - name: Victoria
+    voiceLines:
+    - lineName: My,My aren't you a cute thing
+      voiceClip: {fileID: 8300000, guid: c595b452457447f47a9a78c1cd9445d7, type: 3}
+    - lineName: Victoria
+      voiceClip: {fileID: 8300000, guid: 05e9edec6987d9d4f8511073b3177206, type: 3}
+    - lineName: I brought your food
+      voiceClip: {fileID: 8300000, guid: 847576a7fdf974b488aa052ea7616440, type: 3}
+    - lineName: This is a really nice townhouse
+      voiceClip: {fileID: 8300000, guid: 2221be1a3fe9e7745bcc53002c5c5fb6, type: 3}
+    - lineName: Is this yours?
+      voiceClip: {fileID: 8300000, guid: 19ddf1cfef6bcbd4e851922143df9d14, type: 3}
+    - lineName: Is this yours?
+      voiceClip: {fileID: 8300000, guid: 19ddf1cfef6bcbd4e851922143df9d14, type: 3}
+    - lineName: Handsome Man
+      voiceClip: {fileID: 8300000, guid: ceae0e55fda4a49469496c26d40b7f29, type: 3}
