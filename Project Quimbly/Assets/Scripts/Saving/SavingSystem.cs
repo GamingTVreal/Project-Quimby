@@ -6,11 +6,24 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//#if PLATFORM_ANDROID
+using UnityEngine.Android;
+//#endif
 
 namespace ProjectQuimbly.Saving
 {
     public class SavingSystem : MonoBehaviour
     {
+        void Start()
+        {
+#if PLATFORM_ANDROID
+        if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
+        {
+            Permission.RequestUserPermission(Permission.ExternalStorageWrite);
+        }
+#endif
+        }
+
         public IEnumerator LoadLastScene(string saveFile)
         {
             Dictionary<string, object> state = LoadFile(saveFile);

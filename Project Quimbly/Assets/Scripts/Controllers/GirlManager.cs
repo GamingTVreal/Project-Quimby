@@ -106,6 +106,30 @@ namespace ProjectQuimbly.Controllers
             }
         }
 
+        // Modify saved state to change character location
+        public void ChangeInactiveCharacterLocation(string character, string newLocation)
+        {
+            if(!characterLookup.ContainsKey(character)) return;
+            
+            // Get schedule from save
+            string scheduleName = "ProjectQuimbly.Schedules." + character + "Schedule";
+
+            Scheduler scheduler = new Scheduler();
+            Dictionary<string, object> stateDict = (Dictionary<string, object>)characterLookup[character].state;
+            if (stateDict == null)
+            {
+                scheduler = characterDB.GetBasePrefab(character).GetComponent<Scheduler>();
+                stateDict = new Dictionary<string, object>();
+            }
+            else
+            {
+                scheduler.RestoreState(stateDict[scheduleName]);
+            }
+
+            scheduler.ChangeLocation(newLocation);
+            stateDict[scheduleName] = scheduler.CaptureState();
+        }
+
         public object CaptureState()
         {
             BuildLookup();
