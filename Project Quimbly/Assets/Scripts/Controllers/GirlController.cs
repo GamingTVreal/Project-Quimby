@@ -12,6 +12,7 @@ public class GirlController : MonoBehaviour, ISaveable
     // Character variables
     bool hasMet = false;
     int dateLevel;
+    int inflatedDateLevel;
     int bellyCapacity = 25;
 
     // Cache
@@ -55,6 +56,16 @@ public class GirlController : MonoBehaviour, ISaveable
     public void IncreaseDateLevel()
     {
         dateLevel++;
+    }
+
+    public int GetInflatedDateLevel()
+    {
+        return inflatedDateLevel;
+    }
+
+    public void IncreaseInflatedDateLevel()
+    {
+        inflatedDateLevel++;
     }
 
     internal void ModifyBellyCapacity(int amount)
@@ -144,6 +155,7 @@ public class GirlController : MonoBehaviour, ISaveable
         CharRecord saveRecord = new CharRecord();
         saveRecord.hasMet = hasMet;
         saveRecord.dateLevel = dateLevel;
+        saveRecord.inflatedDateLevel = inflatedDateLevel;
         saveRecord.bellyCapacity = bellyCapacity;
         return saveRecord;
     }
@@ -153,6 +165,7 @@ public class GirlController : MonoBehaviour, ISaveable
         CharRecord saveRecord = (CharRecord)state;
         hasMet = saveRecord.hasMet;
         dateLevel = saveRecord.dateLevel;
+        inflatedDateLevel = saveRecord.inflatedDateLevel;
         bellyCapacity = saveRecord.bellyCapacity;
     }
 
@@ -161,6 +174,7 @@ public class GirlController : MonoBehaviour, ISaveable
     {
         public bool hasMet;
         public int dateLevel;
+        public int inflatedDateLevel;
         public int bellyCapacity;
     }
 }

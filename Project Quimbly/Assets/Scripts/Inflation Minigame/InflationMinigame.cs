@@ -22,6 +22,7 @@ namespace ProjectQuimbly.Inflation
         bool infLine = false;
         bool hasDoneDialogue1 = false;
         GirlInflation girlInflation = null;
+        GirlController girlController = null;
 
         // Used for cursor change
         [SerializeField] LayerMask grabbableLayers;
@@ -34,6 +35,7 @@ namespace ProjectQuimbly.Inflation
 
             GameObject charPrefab = girlContainer.transform.GetChild(0).gameObject;
             girlInflation = charPrefab.GetComponent<GirlInflation>();
+            girlController = charPrefab.GetComponent<GirlController>();
         }
 
         public void ChoosePump(int choice)
@@ -167,7 +169,7 @@ namespace ProjectQuimbly.Inflation
         public void LeaveInflation()
         {
             ResetGirlLocation();
-            if (fullness < GoodExitFullnessValue && InflatedDatelevel <= 2)
+            if (fullness < GoodExitFullnessValue && girlController.GetInflatedDateLevel() <= 2)
             {
                 girlInflation.StartDialogue("DatePossiblity");
             }
