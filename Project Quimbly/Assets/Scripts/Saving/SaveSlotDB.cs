@@ -87,7 +87,7 @@ namespace ProjectQuimbly.Saving
                 //     continue;
                 // }
 
-                string fileName = filePath.Replace(Application.persistentDataPath + "\\", "");
+                string fileName = filePath.Replace(Application.persistentDataPath + Path.DirectorySeparatorChar, "");
                 fileName = fileName.Replace(".dat", "");
 
                 // string saveString = PlayerPrefs.GetString(saveFile);
