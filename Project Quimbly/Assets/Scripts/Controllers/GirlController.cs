@@ -144,6 +144,19 @@ public class GirlController : MonoBehaviour, ISaveable
         }
     }
 
+    public void AskToLeave()
+    {
+        girlConversant.StartDialogue("AskToLeave");
+        ResetLocation();
+        // girlSchedule.ChangeLocation("PhoneMenu");
+        girlConversant.onConversationEnd += RemoveFromScene;
+    }
+
+    public void RemoveFromScene()
+    {
+        gameObject.SetActive(false);
+    }
+
     public void EnableSpeakButton()
     {
         transform.GetChild(0).GetComponent<Button>().interactable = true;
