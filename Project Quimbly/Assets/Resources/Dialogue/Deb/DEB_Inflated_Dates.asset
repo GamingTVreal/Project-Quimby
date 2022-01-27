@@ -22,8 +22,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 8
-    y: 59
+    x: 7
+    y: 69
     width: 250
     height: 200
   onEnterAction: 1

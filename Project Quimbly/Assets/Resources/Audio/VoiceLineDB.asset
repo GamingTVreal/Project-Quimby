@@ -117,3 +117,13 @@ MonoBehaviour:
       voiceClip: {fileID: 8300000, guid: 19ddf1cfef6bcbd4e851922143df9d14, type: 3}
     - lineName: Handsome Man
       voiceClip: {fileID: 8300000, guid: ceae0e55fda4a49469496c26d40b7f29, type: 3}
+    - lineName: Self Sufficient Man
+      voiceClip: {fileID: 8300000, guid: 9a91d386c7a983b49871114774383bb8, type: 3}
+    - lineName: 'A big turn on '
+      voiceClip: {fileID: 8300000, guid: 07bac9f031cb36f42809633c729f5265, type: 3}
+    - lineName: Call me if you're hungry
+      voiceClip: {fileID: 8300000, guid: 2a3b9dfa4f8a57c4e9d24d2c37f885a8, type: 3}
+    - lineName: For more than one thing
+      voiceClip: {fileID: 8300000, guid: ceae0e55fda4a49469496c26d40b7f29, type: 3}
+    - lineName: cute and funny
+      voiceClip: {fileID: 8300000, guid: 3ab49f9d1e0153a4ca8e969547990c54, type: 3}

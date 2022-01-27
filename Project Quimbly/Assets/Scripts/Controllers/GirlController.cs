@@ -27,6 +27,7 @@ public class GirlController : MonoBehaviour, ISaveable
     private void Start()
     {
         // dateLevel = 0; //comment this out again
+        inflatedDateLevel = 0;
         // Debug.Log(dateLevel);
     }
 
@@ -35,6 +36,7 @@ public class GirlController : MonoBehaviour, ISaveable
         if(!hasMet)
         {
             // Get Speak Button object
+            inflatedDateLevel = 0;
             dateLevel = 0;
             transform.GetChild(0).GetComponent<Button>().interactable = false;
             girlConversant.StartDialogue();
@@ -56,6 +58,10 @@ public class GirlController : MonoBehaviour, ISaveable
     public void IncreaseDateLevel()
     {
         dateLevel++;
+    }
+     public void IncreaseINFDateLevel()
+    {
+        inflatedDateLevel++;
     }
 
     public int GetInflatedDateLevel()

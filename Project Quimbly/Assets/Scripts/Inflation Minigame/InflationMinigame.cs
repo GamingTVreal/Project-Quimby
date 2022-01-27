@@ -112,7 +112,10 @@ namespace ProjectQuimbly.Inflation
             int x = Random.Range(5, 9);
             source.PlayOneShot(pumpSFX[x]);
         }
-
+        public void test()
+        {
+            fullness = 100;
+        }
         private void Update()
         {
             CheckBellyRub();

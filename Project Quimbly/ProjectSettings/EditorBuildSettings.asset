@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jobs/Mechanic.unity
     guid: 8b2834a7b34b0184ba23a91491dfaefa
+  - enabled: 1
+    path: Assets/Scenes/INF_Dates.unity
+    guid: 73379a43fdf617e49a90027ee7c4eb82
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: b147f2445fb89194d934a802e4b5f86b, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: c825447fe685b604aa8d91e846008178, type: 2}

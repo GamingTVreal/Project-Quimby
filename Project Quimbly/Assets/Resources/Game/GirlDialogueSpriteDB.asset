@@ -62,7 +62,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 4765984ae6fbf9c45b0ab5d7e5c38083, type: 3}
   - girlName: Victoria
     girlSprites:
-    - {fileID: 7482667652216324306, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
-    - {fileID: -9095717837082945937, guid: e8ae2671536d7d84d9955f35e5a65495, type: 3}
+    - {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
+    - {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
     - {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
     - {fileID: 3625043607559282579, guid: 7cd4041ebc6e30e4cadb486264bbb04e, type: 3}

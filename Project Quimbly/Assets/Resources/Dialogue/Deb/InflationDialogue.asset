@@ -585,8 +585,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1382
-    y: 1059
+    x: 1333
+    y: 1022
     width: 250
     height: 195
   onEnterAction: 0
@@ -856,6 +856,8 @@ MonoBehaviour:
   - {fileID: -5522787852035364224}
   - {fileID: 7563086959985249146}
   - {fileID: -3140971415919055322}
+  - {fileID: 8592646963914108753}
+  - {fileID: 1420323474108316330}
   rootNodes:
   - {fileID: -2473976628778437349}
   - {fileID: 7175816119508108231}
@@ -927,6 +929,42 @@ MonoBehaviour:
   onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &1420323474108316330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: b0ba711c-b609-4d11-9212-8d32faab96eb
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Deb
+  text: 'You''re pretty sweet too DEB! '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1853
+    y: 1017
+    width: 250
+    height: 200
+  onEnterAction: 11
+  onEnterActionParameter:
+  - INF_Dates
+  onExitAction: 5
+  onExitActionParameter:
+  - INF_Dates
   condition:
     and: []
   enterActionIndex: 0
@@ -1124,14 +1162,15 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: Deb
-  text: 
-  children: []
+  text: 'Oh, I''m so glad you want to spend more time with me! '
+  children:
+  - d0d32a6a-ec67-45e5-89a2-7b6132240c6c
   rect:
     serializedVersion: 2
-    x: 1373
-    y: 879
+    x: 1324
+    y: 867
     width: 250
-    height: 140
+    height: 155
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1200,6 +1239,41 @@ MonoBehaviour:
     serializedVersion: 2
     x: 279
     y: 920
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8592646963914108753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: d0d32a6a-ec67-45e5-89a2-7b6132240c6c
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Deb
+  text: You really are my everything, [p]
+  children:
+  - b0ba711c-b609-4d11-9212-8d32faab96eb
+  rect:
+    serializedVersion: 2
+    x: 1575
+    y: 874
     width: 250
     height: 140
   onEnterAction: 0
