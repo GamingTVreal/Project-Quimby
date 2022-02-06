@@ -73,6 +73,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-8655833363612529420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: c3df5496-137f-4ae9-b985-6d930dc43724
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Victoria
+  spriteToDisplay: {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Victoria
+  text: Anytime, [p]
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 765
+    y: 542
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-8596473510397049451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,6 +801,9 @@ MonoBehaviour:
   - {fileID: 7025508796862569801}
   - {fileID: 8383370753672044887}
   - {fileID: 63024796824914501}
+  - {fileID: 2920577423457591872}
+  - {fileID: 3099962719377093477}
+  - {fileID: -8655833363612529420}
   rootNodes:
   - {fileID: -9186407536842411665}
   - {fileID: 1265728695973622140}
@@ -963,8 +1000,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 1
   conversationChainName: BadDate
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Victoria
+  spriteToDisplay: {fileID: 21300000, guid: cee0e38675ae90e4f85a3ddcbfa80341, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: You're not the man I thought you were...
@@ -972,10 +1009,10 @@ MonoBehaviour:
   - 363181b5-9009-45be-8d31-c1f8cf808d1e
   rect:
     serializedVersion: 2
-    x: 4
-    y: 368
+    x: -7
+    y: 352
     width: 250
-    height: 160
+    height: 180
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1337,6 +1374,76 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &2920577423457591872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: fcc8fe9d-e45e-4970-94fc-f8aec67c66cb
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Victoria
+  spriteToDisplay: {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: 'Yeah, I did as well! '
+  children:
+  - 81bb1b64-b5d1-4454-8333-31788249c422
+  rect:
+    serializedVersion: 2
+    x: 259
+    y: 545
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &3099962719377093477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 81bb1b64-b5d1-4454-8333-31788249c422
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Victoria
+  spriteToDisplay: {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: Wanna see eachother again?
+  children:
+  - c3df5496-137f-4ae9-b985-6d930dc43724
+  rect:
+    serializedVersion: 2
+    x: 511
+    y: 546
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &4335617248146623257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1356,11 +1463,12 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: Hey, I've had a pretty good time today!
-  children: []
+  children:
+  - fcc8fe9d-e45e-4970-94fc-f8aec67c66cb
   rect:
     serializedVersion: 2
-    x: 1
-    y: 517
+    x: 2
+    y: 537
     width: 250
     height: 180
   onEnterAction: 0
@@ -1463,8 +1571,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 0
-    y: 684
+    x: -3
+    y: 726
     width: 250
     height: 160
   onEnterAction: 0

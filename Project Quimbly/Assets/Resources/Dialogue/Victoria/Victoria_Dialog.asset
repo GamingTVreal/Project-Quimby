@@ -126,7 +126,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: VIctoria
-  text: Oh, you wan't to help with that...?
+  text: Oh, you want to help with that...?
   children:
   - 1118a116-5fcc-471f-925f-50b5ec784b95
   rect:
@@ -617,7 +617,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: a5ab37b2c50d5d642916cbc78e9d0a99, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: Personal Affairs...
@@ -866,7 +866,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: a5ab37b2c50d5d642916cbc78e9d0a99, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff> Victoria blows a kiss at me
@@ -1747,8 +1747,8 @@ MonoBehaviour:
   - 2f39785d-c9b9-473e-b454-4d5e8a7590fe
   rect:
     serializedVersion: 2
-    x: 572
-    y: 1723
+    x: 575
+    y: 1718
     width: 250
     height: 160
   onEnterAction: 0
@@ -2380,7 +2380,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: a5ab37b2c50d5d642916cbc78e9d0a99, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: Well, I do need more time for...
@@ -2450,7 +2450,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 87a1ccebf1e535949ab286a658ad6e97, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: uhm, okay?

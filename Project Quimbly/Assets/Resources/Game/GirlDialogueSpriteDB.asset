@@ -64,6 +64,8 @@ MonoBehaviour:
     girlSprites:
     - {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
     - {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
-    - {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
-    - {fileID: 3625043607559282579, guid: 7cd4041ebc6e30e4cadb486264bbb04e, type: 3}
+    - {fileID: 21300000, guid: a5ab37b2c50d5d642916cbc78e9d0a99, type: 3}
+    - {fileID: 21300000, guid: 87a1ccebf1e535949ab286a658ad6e97, type: 3}
     - {fileID: 21300000, guid: 59fbcca58ca27884fbe6463f7ace9f4c, type: 3}
+    - {fileID: 21300000, guid: cee0e38675ae90e4f85a3ddcbfa80341, type: 3}
+    - {fileID: 21300000, guid: f3c3e1af08bcc844a81c3a01d64078ce, type: 3}
