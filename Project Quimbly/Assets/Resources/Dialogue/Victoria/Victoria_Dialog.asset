@@ -123,7 +123,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: VIctoria
   text: Oh, you wan't to help with that...?
@@ -617,7 +617,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: Personal Affairs...
@@ -866,7 +866,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff> Victoria blows a kiss at me
@@ -1041,7 +1041,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: Hey, I'm just as if not more interested than you
@@ -1110,7 +1110,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: How curious...
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: How many orders do you typically deliver then?
@@ -1215,7 +1215,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: You wouldn't tell my boss would you sweetie
@@ -1257,8 +1257,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 0
-    y: 1947
+    x: -1
+    y: 2011
     width: 250
     height: 160
   onEnterAction: 0
@@ -1430,8 +1430,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: -2
-    y: 2096
+    x: -17
+    y: 2209
     width: 250
     height: 160
   onEnterAction: 0
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: I'll be sure to call you whether I want a full meal or a little snack
@@ -1702,7 +1702,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: A big turn on for me...
@@ -1774,7 +1774,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: For more than one thing...
@@ -1846,7 +1846,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff> hmm it seems like she could totally be a closeted stuffer...
@@ -1880,7 +1880,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: 'It''s not that often my delivery driver is a voluptuous , toned woman with
@@ -2204,7 +2204,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: Interested...
@@ -2239,7 +2239,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: I was sooooo stuffed, My belly was actually touching the steering wheel of
@@ -2380,7 +2380,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: Well, I do need more time for...
@@ -2519,15 +2519,15 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 59fbcca58ca27884fbe6463f7ace9f4c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: hahaha, funny and cute.
   children: []
   rect:
     serializedVersion: 2
-    x: 4550
-    y: 29
+    x: 4549
+    y: 27
     width: 250
     height: 220
   onEnterAction: 8
@@ -2625,7 +2625,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: What else can a girl ask for?
@@ -2694,7 +2694,7 @@ MonoBehaviour:
   isRoot: 1
   conversationChainName: Chat 3
   girlToDisplay: Victoria
-  spriteToDisplay: {fileID: -2413806693520163455, guid: 33479df42be45d44aac541777d5d99db, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
   isPlayerSpeaking: 0
   speakerName: Victoria
   text: You're so handome
