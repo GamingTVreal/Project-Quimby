@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 11400000, guid: 3df3596a46b4a8240bc5e924be51cb2c, type: 2}
+    - target: {fileID: 6520805503096795797, guid: 757fc13094754624d930450dfd694c9d, type: 3}
+      propertyPath: uniqueIdentifier
+      value: Victoria
+      objectReference: {fileID: 0}
     - target: {fileID: 6520805503096795799, guid: 757fc13094754624d930450dfd694c9d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

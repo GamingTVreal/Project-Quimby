@@ -40,5 +40,9 @@ public class Menu : MonoBehaviour
     {
         Application.OpenURL("https://www.patreon.com/TeamQuimbly");
     }
+        public void DeviantArt()
+    {
+        Application.OpenURL("https://www.deviantart.com/teamquimbly");
+    }
 
 }
