@@ -1257,8 +1257,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: -1
-    y: 2011
+    x: -12
+    y: 2044
     width: 250
     height: 160
   onEnterAction: 0
@@ -1421,19 +1421,19 @@ MonoBehaviour:
   m_Name: 21e35f64-ca24-4256-9dfd-30711b790205
   m_EditorClassIdentifier: 
   isRoot: 1
-  conversationChainName: 
+  conversationChainName: Inflate
   girlToDisplay: None
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
-  speakerName: Speaker
-  text: 
+  speakerName: Vicotria
+  text: Now I totally would... If there were more days in February
   children: []
   rect:
     serializedVersion: 2
-    x: -17
-    y: 2209
+    x: -5
+    y: 2232
     width: 250
-    height: 160
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
