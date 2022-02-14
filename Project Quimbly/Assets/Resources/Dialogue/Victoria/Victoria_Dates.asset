@@ -303,7 +303,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: Don't worry about the time, just stay a while
-  children: []
+  children:
+  - 9c9ad466-43a5-407c-be9d-5ffcc8fcd7ed
   rect:
     serializedVersion: 2
     x: 3148
@@ -416,6 +417,41 @@ MonoBehaviour:
     y: 1453
     width: 250
     height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-7948948891526319971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 9c9ad466-43a5-407c-be9d-5ffcc8fcd7ed
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Victoria
+  spriteToDisplay: {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Victoria
+  text: I, Uh okay...
+  children:
+  - 8780c463-13e4-4cb1-a318-da32e62e403b
+  rect:
+    serializedVersion: 2
+    x: 3399
+    y: 1083
+    width: 250
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1120,6 +1156,40 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1840
     y: 1056
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-3840535393574517842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 0a8fd70f-3cae-403c-be28-d2a4d2302baf
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Victoria
+  spriteToDisplay: {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Victoria
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 3901
+    y: 1081
     width: 250
     height: 160
   onEnterAction: 0
@@ -1999,6 +2069,9 @@ MonoBehaviour:
   - {fileID: 5953859827148843952}
   - {fileID: 2773023670309036223}
   - {fileID: -8256241980545935676}
+  - {fileID: -7948948891526319971}
+  - {fileID: 8961552728116512517}
+  - {fileID: -3840535393574517842}
   rootNodes:
   - {fileID: -9186407536842411665}
   - {fileID: 1265728695973622140}
@@ -4046,6 +4119,41 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1592
     y: 1210
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8961552728116512517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 8780c463-13e4-4cb1-a318-da32e62e403b
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Victoria
+  spriteToDisplay: {fileID: 21300000, guid: db83ddccbd1509849bdd7e6db87e63da, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: Victoria
+  text: Thank you...
+  children:
+  - 0a8fd70f-3cae-403c-be28-d2a4d2302baf
+  rect:
+    serializedVersion: 2
+    x: 3650
+    y: 1081
     width: 250
     height: 160
   onEnterAction: 0
