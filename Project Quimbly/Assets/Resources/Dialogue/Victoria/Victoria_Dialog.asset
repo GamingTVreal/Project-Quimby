@@ -602,6 +602,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-5434286992591412858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 4b49c8de-96e7-4ae5-9bc4-ce14b17da208
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: AllDatesComplete
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Victoria
+  text: Hey, I had a great time last time but I think we need a break
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 7
+    y: 2379
+    width: 250
+    height: 175
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-5167455742927120330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,8 +1291,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: -12
-    y: 2044
+    x: 9
+    y: 2045
     width: 250
     height: 160
   onEnterAction: 0
@@ -1359,6 +1393,7 @@ MonoBehaviour:
   - {fileID: 2719509146545960823}
   - {fileID: 6653568616973539687}
   - {fileID: 9003368630884290996}
+  - {fileID: -5434286992591412858}
   rootNodes:
   - {fileID: -8624172955114062071}
   - {fileID: 488550577266601351}
@@ -1372,6 +1407,7 @@ MonoBehaviour:
   - {fileID: -6754534393612697374}
   - {fileID: 47992054414848590}
   - {fileID: -48059449518541453}
+  - {fileID: -5434286992591412858}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &40684594614104882
 MonoBehaviour:
@@ -1430,8 +1466,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: -5
-    y: 2232
+    x: 7
+    y: 2202
     width: 250
     height: 175
   onEnterAction: 0
@@ -1465,7 +1501,7 @@ MonoBehaviour:
   - 8914af59-543f-44f6-b243-6bbb661584ed
   rect:
     serializedVersion: 2
-    x: -1
+    x: 2
     y: 1061
     width: 250
     height: 160
