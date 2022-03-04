@@ -73,3 +73,17 @@ MonoBehaviour:
       clip: {fileID: 8300000, guid: ccfc71ed2b8bfce4a9b76d156130e717, type: 3}
     - sfxName: SandFall
       clip: {fileID: 8300000, guid: 9350991e84c95ee4884e8ecb181bb020, type: 3}
+  - name: Slaps
+    sfxSamples:
+    - sfxName: Spank1
+      clip: {fileID: 8300000, guid: eff075f3b5c581643ba2fef12dbf8599, type: 3}
+    - sfxName: Spank2
+      clip: {fileID: 8300000, guid: 23af5313e377eb3469f926519c963d8e, type: 3}
+    - sfxName: Spank3
+      clip: {fileID: 8300000, guid: e3c2d8e35d2fc0549a6630810950ea43, type: 3}
+    - sfxName: Spank4
+      clip: {fileID: 8300000, guid: e59ea34fa358cdc449183849a0b5f501, type: 3}
+    - sfxName: Spank5
+      clip: {fileID: 8300000, guid: 36e13620b94d923459f1d74ae36414f3, type: 3}
+    - sfxName: Spank6
+      clip: {fileID: 8300000, guid: 907ec144d43e9454b9675031a0a056b2, type: 3}

@@ -3205,8 +3205,8 @@ MonoBehaviour:
   - dcf40e24-5db2-4e08-b6fe-8f6fc87c3e44
   rect:
     serializedVersion: 2
-    x: 270
-    y: 2522
+    x: 291
+    y: 2492
     width: 250
     height: 155
   onEnterAction: 0
@@ -7693,12 +7693,13 @@ MonoBehaviour:
   - c59a1785-9340-4bcc-831b-6eb3a567ce17
   rect:
     serializedVersion: 2
-    x: 1279
-    y: 2720
+    x: 1278
+    y: 2697
     width: 250
-    height: 135
-  onEnterAction: 0
-  onEnterActionParameter: []
+    height: 175
+  onEnterAction: 1
+  onEnterActionParameter:
+  - AmberStuffing
   onExitAction: 0
   onExitActionParameter: []
   condition:

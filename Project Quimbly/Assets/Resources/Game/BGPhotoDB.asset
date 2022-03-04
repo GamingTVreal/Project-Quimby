@@ -51,6 +51,8 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: f7cecd4b4addb7248b96a4e9720fd590, type: 3}
   - location: Bar
     sprite: {fileID: 21300000, guid: b77fee37891764449ba61d9c21744465, type: 3}
+  - location: AmberStuffing
+    sprite: {fileID: 21300000, guid: 0f5a5f9edb461cd43adbf3b1a48b566c, type: 3}
   bgSpritesn:
   - location: Home_n
     sprite: {fileID: 21300000, guid: e59c6d61eb5caac4d941620f3a183fcc, type: 3}

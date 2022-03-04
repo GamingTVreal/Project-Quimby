@@ -127,3 +127,21 @@ MonoBehaviour:
       voiceClip: {fileID: 8300000, guid: ceae0e55fda4a49469496c26d40b7f29, type: 3}
     - lineName: cute and funny
       voiceClip: {fileID: 8300000, guid: 3ab49f9d1e0153a4ca8e969547990c54, type: 3}
+    - lineName: Thank_You_Horny
+      voiceClip: {fileID: 8300000, guid: 6ba0ae373d276a94e84c83a8658398f0, type: 3}
+    - lineName: That'll Teach Em
+      voiceClip: {fileID: 8300000, guid: 18cb84f6214c2c245ba5573a3177f29d, type: 3}
+    - lineName: Rub it NOW!
+      voiceClip: {fileID: 8300000, guid: 90160570621ba734e93db468ab1befb2, type: 3}
+    - lineName: '*Belly Moan Noises*'
+      voiceClip: {fileID: 8300000, guid: 706be917282b0454f971517e09e7349e, type: 3}
+    - lineName: I-uh
+      voiceClip: {fileID: 8300000, guid: 5b1d76e409564d44cba88950b4b1d020, type: 3}
+    - lineName: Guess by Definition
+      voiceClip: {fileID: 8300000, guid: f3aa719e3989fcd4184755db850aeb53, type: 3}
+    - lineName: I Win!
+      voiceClip: {fileID: 8300000, guid: c2ba3b2be89bedd41a69e874b27e39f3, type: 3}
+    - lineName: cute and funny
+      voiceClip: {fileID: 8300000, guid: 3ab49f9d1e0153a4ca8e969547990c54, type: 3}
+    - lineName: Reward
+      voiceClip: {fileID: 8300000, guid: 7ff9beca99f3c334998e380cdbad30a1, type: 3}
