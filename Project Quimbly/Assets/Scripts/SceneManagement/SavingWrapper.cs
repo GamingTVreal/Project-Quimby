@@ -39,11 +39,13 @@ namespace ProjectQuimbly.SceneManagement
         public IEnumerator Load()
         {
             yield return GetComponent<SavingSystem>().Load(defaultSaveFile);
+            print("POTATO");
         }
 
         public IEnumerator Load(string saveFile)
         {
             yield return GetComponent<SavingSystem>().Load(saveFile);
+            print("VEGETABLE");
         }
 
         public void Save()
