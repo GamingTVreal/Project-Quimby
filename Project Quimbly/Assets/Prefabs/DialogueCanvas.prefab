@@ -585,6 +585,7 @@ MonoBehaviour:
   Textbox: {fileID: 9085945098770367520}
   Namebox: {fileID: 7192481169966255126}
   Textbox2: {fileID: 7687347095493938941}
+  UnhideTip: {fileID: 8252102766766812074}
   DefaultText: {fileID: 9085945098616353154}
   WrittenText: 
   PreviousText: 
@@ -1005,6 +1006,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 75.00003
       objectReference: {fileID: 0}
+    - target: {fileID: 2361516593790780753, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2416676318948766961, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: m_Name
       value: DialogueContainer
@@ -1133,6 +1138,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4797951109673208800, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4992037683336626271, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -1217,6 +1226,11 @@ GameObject:
 --- !u!1 &7687347095493938941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4102321993003327494, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+  m_PrefabInstance: {fileID: 5926896994729619195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8252102766766812074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2361516593790780753, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
   m_PrefabInstance: {fileID: 5926896994729619195}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &4081682313923114354 stripped

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIHider : MonoBehaviour
 {
-    [SerializeField] GameObject UI,textbox;
+    [SerializeField] GameObject UI,textbox, unhide;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +25,11 @@ public class UIHider : MonoBehaviour
         if (UI.activeInHierarchy == true)
         {
             UI.SetActive(false);
+            unhide.SetActive(true);
         }
         else
         {
+            unhide.SetActive(false);
             UI.SetActive(true);
         }
 

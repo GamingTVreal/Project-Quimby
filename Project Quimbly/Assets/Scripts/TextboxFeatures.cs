@@ -5,13 +5,14 @@ using TMPro;
 
 public class TextboxFeatures : MonoBehaviour
 {
-    [SerializeField] GameObject Textbox, Namebox, Textbox2;
+    [SerializeField] GameObject Textbox, Namebox, Textbox2, UnhideTip;
     [SerializeField] TMP_Text DefaultText;
     public string WrittenText, PreviousText;
     public bool Hidden;
     // Start is called before the first frame update
     void Start()
     {
+        Hidden = false;
         WrittenText = DefaultText.text;
     }
 
@@ -43,6 +44,7 @@ public class TextboxFeatures : MonoBehaviour
         {
             Textbox.SetActive(false);
             Namebox.SetActive(false);
+            UnhideTip.SetActive(true);
             Hidden = true;
         }
         else if (Textbox2.activeInHierarchy == true)
@@ -53,13 +55,13 @@ public class TextboxFeatures : MonoBehaviour
         {
             Textbox.SetActive(true);
             Namebox.SetActive(true);
+            UnhideTip.SetActive(false);
             Hidden = false;
         }
         else if (Textbox2.activeInHierarchy == true)
         {
             Textbox2.SetActive(true);
         }
-
-        Debug.Log(WrittenText);
+       
     }
 }
