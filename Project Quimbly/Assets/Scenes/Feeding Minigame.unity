@@ -394,6 +394,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2361516593790780753, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2416676318948766961, guid: 721863ef7c00fc24fa0498a8f7fef1ba, type: 3}
       propertyPath: m_Name
       value: TextBoxHolder
@@ -3189,6 +3193,10 @@ PrefabInstance:
       value: DialogueCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 7687347095493938941, guid: c58e073619d697b4db8df8812b2a06b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8543846357988468846, guid: c58e073619d697b4db8df8812b2a06b1, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

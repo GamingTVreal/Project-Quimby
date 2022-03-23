@@ -172,7 +172,7 @@ namespace ProjectQuimbly.Inflation
         public void LeaveInflation()
         {
             ResetGirlLocation();
-            if (fullness <= 100 && girlController.GetInflatedDateLevel() <= 2)
+            if (fullness >= 100 && girlController.GetInflatedDateLevel() <= 2)
             {
                 girlInflation.StartDialogue("DatePossiblity");
             }

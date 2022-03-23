@@ -1,5 +1,75 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8719459974361199543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 8b5b7cea-8f78-4267-a44e-0947776e1223
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Sophia
+  text: Nevermind...
+  children:
+  - a7d7cef0-189f-4494-b751-c62e70aa123f
+  rect:
+    serializedVersion: 2
+    x: 322
+    y: 1035
+    width: 250
+    height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-8163786151307314572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 85676741-b6b8-4430-9194-30220ff1089d
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Sophia
+  text: 'Right, of course! '
+  children:
+  - d948eed6-9c52-41f9-8f40-d112d4760df5
+  rect:
+    serializedVersion: 2
+    x: 1671
+    y: 890
+    width: 250
+    height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-7599700067249304907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,6 +97,76 @@ MonoBehaviour:
     y: 747
     width: 250
     height: 155
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-7245085966655850745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: bdd6b8fb-825f-48d4-a30a-d4404dc41a39
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Sophia
+  text: 'See you soon Sophia, can''t wait to do this again! '
+  children:
+  - 07e4f0ce-4eaa-4bb8-b475-9a2ecaea0938
+  rect:
+    serializedVersion: 2
+    x: 890
+    y: 1018
+    width: 250
+    height: 135
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-7191350187382129352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: edc13ab2-d808-4c26-9e46-31067b510f60
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: 'No no no no! This body is only for you! '
+  children:
+  - 8c9760b7-73e4-4eec-946c-ade534c15155
+  rect:
+    serializedVersion: 2
+    x: 1158
+    y: 879
+    width: 250
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -101,6 +241,41 @@ MonoBehaviour:
   onEnterActionParameter: []
   onExitAction: 0
   onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-6596442180636188690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 07e4f0ce-4eaa-4bb8-b475-9a2ecaea0938
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: ehehe, me too [p]!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1190
+    y: 1018
+    width: 250
+    height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 5
+  onExitActionParameter:
+  - Home
   condition:
     and: []
   enterActionIndex: 0
@@ -314,6 +489,42 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-4484756928385708517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: a13a6586-195f-4412-a4eb-15aabc2ecdaa
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  conversationChainName: DatePossiblity
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Sophia
+  text: Hey Sophia,
+  children:
+  - 23d3fcb1-b886-459d-bd92-143caf57d2ef
+  - 8b5b7cea-8f78-4267-a44e-0947776e1223
+  rect:
+    serializedVersion: 2
+    x: 27
+    y: 959
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-3517824763927541827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,6 +622,41 @@ MonoBehaviour:
     y: 78
     width: 250
     height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &-2339697130275201931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: a7d7cef0-189f-4494-b751-c62e70aa123f
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: 'Alright then! '
+  children:
+  - bdd6b8fb-825f-48d4-a30a-d4404dc41a39
+  rect:
+    serializedVersion: 2
+    x: 590
+    y: 1018
+    width: 250
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -633,11 +879,24 @@ MonoBehaviour:
   - {fileID: -7046323569218376534}
   - {fileID: -3517824763927541827}
   - {fileID: -5236556341162266718}
+  - {fileID: -4484756928385708517}
+  - {fileID: 6495683325869302188}
+  - {fileID: -8719459974361199543}
+  - {fileID: -2339697130275201931}
+  - {fileID: -7245085966655850745}
+  - {fileID: -6596442180636188690}
+  - {fileID: 1058445344996979951}
+  - {fileID: 7749127543732471508}
+  - {fileID: -7191350187382129352}
+  - {fileID: 2726805243972587987}
+  - {fileID: -8163786151307314572}
+  - {fileID: 6232231178657708272}
   rootNodes:
   - {fileID: -2473976628778437349}
   - {fileID: 7175816119508108231}
   - {fileID: -5474101123648635587}
   - {fileID: -4722296906468562945}
+  - {fileID: -4484756928385708517}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &657482466026046517
 MonoBehaviour:
@@ -709,6 +968,76 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &1058445344996979951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: cc7be828-9e1e-4397-a5ad-f68ca342d033
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: EEK, Like this??!
+  children:
+  - 1d0a16b2-39a4-4570-b522-4a4530b52081
+  rect:
+    serializedVersion: 2
+    x: 584
+    y: 888
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &2726805243972587987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 8c9760b7-73e4-4eec-946c-ade534c15155
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Sophia
+  text: <color=#00ffffff>FUCK!
+  children:
+  - 85676741-b6b8-4430-9194-30220ff1089d
+  rect:
+    serializedVersion: 2
+    x: 1416
+    y: 892
+    width: 250
+    height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &2844120375051589396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,6 +1066,76 @@ MonoBehaviour:
     y: 739
     width: 250
     height: 170
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &6232231178657708272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: d948eed6-9c52-41f9-8f40-d112d4760df5
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Sophia
+  text: Can't wait to see you again [p]!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1971
+    y: 886
+    width: 250
+    height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 5
+  onExitActionParameter:
+  - Home
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &6495683325869302188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 23d3fcb1-b886-459d-bd92-143caf57d2ef
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Sophia
+  text: Would you like to go on a date?
+  children:
+  - cc7be828-9e1e-4397-a5ad-f68ca342d033
+  rect:
+    serializedVersion: 2
+    x: 323
+    y: 902
+    width: 250
+    height: 120
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -845,6 +1244,41 @@ MonoBehaviour:
   onExitAction: 5
   onExitActionParameter:
   - Home
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &7749127543732471508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 1d0a16b2-39a4-4570-b522-4a4530b52081
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Sophia
+  text: Well, yeah that's the whole point
+  children:
+  - edc13ab2-d808-4c26-9e46-31067b510f60
+  rect:
+    serializedVersion: 2
+    x: 884
+    y: 888
+    width: 250
+    height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
   condition:
     and: []
   enterActionIndex: 0
