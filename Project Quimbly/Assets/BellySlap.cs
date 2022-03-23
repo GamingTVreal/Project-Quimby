@@ -15,18 +15,14 @@ public void Update(){
 }
 void Start(){
     ScriptController = GameObject.FindWithTag("GameController");
+    source = ScriptController.GetComponent<AudioSource>();
 }
-
-
-
-
- public void CheckBellySlap()
+ private void CheckBellySlap()
         { 
-            source = ScriptController.GetComponent<AudioSource>();
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, grabbableLayers);
             Debug.Log(hit.collider);
-           if (hit.collider != null && hit.collider.name == "BellyCollider"){
+           if (hit.collider != null && hit.collider.name == "GirlSprite"){
                Debug.Log("HitDaBelly");
                source.PlayOneShot(BellySlaps[Random.Range(0,5)]);
            }
