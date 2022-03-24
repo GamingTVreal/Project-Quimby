@@ -112,7 +112,8 @@ PrefabInstance:
       propertyPath: uniqueIdentifier
       value: Deb
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4649697783670482088, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d5a1fa8aed3e2f344bef8be283fd96b0, type: 3}
 --- !u!1 &3095148403507097135 stripped
 GameObject:

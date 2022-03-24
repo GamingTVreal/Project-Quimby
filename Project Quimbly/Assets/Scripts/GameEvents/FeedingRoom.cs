@@ -12,6 +12,8 @@ public class FeedingRoom : MonoBehaviour
     [SerializeField] AudioSource Audio, Audio2;
     [SerializeField] AudioClip[] Songs;
     [SerializeField] AudioClip[] SFX,EatingSFX;
+    public AudioClip[] BellySlaps;
+    public AudioSource source;
     [SerializeField] Animator FeedingRoomAnimator, CameraAnimator;
     [SerializeField] PlateSelector plate;
     [SerializeField] SelectedFood FoodItem;
@@ -24,6 +26,8 @@ public class FeedingRoom : MonoBehaviour
     // private TextEvents TextEvent;
     [SerializeField] TextMeshProUGUI fullnessText;
     GirlFeeding feedingScript = null;
+    // Used for cursor change
+    [SerializeField] LayerMask grabbableLayers;
 
     private void Start() 
     {
@@ -36,6 +40,23 @@ public class FeedingRoom : MonoBehaviour
         Audio.volume = 0.100f;
         // Character = FindObjectOfType<CharacterController>();
         // TextEvent = FindObjectOfType<TextEvents>();
+    }
+
+    private void Update()
+    {
+        checkBellySlap();
+    }
+
+    private void checkBellySlap()
+    {
+        Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, grabbableLayers);
+        Debug.Log(hit.collider);
+        if (hit.collider != null && hit.collider.name == "BellySlapArea")
+        {
+            Debug.Log("HitDaBelly");
+            source.PlayOneShot(BellySlaps[Random.Range(0, 5)]);
+        }
     }
 
     // From Leave button onClick

@@ -129,7 +129,6 @@ namespace ProjectQuimbly.Inflation
 
         private void CheckBellyRub()
         {
-            
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, grabbableLayers);
             Debug.Log(hit.collider);

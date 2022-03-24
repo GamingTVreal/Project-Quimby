@@ -12,8 +12,7 @@ public class GirlFeeding : MonoBehaviour
     // Will need reworked if not all girls have the same dialogue counts
     [SerializeField] int numFullConvos;
     [SerializeField] int numMaxFullConvos;
-    [SerializeField] int bonusComboFullness = 5;
-
+    [SerializeField] int bonusComboFullness = 5; 
     // Cache
     int capacity;
     int currentSprite = 0;
@@ -21,6 +20,8 @@ public class GirlFeeding : MonoBehaviour
     Item itemLastEaten;
 
     public event Action OnItemCombo;
+    //Possibly unnessisary
+    [SerializeField] LayerMask grabbableLayers;
 
     // Set up references
     private void Start() 
@@ -89,6 +90,8 @@ public class GirlFeeding : MonoBehaviour
                 return false;
         }
     }
+
+    
 
     // Display conversation based on capacity
     private void CapacityReached()

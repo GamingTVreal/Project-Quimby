@@ -1410,6 +1410,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 42d3169c880c09a439aeb747f2b86e30, type: 3}
   - {fileID: 8300000, guid: e00cb517d188e59498a11c33cb669408, type: 3}
   - {fileID: 8300000, guid: 656c83ffdc45316448952ed5506c844c, type: 3}
+  BellySlaps:
+  - {fileID: 8300000, guid: eff075f3b5c581643ba2fef12dbf8599, type: 3}
+  - {fileID: 8300000, guid: 23af5313e377eb3469f926519c963d8e, type: 3}
+  - {fileID: 8300000, guid: e3c2d8e35d2fc0549a6630810950ea43, type: 3}
+  - {fileID: 8300000, guid: e59ea34fa358cdc449183849a0b5f501, type: 3}
+  - {fileID: 8300000, guid: 36e13620b94d923459f1d74ae36414f3, type: 3}
+  - {fileID: 8300000, guid: 907ec144d43e9454b9675031a0a056b2, type: 3}
+  source: {fileID: 0}
   FeedingRoomAnimator: {fileID: 0}
   CameraAnimator: {fileID: 1166480337}
   plate: {fileID: 770554580}
@@ -1421,6 +1429,9 @@ MonoBehaviour:
     filling: 0
     isdrink: 0
   fullnessText: {fileID: 931545503}
+  grabbableLayers:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &134501225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,7 +1783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6684004418352311674, guid: d81752984f7299e409fc4fd94415403f, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6684004418352311678, guid: d81752984f7299e409fc4fd94415403f, type: 3}
       propertyPath: m_Pivot.x
@@ -1876,35 +1887,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d81752984f7299e409fc4fd94415403f, type: 3}
---- !u!1 &224248967 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3241687173818506859, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
-  m_PrefabInstance: {fileID: 1311127916}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &224248978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224248967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13f331b0b7327124aa6a9e65d6939825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BellySlaps:
-  - {fileID: 8300000, guid: eff075f3b5c581643ba2fef12dbf8599, type: 3}
-  - {fileID: 8300000, guid: 23af5313e377eb3469f926519c963d8e, type: 3}
-  - {fileID: 8300000, guid: e3c2d8e35d2fc0549a6630810950ea43, type: 3}
-  - {fileID: 8300000, guid: e59ea34fa358cdc449183849a0b5f501, type: 3}
-  - {fileID: 8300000, guid: 36e13620b94d923459f1d74ae36414f3, type: 3}
-  - {fileID: 8300000, guid: 907ec144d43e9454b9675031a0a056b2, type: 3}
-  source: {fileID: 0}
-  ScriptController: {fileID: 3241687173818506859, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
-  grabbableLayers:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &237616595
 GameObject:
   m_ObjectHideFlags: 0
@@ -4829,7 +4811,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3241687173818506854, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
   m_PrefabInstance: {fileID: 1311127916}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224248967}
+  m_GameObject: {fileID: 1311127919}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 264a6f967fef96b4d96095367616648a, type: 3}
@@ -4840,12 +4822,50 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3241687173818506852, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
   m_PrefabInstance: {fileID: 1311127916}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224248967}
+  m_GameObject: {fileID: 1311127919}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f13c8f635830ccb429b44212faf5e467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1311127919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3241687173818506859, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
+  m_PrefabInstance: {fileID: 1311127916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1311127920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311127919}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a270e86c657500f45b8675a748c67859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
+  Audio2: {fileID: 0}
+  Songs: []
+  SFX: []
+  EatingSFX: []
+  BellySlaps: []
+  source: {fileID: 0}
+  FeedingRoomAnimator: {fileID: 0}
+  CameraAnimator: {fileID: 0}
+  plate: {fileID: 0}
+  FoodItem: {fileID: 0}
+  CurrentItem:
+    itemType: 0
+    icon: {fileID: 0}
+    amount: 0
+    filling: 0
+    isdrink: 0
+  fullnessText: {fileID: 0}
+  grabbableLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1313791218
 GameObject:
   m_ObjectHideFlags: 0
@@ -5845,27 +5865,6 @@ RectTransform:
   m_AnchoredPosition: {x: 17.779175, y: -154.57361}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1552648831 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6684004418352311674, guid: d81752984f7299e409fc4fd94415403f, type: 3}
-  m_PrefabInstance: {fileID: 216684887}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &1552648837
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1552648831}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 15, y: -110}
-  serializedVersion: 2
-  m_Radius: 100
 --- !u!1 &1554930947
 GameObject:
   m_ObjectHideFlags: 0

@@ -92,9 +92,7 @@ GameObject:
   - component: {fileID: 2458025740137641509}
   - component: {fileID: 2692219682289329901}
   - component: {fileID: 4268092733610904678}
-  - component: {fileID: 5257576616376770617}
-  - component: {fileID: 4649697783670482088}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GirlSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,6 +111,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6320536823837804204}
+  - {fileID: 8732910762304374431}
   m_Father: {fileID: 6075113196282929516}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -159,46 +158,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5257576616376770617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3946372517940515708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13f331b0b7327124aa6a9e65d6939825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BellySlaps:
-  - {fileID: 8300000, guid: eff075f3b5c581643ba2fef12dbf8599, type: 3}
-  - {fileID: 8300000, guid: 23af5313e377eb3469f926519c963d8e, type: 3}
-  - {fileID: 8300000, guid: e3c2d8e35d2fc0549a6630810950ea43, type: 3}
-  - {fileID: 8300000, guid: e59ea34fa358cdc449183849a0b5f501, type: 3}
-  - {fileID: 8300000, guid: 36e13620b94d923459f1d74ae36414f3, type: 3}
-  - {fileID: 8300000, guid: 907ec144d43e9454b9675031a0a056b2, type: 3}
-  source: {fileID: 0}
-  ScriptController: {fileID: 3241687173818506859, guid: f42f19af35495a74983583df8ee15fa5, type: 3}
-  grabbableLayers:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!58 &4649697783670482088
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3946372517940515708}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 15, y: -110}
-  serializedVersion: 2
-  m_Radius: 100
 --- !u!1 &6075113196282929427
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +255,9 @@ MonoBehaviour:
   numFullConvos: 6
   numMaxFullConvos: 2
   bonusComboFullness: 5
+  grabbableLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &7994469942826941605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,3 +299,55 @@ MonoBehaviour:
   BelliesS: []
   textboxmanager: {fileID: 0}
   Feedee: {fileID: 4268092733610904678}
+--- !u!1 &8500107132334750005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8732910762304374431}
+  - component: {fileID: 4120555135513361641}
+  m_Layer: 9
+  m_Name: BellySlapArea
+  m_TagString: BellyRub
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8732910762304374431
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8500107132334750005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2458025740137641509}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 11, y: -148}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!58 &4120555135513361641
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8500107132334750005}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 100
