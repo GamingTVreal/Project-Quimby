@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using ProjectQuimbly.Saving;
-using UnityEngine;
-
 namespace ProjectQuimbly.Schedules
 {
     public class AmberSchedule : Scheduler
     {
-
+        private void Start()
+        {
+            // Placeholder until schedules are completed
+            defaultLocation = "PhoneMenu";
+            currentLocation = "Beach";
+        }
     }
 }

@@ -6,6 +6,7 @@ namespace ProjectQuimbly.Schedules
         {
             // Placeholder until schedules are completed
             defaultLocation = "PhoneMenu";
+            currentLocation = "PhoneMenu";
         }
     }
 }

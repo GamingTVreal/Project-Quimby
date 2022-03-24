@@ -7,7 +7,7 @@ namespace ProjectQuimbly.Dialogue
 {
     public class AIConversant : MonoBehaviour
     {
-        [SerializeField] Dialogue dialogue;
+        [SerializeField] public Dialogue dialogue;
         [SerializeField] string conversationChain;
         [SerializeField] int[] randomConvoOptions;
 
@@ -18,6 +18,11 @@ namespace ProjectQuimbly.Dialogue
         private void Awake()
         {
             player = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerConversant>();
+        }
+
+        public Dialogue getDialogue()
+        {
+            return dialogue;
         }
         
         public void StartDialogue()

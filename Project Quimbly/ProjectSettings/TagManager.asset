@@ -15,6 +15,7 @@ TagManager:
   - EnemaBag
   - CGObject
   - BellyRub
+  - GirlSlot
   layers:
   - Default
   - TransparentFX

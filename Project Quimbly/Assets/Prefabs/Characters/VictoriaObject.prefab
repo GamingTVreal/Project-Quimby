@@ -133,19 +133,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4510223790011468380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8875253294059134581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87393c0802b663f4382fe16452964f90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  location: Home
 --- !u!1 &5997639828972005070
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +267,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4510223790011468380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8875253294059134581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87393c0802b663f4382fe16452964f90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location: PhoneMenu
 --- !u!1001 &5652368559251139122
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -4,22 +4,28 @@ using ProjectQuimbly.Saving;
 using ProjectQuimbly.Schedules;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using ProjectQuimbly.Dialogue;
 
 namespace ProjectQuimbly.Controllers
 {
     public class GirlManager : MonoBehaviour, ISaveable
     {
+        
         [SerializeField] CharacterDB characterDB = null;
         Dictionary<string, CharacterRecord> characterLookup = null;
+        List<string> currentLocations = null;
         List<SaveableClone> saveables = null;
         int charactersInScene = 0;
 
         private void Awake() 
         {
             BuildLookup();
-            // SpawnCharacters();
+            //SpawnCharacters();
+            scheduleHandler();
+            SpawnCharacters2();
         }
 
+        //Recycled code to allow date spawning
         private void SpawnCharacters()
         {
             // Check scene location against character location
@@ -60,9 +66,11 @@ namespace ProjectQuimbly.Controllers
                         case "Inflation Minigame":
                             characterGO = characterDB.GetInflationPrefab(girl);
                             break;
+                            /*
                         default:
                             characterGO = characterDB.GetBasePrefab(girl);
                             break;
+                            */
                     } 
                     GameObject charInstance = Instantiate(characterGO, transform);
 
@@ -86,6 +94,53 @@ namespace ProjectQuimbly.Controllers
                     charactersInScene++;
                 }
             }
+        }
+        //Loads every girl's schedule when the game starts
+        private void scheduleHandler()
+        {
+            currentLocations = characterDB.GetIniLocations();
+        }
+
+        private void SpawnCharacters2()
+        {
+            //Check current location
+            string curScene = SceneManager.GetActiveScene().name;
+            GameObject[] characterSlots = GameObject.FindGameObjectsWithTag("GirlSlot");
+            //saveables = new List<SaveableClone>();
+            string[] names = characterDB.GetNames();
+            int charactersToSpawn = 0;
+
+            foreach (string girl in characterLookup.Keys)
+            {
+                //ALMOST *******************************************************************************
+                if (curScene == characterDB.GetIniLocation(girl))
+                {
+                    charactersToSpawn++;
+                }
+
+                //Fills the character slots with loaded character data
+                for (int i = 0; i < charactersToSpawn; i++)
+                {
+                    //Would be nice to make the variables private again once the system is up and running
+                    characterSlots[i].gameObject.GetComponent<AIConversant>().dialogue = characterDB.GetDialogue(girl);
+                    characterSlots[i].gameObject.GetComponent<SaveableClone>().uniqueIdentifier = characterDB.GetName(girl);
+                    characterSlots[i].gameObject.GetComponent<Scheduler>().addToScene();
+                }
+            }
+
+            
+            /*
+            for (int i = 0; i < currentLocations.Count; i++)
+            {
+                if (currentLocations[i] == curScene)
+                {
+                    charactersToSpawn++;
+                }
+            }
+            */
+            
+
+            
         }
 
         private void BuildLookup()

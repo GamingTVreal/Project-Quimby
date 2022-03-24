@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: dateDialogue
       value: 
       objectReference: {fileID: 11400000, guid: 5d03298c6186f4648bf613f2893ed535, type: 2}
+    - target: {fileID: 3451490461715575067, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b6302b9f0e345843bc2dea61e4550bb, type: 2}
     - target: {fileID: 3844390285431793747, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_SizeDelta.y
       value: 179.3403
@@ -244,7 +248,8 @@ PrefabInstance:
       propertyPath: m_ShowMaskGraphic
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3473484694633552611, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
 --- !u!1 &2339657948083030910 stripped
 GameObject:

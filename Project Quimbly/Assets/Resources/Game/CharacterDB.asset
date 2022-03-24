@@ -14,21 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - girlName: Deb
+    initialLocation: Park
+    Dialogue: {fileID: 11400000, guid: 5b6302b9f0e345843bc2dea61e4550bb, type: 2}
     basePrefab: {fileID: 2339657948083030910, guid: 3bd74a736b3288f45b983d95f30b747c, type: 3}
     datePrefab: {fileID: 2961291967668336133, guid: 230b8df405c18f94ca49638af52dcdad, type: 3}
     feedingPrefab: {fileID: 3095148403507097135, guid: 35a7376693a77a541a82ad7e689a2ef7, type: 3}
     inflationPrefab: {fileID: 2654811142980758392, guid: 4066ebc213951cb4197413ff8c47ae5b, type: 3}
   - girlName: Amber
+    initialLocation: Beach
+    Dialogue: {fileID: 11400000, guid: ba8a79a1ea06e7c4095a3964f8f3e904, type: 2}
     basePrefab: {fileID: 7831626443754671777, guid: 32b21054d903fd043957ae52ec21b140, type: 3}
     datePrefab: {fileID: 2473395646233674262, guid: 4d0c2ace2b07ff24f84c17e19a40ecaf, type: 3}
     feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}
     inflationPrefab: {fileID: 6320371722615389297, guid: 24bb1d2837ce0c44380a979b58d36386, type: 3}
   - girlName: Sophia
+    initialLocation: Library
+    Dialogue: {fileID: 11400000, guid: be96d782f3f9982499bda0fea40565f5, type: 2}
     basePrefab: {fileID: 1383477655420371385, guid: 7890c9520450380458b34ae13021d169, type: 3}
     datePrefab: {fileID: 1990943767418728481, guid: cea5587219e5d5244aa89091de84c914, type: 3}
     feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}
     inflationPrefab: {fileID: 2748125380380540493, guid: a6ca18847a4db134db5e08d122d4cfc3, type: 3}
   - girlName: Victoria
+    initialLocation: PhoneMenu
+    Dialogue: {fileID: 11400000, guid: 6efd65dee29699f41a0bb24865a80db4, type: 2}
     basePrefab: {fileID: 8875253294059134581, guid: 1c6f949579282ce4eaf97c1cc39067bf, type: 3}
     datePrefab: {fileID: 7248820227296158012, guid: de49ebb4ba2548545aa05340b3850607, type: 3}
     feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}

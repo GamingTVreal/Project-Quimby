@@ -7,7 +7,7 @@ namespace ProjectQuimbly.Saving
     [System.Serializable]
     public class SaveableClone : MonoBehaviour
     {
-        [SerializeField] string uniqueIdentifier = "";
+        [SerializeField] public string uniqueIdentifier = "";
 
         public string GetUniqueIdentifier()
         {
