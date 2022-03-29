@@ -351,6 +351,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
+    - target: {fileID: 3844390286394061725, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
+      propertyPath: m_text
+      value: Date
+      objectReference: {fileID: 0}
     - target: {fileID: 3844390286428193713, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -430,6 +434,10 @@ PrefabInstance:
     - target: {fileID: 3844390286451868462, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844390286509285636, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
+      propertyPath: m_text
+      value: Inflate (Not Implemented)
       objectReference: {fileID: 0}
     - target: {fileID: 3844390286516204600, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_Pivot.x
