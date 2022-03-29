@@ -11,7 +11,7 @@ public AudioClip[] BellySlaps;
 
 [SerializeField] LayerMask grabbableLayers;
 public void Update(){
-    CheckBellySlap();
+    //CheckBellySlap();
 }
 void Start(){
     ScriptController = GameObject.FindWithTag("GameController");

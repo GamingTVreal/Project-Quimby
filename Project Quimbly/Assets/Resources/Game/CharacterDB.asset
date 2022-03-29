@@ -31,5 +31,5 @@ MonoBehaviour:
   - girlName: Victoria
     basePrefab: {fileID: 8875253294059134581, guid: 1c6f949579282ce4eaf97c1cc39067bf, type: 3}
     datePrefab: {fileID: 7248820227296158012, guid: de49ebb4ba2548545aa05340b3850607, type: 3}
-    feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}
+    feedingPrefab: {fileID: 3873230918287648690, guid: 24423d1ccb3b92346bdaaf0b2db2054b, type: 3}
     inflationPrefab: {fileID: 2748125380380540493, guid: a6ca18847a4db134db5e08d122d4cfc3, type: 3}
