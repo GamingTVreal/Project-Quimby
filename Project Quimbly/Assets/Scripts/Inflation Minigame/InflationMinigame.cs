@@ -131,7 +131,7 @@ namespace ProjectQuimbly.Inflation
         {
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, grabbableLayers);
-            Debug.Log(hit.collider);
+           // Debug.Log(hit.collider);
             if (hit.collider != null && hit.collider.name == "BellyRubArea")
             {
                 if (Input.GetMouseButton(0))
