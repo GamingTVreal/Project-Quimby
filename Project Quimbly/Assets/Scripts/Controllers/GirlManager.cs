@@ -60,6 +60,9 @@ namespace ProjectQuimbly.Controllers
                         case "Inflation Minigame":
                             characterGO = characterDB.GetInflationPrefab(girl);
                             break;
+                        case "INF_Dates":
+                            characterGO = characterDB.GetInfDatePrefab(girl);
+                            break;
                         default:
                             characterGO = characterDB.GetBasePrefab(girl);
                             break;

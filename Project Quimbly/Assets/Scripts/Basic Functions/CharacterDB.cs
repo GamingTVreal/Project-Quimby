@@ -66,6 +66,17 @@ public class CharacterDB : ScriptableObject
         return null;
     }
 
+    public GameObject GetInfDatePrefab(string charName)
+    {
+        BuildLookup();
+
+        if (characterLookup.ContainsKey(charName))
+        {
+            return characterLookup[charName].infDatePrefab;
+        }
+        return null;
+    }
+
     // public string GetBio(string charName)
     // {
     //     BuildLookup();
@@ -97,6 +108,7 @@ public class CharacterDB : ScriptableObject
         public GameObject datePrefab;
         public GameObject feedingPrefab;
         public GameObject inflationPrefab;
+        public GameObject infDatePrefab;
         // public string biography;
         // public int age;
         // public string cupSize;

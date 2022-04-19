@@ -18,18 +18,22 @@ MonoBehaviour:
     datePrefab: {fileID: 2961291967668336133, guid: 230b8df405c18f94ca49638af52dcdad, type: 3}
     feedingPrefab: {fileID: 3095148403507097135, guid: 35a7376693a77a541a82ad7e689a2ef7, type: 3}
     inflationPrefab: {fileID: 2654811142980758392, guid: 4066ebc213951cb4197413ff8c47ae5b, type: 3}
+    infDatePrefab: {fileID: 2961291967668336133, guid: d133d6662a40aeb44b323af2b65a34f3, type: 3}
   - girlName: Amber
     basePrefab: {fileID: 7831626443754671777, guid: 32b21054d903fd043957ae52ec21b140, type: 3}
     datePrefab: {fileID: 2473395646233674262, guid: 4d0c2ace2b07ff24f84c17e19a40ecaf, type: 3}
     feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}
     inflationPrefab: {fileID: 6320371722615389297, guid: 24bb1d2837ce0c44380a979b58d36386, type: 3}
+    infDatePrefab: {fileID: 2473395646233674262, guid: fc9cf505efdf2b4448f9652fcf40f239, type: 3}
   - girlName: Sophia
     basePrefab: {fileID: 1383477655420371385, guid: 7890c9520450380458b34ae13021d169, type: 3}
     datePrefab: {fileID: 1990943767418728481, guid: cea5587219e5d5244aa89091de84c914, type: 3}
     feedingPrefab: {fileID: 2323063222657794081, guid: 4b77ef859bb1e2f439ddfa5dcf2549a3, type: 3}
     inflationPrefab: {fileID: 2748125380380540493, guid: a6ca18847a4db134db5e08d122d4cfc3, type: 3}
+    infDatePrefab: {fileID: 1990943767418728481, guid: b7131f5aed26b324da67df86acfbce58, type: 3}
   - girlName: Victoria
     basePrefab: {fileID: 8875253294059134581, guid: 1c6f949579282ce4eaf97c1cc39067bf, type: 3}
     datePrefab: {fileID: 7248820227296158012, guid: de49ebb4ba2548545aa05340b3850607, type: 3}
     feedingPrefab: {fileID: 3873230918287648690, guid: 24423d1ccb3b92346bdaaf0b2db2054b, type: 3}
     inflationPrefab: {fileID: 2748125380380540493, guid: a6ca18847a4db134db5e08d122d4cfc3, type: 3}
+    infDatePrefab: {fileID: 7248820227296158012, guid: dd833a91392bb3b41a024840fcde253b, type: 3}
