@@ -1391,8 +1391,8 @@ MonoBehaviour:
   - 215c450b-84ea-4989-b04d-1f32610e05ed
   rect:
     serializedVersion: 2
-    x: 2
-    y: 42
+    x: 3
+    y: 39
     width: 250
     height: 175
   onEnterAction: 0

@@ -50,7 +50,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: ecc65575ca88ebc4a8b0e4c69c0acb70, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: looking like this...
@@ -59,8 +59,8 @@ MonoBehaviour:
   - 307a5be9-6674-4d45-a492-b37d95767add
   rect:
     serializedVersion: 2
-    x: 262
-    y: 97
+    x: 271
+    y: 105
     width: 250
     height: 160
   onEnterAction: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 2dae03ac6c5a364418b6317b8da3fc83, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: It's sooooo fucking hot!!!
@@ -157,7 +157,7 @@ MonoBehaviour:
   isRoot: 1
   conversationChainName: Date 0
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 2dae03ac6c5a364418b6317b8da3fc83, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Wow, we're really out in public...
@@ -263,7 +263,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 22f46be2d6a93864ca99b6df68737aa8, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 6b85ec63a4523044eb18353c111483a0, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: 'I felt like I was being unfaithful to you at first but then '
@@ -298,7 +298,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 153e35f0be70e1a42bf2df674b17f042, type: 3}
   isPlayerSpeaking: 0
   speakerName: Speaker
   text: Well let's get walking. I think that's what people do in malls
@@ -369,7 +369,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 174e2b4de86e3b344930cb146bd2f70e, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 2dae03ac6c5a364418b6317b8da3fc83, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Ehehe, I just saw you there staring at my blimp of a belly
@@ -404,7 +404,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 6b85ec63a4523044eb18353c111483a0, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: ehehehhe awww you're so sweet
@@ -412,8 +412,8 @@ MonoBehaviour:
   - 62823c4a-836d-4f59-9903-86eed6fe8163
   rect:
     serializedVersion: 2
-    x: 1352
-    y: 19
+    x: 1348
+    y: 16
     width: 250
     height: 160
   onEnterAction: 0
@@ -474,7 +474,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 153e35f0be70e1a42bf2df674b17f042, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: 'Ehehe, this is kinda fun! '
@@ -564,6 +564,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-288323188718830646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 704ad25c-9f8a-426f-a625-246afb20ef4e
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: ???
+  text: eheheh... Hiii I'm Ryu...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 7235
+    y: 161
+    width: 250
+    height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,6 +646,8 @@ MonoBehaviour:
   - {fileID: 654893651816195820}
   - {fileID: -9001386279389818027}
   - {fileID: 423171368539953326}
+  - {fileID: 2556894360322316490}
+  - {fileID: -288323188718830646}
   rootNodes:
   - {fileID: -7814225611369990580}
   newNodeOffset: {x: 300, y: 0}
@@ -629,18 +665,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
-  isPlayerSpeaking: 1
-  speakerName: Speaker
-  text: 
-  children: []
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: shshshshhh
+  children:
+  - c7035569-a0c0-4a10-892a-db1847e7c14c
   rect:
     serializedVersion: 2
-    x: 6774
-    y: 151
+    x: 6727
+    y: 143
     width: 250
-    height: 120
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -734,7 +771,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 153e35f0be70e1a42bf2df674b17f042, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: You were right
@@ -742,10 +779,45 @@ MonoBehaviour:
   - bc5a809b-644c-42e9-acd2-706265c5ca51
   rect:
     serializedVersion: 2
-    x: 4469
-    y: 338
+    x: 4447
+    y: 308
     width: 250
     height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &2556894360322316490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: c7035569-a0c0-4a10-892a-db1847e7c14c
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: <color=#00ffffff>The girl and I lock eyes
+  children:
+  - 704ad25c-9f8a-426f-a625-246afb20ef4e
+  rect:
+    serializedVersion: 2
+    x: 6980
+    y: 154
+    width: 250
+    height: 135
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -769,7 +841,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: ecc65575ca88ebc4a8b0e4c69c0acb70, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: Don't get cold feet on me now
@@ -804,7 +876,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 61b535b7819af844bb9973c2c072e7d9, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 6b85ec63a4523044eb18353c111483a0, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: Even in public.
@@ -839,7 +911,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: ecc65575ca88ebc4a8b0e4c69c0acb70, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: You're right you're right, I agreed to this
@@ -909,7 +981,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 22f46be2d6a93864ca99b6df68737aa8, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 6b85ec63a4523044eb18353c111483a0, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: I loved when that couple asked how far along I was...
@@ -945,7 +1017,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 22f46be2d6a93864ca99b6df68737aa8, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: 6b85ec63a4523044eb18353c111483a0, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Yeah, it really is [p]!
@@ -1015,7 +1087,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: ecc65575ca88ebc4a8b0e4c69c0acb70, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff> DEB takes a deep breath
@@ -1050,7 +1122,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: ecc65575ca88ebc4a8b0e4c69c0acb70, type: 3}
   isPlayerSpeaking: 0
   speakerName: DEB
   text: Oh no...
@@ -1120,7 +1192,7 @@ MonoBehaviour:
   isRoot: 0
   conversationChainName: 
   girlToDisplay: Deb
-  spriteToDisplay: {fileID: 21300000, guid: 1c800013c309e1849a9bf4c0c4bee047, type: 3}
+  spriteToDisplay: {fileID: 21300000, guid: ecc65575ca88ebc4a8b0e4c69c0acb70, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: Just take a deep breath and remember that you're the apple of my eye
@@ -1191,7 +1263,7 @@ MonoBehaviour:
   conversationChainName: 
   girlToDisplay: None
   spriteToDisplay: {fileID: 0}
-  isPlayerSpeaking: 0
+  isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff>The suspicous girl makes her way towards us
   children:
@@ -1199,9 +1271,9 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 5466
-    y: 166
+    y: 175
     width: 250
-    height: 155
+    height: 135
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
