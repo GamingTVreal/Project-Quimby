@@ -565,6 +565,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &-2640234107400838057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: f5ccc77a-4c25-4008-b21c-3b69ff4569d5
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: 2. If it's "that" time of the month.
+  children:
+  - 55dd645c-977f-454e-be96-f393523fbbf9
+  rect:
+    serializedVersion: 2
+    x: 771
+    y: 442
+    width: 250
+    height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &-336718974790183538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,6 +722,11 @@ MonoBehaviour:
   - {fileID: -288323188718830646}
   - {fileID: -3759966006047871883}
   - {fileID: 5289022497811966311}
+  - {fileID: 6503397652296810080}
+  - {fileID: 4042220073897403534}
+  - {fileID: -2640234107400838057}
+  - {fileID: 3804547781519487295}
+  - {fileID: 3381600178802660049}
   rootNodes:
   - {fileID: -7814225611369990580}
   newNodeOffset: {x: 300, y: 0}
@@ -865,6 +905,40 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &3381600178802660049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 22eb9d44-b4f7-4141-be1f-339ca80715a6
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: Deb
+  spriteToDisplay: {fileID: 21300000, guid: d18842a12acb5aa42955d8c90f9907c4, type: 3}
+  isPlayerSpeaking: 0
+  speakerName: DEB
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1277
+    y: 417
+    width: 250
+    height: 160
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &3771954270839889657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -892,6 +966,76 @@ MonoBehaviour:
     y: 267
     width: 250
     height: 140
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &3804547781519487295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 55dd645c-977f-454e-be96-f393523fbbf9
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: 3. HER WEIGHT!
+  children:
+  - 22eb9d44-b4f7-4141-be1f-339ca80715a6
+  rect:
+    serializedVersion: 2
+    x: 1024
+    y: 441
+    width: 250
+    height: 120
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &4042220073897403534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 150c048e-d0c9-4029-af4e-3d54ff8481b6
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: 1. Whether her hair is real.
+  children:
+  - f5ccc77a-4c25-4008-b21c-3b69ff4569d5
+  rect:
+    serializedVersion: 2
+    x: 520
+    y: 442
+    width: 250
+    height: 120
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -954,11 +1098,12 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   speakerName: Ryu
   text: You've gotten fatter since high school Debra.
-  children: []
+  children:
+  - 75e6c6b9-b1cb-468b-b36c-e8bceb441b3c
   rect:
     serializedVersion: 2
-    x: 7736
-    y: 153
+    x: 16
+    y: 417
     width: 250
     height: 155
   onEnterAction: 0
@@ -1145,6 +1290,41 @@ MonoBehaviour:
     and: []
   enterActionIndex: 0
   exitActionIndex: 0
+--- !u!114 &6503397652296810080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 75e6c6b9-b1cb-468b-b36c-e8bceb441b3c
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 1
+  speakerName: Speaker
+  text: <color=#00ffffff>There are 3 things man should never ask woman...
+  children:
+  - 150c048e-d0c9-4029-af4e-3d54ff8481b6
+  rect:
+    serializedVersion: 2
+    x: 268
+    y: 435
+    width: 250
+    height: 135
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
 --- !u!114 &6811519499188758511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,7 +1343,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 21300000, guid: ecc65575ca88ebc4a8b0e4c69c0acb70, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
-  text: <color=#00ffffff> DEB takes a deep breath
+  text: <color=#00ffffff>DEB takes a deep breath
   children:
   - 62823c4a-836d-4f59-9903-86eed6fe8163
   rect:
