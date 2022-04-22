@@ -793,8 +793,9 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: Victoria
-  text: And march...
-  children: []
+  text: Oh It makes my belly bigger?
+  children:
+  - 243a8684-6d49-40e3-8678-1177c72aeb81
   rect:
     serializedVersion: 2
     x: 259
@@ -1433,6 +1434,7 @@ MonoBehaviour:
   - {fileID: 2647911068804020339}
   - {fileID: 1653823863353622955}
   - {fileID: 2156853582571074529}
+  - {fileID: 8789036789130232610}
   rootNodes:
   - {fileID: -8624172955114062071}
   - {fileID: 488550577266601351}
@@ -1501,7 +1503,7 @@ MonoBehaviour:
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
   speakerName: Vicotria
-  text: Now I totally would... If there were more days in February...
+  text: Inflation?
   children:
   - 54810722-b713-4fa2-bbb6-b42ac147e0b0
   rect:
@@ -1509,7 +1511,7 @@ MonoBehaviour:
     x: 7
     y: 2201
     width: 250
-    height: 175
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2888,6 +2890,40 @@ MonoBehaviour:
     y: 602
     width: 250
     height: 180
+  onEnterAction: 0
+  onEnterActionParameter: []
+  onExitAction: 0
+  onExitActionParameter: []
+  condition:
+    and: []
+  enterActionIndex: 0
+  exitActionIndex: 0
+--- !u!114 &8789036789130232610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
+  m_Name: 243a8684-6d49-40e3-8678-1177c72aeb81
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  conversationChainName: 
+  girlToDisplay: None
+  spriteToDisplay: {fileID: 0}
+  isPlayerSpeaking: 0
+  speakerName: Victoria
+  text: 'Sign me UP! '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 559
+    y: 2219
+    width: 250
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
