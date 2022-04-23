@@ -20,10 +20,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 90772068440197854, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 839533329849385723, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 92d3279ee3b559648adafea77745ef64, type: 3}
+      objectReference: {fileID: 21300000, guid: 0dd8126398fbb6f4f8556deb1b88d05d, type: 3}
+    - target: {fileID: 839533329849385723, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 918584915324981149, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -120,6 +128,10 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 11400000, guid: 856b03659f6ecf547ac27509edeb389e, type: 2}
+    - target: {fileID: 7483432571926030950, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7865354001916240363, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 68

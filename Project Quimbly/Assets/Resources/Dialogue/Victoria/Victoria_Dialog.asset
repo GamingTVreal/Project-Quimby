@@ -1498,7 +1498,7 @@ MonoBehaviour:
   m_Name: 21e35f64-ca24-4256-9dfd-30711b790205
   m_EditorClassIdentifier: 
   isRoot: 1
-  conversationChainName: Inflate
+  conversationChainName: Inflation
   girlToDisplay: None
   spriteToDisplay: {fileID: 0}
   isPlayerSpeaking: 0
@@ -2920,14 +2920,16 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 559
-    y: 2219
+    x: 515
+    y: 2224
     width: 250
-    height: 140
-  onEnterAction: 0
-  onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
+    height: 220
+  onEnterAction: 11
+  onEnterActionParameter:
+  - Inflation Minigame
+  onExitAction: 5
+  onExitActionParameter:
+  - Inflation Minigame
   condition:
     and: []
   enterActionIndex: 0
