@@ -91,9 +91,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 332359772470862184, guid: 141f5542af0ddc74ab8979fb71c4edec, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
+    - target: {fileID: 3650853446300807042, guid: 141f5542af0ddc74ab8979fb71c4edec, type: 3}
+      propertyPath: m_text
+      value: Victoria
+      objectReference: {fileID: 0}
     - target: {fileID: 8883995393695470982, guid: 141f5542af0ddc74ab8979fb71c4edec, type: 3}
       propertyPath: m_Name
-      value: Sophia
+      value: Victoria
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 141f5542af0ddc74ab8979fb71c4edec, type: 3}

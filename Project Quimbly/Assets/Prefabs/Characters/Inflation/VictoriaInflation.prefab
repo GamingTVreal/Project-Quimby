@@ -120,6 +120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VictoriaInflation
       objectReference: {fileID: 0}
+    - target: {fileID: 1586204729116740286, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 98f721e26b5f60c4e84c90c543745a5d, type: 2}
     - target: {fileID: 2415864990094978937, guid: 38a02564bfbd17a4cb9d0913d10952da, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -50.52

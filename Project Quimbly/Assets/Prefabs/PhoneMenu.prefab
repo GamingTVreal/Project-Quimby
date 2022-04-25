@@ -7071,7 +7071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3812538623646525499
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11574,17 +11574,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7750824167511386980}
     m_Modifications:
-    - target: {fileID: 676609315127083976, guid: 4e27a15a887c221478a2df340fb3464e, type: 3}
-      propertyPath: m_text
-      value: Victoria
-      objectReference: {fileID: 0}
     - target: {fileID: 3332540179872537210, guid: 4e27a15a887c221478a2df340fb3464e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6492086461416597313}
     - target: {fileID: 3955967172295168247, guid: 4e27a15a887c221478a2df340fb3464e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1072.2998
+      value: 1022.187
       objectReference: {fileID: 0}
     - target: {fileID: 3955967172295168247, guid: 4e27a15a887c221478a2df340fb3464e, type: 3}
       propertyPath: m_SizeDelta.y
@@ -11592,11 +11588,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3955967172295168247, guid: 4e27a15a887c221478a2df340fb3464e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 211
+      value: 221
       objectReference: {fileID: 0}
     - target: {fileID: 3955967172295168247, guid: 4e27a15a887c221478a2df340fb3464e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -547
+      value: -549
       objectReference: {fileID: 0}
     - target: {fileID: 4388838060236340882, guid: 4e27a15a887c221478a2df340fb3464e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -11606,10 +11602,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -50.001007
       objectReference: {fileID: 0}
-    - target: {fileID: 4563663989658783010, guid: 4e27a15a887c221478a2df340fb3464e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7304d779f63c22a4c93ee3ed427a4e6c, type: 3}
     - target: {fileID: 4589892895121024429, guid: 4e27a15a887c221478a2df340fb3464e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
