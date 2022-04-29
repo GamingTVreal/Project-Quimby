@@ -33,6 +33,12 @@ public class DateScript : MonoBehaviour
         conversant.StartDialogue("Date " + dateLevel);
     }
 
+    public void EndInflationDate()
+    {
+        girlController.IncreaseINFDateLevel();
+        conversant.onConversationEnd += ResetGirlLocation;
+        
+    }
     public void ModifyDP(int amount)
     {
         DP += amount;

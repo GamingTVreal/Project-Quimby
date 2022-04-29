@@ -5,27 +5,40 @@ using ProjectQuimbly.Dialogue;
 
 public class INF_Dates : MonoBehaviour
 {
+   [SerializeField] AudioSource musicSource;
+
+
+    int dateLevel;
     AIConversant conversant = null;
     GirlController girlController = null;
 
-    private void Awake()
-    {
+    private void Awake() {
         conversant = GetComponent<AIConversant>();
         girlController = GetComponent<GirlController>();
+        musicSource = GameObject.FindWithTag("MainCamera").GetComponent<AudioSource>();
     }
-    
-    // Start is called before the first frame update
+
     void Start()
     {
-
+        dateLevel = girlController.GetInflatedDateLevel();
+        Debug.Log("This is the " + dateLevel + " Date");
+        //dateLevel = 2;
+        conversant.StartDialogue("Date " + dateLevel);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EndInflationDate()
     {
-
+        girlController.IncreaseINFDateLevel();
+        conversant.onConversationEnd += ResetGirlLocation;
     }
-}
     
+public void ResetGirlLocation()
+    {
+        girlController.ResetLocation();
+        conversant.onConversationEnd -= ResetGirlLocation;
+    }
+
+    
+}
 
 

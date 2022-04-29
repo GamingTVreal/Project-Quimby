@@ -13,6 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   location: Park
+--- !u!114 &9034981344993406568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961291967668336133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afbb19fe615f3e644a089bdaa5df1087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 0}
 --- !u!1001 &8315352816816850157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22,10 +35,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3074613681770152436, guid: 757fc13094754624d930450dfd694c9d, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3074613681770152436, guid: 757fc13094754624d930450dfd694c9d, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253312332041464139, guid: 757fc13094754624d930450dfd694c9d, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4666471244525811636, guid: 757fc13094754624d930450dfd694c9d, type: 3}
@@ -128,7 +145,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebDate Object 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5051914142212815670, guid: 757fc13094754624d930450dfd694c9d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 757fc13094754624d930450dfd694c9d, type: 3}
 --- !u!1 &2961291967668336133 stripped
 GameObject:

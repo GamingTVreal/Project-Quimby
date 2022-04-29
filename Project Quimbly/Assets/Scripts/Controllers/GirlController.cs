@@ -27,7 +27,7 @@ public class GirlController : MonoBehaviour, ISaveable
     private void Start()
     {
         // dateLevel = 0; //comment this out again
-        inflatedDateLevel = 0;
+        //inflatedDateLevel = 0;
         // Debug.Log(dateLevel);
     }
 
@@ -67,11 +67,6 @@ public class GirlController : MonoBehaviour, ISaveable
     public int GetInflatedDateLevel()
     {
         return inflatedDateLevel;
-    }
-
-    public void IncreaseInflatedDateLevel()
-    {
-        inflatedDateLevel++;
     }
 
     internal void ModifyBellyCapacity(int amount)

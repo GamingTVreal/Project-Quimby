@@ -15,6 +15,9 @@ namespace ProjectQuimbly.Dialogue
         EndDate,
         ChangeGirlLocation,
         EndDateWithNoDialog,
-        ChangeCG
+        ChangeCG,
+        IncreaseInflatedLevel
+
+
     }
 }

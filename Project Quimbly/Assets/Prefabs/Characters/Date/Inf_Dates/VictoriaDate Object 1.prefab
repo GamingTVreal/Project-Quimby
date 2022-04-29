@@ -114,9 +114,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6520805503096795880, guid: 757fc13094754624d930450dfd694c9d, type: 3}
       propertyPath: m_Name
-      value: VictoriaDate Object
+      value: VictoriaDate Object 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5051914142212815670, guid: 757fc13094754624d930450dfd694c9d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 757fc13094754624d930450dfd694c9d, type: 3}
 --- !u!1 &7248820227296158012 stripped
 GameObject:

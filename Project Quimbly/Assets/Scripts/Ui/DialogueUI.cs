@@ -320,10 +320,15 @@ namespace ProjectQuimbly.UI
            DateScript DS = GameObject.FindWithTag("DateController").GetComponent<DateScript>();
            DS.EndDate();
         }
-        
+        public void IncreaseInflatedLevel()
+        {
+           INF_Dates InflationDates = GameObject.FindWithTag("DateController").GetComponent<INF_Dates>();
+           InflationDates.EndInflationDate();
+        }
         public void EndDateWithNoDialog()
         {
             DateScript DS = GameObject.FindWithTag("DateController").GetComponent<DateScript>();
+            
             DS.EndDateNoDialog();
         }
         
