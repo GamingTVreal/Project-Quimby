@@ -2265,7 +2265,6 @@ MonoBehaviour:
   - {fileID: 7478110133132446509}
   - {fileID: 8377747904605299680}
   - {fileID: -2997380194388090852}
-  - {fileID: 1195474272094302230}
   - {fileID: -7624744454396978474}
   - {fileID: 899499494179496097}
   - {fileID: -3275612975874504082}
@@ -2304,7 +2303,7 @@ MonoBehaviour:
   rootNodes:
   - {fileID: -7814225611369990580}
   - {fileID: 950541360146081129}
-  - {fileID: 1195474272094302230}
+  - {fileID: 0}
   newNodeOffset: {x: 300, y: 0}
 --- !u!114 &78531672799180900
 MonoBehaviour:
@@ -2509,40 +2508,6 @@ MonoBehaviour:
     y: 191
     width: 250
     height: 120
-  onEnterAction: 0
-  onEnterActionParameter: []
-  onExitAction: 0
-  onExitActionParameter: []
-  condition:
-    and: []
-  enterActionIndex: 0
-  exitActionIndex: 0
---- !u!114 &1195474272094302230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a091f201fc5190b428d09fd72ba53cbb, type: 3}
-  m_Name: b324aa15-f88d-4bc2-a4c6-4369460a0695
-  m_EditorClassIdentifier: 
-  isRoot: 1
-  conversationChainName: Date 2
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
-  isPlayerSpeaking: 0
-  speakerName: Speaker
-  text: 
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 8
-    y: 923
-    width: 250
-    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -3380,8 +3345,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 7526
-    y: 1220
+    x: 7749
+    y: 915
     width: 250
     height: 235
   onEnterAction: 14
