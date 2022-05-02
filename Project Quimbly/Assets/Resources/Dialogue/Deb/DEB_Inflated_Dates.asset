@@ -968,8 +968,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: 99fa1aa2f27cd724380d306e3550cbc5, type: 3}
   isPlayerSpeaking: 0
   speakerName: Ryu
   text: Him...
@@ -977,10 +977,10 @@ MonoBehaviour:
   - 27f5b3ab-3223-47e5-a64d-b10d91171a2c
   rect:
     serializedVersion: 2
-    x: 2279
-    y: 420
+    x: 2292
+    y: 384
     width: 250
-    height: 140
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1215,8 +1215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: e38f7c7cce295264baf9790238bd4985, type: 3}
   isPlayerSpeaking: 0
   speakerName: Ryu
   text: What are you eating to look like that anyways?
@@ -1224,10 +1224,10 @@ MonoBehaviour:
   - a92818be-e4d2-4c7e-8899-e51983006124
   rect:
     serializedVersion: 2
-    x: 1775
-    y: 419
+    x: 1787
+    y: 377
     width: 250
-    height: 155
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1250,8 +1250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: c34c28354304cfa4da19358b4dd9bd63, type: 3}
   isPlayerSpeaking: 0
   speakerName: Ryu
   text: You can do sooo much better...
@@ -1262,7 +1262,7 @@ MonoBehaviour:
     x: 3594
     y: 427
     width: 250
-    height: 140
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -1495,8 +1495,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: 99fa1aa2f27cd724380d306e3550cbc5, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff>The girl begins to blush before looking at DEB with an upset
@@ -1505,10 +1505,10 @@ MonoBehaviour:
   - fb6ce850-80db-45e0-b014-b5232d107c3c
   rect:
     serializedVersion: 2
-    x: 7485
-    y: 147
+    x: 7488
+    y: 137
     width: 250
-    height: 150
+    height: 170
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2129,8 +2129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: 99fa1aa2f27cd724380d306e3550cbc5, type: 3}
   isPlayerSpeaking: 0
   speakerName: ???
   text: eheheh... Hiii I'm Ryu...
@@ -2138,10 +2138,10 @@ MonoBehaviour:
   - e300b126-dff4-4f38-8c2c-1b413e829fee
   rect:
     serializedVersion: 2
-    x: 7237
-    y: 134
+    x: 7232
+    y: 142
     width: 250
-    height: 140
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2495,8 +2495,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: e38f7c7cce295264baf9790238bd4985, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff>It was so odd...?
@@ -2507,7 +2507,7 @@ MonoBehaviour:
     x: 3410
     y: 191
     width: 250
-    height: 120
+    height: 140
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2539,8 +2539,8 @@ MonoBehaviour:
   - a1f5a6fc-e381-49bb-9072-f8e6df6fcc98
   rect:
     serializedVersion: 2
-    x: 775
-    y: 579
+    x: 784
+    y: 572
     width: 250
     height: 160
   onEnterAction: 0
@@ -2670,8 +2670,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: 99fa1aa2f27cd724380d306e3550cbc5, type: 3}
   isPlayerSpeaking: 0
   speakerName: Ryu
   text: oooooh~
@@ -2679,10 +2679,10 @@ MonoBehaviour:
   - 23ad22ee-6f46-4bdc-ac11-25d5634ba1f0
   rect:
     serializedVersion: 2
-    x: 2531
-    y: 417
+    x: 2548
+    y: 382
     width: 250
-    height: 140
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -2775,8 +2775,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: c34c28354304cfa4da19358b4dd9bd63, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: <color=#00ffffff>The girl and I lock eyes
@@ -2787,7 +2787,7 @@ MonoBehaviour:
     x: 6980
     y: 154
     width: 250
-    height: 135
+    height: 155
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -3477,8 +3477,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: e38f7c7cce295264baf9790238bd4985, type: 3}
   isPlayerSpeaking: 0
   speakerName: Ryu
   text: You've gotten fatter since high school Debra.
@@ -3486,10 +3486,10 @@ MonoBehaviour:
   - 75e6c6b9-b1cb-468b-b36c-e8bceb441b3c
   rect:
     serializedVersion: 2
-    x: 16
-    y: 417
+    x: 9
+    y: 427
     width: 250
-    height: 155
+    height: 175
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -4283,8 +4283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: e38f7c7cce295264baf9790238bd4985, type: 3}
   isPlayerSpeaking: 0
   speakerName: Ryu
   text: Ugh,Whatever...
@@ -4292,10 +4292,10 @@ MonoBehaviour:
   - 2cbf74b5-fd4a-4b17-a539-9d017d132738
   rect:
     serializedVersion: 2
-    x: 1528
-    y: 418
+    x: 1534
+    y: 386
     width: 250
-    height: 140
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -4388,8 +4388,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: e38f7c7cce295264baf9790238bd4985, type: 3}
   isPlayerSpeaking: 0
   speakerName: Ryu
   text: And how did you come here with...
@@ -4397,10 +4397,10 @@ MonoBehaviour:
   - 7a6e91c1-af10-4a73-865c-7ce434eaa681
   rect:
     serializedVersion: 2
-    x: 2027
-    y: 427
+    x: 2039
+    y: 394
     width: 250
-    height: 140
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -4423,8 +4423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: e38f7c7cce295264baf9790238bd4985, type: 3}
   isPlayerSpeaking: 1
   speakerName: Speaker
   text: '<color=#00ffffff> She would just stare... '
@@ -4433,9 +4433,9 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 3158
-    y: 191
+    y: 179
     width: 250
-    height: 135
+    height: 155
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
@@ -4669,8 +4669,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRoot: 0
   conversationChainName: 
-  girlToDisplay: None
-  spriteToDisplay: {fileID: 0}
+  girlToDisplay: Ryu
+  spriteToDisplay: {fileID: 21300000, guid: c34c28354304cfa4da19358b4dd9bd63, type: 3}
   isPlayerSpeaking: 0
   speakerName: ???
   text: Say is that Debra?
@@ -4678,10 +4678,10 @@ MonoBehaviour:
   - 51405d03-c2cf-4dcf-941f-10990155d8ee
   rect:
     serializedVersion: 2
-    x: 5971
-    y: 456
+    x: 5906
+    y: 407
     width: 250
-    height: 140
+    height: 160
   onEnterAction: 0
   onEnterActionParameter: []
   onExitAction: 0
