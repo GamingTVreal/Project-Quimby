@@ -123,7 +123,7 @@ namespace ProjectQuimbly.Inflation
             pressureText.text = pressure.ToString("0.00");
             if (pressure > 0 && pressure < 101)
             {
-                pressure -= Time.deltaTime;
+                pressure -= Time.deltaTime * 1.5;
             }
         }
 

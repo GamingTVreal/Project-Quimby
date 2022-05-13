@@ -437,7 +437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3844390286509285636, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_text
-      value: Inflate (Not Implemented)
+      value: Inflate
       objectReference: {fileID: 0}
     - target: {fileID: 3844390286516204600, guid: 26e882b80ef9fa54485895218582d3db, type: 3}
       propertyPath: m_Pivot.x
