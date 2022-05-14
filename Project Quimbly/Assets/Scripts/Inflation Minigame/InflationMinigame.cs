@@ -13,7 +13,7 @@ namespace ProjectQuimbly.Inflation
         [SerializeField] private const int GoodExitFullnessValue = 60;
         public GameObject gameOver, pumpObject;
         public TMP_Text pressureText, fullnessText;
-        public float pressure, fullness;
+        public float pressure, fullness, BRSMultiplyer = 3;
         public AudioClip[] pumpSFX;            //0-4 Releasing Pump, 5-10 Charging Pump
         public AudioSource source;
         public int currentPump;
@@ -123,7 +123,7 @@ namespace ProjectQuimbly.Inflation
             pressureText.text = pressure.ToString("0.00");
             if (pressure > 0 && pressure < 101)
             {
-                pressure -= Time.deltaTime * 1.5;
+                pressure -= Time.deltaTime * 1.5f;
             }
         }
 
@@ -147,7 +147,7 @@ namespace ProjectQuimbly.Inflation
                     }
                     if (pressure >= 1)
                     {
-                        pressure = pressure - Time.deltaTime * 3;
+                        pressure = pressure - Time.deltaTime * BRSMultiplyer;
                     }
                     if (pressure < 1)
                     {
@@ -176,10 +176,12 @@ namespace ProjectQuimbly.Inflation
             if (fullness >= 100 && girlController.GetInflatedDateLevel() <= 1)
             {
                 girlInflation.StartDialogue("DatePossiblity");
+                BRSMultiplyer += 0.05f;
             }
             else if (fullness < GoodExitFullnessValue)
             {
                 girlInflation.StartDialogue("LeaveDeb");
+                BRSMultiplyer += 0.05f;
             }
             else
             {
