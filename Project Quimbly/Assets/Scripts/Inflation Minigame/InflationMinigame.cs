@@ -30,13 +30,14 @@ namespace ProjectQuimbly.Inflation
         private void Start()
         {
             // Get spawned girl obect
-            BRSMultiplyer = girlController.GetRubSpeed();
+           
             GameObject girlContainer = GameObject.FindWithTag("GirlContainer");
             if (girlContainer.transform.childCount == 0) return;
 
             GameObject charPrefab = girlContainer.transform.GetChild(0).gameObject;
             girlInflation = charPrefab.GetComponent<GirlInflation>();
             girlController = charPrefab.GetComponent<GirlController>();
+            BRSMultiplyer = girlController.GetRubSpeed();
         }
 
         public void ChoosePump(int choice)
