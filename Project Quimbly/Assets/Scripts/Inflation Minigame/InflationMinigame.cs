@@ -30,6 +30,7 @@ namespace ProjectQuimbly.Inflation
         private void Start()
         {
             // Get spawned girl obect
+            BRSMultiplyer = girlController.GetRubSpeed();
             GameObject girlContainer = GameObject.FindWithTag("GirlContainer");
             if (girlContainer.transform.childCount == 0) return;
 
@@ -172,16 +173,19 @@ namespace ProjectQuimbly.Inflation
 
         public void LeaveInflation()
         {
+            if (BRSMultiplyer < 5 && fullness > 75)
+            {
+                girlController.SetRubSpeed(0.05f);
+                Debug.Log(BRSMultiplyer);
+            }
             ResetGirlLocation();
             if (fullness >= 100 && girlController.GetInflatedDateLevel() <= 1)
             {
                 girlInflation.StartDialogue("DatePossiblity");
-                BRSMultiplyer += 0.05f;
             }
             else if (fullness < GoodExitFullnessValue)
             {
                 girlInflation.StartDialogue("LeaveDeb");
-                BRSMultiplyer += 0.05f;
             }
             else
             {

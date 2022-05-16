@@ -14,6 +14,7 @@ public class GirlController : MonoBehaviour, ISaveable
     int dateLevel;
     int inflatedDateLevel;
     int bellyCapacity = 25;
+    float BellyRubFluency = 3;
 
     // Cache
     AIConversant girlConversant = null;
@@ -78,6 +79,17 @@ public class GirlController : MonoBehaviour, ISaveable
     {
         return bellyCapacity;
     }
+    internal float GetRubSpeed()
+    {
+        return BellyRubFluency;
+    }
+    public void SetRubSpeed(float amount)
+    {
+        BellyRubFluency += amount;
+    }
+    
+        
+    
 
     public void ResetLocation()
     {
